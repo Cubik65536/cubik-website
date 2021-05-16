@@ -5,6 +5,16 @@ sidebar:
     wiki: '[btn.wiki](/wiki/)'
     notes: '[btn.notes](/notes/)'
     more: '[btn.more](/more/)'
+footer:
+  social:
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/github.svg"/>'
+      url: https://github.com/Cubik65536
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/mail-bulk-solid.svg"/>'
+      url: mailto:cubik65536@cubik65536.top
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/comments.svg"/>'
+      url: /more/#comments
+
+  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
 comments:
   service: utterances # utterances
   utterances:
