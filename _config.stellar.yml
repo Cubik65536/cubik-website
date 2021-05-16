@@ -1,0 +1,11 @@
+sidebar:
+  menu:
+    home: '[btn.home](/)'
+    post: '[btn.blog](/blog/)'
+    wiki: '[btn.wiki](/wiki/)'
+    notes: '[btn.notes](/notes/)'
+    more: '[btn.more](/more/)'
+comments:
+  service: utterances # utterances
+  utterances:
+    repo: Cubik65536/blog-comments
