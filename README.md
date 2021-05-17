@@ -1,8 +1,4 @@
-## Cubik的小站
-
-### https://cubik65536.top
-
----
+## Cubik的小站<br/>https://cubik65536.top
 
 <p align="center">
   <a href="https://vercel.com?utm_source=powered-by-vercel"><img height="35" src="https://raw.githubusercontent.com/abumalick/powered-by-vercel/master/powered-by-vercel.svg" alt="Powered by Vercel"></a>
