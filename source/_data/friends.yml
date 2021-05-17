@@ -1,0 +1,12 @@
+group1:
+  title: 友情链接
+  items:
+    - title: Evan's blog
+      description: 积跬步以至千里，喜欢学习喜欢你。
+      avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+      url: https://xugaoyi.com/
+
+group2:
+  description: '以下友链通过 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 提交，按 issue 最后更新时间排序：'
+  api: friends-api.blog.cubik65536.top
+  repo: Cubik65536/friends-api

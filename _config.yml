@@ -108,3 +108,15 @@ theme: stellar
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+inject:
+  head:
+    - <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    - <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    - <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    - <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    - <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    - <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    - <meta name="msapplication-TileColor" content="#fd7600">
+    - <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    - <meta name="theme-color" content="#ffffff">
