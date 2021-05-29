@@ -7,6 +7,19 @@ wiki: Notes
 comments: false
 ---
 
+{% folding certbot arm64 docker获取ssl证书 %}
+
+docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.com
+
+{% endfolding %}
+
+{% folding 更新Git Submodule %}
+
+{% copy git submodule foreach git pull %}
+
+{% endfolding %}
+
+
 {% folding 提示 “安装包已损坏” 怎么办？ %}
 
 {% copy sudo spctl --master-disable %}
