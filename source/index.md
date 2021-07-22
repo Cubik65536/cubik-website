@@ -15,7 +15,13 @@ header: false
 
 **RECOMMENDED BY DR.CREATIVE**
 
-大家好，我是Cubik！<br/>目前是一个高中学生，常用语言Java&Python&Swift，~~但都只会一点点~~。<br/>本人还是[LittleSkinCommspt（社区支持组）](https://github.com/LittleSkinCommspt)成员之一，~~最菜的那个~~
+大家好，我是Cubik！<br/>目前是一个高中学生，常用语言有Java，Python和Swift。
+
+本人还是[LittleSkinCommspt（社区支持组）](https://github.com/LittleSkinCommspt)成员之一，~~最菜的那个~~
+
+本站是我的个人博客站，不会放置任何推广链接。本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
+
+~~会咕咕咕的很厉害，随缘诈尸更新~~
 
 ------
 
