@@ -17,7 +17,21 @@ header: false
 
 大家好，我是Cubik！<br/>目前是一个高中学生，常用语言Java&Python&Swift，~~但都只会一点点~~。<br/>本人还是[LittleSkinCommspt（社区支持组）](https://github.com/LittleSkinCommspt)成员之一，~~最菜的那个~~
 
-📬 联系我：<br/>[电子邮件](mailto:cubik65536@cubik65536.top)<br/>[GitHub](https://github.com/Cubik65536)
+------
+
+📬 联系我：
+
+[![电子邮件](https://img.shields.io/badge/电子邮件-cubik65536%40cubik65356.top-informational?style=for-the-badge)](mailto:cubik65536@cubik65356.top)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cubik65536)
+
+[![GPG Key](https://img.shields.io/badge/我的GPG指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/gpg-public-key.txt)
+
+<div style="text-align: center"><code>Click on the badge to see my public key!</code></div>
+
+<br/>
+
+------
 
 {% navbar [文章](/blog/) [项目](/wiki/) [友链](/friends/) [留言](/more#comments) %}
 
