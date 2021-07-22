@@ -11,6 +11,7 @@ group1:
       url: https://blog.restent.win
 
 group2:
+  title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/) 提交，按 issue 最后更新时间排序：'
-  api: friends-api.blog.cubik65536.top
+  api: https://friends-api.blog.cubik65536.top
   repo: Cubik65536/friends-api
