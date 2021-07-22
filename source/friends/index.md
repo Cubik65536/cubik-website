@@ -24,7 +24,7 @@ header: false
 
 {% timeline %}
 
-{% timenode 第一步：新建 Issue %}
+<!-- node 第一步：新建 Issue -->
 
 新建 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/new/choose) 按照模板格式填写并提交。
 
@@ -32,9 +32,7 @@ header: false
 1. 将您的头像图片尺寸调整到 `96px`。
 2. 将压缩后的图片上传到你希望使用的图床并使用此图片链接作为头像。
 
-{% endtimenode %}
-
-{% timenode 第二步：添加友链并等待管理员审核 %}
+<!-- node 第二步：添加友链并等待管理员审核 -->
 
 请添加本站到您的友链中<br/>**如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可**。
 
@@ -48,8 +46,6 @@ description: RECOMMENDED BY DR.CREATIVE
 ```
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
-
-{% endtimenode %}
 
 {% endtimeline %}
 

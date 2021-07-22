@@ -13,6 +13,21 @@ footer:
       url: mailto:cubik65536@cubik65536.top
     - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/comments.svg"/>'
       url: /more/#comments
+  sitemap:
+    '主页':
+      - '[近期发布](/blog/)'
+      - '[分类](/categories/)'
+      - '[标签](/tags/)'
+      - '[归档](/archives/)'
+    'Wiki':
+#      - '[所有项目](/wiki/)'
+      - '[便签](/notes/)'
+    '社交':
+      - '[友链](/friends/)'
+      - '[留言板](/more#comments)'
+    '联系我们':
+      - '[Email](mailto:cubik65536@cubik65536.top)'
+      - '[GitHub](https://github.com/Cubik65536)'
 
 #  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
 comments:

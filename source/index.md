@@ -29,17 +29,15 @@ header: false
 
 {% timeline %}
 
-{% timenode MCDReforged-Remote %}
+<!-- node MCDReforged-Remote -->
 
 MCDReforged-Remote插件API v2开发
-
-{% endtimenode %}
 
 {% endtimeline %}
 
 ## 兴趣爱好
 
-{% tabs hobbies active:1 %}
+{% tabs hobbies active:1 align:center %}
 
 <!-- tab 游戏 -->
 
@@ -49,8 +47,6 @@ MCDReforged-Remote插件API v2开发
 | Grand Theft Auto V | ★★★☆ | 2018-2020 |
 | F1 2020 | ★★★★ | 2020-2021 |
 | F1 2021 | ★★★★☆ | 2021- |
-
-<!-- endtab -->
 
 {% endtabs %}
 
