@@ -1,16 +1,22 @@
 group1:
-  title: 友情链接
+  title: 海内存知己 天涯若比邻
+  description: 感谢人生旅途中的每一份真挚的友谊。列表按结识先后顺序排列：
   items:
-    - title: Evan's blog
-      description: 积跬步以至千里，喜欢学习喜欢你。
-      avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-      url: https://xugaoyi.com/
     - title: Restent Blog
       description: 面对黑暗，向往光明。
       avatar: https://cdn.jsdelivr.net/gh/Restent/Restent/avatar.jpg
       url: https://blog.restent.win
 
 group2:
+  title: 开发大佬
+  description: 特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
+  items:
+    - title: Evan's blog
+      description: 积跬步以至千里，喜欢学习喜欢你。
+      avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+      url: https://xugaoyi.com/
+
+group3:
   title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/) 提交，按 issue 最后更新时间排序：'
   api: https://friends-api.blog.cubik65536.top
