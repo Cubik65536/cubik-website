@@ -14,7 +14,7 @@ footer:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/comments.svg"/>'
       url: /more/#comments
 
-  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
+#  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
 comments:
   service: utterances # utterances
   utterances:

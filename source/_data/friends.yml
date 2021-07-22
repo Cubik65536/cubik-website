@@ -5,6 +5,10 @@ group1:
       description: 积跬步以至千里，喜欢学习喜欢你。
       avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
       url: https://xugaoyi.com/
+    - title: Restent Blog
+      description: 面对黑暗，向往光明。
+      avatar: https://cdn.jsdelivr.net/gh/Restent/Restent/avatar.jpg
+      url: https://blog.restent.win
 
 group2:
   description: '以下友链通过 [GitHub Issue](https://github.com/xaoxuu/friends/issues/) 提交，按 issue 最后更新时间排序：'
