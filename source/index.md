@@ -33,7 +33,7 @@ header: false
 
 [![GPG Key](https://img.shields.io/badge/我的GPG指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/gpg-public-key.txt)
 
-<div style="text-align: center"><code>Click on the badge to see my public key!</code></div>
+<div style="text-align: center"><code>点击上方徽标查看我的GPG公钥</code></div>
 
 <br/>
 
