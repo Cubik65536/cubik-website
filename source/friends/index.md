@@ -20,7 +20,8 @@ header: false
 - 合法的、非营利性、无商业广告
 - 有实质性原创内容的 `HTTPS` 站点
 
-{% folding 如何自助添加友链？ %}
+
+### 如何自助添加友链？
 
 {% timeline %}
 
@@ -37,18 +38,17 @@ header: false
 请添加本站到您的友链中<br/>**如果您也使用 issue 作为友链源，只需要告知您的友链源仓库即可**。
 
 本站友链信息：
-```yaml
+
+{% codeblock lang:yaml %}
 title: Cubik的小站
 avatar: https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/CubikLogo.png
 url: https://cubik65536.top
 screenshot: https://img.cubik65536.top/Cubik65536.github.io-Screenshot.png
 description: RECOMMENDED BY DR.CREATIVE
-```
+{% endcodeblock %}
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
 
 {% endtimeline %}
-
-{% endfolding %}
 
 如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
