@@ -1,6 +1,7 @@
 ---
 title: 注册MS 365 Developer Program并确保它可以长期使用
 date: 2021-07-22 21:03:40
+cover: https://img.cubik65536.top/EnterYourInfo.png
 categories:
   - 折腾记录
 tags:

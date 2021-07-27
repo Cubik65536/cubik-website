@@ -1,6 +1,7 @@
 ---
 title: 为Oracle Cloud计算实例开放所有访问端口
 date: 2021-01-11 21:37:08
+cover: https://live.staticflickr.com/3846/14601920735_08705262eb_o.jpg
 categories:
   - 折腾记录
 tags:
@@ -41,3 +42,7 @@ tags:
 ![](https://cdn.jsdelivr.net/gh/Cubik65536/Cubik-Image-Hosting-Service/public/assets/img/20210111221009.png)
 
 你接下来会发现最开始只允许TCP的那项的“IP协议”变成“所有协议”且“允许“一栏显示”所有端口的所有流量“。至此你就完成了所有设置啦！
+
+--------------------------------
+
+Credit for cover image: [CGRB server room](https://www.flickr.com/photos/oneilsh/14601920735) by Shawn O'Neil on `flickr.com`

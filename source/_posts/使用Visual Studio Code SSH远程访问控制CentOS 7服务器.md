@@ -1,6 +1,7 @@
 ---
 title: 使用Visual Studio Code SSH远程访问控制CentOS 7服务器
 date: 2021-01-10 14:16:47
+cover: https://cdn.jsdelivr.net/gh/Cubik65536/Cubik-Image-Hosting-Service/public/assets/img/20210110155525.png
 categories:
   - 折腾记录
 tags:
