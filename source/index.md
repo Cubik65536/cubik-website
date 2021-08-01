@@ -9,9 +9,9 @@ breadcrumb: false
 header: false
 ---
 
-{% about avatar:https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/CubikLogo.png height:80px %}
+{% about avatar:https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/Cubik-Avatar-02.png height:180px %}
 
-<img height="75px" alt="hello" src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/hello-cubik.png">
+<img height="96px" alt="hello" src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@34762a5/hello-cubik.png">
 
 **RECOMMENDED BY DR.CREATIVE**
 
