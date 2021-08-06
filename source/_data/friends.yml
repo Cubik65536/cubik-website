@@ -6,6 +6,10 @@ group1:
       description: 面对黑暗，向往光明。
       avatar: https://cdn.jsdelivr.net/gh/Restent/Restent/avatar.jpg
       url: https://blog.restent.win
+    - title: Nofated's Blog
+      description: I hope to be with you everyday.
+      avatar: https://pic.rmb.bdstatic.com/bjh/020a46e8318d66b55d73afe31805d653.jpeg
+      url: https://blog.nofated.win
 
 group2:
   title: 开发大佬
