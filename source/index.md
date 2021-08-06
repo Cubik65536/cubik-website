@@ -15,9 +15,9 @@ header: false
 
 **RECOMMENDED BY DR.CREATIVE**
 
-大家好，我是Cubik！<br/>目前是一个高中学生，常用语言有Java，Python和Swift。
+嗨！我是Cubik，一个16岁的中学生，Java、Python 和 Swift 开发者。
 
-本人还是[LittleSkinCommspt（社区支持组）](https://github.com/LittleSkinCommspt)成员之一，~~最菜的那个~~
+如果你想更多的了解我，可以去看看[我的个人主页](https://www.cubik65536.top)。
 
 本站是我的个人博客站，不会放置任何推广链接。本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
 
@@ -34,12 +34,6 @@ header: false
 [![PGP Key](https://img.shields.io/badge/我的PGP指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
 
 <div style="text-align: center"><code>点击上方徽标查看我的PGP公钥</code></div>
-
-<br/>
-
-------
-
-{% navbar [文章](/blog/) [项目](/wiki/) [友链](/friends/) [留言](/more#comments) %}
 
 {% endabout %}
 
@@ -69,7 +63,3 @@ MCDReforged-Remote插件API v2开发
 | F1 2021 | ★★★★☆ | 2021- |
 
 {% endtabs %}
-
-## 关于本站
-
-本站是个人博客，不放置任何推广链接。内容以折腾记录以及本人项目的各种文档为主。<br/>为保证文章质量，篇数不会很多。
