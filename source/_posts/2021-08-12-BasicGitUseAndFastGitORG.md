@@ -79,6 +79,23 @@ $ sudo apt install git-all
 
 {% endnoteblock %}
 
+#### “登录”
+
+准确的来说是将你的用户名和邮箱配置好，让 git 知道这是你做的。
+
+``` bash
+git config --global user.name "用户名"
+git config --global user.email "邮箱"
+```
+
+使用以下命令可以检查配置是否正常：
+
+``` bash
+git config --global --list
+```
+
+由于这个身份极易被伪造，所以某些人会使用PGP来验证签名。如果你在用，你就需要进行额外操作。~~大佬请离开这个页面x2~~
+
 #### clone
 
 简单来说，这个操作是为了将你的文件下载到你的机器上，打开命令行，输入以下命令
@@ -97,7 +114,7 @@ git clone https://github.com/author/repo
 
 ##### macOS & Linux
 
-一般都在你的 User 家目录下，使用了 cd 命令的各位请自行寻找 ~~大佬请离开这个页面x2~~
+一般都在你的 User 家目录下，使用了 cd 命令的各位请自行寻找 ~~大佬请离开这个页面x3~~
 
 #### 编辑
 
