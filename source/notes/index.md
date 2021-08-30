@@ -7,7 +7,7 @@ comments: false
 
 {% folding certbot arm64 docker获取ssl证书 %}
 
-sudo docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.tld
+{% copy sudo docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.tld %}
 
 {% endfolding %}
 
