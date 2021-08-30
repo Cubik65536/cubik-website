@@ -43,9 +43,9 @@ header: false
 
 {% timeline %}
 
-<!-- node MCDReforged-Remote -->
+<!-- node MCDReforged-Remote v2.1 -->
 
-MCDReforged-Remote插件API v2开发
+MCDReforged 2.0 插件格式变更
 
 {% endtimeline %}
 
