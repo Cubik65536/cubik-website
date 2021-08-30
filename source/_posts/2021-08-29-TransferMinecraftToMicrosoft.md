@@ -1,7 +1,7 @@
 ---
 title: 迁移 Minecraft 到微软账户
 date: 2021-08-29 22:39:34
-cover: https://static.wikia.nocookie.net/minecraft_gamepedia/images/8/8d/Minecraft_Launcher.png/revision/latest?cb=20210612104840
+cover: https://img.cubik65536.top/Minecraft_Launcher.png
 categories:
   - 日常
 tags:
