@@ -43,9 +43,17 @@ header: false
 
 {% timeline %}
 
+<!-- node iXOR Technology website -->
+
+更新&美化iXOR Technology官网
+
 <!-- node MCDReforged-Remote v2.1 -->
 
 MCDReforged 2.0 插件格式变更
+
+<!-- node iXORTech/NBTEditor -->
+
+开发iXOR Technology的NBTEditor，跨平台，使用Java编写，使用[SpinyOwl/legui](https://github.com/SpinyOwl/legui)作为GUI库，使用[tr7zw/Item-NBT-API](https://github.com/tr7zw/Item-NBT-API)作为NBT解析&编辑器
 
 {% endtimeline %}
 
