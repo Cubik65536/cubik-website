@@ -39,17 +39,13 @@ header: false
 
 ## 近期日程
 
-开源项目无任何盈利目的（但接受打赏，也有可能会提供相关付费服务），所有项目均会在闲暇之余维护，开源项目如有任何问题建议提交Issue，紧急问题（包括但不限于安全缺陷等问题）请发送私人邮件
+开源项目无任何盈利目的，所有项目均会在闲暇之余维护，开源项目如有任何问题建议提交 Issue，紧急问题（包括但不限于安全缺陷等问题）请发送私人邮件
 
 {% timeline %}
 
-<!-- node iXOR Technology website -->
+<!-- node MCDRRemote Series -->
 
-更新&美化iXOR Technology官网
-
-<!-- node MCDReforged-Remote v2.1 -->
-
-MCDReforged 2.0 插件格式变更
+开发 MCDRRemote 系列产品的互通功能，MC服务器绑定系统，BC子服/多服务器状态获取
 
 <!-- node iXORTech/NBTEditor -->
 
