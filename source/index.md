@@ -15,7 +15,7 @@ header: false
 
 **RECOMMENDED BY DR.CREATIVE**
 
-嗨！我是Cubik，一个16岁的中学生，Java、Python 和 Swift 开发者。
+嗨！我是Cubik，一个 Java、Python 和 Swift 开发者。
 
 如果你想更多的了解我，可以去看看[我的个人主页](https://www.cubik65536.top)。
 
