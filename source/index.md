@@ -45,11 +45,14 @@ header: false
 
 <!-- node MCDRRemote Series -->
 
-开发 MCDRRemote 系列产品的互通功能，MC服务器绑定系统，BC子服/多服务器状态获取
+1. 重构 [MCDReforged-Remote](https://github.com/iXORTech/MCDReforged-Remote)，为互通功能做准备
+2. 重构 [MCDRemoteBot](https://github.com/iXORTech/MCDRemoteBot)，为互通功能做准备
+3. 开发 MCDRRemote 系列产品的互通功能
+4. MC服务器绑定系统，BC子服/多服务器状态获取
 
 <!-- node iXORTech/NBTEditor -->
 
-开发iXOR Technology的NBTEditor，跨平台，使用Java编写，使用[SpinyOwl/legui](https://github.com/SpinyOwl/legui)作为GUI库，使用[tr7zw/Item-NBT-API](https://github.com/tr7zw/Item-NBT-API)作为NBT解析&编辑器
+开发iXOR Technology的NBTEditor，跨平台，使用Java编写，使用[sshahine/JFoenix](https://github.com/sshahine/JFoenix)作为GUI库，使用[tr7zw/Item-NBT-API](https://github.com/tr7zw/Item-NBT-API)作为NBT解析&编辑器
 
 {% endtimeline %}
 
