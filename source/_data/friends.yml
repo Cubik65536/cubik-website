@@ -23,6 +23,10 @@ group2:
   title: 开发大佬
   description: 特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
   items:
+    - title: xaoxuu
+      desc: 本博客主题作者
+      avatar: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+      url: https://xaoxuu.com
     - title: Evan's blog
       description: 积跬步以至千里，喜欢学习喜欢你。
       avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
