@@ -1,12 +1,12 @@
 sidebar:
   menu:
     personal_homepage: '[btn.personal_homepage](https://www.cubik65536.top/)'
-    home1: '[btn.blog_home](/)'
-    post1: '[btn.blog](/blog/)'
-    wiki1: '[btn.wiki](/wiki/)'
-    notes1: '[btn.notes](/notes/)'
-    more1: '[btn.more](/more/)'
-    friends1: '[btn.friends](/friends/)'
+    blog_home: '[btn.blog_home](/)'
+    blog_post: '[btn.blog](/blog/)'
+    blog_wiki: '[btn.wiki](/wiki/)'
+    blog_notes: '[btn.notes](/notes/)'
+    blog_more: '[btn.more](/more/)'
+    blog_friends: '[btn.friends](/friends/)'
 footer:
   social:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/github.svg"/>'
