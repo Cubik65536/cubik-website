@@ -19,11 +19,11 @@ header: false
 
 如果你想更多的了解我，可以去看看[我的个人主页](https://www.cubik65536.top)。
 
-本站是我的个人博客站，不会放置任何推广链接。本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
+本站是我的个人博客站，原则上不会防止任何推广链接，但是仍然会帮助我的朋友推广他们的产品。
 
-~~会咕咕咕的很厉害，随缘诈尸更新~~
+本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
 
-------
+<hr/>
 
 📬 联系我：
 
@@ -35,7 +35,29 @@ header: false
 
 <div style="text-align: center"><code>点击上方徽标查看我的PGP公钥</code></div>
 
+<hr/>
+
+🎉 感谢：
+
+**感谢 `🍉 Network` 以及 `幻境云计算` 为我提供网络与计算基础设施**
+
 {% endabout %}
+
+{% noteblock 给我的朋友们打个广告～ %}
+
+<br/>
+
+{% timeline %}
+
+<!-- node mcHosts -->
+
+{% image https://img.cubik65536.top/mchosts-tb.png %}
+
+{% endtimeline %}
+
+<br/>
+
+{% endnoteblock %}
 
 ## 近期日程
 
