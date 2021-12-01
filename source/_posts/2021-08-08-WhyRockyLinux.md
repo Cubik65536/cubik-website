@@ -1,7 +1,7 @@
 ---
 title: 为什么我要选择 Rocky Linux 作为服务器操作系统？
 date: 2021-08-08 12:38:02
-cover: https://rockylinux.org/static/cover-569f1cd3c153cf34a66264dd3458b34d.png
+cover: https://rockylinux.org/static/cover-30861d986e2e6f105828f426520b66c9.png
 categories:
   - 解决方案
 tags:
