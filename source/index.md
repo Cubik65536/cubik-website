@@ -19,7 +19,7 @@ header: false
 
 如果你想更多的了解我，可以去看看[我的个人主页](https://www.cubik65536.top)。
 
-本站是我的个人博客站，原则上不会防止任何推广链接，但是仍然会帮助我的朋友推广他们的产品。
+本站是我的个人博客站，原则上不会放置任何推广链接。
 
 本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
 
@@ -39,25 +39,9 @@ header: false
 
 🎉 感谢：
 
-**感谢 `🍉 Network` 以及 `幻境云计算` 为我提供网络与计算基础设施**
+**感谢 `🍉 Network` & `mcHosts` 以及 `幻境云计算` 为我提供网络与计算基础设施**
 
 {% endabout %}
-
-{% noteblock 给我的朋友们打个广告～ %}
-
-<br/>
-
-{% timeline %}
-
-<!-- node mcHosts -->
-
-{% image https://img.cubik65536.top/mchosts-tb.png %}
-
-{% endtimeline %}
-
-<br/>
-
-{% endnoteblock %}
 
 ## 近期日程
 
