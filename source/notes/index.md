@@ -5,6 +5,15 @@ menu_id: notes
 comments: false
 ---
 
+
+{% folding 移除镜像的Quarantine属性 %}
+
+``` bash
+sudo xattr -r -d com.apple.quarantine /path-to-dmg
+```
+
+{% endfolding %}
+
 {% folding certbot arm64 docker获取ssl证书 %}
 
 {% copy sudo docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.tld %}
