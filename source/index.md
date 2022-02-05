@@ -27,7 +27,7 @@ header: false
 
 📬 联系我：
 
-[![电子邮件](https://img.shields.io/badge/电子邮件-cubik65536%40cubik65356.top-informational?style=for-the-badge)](mailto:cubik65536@cubik65356.top)
+[![电子邮件](https://img.shields.io/badge/电子邮件-cubik65536%40cubik65536.top-informational?style=for-the-badge)](mailto:cubik65536@cubik65536.top)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cubik65536)
 
