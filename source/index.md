@@ -13,19 +13,19 @@ header: false
 
 <img height="96px" alt="hello" src="https://img.cubik65536.top/hello-cubik.png">
 
-## Hi there, I'm Cubik 👋
+## 嗨！我是Cubik 👋
 
-**A Java & Kotlin & Python & Swift Developer.**
+**一个 Java、Kotlin、Python 和 Swift 开发者。**
 
 <br/>
 
-*Founder* **&** *Software Engineer* 
 **[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
+*创始人* **&** *软件工程师* 
 
 <br/>
 
-*Deputy Vice-Chancellor* & *Acting Principal* of `St. Linus College`
 **[@HMUniversity](https://github.com/HMUniversity)**
+*首席副校长* & `St. Linus 学院` *院长*
 
 <br/>
 <hr/>
@@ -76,11 +76,11 @@ header: false
 <br/>
 <hr/>
 
-### 📫 Contact Me
+#### 📫 联系我
 
-If you want to contact me, the most efficient way is to send emails to me. I will check my inbox every 4 to 5 hours, so you should get my response pretty quickly unless the mail system moves your message to the junk box, which I will only check once a day.
+如果你需要联系我，给我发送邮件是最高效的方法。我会妹4到5个小时查看一次收件箱，所以，除非你的邮件被系统移动到垃圾邮件中（一般每天才会被检查一次），你将会可以很快收到我的回复。
 
-Send the messages to `me@` address is better because the `cubik65536@` address is also receiving a lot of notifications, so there's a bigger chance that I miss your message.
+我建议向 `me@` 的邮件地址发送信息，因为 `cubik65536@` 同时会被用来接收各种通知，所以你的邮件有更大被无意中忽略掉的几率。
 
 <br/>
 
@@ -92,7 +92,7 @@ Send the messages to `me@` address is better because the `cubik65536@` address i
 
 <br/>
 
-**If you want to send PGP signed messages to me, send them to the mailbox below. I WON"T checkout any encrypted messages sent to the mailboxes above, and I WON'T check any unencrypted messages sent to mailbox below.**
+**如果你想给我发送带有 PGP 加密的信息，请向下方的邮件地址发送。我不会查看发送给上方邮件地址的加密信息，我也不会查看向下方邮箱发送的非加密信息。**
 
 <br/>
 
@@ -100,21 +100,17 @@ Send the messages to `me@` address is better because the `cubik65536@` address i
 
 <br/>
 
-**I will always use my PGP signature when I reply or send messages with this mail address.**
+**我在使用 `me@enc.cubik65536.top` 发送或回复邮件的时候永远会使用我的 PGP 签名进行加密！请注意！**
 
 <br/>
 
-[![PGP Key](https://img.shields.io/badge/My%20PGP%20Fingerprint-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](./pgp-public-key.txt)
- > Click on the badge to see my public key!
+[![PGP Key](https://img.shields.io/badge/我的PGP指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
+ > 点击徽标查看我的公钥！
 
 <br/>
 <hr/>
 
-### 🧑🏻‍💻 My current projects:
-
-Coming soon!
-
-### ℹ️ Credits
+#### ℹ️ 本页面使用以下技术制作
 
 <p>
   <a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=anuraghazra&repo=github-readme-stats&show_owner=true" style="display: inline-block" /></a>
@@ -122,62 +118,53 @@ Coming soon!
   <a href="https://github.com/Ileriayo/markdown-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Ileriayo&repo=markdown-badges&show_owner=true" style="display: inline-block" /></a>
 </p>
 
-## 🎉 Thanks:
+### 🎉 感谢：
 
-Thanks to `🍉 Network`, `mcHosts` and `RealmIDC` for providing me network and computing resources
+感谢 `🍉 Network` & `mcHosts` 以及 `幻境云计算` 为我提供网络与计算基础设施
 
 <br/>
 
-You can also sponsor me on [`GitHub`](https://github.com/sponsors/Cubik65536) or [`afdian`](https://afdian.net/@cubik65536) so that your name will be also on the list!
+你也可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或者 [`爱发电`](https://afdian.net/@cubik65536) 上赞助我，让你的名字也出现在列表上！
 
 <p>
-  <a href="https://github.com/sponsors/Cubik65536"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" width="auto" height="40" style="display: inline-block" /></a>
+  <a href="https://github.com/sponsors/Cubik65536"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA&" width="auto" height="40" style="display: inline-block" /></a>
   &nbsp;
   <a href="https://afdian.net/@cubik65536"><img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/support%20me%20on%20afd.png" width="auto" height="38" style="display: inline-block" /></a>
 </p>
 
 {% endabout %}
 
-## My GitHub
+### 👨🏻‍💻 我的 GitHub
 
 <a href="https://github.com/Cubik65536"><img align="left" src="https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white"></a>
 
 {% timeline %}
 
-<!-- node My GitHub Stats -->
+<!-- node GitHub 统计数据 -->
 
 <a href="https://github.com/Cubik65536">
-    <img src="https://github-readme-stats.cubik65536.top/api?theme=github_dark&username=Cubik65536&count_private=true&hide=stars&show_icons=true&line_height=24" style="display: inline-block">
+    <img src="https://github-readme-stats.cubik65536.top/api?theme=github_dark&username=Cubik65536&count_private=true&hide=stars&show_icons=true&line_height=24&locale=cn" style="display: inline-block">
 </a>
 
-<!-- node My Most Used Languages -->
+<!-- node 最常用的语言 -->
 
 <a href="https://github.com/Cubik65536">
-    <img src="https://github-readme-stats.cubik65536.top/api/top-langs/?theme=github_dark&username=Cubik65536&layout=compact&count_private=true&card_width=445" style="display: inline-block">
+    <img src="https://github-readme-stats.cubik65536.top/api/top-langs/?theme=github_dark&username=Cubik65536&layout=compact&count_private=true&card_width=445&locale=cn" style="display: inline-block">
 </a>
 
 {% endtimeline %}
 
-## 近期日程
+### 🗓 近期日程
 
 开源项目无任何盈利目的，所有项目均会在闲暇之余维护，开源项目如有任何问题建议提交 Issue，紧急问题（包括但不限于安全缺陷等问题）请发送私人邮件
 
 {% timeline %}
 
-<!-- node MCDRRemote Series -->
-
-1. 重构 [MCDReforged-Remote](https://github.com/iXORTech/MCDReforged-Remote)，为互通功能做准备
-2. 重构 [MCDRemoteBot](https://github.com/iXORTech/MCDRemoteBot)，为互通功能做准备
-3. 开发 MCDRRemote 系列产品的互通功能
-4. MC服务器绑定系统，BC子服/多服务器状态获取
-
-<!-- node iXORTech/NBTEditor -->
-
-开发iXOR Technology的NBTEditor，跨平台，使用Java编写，使用[sshahine/JFoenix](https://github.com/sshahine/JFoenix)作为GUI库，使用[tr7zw/Item-NBT-API](https://github.com/tr7zw/Item-NBT-API)作为NBT解析&编辑器
+<!-- node 即将到来，敬请期待！ -->
 
 {% endtimeline %}
 
-## 兴趣爱好
+### 🤩 兴趣爱好
 
 {% tabs hobbies active:1 align:center %}
 
