@@ -9,39 +9,154 @@ breadcrumb: false
 header: false
 ---
 
-{% about avatar:https://img.cubik65536.top/Cubik-Avatar-02.png height:180px %}
+{% about %}
 
 <img height="96px" alt="hello" src="https://img.cubik65536.top/hello-cubik.png">
 
-**RECOMMENDED BY DR.CREATIVE**
+## Hi there, I'm Cubik 👋
 
-嗨！我是Cubik，一个 Java、Python 和 Swift 开发者。
+**A Java & Kotlin & Python & Swift Developer.**
 
-如果你想更多的了解我，可以去看看[我的个人主页](https://www.cubik65536.top)。
+<br/>
 
-本站是我的个人博客站，原则上不会放置任何推广链接。
+*Founder* **&** *Software Engineer* 
+**[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
 
-本站的内容由折腾记录，个人项目文档，常用代码/命令/网站的记录和一些开发手册组成。
+<br/>
 
+*Deputy Vice-Chancellor* & *Acting Principal* of `St. Linus College`
+**[@HMUniversity](https://github.com/HMUniversity)**
+
+<br/>
+<hr/>
+<br/>
+
+<p>
+  <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/iPadOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/KDE-1D99F3?logo=KDE&logoColor=fff&style=for-the-badge" style="display: inline-block" />
+</p>
+  
+<p>
+  <img src="https://img.shields.io/badge/iTerm2-546E7A?style=for-the-badge&logo=iTerm2&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Windows%20Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=F0F0F0" style="display: inline-block" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" style="display: inline-block" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" style="display: inline-block" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" style="display: inline-block" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
+</p>
+
+<br/>
 <hr/>
 
-📬 联系我：
+### 📫 Contact Me
 
-[![电子邮件](https://img.shields.io/badge/电子邮件-cubik65536%40cubik65536.top-informational?style=for-the-badge)](mailto:cubik65536@cubik65536.top)
+If you want to contact me, the most efficient way is to send emails to me. I will check my inbox every 4 to 5 hours, so you should get my response pretty quickly unless the mail system moves your message to the junk box, which I will only check once a day.
 
-[![GitHub](https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Cubik65536)
+Send the messages to `me@` address is better because the `cubik65536@` address is also receiving a lot of notifications, so there's a bigger chance that I miss your message.
 
-[![PGP Key](https://img.shields.io/badge/我的PGP指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
+<br/>
 
-<div style="text-align: center"><code>点击上方徽标查看我的PGP公钥</code></div>
+<p align="center">
+  <a href="mailto:cubik65536@cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-cubik65536%40cubik65536.top-informational?style=for-the-badge" style="display: inline-block" /></a>
+  &nbsp;
+  <a href="mailto:me@cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-me%40cubik65536.top-informational?style=for-the-badge" style="display: inline-block" /></a>
+</p>
 
+<br/>
+
+**If you want to send PGP signed messages to me, send them to the mailbox below. I WON"T checkout any encrypted messages sent to the mailboxes above, and I WON'T check any unencrypted messages sent to mailbox below.**
+
+<br/>
+
+[![📫 EMAIL](https://img.shields.io/badge/📫%20EMAIL-me%40enc.cubik65536.top-informational?style=for-the-badge)](mailto:me@enc.cubik65536.top)
+
+<br/>
+
+**I will always use my PGP signature when I reply or send messages with this mail address.**
+
+<br/>
+
+[![PGP Key](https://img.shields.io/badge/My%20PGP%20Fingerprint-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](./pgp-public-key.txt)
+ > Click on the badge to see my public key!
+
+<br/>
 <hr/>
 
-🎉 感谢：
+### 🧑🏻‍💻 My current projects:
 
-**感谢 `🍉 Network` & `mcHosts` 以及 `幻境云计算` 为我提供网络与计算基础设施**
+Coming soon!
+
+### ℹ️ Credits
+
+<p>
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=anuraghazra&repo=github-readme-stats&show_owner=true" style="display: inline-block" /></a>
+  &nbsp;
+  <a href="https://github.com/Ileriayo/markdown-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Ileriayo&repo=markdown-badges&show_owner=true" style="display: inline-block" /></a>
+</p>
+
+## 🎉 Thanks:
+
+Thanks to `🍉 Network`, `mcHosts` and `RealmIDC` for providing me network and computing resources
+
+<br/>
+
+You can also sponsor me on [`GitHub`](https://github.com/sponsors/Cubik65536) or [`afdian`](https://afdian.net/@cubik65536) so that your name will be also on the list!
+
+<p>
+  <a href="https://github.com/sponsors/Cubik65536"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" width="auto" height="40" style="display: inline-block" /></a>
+  &nbsp;
+  <a href="https://afdian.net/@cubik65536"><img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/support%20me%20on%20afd.png" width="auto" height="38" style="display: inline-block" /></a>
+</p>
 
 {% endabout %}
+
+## My GitHub
+
+<a href="https://github.com/Cubik65536"><img align="left" src="https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white"></a>
+
+{% timeline %}
+
+<!-- node My GitHub Stats -->
+
+<a href="https://github.com/Cubik65536">
+    <img src="https://github-readme-stats.cubik65536.top/api?theme=github_dark&username=Cubik65536&count_private=true&hide=stars&show_icons=true&line_height=24" style="display: inline-block">
+</a>
+
+<!-- node My Most Used Languages -->
+
+<a href="https://github.com/Cubik65536">
+    <img src="https://github-readme-stats.cubik65536.top/api/top-langs/?theme=github_dark&username=Cubik65536&layout=compact&count_private=true&card_width=445" style="display: inline-block">
+</a>
+
+{% endtimeline %}
 
 ## 近期日程
 
