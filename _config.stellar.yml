@@ -1,7 +1,6 @@
 sidebar:
   menu:
-    personal_homepage: '[btn.personal_homepage](https://www.cubik65536.top/)'
-    home: '[btn.blog_home](/)'
+    home: '[btn.home](/)'
     post: '[btn.blog](/blog/)'
     wiki: '[btn.wiki](/wiki/)'
     notes: '[btn.notes](/notes/)'
