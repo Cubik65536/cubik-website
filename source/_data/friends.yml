@@ -18,6 +18,10 @@ group1:
       description: 一只猫猫的博客
       avatar: https://blog.charlie.moe/images/avatar.png
       url: https://blog.charlie.moe
+    - title: Fawdlstty
+      description: 只感觉自己萌萌哒的程序猿~~
+      avatar: https://avatars.githubusercontent.com/u/7323999?v=4
+      url: https://www.fawdlstty.com/
 
 group2:
   title: 开发大佬
