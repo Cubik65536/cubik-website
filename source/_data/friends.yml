@@ -18,6 +18,10 @@ group1:
       description: 一只猫猫的博客
       avatar: https://blog.charlie.moe/images/avatar.png
       url: https://blog.charlie.moe
+    - title: KevinZønda
+      description: First Year B.Sc. Computer Science Student @ University of Birmingham
+      avatar: https://avatars.githubusercontent.com/u/33132228?v=4
+      url: https://kevinzonda.com
     - title: Fawdlstty
       description: 只感觉自己萌萌哒的程序猿~~
       avatar: https://avatars.githubusercontent.com/u/7323999?v=4
