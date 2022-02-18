@@ -178,6 +178,6 @@ header: false
 | F1 2021 | ★★★★☆ | 2021- |
 | MONCAGE（笼中窥梦） | ★★★☆ | 2021-2022 |
 | Mini Metro | ★★★★ | 2019- |
-| Mini Motorways | ★★★☆ | 2021- |
+| Mini Motorways | ★★★☆ | 2022- |
 
 {% endtabs %}
