@@ -38,10 +38,17 @@ header: false
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Windows%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" />
+  &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=Manjaro&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/KDE-1D99F3?logo=KDE&logoColor=fff&style=for-the-badge" style="display: inline-block" />
+  <br/>
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/-KUbuntu-%230079C1?style=for-the-badge&logo=kubuntu&logoColor=white" style="display: inline-block" />
+  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/-Rocky%20Linux-%2310B981?style=for-the-badge&logo=rockylinux&logoColor=white" style="display: inline-block" />
 </p>
   
 <p>
