@@ -6,6 +6,12 @@ sidebar:
     notes: '[btn.notes](/notes/)'
     more: '[btn.more](/more/)'
     friends: '[btn.friends](/friends/)'
+  widgets:
+    # Recent update
+    recent:
+      layout: recent
+      rss: /atom.xml # npm i hexo-generator-feed
+      limit: 5 # Count of posts
 footer:
   social:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/github.svg"/>'

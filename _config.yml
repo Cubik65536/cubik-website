@@ -121,3 +121,13 @@ inject:
     - <meta name="msapplication-TileColor" content="#fd7600">
     - <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
     - <meta name="theme-color" content="#ffffff">
+
+########################### Plugins ###########################
+# npm i hexo-generator-feed
+feed:
+  type: atom
+  path: atom.xml
+  limit: false
+  content: true
+  icon: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+  autodiscovery: true
