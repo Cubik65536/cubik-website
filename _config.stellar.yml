@@ -30,8 +30,8 @@ footer:
       - '[分类](/categories/)'
       - '[标签](/tags/)'
       - '[归档](/archives/)'
-    'Wiki':
-#      - '[所有项目](/wiki/)'
+    '知识库':
+      - '[知识库](/wiki/)'
       - '[便签](/notes/)'
     '社交':
       - '[个人主页](https://www.cubik65536.top/)'
