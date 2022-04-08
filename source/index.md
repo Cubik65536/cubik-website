@@ -177,15 +177,17 @@ header: false
 
 <!-- tab 游戏 -->
 
-| 游戏 | 推荐指数 |游玩时间 |
-|:-----|:--------|:--------|
-| Minecraft | ★★★★★ | 2015- |
-| Grand Theft Auto V | ★★★☆ | 2018- |
-| F1 2020 | ★★★★ | 2020-2021 |
-| F1 2021 | ★★★★☆ | 2021- |
-| MONCAGE（笼中窥梦） | ★★★☆ | 2021-2022 |
-| Mini Metro | ★★★★ | 2019- |
-| Mini Motorways | ★★★☆ | 2022- |
-| Game Dev Story+ | ★★★☆ | 2022- |
+{% note color:yellow 注意！ 以下列表中的平台仅代表我游玩此游戏使用的平台，此游戏可能支持其他平台。%}
+
+| 游戏 | 平台 | 推荐指数 | 游玩时间 |
+|:-----|:-----|:---------|:---------|
+| Minecraft | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" /> | ★★★★★ | 2015- |
+| Grand Theft Auto V | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★☆ | 2018- |
+| F1 2020 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★★ | 2020-2021 |
+| F1 2021 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★★☆ | 2021- |
+| MONCAGE（笼中窥梦） | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" /> | ★★★☆ | 2021-2022 |
+| Mini Metro | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" /> | ★★★★ | 2019- |
+| Mini Motorways | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" /> | ★★★☆ | 2022- |
+| Game Dev Story+ | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" /> | ★★★☆ | 2022- |
 
 {% endtabs %}
