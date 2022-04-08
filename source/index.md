@@ -186,5 +186,6 @@ header: false
 | MONCAGE（笼中窥梦） | ★★★☆ | 2021-2022 |
 | Mini Metro | ★★★★ | 2019- |
 | Mini Motorways | ★★★☆ | 2022- |
+| Game Dev Story+ | ★★★☆ | 2022- |
 
 {% endtabs %}
