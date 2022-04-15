@@ -17,7 +17,7 @@ footer:
     - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/github.svg"/>'
       url: https://github.com/Cubik65536
     - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/gitlab.svg"/>'
-      url: https://github.com/Cubik65536
+      url: https://gitlab.com/Cubik65536
     - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/bilibili.svg"/>'
       url: https://space.bilibili.com/439205819
     - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/telegram.svg"/>'
@@ -47,9 +47,10 @@ footer:
     '联系我们':
       - '[Email](mailto:me@cubik65536.top)'
       - '[GitHub](https://github.com/Cubik65536)'
-      - '[GitLab](https://github.com/Cubik65536)'
+      - '[GitLab](https://gitlab.com/Cubik65536)'
 
-#  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
+  source: '[GitHub](https://github.com/Cubik65536/cubik-website/)'
+
 comments:
   service: utterances # utterances
   utterances:
