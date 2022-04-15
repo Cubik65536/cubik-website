@@ -8,16 +8,15 @@ comments: false
 {% folding 更改 dmg 文件的容量 %}
 
 ``` bash
-hdiutil resize -size 2048M /path/to/file.dmg
+{% copy hdiutil resize -size 2048M /path/to/file.dmg %}
+
 ```
 
 {% endfolding %}
 
-{% folding 移除镜像的Quarantine属性 %}
+{% folding 移除镜像的 Quarantine 属性 %}
 
-``` bash
-sudo xattr -r -d com.apple.quarantine /path/to/file.dmg
-```
+{% copy sudo xattr -r -d com.apple.quarantine /path/to/file.dmg %}
 
 {% endfolding %}
 
