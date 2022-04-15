@@ -14,11 +14,17 @@ sidebar:
       limit: 5 # Count of posts
 footer:
   social:
-    - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/github.svg"/>'
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/github.svg"/>'
       url: https://github.com/Cubik65536
-    - icon: '<img src="https://img.cubik65536.top/mail-bulk-solid.svg"/>'
-      url: mailto:cubik65536@cubik65536.top
-    - icon: '<img src="https://cdn.jsdelivr.net/gh/Rush/Font-Awesome-SVG-PNG@master/white/svg/comments.svg"/>'
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/gitlab.svg"/>'
+      url: https://github.com/Cubik65536
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/bilibili.svg"/>'
+      url: https://space.bilibili.com/439205819
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/brands/telegram.svg"/>'
+      url: https://t.me/cubiksteleblog
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/solid/envelopes-bulk.svg"/>'
+      url: mailto:me@cubik65536.top
+    - icon: '<img src="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@6.x/svgs/solid/comments.svg"/>'
       url: /more/#comments
   sitemap:
     '主页':
