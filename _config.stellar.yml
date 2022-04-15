@@ -40,12 +40,14 @@ footer:
       - '[知识库](/wiki/)'
       - '[便签](/notes/)'
     '社交':
-      - '[个人主页](https://www.cubik65536.top/)'
       - '[友链](/friends/)'
+      - '[哔哩哔哩](https://space.bilibili.com/439205819)'
+      - '[Telegram 频道](https://t.me/cubiksteleblog)'
       - '[留言板](/more#comments)'
     '联系我们':
-      - '[Email](mailto:cubik65536@cubik65536.top)'
+      - '[Email](mailto:me@cubik65536.top)'
       - '[GitHub](https://github.com/Cubik65536)'
+      - '[GitLab](https://github.com/Cubik65536)'
 
 #  source: '[GitHub](https://github.com/Cubik65536/Cubik65536.github.io/)'
 comments:
