@@ -7,10 +7,7 @@ comments: false
 
 {% folding 更改 dmg 文件的容量 %}
 
-``` bash
 {% copy hdiutil resize -size 2048M /path/to/file.dmg %}
-
-```
 
 {% endfolding %}
 
