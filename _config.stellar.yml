@@ -55,3 +55,9 @@ comments:
   service: utterances # utterances
   utterances:
     repo: Cubik65536/blog-comments
+
+######## Tag Plugins ########
+tag_plugins:
+  # {% image %}
+  image:
+    fancybox: true
