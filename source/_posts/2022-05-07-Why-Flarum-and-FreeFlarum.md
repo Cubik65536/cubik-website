@@ -70,7 +70,7 @@ tags:
 
 [FreeFlarum](https://github.com/flarum) 是一个免费的 Flarum 托管服务。你只要拥有一个邮箱就可以注册并拥有你自己的 Flarum 论坛而不需要经历繁琐的服务器配置。[MC@HMU](https://mc.hmu.ac.cn) 的论坛 [MC@HMU BBS](https://bbs.mc.hmu.ac.cn) 就托管在此。
 
-FreeFlarum 在初始化时为你建成的论坛也包含了大部分你会需要的插件，而不需要你自己去找到并安装。返回到前两点缺点，FreeFlarum 直接提供了插件的服务相对的缓解了这些缺点的带来的麻烦。同时，Flarum 本体和插件的更新由 FreeFlarum 负责，所以也相对的缓解了第三点缺点带来的问题。同时，FreeFlarum 还提供了免费 SSL，以及一个 Cloudflare CDN（实测速度还可以接受），所以 FreeFlarum 对于懒得折腾的人是个不错的选择。
+FreeFlarum 在初始化时为你建成的论坛也包含了大部分你会需要的插件，而不需要你自己去找到并安装。返回到前两点缺点，FreeFlarum 直接提供了插件的服务相对的缓解了这些缺点的带来的麻烦。同时，Flarum 本体和插件的更新由 FreeFlarum 负责，所以也相对的缓解了第三点缺点带来的问题。同时，FreeFlarum 支持自定义域名，还提供了免费 SSL，爬虫优化，Cloudflare CDN（实测速度还可以接受）等功能，所以 FreeFlarum 对于懒得折腾的人是个不错的选择。
 
 但 FreeFlarum 也有缺点，例如你需要赞助才可以移除 `A free forum powered by FreeFlarum` 的页脚或者添加非内置的插件。而你的论坛也可能会因为长期无访问而被存档（可以恢复）。但是考虑到 FreeFlarum 是公益项目，而且服务器等资源确实需要资金，所以我认为可以接受这些缺点。
 
