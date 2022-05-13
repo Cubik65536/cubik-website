@@ -15,14 +15,15 @@ header: false
 
 ## 嗨！我是Cubik 👋
 
-**一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer**
-
-**目前处在 USACO 🏅️ 组别中**
+**一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
 <br/>
 
 **[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
-*创始人* **&** *软件工程师* 
+*创始人* **&** *软件工程师*
+
+**[@MC@HMU](https://github.com/MC-HMU)**.
+*服主* **&** *运维*
 
 <br/>
 <hr/>
