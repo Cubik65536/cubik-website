@@ -4,9 +4,9 @@ date: 2022-04-17 00:13:17
 cover: https://img.cubik65536.top/warp-terminal.png
 categories:
   - 日常
-  - 上手
-tags:
   - 折腾
+tags:
+  - 上手
   - 终端
   - macOS
 ---
