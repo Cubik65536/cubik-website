@@ -125,7 +125,7 @@ header: false
 
 ### 🎉 感谢：
 
-感谢 `🍉 Network` & `mcHosts` 以及 `幻境云计算` 为我提供网络与计算基础设施
+感谢 [`wngamebox`](https://wngamebox.cn), [@JohnsonRan](https://github.com/JohnsonRan) 以及 `🍉 Network` 为我提供网络与计算基础设施
 
 <br/>
 
