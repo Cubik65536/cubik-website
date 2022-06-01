@@ -129,12 +129,12 @@ header: false
 
 <br/>
 
-你也可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或者 [`爱发电`](https://afdian.net/@cubik65536) 上赞助我，让你的名字也出现在列表上！
+你也可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或者 [`(我的软件开发工作室 iXORTech 的) 爱发电`](https://afdian.net/@ixortech) 上赞助我，让你的名字也出现在列表上！
 
 <p>
   <a href="https://github.com/sponsors/Cubik65536"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA&" width="auto" height="40" style="display: inline-block" /></a>
   &nbsp;
-  <a href="https://afdian.net/@cubik65536"><img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/support%20me%20on%20afd.png" width="auto" height="38" style="display: inline-block" /></a>
+  <a href="https://afdian.net/@ixortech"><img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/support%20me%20on%20afd.png" width="auto" height="38" style="display: inline-block" /></a>
 </p>
 
 {% endabout %}
