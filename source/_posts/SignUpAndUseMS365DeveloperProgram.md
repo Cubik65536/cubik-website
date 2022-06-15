@@ -9,13 +9,13 @@ tags:
   - 常用工具
 ---
 
-{% noteblock color:yellow 提示 %}
+{% grid color:yellow 提示 %}
 
 本文有部分参考、引用 [Restent Ou](https://blog.restent.win) 的 [《如何续订 MS 365 E5 开发者计划》](https://blog.restent.win/2021/07/22/Renew-MS-365-E5-plan/)一文。
 本文有使用该《如何续订 MS 365 E5 开发者计划》一文的图片。~~才不是懒得自己截图了呢~~
 《如何续订 MS 365 E5 开发者计划》一文基于[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)协议
 
-{% endnoteblock %}
+{% endgrid %}
 
 相信不少人都听说过Microsoft 365 Developer Program，或者说Microsoft E5。这是微软为开发人员推出的计划，目的是可以为开发者提供全套的Microsoft 365套件。当然不少人（包括我的朋友Restent）都依靠着这个计划为自己团队提供带有域名的邮箱访问。
 
@@ -47,11 +47,11 @@ tags:
 
 ![EnterYourInfo.png](https://img.cubik65536.top/EnterYourInfo.png)
 
-{% noteblock color:red 注意 %}
+{% grid color:red 注意 %}
 
 我的账户**已经**与我的GitHub账户进行了关联，所以上方会有GitHub徽标，新注册用户是没有该徽标的！
 
-{% endnoteblock %}
+{% endgrid %}
 
 到这里你就设置成功了，你接下来可以到 [Microsoft 365 Admin Center](https://admin.microsoft.com) 处登录你刚刚注册的，以`onmicrosoft.com`结尾的账户。在那个站点上，你可以添加用户，域名以及做出其他设置。这些以后再讲。
 
