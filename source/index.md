@@ -129,6 +129,14 @@ header: false
 
 <br/>
 
+**感谢所有赞助我的人！你们的支持是我最大的动力！**
+
+**GitHub 赞助：**
+
+- JiJi ([@mmdjiji](https://github.com/mmdjiji))
+
+<br/>
+
 你也可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或者 [`(我的软件开发工作室 iXORTech 的) 爱发电`](https://afdian.net/@ixortech) 上赞助我，让你的名字也出现在列表上！
 
 <p>
