@@ -6,7 +6,7 @@ categories:
   - 解决方案
 tags:
   - Linux
-  - 瞎折腾
+  - 折腾
 ---
 
 在本文中，我将简单的带大家了解如何在 Ubuntu 20.04.3 LTS 上安装 KDE desktop 桌面环境并使用 Xrdp 进行远程桌面连接

@@ -6,7 +6,7 @@ categories:
   - 解决方案
 tags:
   - Linux
-  - 瞎折腾
+  - 折腾
 ---
 
 ~~Cubik！两周了！你的 Linux 主力系统系列呢！~~你看，这不就来了吗
