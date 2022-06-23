@@ -131,3 +131,7 @@ feed:
   content: true
   icon: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
   autodiscovery: true
+
+# npm install hexo-footnote --save
+footnote:
+  location_target_class: location-target

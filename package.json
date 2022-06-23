@@ -9,10 +9,11 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "5.4.0"
+    "version": "6.2.0"
   },
   "dependencies": {
     "hexo": "^6.2.0",
+    "hexo-footnote": "^1.0.4",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-feed": "^3.0.0",
