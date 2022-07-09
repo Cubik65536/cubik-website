@@ -173,7 +173,17 @@ header: false
 
 {% timeline %}
 
-<!-- node 即将到来，敬请期待！ -->
+<!-- node RemoteMC 系列 -->
+
+<a href="https://github.com/iXORTech/RemoteMC-Core"><img src="https://img.shields.io/badge/iXORTech%2FRemoteMC-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" style="display: inline-block" /></a>
+
+数个程序组成的项目，可以让用户同步 Minecraft 服务器以及聊天群中的聊天消息并通过聊天机器人控制 Minecraft 服务器。
+
+<!-- node KookyBot -->
+
+<a href="https://github.com/KookyBot/KookyBot"><img src="https://img.shields.io/badge/KookyBot%2FKookyBot-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" style="display: inline-block" /></a>
+
+一个用于开发 KOOK（原开黑啦）聊天机器人的 Kotlin & Java SDK
 
 {% endtimeline %}
 
