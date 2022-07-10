@@ -165,6 +165,12 @@ header: false
     <img src="https://github-readme-stats.cubik65536.top/api/top-langs/?theme=github_dark&username=Cubik65536&layout=compact&count_private=true&card_width=445&locale=cn" style="display: inline-block">
 </a>
 
+<!-- node GitHub 统计图表 -->
+
+<a href="https://github.com/Cubik65536">
+    <img src="https://cdn.jsdelivr.net/gh/Cubik65536/Cubik65536@main/profile-3d-contrib/profile-night-rainbow.svg" style="display: inline-block">
+</a>
+
 {% endtimeline %}
 
 ### 🗓 近期日程
