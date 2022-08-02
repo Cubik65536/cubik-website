@@ -32,6 +32,15 @@ footer:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/comments.svg"/>'
       url: /more/#comments
       title: '在线聊天'
+  largesocial:
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
+      url: https://foreverblog.cn/go.html
+      title: '穿梭虫洞-随机访问十年之约友链博客'
+      description: '虫洞 | WORMHOLE'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/train.svg" />'
+      url: https://travellings.link
+      title: '开往-友链接力'
+      description: '开往 | Travelling'
   sitemap:
     '主页':
       - '[简介](/)'
