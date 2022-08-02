@@ -22,9 +22,9 @@ footer:
       url: https://space.bilibili.com/439205819
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/solid/envelopes-bulk.svg"/>'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/>'
       url: mailto:me@cubik65536.top
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/solid/comments.svg"/>'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/comments.svg"/>'
       url: /more/#comments
   sitemap:
     '主页':
