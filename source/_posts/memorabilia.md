@@ -16,4 +16,12 @@ categories: 大事记
 
 本站已经正式的成为了[十年之约](https://www.foreverblog.cn)的成员，让我们一起坚持下去！
 
+<!-- node 2022-08-04 -->
+
+***在侧边栏中加入了[十年之约 - 虫洞](https://foreverblog.cn/go.html)链接，访问者们可以通过此链接访问其他十年之约成员的博客！***
+
+<!-- node 2022-04-13 -->
+
+***在侧边栏中加入了[开往](https://travellings.link/)链接，访问者们可以通过此链接访问其他开往成员的博客！***
+
 {% endtimeline %}
