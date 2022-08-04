@@ -40,11 +40,8 @@ header: false
   <img src="https://img.shields.io/badge/Windows%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=Manjaro&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Artix_Linux-10A0CC?style=for-the-badge&logo=artix-linux&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/KDE-1D99F3?logo=KDE&logoColor=fff&style=for-the-badge" style="display: inline-block" />
-  <br/>
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/-KUbuntu-%230079C1?style=for-the-badge&logo=kubuntu&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/-Rocky%20Linux-%2310B981?style=for-the-badge&logo=rockylinux&logoColor=white" style="display: inline-block" />
 </p>
@@ -119,13 +116,18 @@ header: false
 
 <p>
   <a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=anuraghazra&repo=github-readme-stats&show_owner=true" style="display: inline-block" /></a>
-  &nbsp;
+</p>
+<p>
   <a href="https://github.com/Ileriayo/markdown-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Ileriayo&repo=markdown-badges&show_owner=true" style="display: inline-block" /></a>
 </p>
+<p>
+  <a href="https://github.com/Envoy-VC/awesome-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Envoy-VC&repo=awesome-badges&show_owner=true" style="display: inline-block" /></a>
+</p>
+
 
 ### 🎉 感谢：
 
-感谢 [`wngamebox`](https://wngamebox.cn), [@JohnsonRan](https://github.com/JohnsonRan) 以及 `🍉 Network` 为我提供网络与计算基础设施
+感谢 [`wngamebox`](https://wngamebox.cn) 和 [@JohnsonRan](https://github.com/JohnsonRan) 为我提供网络与计算基础设施
 
 <br/>
 
