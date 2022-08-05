@@ -11,7 +11,7 @@ sidebar:
     recent:
       layout: recent
       rss: /atom.xml # npm i hexo-generator-feed
-      limit: 5 # Count of posts
+      limit: 6 # Count of posts
 footer:
   social:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
