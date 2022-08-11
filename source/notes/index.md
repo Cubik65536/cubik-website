@@ -5,6 +5,18 @@ menu_id: notes
 comments: false
 ---
 
+{% folding certbot 生成 ssl 证书 %}
+
+{% copy sudo certbot certonly --standalone -d subdomain.domain.tld %}
+
+{% endfolding %}
+
+{% folding 更新所有 certbot 生成的 ssl 证书 %}
+
+{% copy sudo certbot renew %}
+
+{% endfolding %}
+
 {% folding 更改 dmg 文件的容量 %}
 
 {% copy hdiutil resize -size 2048M /path/to/file.dmg %}
@@ -17,7 +29,7 @@ comments: false
 
 {% endfolding %}
 
-{% folding certbot arm64 docker获取ssl证书 %}
+{% folding certbot arm64 docker 获取 ssl 证书 %}
 
 {% copy sudo docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.tld %}
 
