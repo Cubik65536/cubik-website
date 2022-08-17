@@ -68,9 +68,39 @@ footer:
   source: '[GitHub](https://github.com/Cubik65536/cubik-website/)'
 
 comments:
-  service: utterances # utterances
-  utterances:
-    repo: Cubik65536/blog-comments
+  service: waline
+  waline:
+    js: https://unpkg.com/@waline/client@v2/dist/waline.js
+    css: https://unpkg.com/@waline/client@v2/dist/waline.css
+    # Waline server address url, you should set this to your own link
+    serverURL: https://waline.cubik65536.top
+    # If false, comment count will only be displayed in post page, not in home page
+    commentCount: true
+    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+    pageview: true
+    # Custom emoji
+    emoji:
+      - https://unpkg.com/@waline/emojis@1.0.1/weibo
+      - https://unpkg.com/@waline/emojis@1.0.1/alus
+      - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+      - https://unpkg.com/@waline/emojis@1.0.1/qq
+      - https://unpkg.com/@waline/emojis@1.0.1/tieba
+      - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+    # Comment infomation, valid meta are nick, mail and link
+    meta:
+      - nick
+      - mail
+      - link
+    # Set required meta field, e.g.: [nick] | [nick, mail]
+    requiredMeta:
+      - nick
+      - mail
+    # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+    lang: zh-CN
+    # Whether enable login, can choose from 'enable', 'disable' and 'force'
+    login: force
+    # comment per page
+    pageSize: 10
 
 ######## Tag Plugins ########
 tag_plugins:
