@@ -46,4 +46,8 @@ categories: 大事记
 
 - ***在侧边栏中加入了[开往](https://travellings.link/)链接，访问者们可以通过此链接访问其他开往成员的博客！***
 
+<!-- node 2022-08-17 -->
+
+- ***将博客的评论系统更换为 [Waline](https://waline.js.org)***
+
 {% endtimeline %}
