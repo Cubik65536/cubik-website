@@ -4,9 +4,9 @@ date: 2021-12-25 13:06:44
 cover: https://i.imgur.com/cRwPlRY.jpg
 categories:
   - 解决方案
+  - 折腾
 tags:
   - Linux
-  - 折腾
 ---
 
 ~~Cubik！两周了！你的 Linux 主力系统系列呢！~~你看，这不就来了吗

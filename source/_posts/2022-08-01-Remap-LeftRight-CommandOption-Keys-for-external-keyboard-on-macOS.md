@@ -4,8 +4,8 @@ date: 2022-08-01 22:04:27
 cover: https://img.cubik65536.top/FD-Command-Key-Gear-Patrol-Lead-Full.jpg
 categories:
  - 解决方案
- - 折腾
 tags:
+ - 折腾
  - macOS
  - 外置键盘
  - 键位映射

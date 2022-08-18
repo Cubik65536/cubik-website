@@ -4,7 +4,6 @@ date: 2022-07-27 12:39:10
 cover: https://img.cubik65536.top/warp-terminal.png
 categories:
   - 日常
-  - 折腾
 tags:
   - 上手
   - 终端

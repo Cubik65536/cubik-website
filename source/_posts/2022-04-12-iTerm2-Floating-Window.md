@@ -5,8 +5,8 @@ cover: https://img.cubik65536.top/iterm2.jpg
 categories: 
   - 日常
   - 解决方案
-tags:
   - 折腾
+tags:
   - 终端
   - macOS
 ---

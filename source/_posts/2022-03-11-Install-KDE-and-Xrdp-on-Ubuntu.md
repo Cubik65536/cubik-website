@@ -4,9 +4,9 @@ date: 2022-03-11 20:29:18
 cover: https://upload.wikimedia.org/wikipedia/commons/b/b6/Kubuntu_21.10_Desktop.png
 categories:
   - 解决方案
+  - 折腾
 tags:
   - Linux
-  - 折腾
 ---
 
 在本文中，我将简单的带大家了解如何在 Ubuntu 20.04.3 LTS 上安装 KDE desktop 桌面环境并使用 Xrdp 进行远程桌面连接

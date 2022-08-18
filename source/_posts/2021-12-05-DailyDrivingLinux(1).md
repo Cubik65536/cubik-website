@@ -4,9 +4,9 @@ date: 2021-12-05 22:40:49
 cover: https://images.unsplash.com/photo-1549605659-32d82da3a059
 categories:
   - 解决方案
+  - 折腾
 tags:
   - Linux
-  - 折腾
 ---
 
 这段时间刚好搬家，于是获得了一个额外可以放置第二台主力机和一个额外显示器的机会。趁着这个机会，再加上喜欢折腾，于是我决定为这第二台机器装上Linux。在本篇中，我将会讲到为什么要选择Linux、谁更适合Linux以及我会选择的Linux发行。
