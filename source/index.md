@@ -43,6 +43,9 @@ header: false
   <img src="https://img.shields.io/badge/Artix_Linux-10A0CC?style=for-the-badge&logo=artix-linux&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/KDE-1D99F3?logo=KDE&logoColor=fff&style=for-the-badge" style="display: inline-block" />
   &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Manjaro-35BF5C?style=for-the-badge&logo=Manjaro&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/XFCE-%232284F2.svg?style=for-the-badge&logo=xfce&logoColor=white" style="display: inline-block" />
+  &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/-Rocky%20Linux-%2310B981?style=for-the-badge&logo=rockylinux&logoColor=white" style="display: inline-block" />
 </p>
   
