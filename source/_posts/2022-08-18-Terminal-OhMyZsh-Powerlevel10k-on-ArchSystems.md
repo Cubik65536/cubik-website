@@ -97,51 +97,20 @@ echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >> ~/.z
 执行以下命令安装：
 
 ``` bash
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 ```
 
-## 安装 [zsh-syntax-highlighting](https://github.com/zsh-users/) 插件
+## 安装 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting) 插件
 
 这个插件会为你输入的命令增加语法高亮。
 
 执行以下命令安装：
 
 ``` bash
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-
-## 应用插件
-
-接下来我们需要应用我们安装的主题与插件
-
-### 打开配置文件
-
-``` bash
-vim ~/.zshrc
-```
-
-### 编辑配置
-
-按 {% kbd I %} 进入编辑模式，增加以下内容：
-
-``` plain
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
-```
-
-### 保存并应用配置文件
-
-使用以下方法保存文件
-
-1. {% kbd Esc %}
-2. {% kbd : %}
-3. {% kbd w %}
-4. {% kbd q %}
-5. {% kbd 回车 %}
-
-使用以下命令应用配置
-
-``` bash
-source ~/.zshrc
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ```
 
 ## 完成
