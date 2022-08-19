@@ -5,6 +5,18 @@ menu_id: notes
 comments: false
 ---
 
+{% folding git 更新 submodules %}
+
+**初始化拉取 submodule**
+
+{% copy git submodule update --init --recursive %}
+
+**更新 submodule**
+
+{% copy git submodule update --recursive --remote %}
+
+{% endfolding %}
+
 {% folding certbot 生成 ssl 证书 %}
 
 {% copy sudo certbot certonly --standalone -d subdomain.domain.tld %}
@@ -34,13 +46,6 @@ comments: false
 {% copy sudo docker run -it --rm --name certbot -p 80:80 -p 443:443 -v "/etc/letsencrypt:/etc/letsencrypt" -v "/var/lib/letsencrypt:/var/lib/letsencrypt" certbot/certbot:arm64v8-latest certonly --standalone -d subdomain.domain.tld %}
 
 {% endfolding %}
-
-{% folding 更新Git Submodule %}
-
-{% copy git submodule foreach git pull %}
-
-{% endfolding %}
-
 
 {% folding 提示 “安装包已损坏” 怎么办？ %}
 
