@@ -109,7 +109,7 @@ header: false
 
 <br/>
 
-[![PGP Key](https://img.shields.io/badge/我的PGP指纹-7C58%20C98C%203AB8%20004E%20046C%2016FA%204462%209FF0%20C890%20D359-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
+[![PGP Key](https://img.shields.io/badge/我的PGP指纹-F03D%20391A%201046%203019%20531B%20B407%208159%20AF5B%202D7F%2090EA-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
  > 点击徽标查看我的公钥！
 
 <br/>
