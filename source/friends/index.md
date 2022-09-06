@@ -42,7 +42,7 @@ header: false
 
 {% codeblock lang:yaml %}
 title: Cubik的小站
-avatar: https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/CubikLogo.png
+avatar: https://img.cubik65536.top/CubikLogo.png
 url: https://cubik65536.top
 screenshot: https://img.cubik65536.top/Cubik65536.github.io-Screenshot.png
 description: RECOMMENDED BY DR.CREATIVE
