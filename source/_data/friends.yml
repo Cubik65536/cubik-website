@@ -33,7 +33,7 @@ group1:
 
 group2:
   title: 常去的地方
-  description: 经常访问的一些优秀博客，见识到了很多新事物，也学习到了新的东西。列表按结识先后顺序排列：
+  description: 经常访问的一些优秀博客，见识到了很多新事物，也学习到了新的知识。列表按结识先后顺序排列：
   items:
     - title: 皮皮凛の小窝
       desc: 永远相信美好的事情即将发生~
@@ -47,6 +47,14 @@ group2:
       desc: 愿多年以后，我可以酌一杯清酒，烂醉如泥，梦中回到我们的曾经。
       avatar: https://cdn.jsdelivr.net/gh/Colsrch/images/Colsrch/avatar.jpg
       url: https://colsrch.cn
+    - title: MyBlog (MqyGalaxy|Blog)
+      desc: 爱好 ACG 的温馨小窝
+      avatar: https://cdn.jsdelivr.net/gh/MqyGalaxy/MyBlog@latest/images/avatarLOGO.jpg
+      url: https://blog.moeqy.com/
+    - title: 優萌初華
+      desc: 琉璃的医学 & 编程笔记
+      avatar: https://cdn.jsdelivr.net/gh/amehime/shoka@latest/images/avatar.jpg
+      url: https://shoka.lostyu.me
 
 group3:
   title: 开发大佬
@@ -60,6 +68,10 @@ group3:
       description: 积跬步以至千里，喜欢学习喜欢你。
       avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
       url: https://xugaoyi.com/
+    - title: 鑫酱个人博客
+      description: 整天摸鱼，却妄想拯救世界的技术宅，不幸转身到异世界写下的博客。
+      avatar: https://allengx.gitee.io/images/avatar.jpg
+      url: https://allengx.gitee.io/
 
 group4:
   title: 来自 GitHub 的朋友
