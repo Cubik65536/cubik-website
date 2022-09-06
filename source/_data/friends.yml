@@ -26,19 +26,15 @@ group1:
       description: 只感觉自己萌萌哒的程序猿~~
       avatar: https://avatars.githubusercontent.com/u/7323999?v=4
       url: https://www.fawdlstty.com/
+    - title: 吉吉博客
+      description: 自古吉吉萌萌哒 ( •̀ ω •́ )✧
+      avatar: https://mmdjiji.com/images/avatar.png
+      url: https://mmdjiji.com
 
 group2:
-  title: 开发大佬
-  description: 特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
+  title: 常去的地方
+  description: 经常访问的一些优秀博客，见识到了很多新事物，也学习到了新的东西。列表按结识先后顺序排列：
   items:
-    - title: xaoxuu
-      desc: 本博客主题作者
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
-      url: https://xaoxuu.com
-    - title: Evan's blog
-      description: 积跬步以至千里，喜欢学习喜欢你。
-      avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
-      url: https://xugaoyi.com/
     - title: 皮皮凛の小窝
       desc: 永远相信美好的事情即将发生~
       avatar: https://cdn.jsdelivr.net/gh/AyagawaSeirin/Assets/img/logo.jpg
@@ -53,6 +49,19 @@ group2:
       url: https://colsrch.cn
 
 group3:
+  title: 开发大佬
+  description: 特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
+  items:
+    - title: xaoxuu
+      desc: 本博客主题作者
+      avatar: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+      url: https://xaoxuu.com
+    - title: Evan's blog
+      description: 积跬步以至千里，喜欢学习喜欢你。
+      avatar: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg
+      url: https://xugaoyi.com/
+
+group4:
   title: 来自 GitHub 的朋友
   description: '以下友链通过 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/) 提交，按 issue 最后更新时间排序：'
   api: https://friends-api.blog.cubik65536.top
