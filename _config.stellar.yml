@@ -1,3 +1,4 @@
+######## Sidebar ########
 sidebar:
   menu:
     home: '[btn.home](/)'
@@ -12,7 +13,51 @@ sidebar:
       layout: recent
       rss: /atom.xml # npm i hexo-generator-feed
       limit: 6 # Count of posts
+
+######## Comments ########
+comments:
+  service: waline
+  waline:
+    js: https://unpkg.com/@waline/client@v2/dist/waline.js
+    css: https://unpkg.com/@waline/client@v2/dist/waline.css
+    # Waline server address url, you should set this to your own link
+    serverURL: https://waline.cubik65536.top
+    # If false, comment count will only be displayed in post page, not in home page
+    commentCount: true
+    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+    pageview: true
+    # Custom emoji
+    emoji:
+      - https://unpkg.com/@waline/emojis@1.0.1/weibo
+      - https://unpkg.com/@waline/emojis@1.0.1/alus
+      - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+      - https://unpkg.com/@waline/emojis@1.0.1/qq
+      - https://unpkg.com/@waline/emojis@1.0.1/tieba
+      - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+    # Comment infomation, valid meta are nick, mail and link
+    meta:
+      - nick
+      - mail
+      - link
+    # Set required meta field, e.g.: [nick] | [nick, mail]
+    requiredMeta:
+      - nick
+      - mail
+    # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+    lang: zh-CN
+    # Whether enable login, can choose from 'enable', 'disable' and 'force'
+    login: force
+    # comment per page
+    pageSize: 10
+
+######## Article ########
+article:
+  # 文章许可协议
+  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议，转载请注明出处。'
+
+######## Footer ########
 footer:
+  since: 2020
   social:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
       url: https://github.com/Cubik65536
@@ -64,43 +109,10 @@ footer:
       - '[Email](mailto:me@cubik65536.top)'
       - '[GitHub](https://github.com/Cubik65536)'
       - '[GitLab](https://gitlab.com/Cubik65536)'
-
-  source: '[GitHub](https://github.com/Cubik65536/cubik-website/)'
-
-comments:
-  service: waline
-  waline:
-    js: https://unpkg.com/@waline/client@v2/dist/waline.js
-    css: https://unpkg.com/@waline/client@v2/dist/waline.css
-    # Waline server address url, you should set this to your own link
-    serverURL: https://waline.cubik65536.top
-    # If false, comment count will only be displayed in post page, not in home page
-    commentCount: true
-    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
-    pageview: true
-    # Custom emoji
-    emoji:
-      - https://unpkg.com/@waline/emojis@1.0.1/weibo
-      - https://unpkg.com/@waline/emojis@1.0.1/alus
-      - https://unpkg.com/@waline/emojis@1.0.1/bilibili
-      - https://unpkg.com/@waline/emojis@1.0.1/qq
-      - https://unpkg.com/@waline/emojis@1.0.1/tieba
-      - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
-    # Comment infomation, valid meta are nick, mail and link
-    meta:
-      - nick
-      - mail
-      - link
-    # Set required meta field, e.g.: [nick] | [nick, mail]
-    requiredMeta:
-      - nick
-      - mail
-    # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
-    lang: zh-CN
-    # Whether enable login, can choose from 'enable', 'disable' and 'force'
-    login: force
-    # comment per page
-    pageSize: 10
+  content: |
+    本博客由 [Hexo](https://hexo.io/) & [Hexo Theme Stellar](https://xaoxuu.com/wiki/stellar/) 强力驱动，您可以在 [GitHub](https://github.com/Cubik65536/cubik-website/) 找到本站源码。
+    Copyright © 2020-2022 [@Cubik65536](https://cubik65536.top) 保留所有权利。
+    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 
 ######## Tag Plugins ########
 tag_plugins:
