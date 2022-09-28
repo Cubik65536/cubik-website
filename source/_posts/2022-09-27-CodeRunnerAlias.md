@@ -1,5 +1,5 @@
 ---
-title: 在 macOS 环境中使用终端命令别名快速编译运行代码
+title: 使用终端命令别名快速编译运行代码
 date: 2022-09-27 20:49:10
 cover:
 categories:
@@ -17,7 +17,7 @@ tags:
 
 <!-- more -->
 
-{% note color:yellow 注意！ 此处的一些功能可能仅适用于 macOS 操作系统%}
+{% note color:yellow 注意！ 此处的一些功能可能仅适用于 macOS 操作系统。Linux 上的操作应该是类似的，而 Windows 用户可能需要使用 WSL 实现此功能。%}
 
 ## 代码运行
 
