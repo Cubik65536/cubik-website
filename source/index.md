@@ -211,6 +211,7 @@ header: false
 | F1 2020 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★★ | 2020-2021 |
 | F1 2021 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★★☆ | 2021-2022 |
 | F1 22 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★☆ | 2022- |
+| F1 Manager 2022 | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" /> | ★★★★☆ | 2022- |
 | MONCAGE（笼中窥梦） | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" /> | ★★★☆ | 2021-2022 |
 | Mini Metro | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" /> | ★★★★ | 2019- |
 | Mini Motorways | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" style="display: inline-block" /> | ★★★☆ | 2022- |
