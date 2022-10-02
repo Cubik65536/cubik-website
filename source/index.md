@@ -162,12 +162,6 @@ header: false
     <img src="https://github-readme-stats.cubik65536.top/api?theme=github_dark&username=Cubik65536&count_private=true&hide=stars&show_icons=true&line_height=24&locale=cn" style="display: inline-block">
 </a>
 
-<!-- node 最常用的语言 -->
-
-<a href="https://github.com/Cubik65536">
-    <img src="https://github-readme-stats.cubik65536.top/api/top-langs/?theme=github_dark&username=Cubik65536&layout=compact&count_private=true&card_width=445&locale=cn" style="display: inline-block">
-</a>
-
 <!-- node GitHub 统计图表 -->
 
 <a href="https://github.com/Cubik65536">
