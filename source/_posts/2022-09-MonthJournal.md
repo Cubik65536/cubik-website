@@ -29,7 +29,7 @@ tags:
 
 ## 试用新的编辑器
 
-在 9 月下旬，我开始尝试使用了新的编辑器，目前我正在试用 [JetBrains 的 Fleet](https://www.jetbrains.com/fleet/)、[Sublime Text](https://www.sublimetext.com) 以及 搭配 [Spacemacs](https://develop.spacemacs.org/) 的 [Emacs](https://www.gnu.org/software/emacs/) 。目前我拥有 [JetBrains IDE](https://www.jetbrains.com/products.html) 作为大型项目的 IDE，以及 Visual Studio Code、Fleet 以及 Emacs 作为较小型项目以及小型文件的编辑器。而我也应该会根据具体需求的不同长期使用所有这些编辑器。
+在 9 月下旬，我开始尝试使用了新的编辑器，目前我正在试用 [JetBrains 的 Fleet](https://www.jetbrains.com/fleet/) 以及搭配 [Spacemacs](https://develop.spacemacs.org/) 的 [Emacs](https://www.gnu.org/software/emacs/) 。目前我拥有 [JetBrains IDE](https://www.jetbrains.com/products.html) 作为大型项目的 IDE，以及 Visual Studio Code、Fleet 以及 Emacs 作为较小型项目以及小型文件的编辑器。而我也应该会根据具体需求的不同长期使用所有这些编辑器。
 
 ## 新项目
 
