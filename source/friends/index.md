@@ -5,7 +5,6 @@ menu_id: friends
 seo_title: 友链
 toc_title: 友链索引
 comments: false
-header: false
 ---
 
 {% friends %}

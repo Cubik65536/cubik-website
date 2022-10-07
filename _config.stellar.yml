@@ -1,5 +1,8 @@
 ######## Sidebar ########
 sidebar:
+  logo:
+    avatar: '[config.avatar](/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    title: '[config.title](/)'
   menu:
     home: '[btn.home](/)'
     post: '[btn.blog](/blog/)'
@@ -13,6 +16,10 @@ sidebar:
       layout: recent
       rss: /atom.xml # npm i hexo-generator-feed
       limit: 6 # Count of posts
+    ghuser:
+      layout: ghuser
+      api: https://api.github.com
+      username: Cubik65536
 
 ######## Comments ########
 comments:
