@@ -18,8 +18,8 @@ sidebar:
       limit: 6 # Count of posts
     ghuser:
       layout: ghuser
-          api: https://api.github.com
-        username: Cubik65536 # your github login username
+      api: https://api.github.com
+      username: Cubik65536 # your github login username
       avatar: true
     ghuser_mini:
       layout: ghuser
