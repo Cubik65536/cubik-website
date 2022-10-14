@@ -11,9 +11,7 @@ header: false
 
 {% navbar [文章](/blog/) [知识库](/wiki/) [便签](/notes/) [更多](/more/) [友链](/friends/) [GitHub](https://github.com/Cubik65536) [虫洞｜WORMHOLE](https://foreverblog.cn/go.html) [开往｜Travelling](https://travellings.link/) %}
 
-{% about %}
-
-<img height="96px" alt="hello" src="https://img.cubik65536.top/hello-cubik.png">
+{% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
 ## 嗨！我是Cubik 👋
 
@@ -76,14 +74,15 @@ header: false
   <img src="https://img.shields.io/badge/Spacemacs-%239266CC.svg?&style=for-the-badge&logo=spacemacs&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="display: inline-block" />
-  &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Lapce-%233B82F6?style=for-the-badge&logo=Lapce&logoColor=white" style="display: inline-block" />
+</p>
+
+<p>
   <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" style="display: inline-block" />
   <img src="https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/Lapce-%233B82F6?style=for-the-badge&logo=Lapce&logoColor=white" style="display: inline-block" />
 </p>
 
 <br/>
