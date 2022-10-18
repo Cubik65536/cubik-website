@@ -74,7 +74,6 @@ header: false
   <img src="https://img.shields.io/badge/Spacemacs-%239266CC.svg?&style=for-the-badge&logo=spacemacs&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/Lapce-%233B82F6?style=for-the-badge&logo=Lapce&logoColor=white" style="display: inline-block" />
 </p>
 
 <p>
