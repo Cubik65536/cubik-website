@@ -7,10 +7,6 @@ comments: true
 breadcrumb: false
 ---
 
-{% about %}
+# 留言板
 
-## 留言板
-
-来过，就留下您的脚印吧～
-
-{% endabout %}
+{% quot 来过，就留下您的脚印吧～ %}
