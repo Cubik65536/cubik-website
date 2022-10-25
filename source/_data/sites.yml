@@ -1,22 +1,12 @@
-mac:
-  title: Mac 应用下载
+minecraft:
+  title: Minecraft 相关网站
   description:
   items:
-    - title: MacWk
-      url: https://macwk.com/
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macwk-icon.png
-      description: 精品mac软件下载
-    - title: MacBL
-      url: https://www.macbl.com
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/macbl-icon.png
-      description: 马可菠萝 - 分享你喜欢的MAC应用
-    - title: Xclient
-      url: https://xclient.info
-      screenshot: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-screenshot.jpg
-      avatar: https://cdn.jsdelivr.net/gh/cdn-x/bookmark@1.0.1/mac/xclient-icon.png
-      description: 精品MAC应用分享
+    - title: Chunker
+      url: https://chunker.app
+      screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://chunker.app&width=1280&height=720
+      avatar: 
+      description: 将 Minecraft 基岩地图转换为 Java 版本
 
 online_tools:
   title: 在线工具
@@ -50,11 +40,6 @@ online_tools:
     - title: 去不图床
       url: https://7bu.top/
       screenshot: https://7.dusays.com/2021/03/03/b4c71570c4b04.png
-      avatar:
-      description: 免费图床
-    - title: vim-cn.com
-      url: https://img.vim-cn.com
-      screenshot: https://7.dusays.com/2021/03/03/a2b15981b5a14.png
       avatar:
       description: 免费图床
     - title: david-smith.org
