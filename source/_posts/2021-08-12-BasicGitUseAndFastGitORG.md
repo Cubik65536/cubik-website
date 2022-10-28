@@ -73,11 +73,7 @@ $ sudo apt install git-all
 
 注意，本章所有内容都将以 `https://github.com/author/repo` 作为演示仓库链接，在使用时记得替换为你自己的仓库。
 
-{% grid color:yellow 提示 %}
-
-本篇针对的读者是没有任何基础但是需要临时使用 git 与其他人合作的用户。故不提起 init 等其他操作。更详细的使用可以参考xaoxuu大佬的[Git实用教程](https://xaoxuu.com/wiki/git/) 和 xugaoyi大佬的[Git学习笔记](https://xugaoyi.com/note/git/)
-
-{% endgrid %}
+{% note color:yellow 提示 本篇针对的读者是没有任何基础但是需要临时使用 git 与其他人合作的用户。故不提起 init 等其他操作。更详细的使用可以参考 xaoxuu 大佬的[Git实用教程](https://xaoxuu.com/wiki/git/) 和  xugaoyi 大佬的[Git学习笔记](https://xugaoyi.com/note/git/) %}
 
 #### “登录”
 
