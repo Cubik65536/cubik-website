@@ -8,8 +8,8 @@ sidebar:
     post: '[btn.blog](/blog/)'
     wiki: '[btn.wiki](/wiki/)'
     notes: '[btn.notes](/notes/)'
-    more: '[btn.more](/more/)'
     friends: '[btn.friends](/friends/)'
+    more: '[btn.more](/more/)'
 
 ######## Comments ########
 comments:

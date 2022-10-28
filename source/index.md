@@ -9,8 +9,6 @@ breadcrumb: false
 header: false
 ---
 
-{% navbar [文章](/blog/) [知识库](/wiki/) [便签](/notes/) [更多](/more/) [友链](/friends/) [GitHub](https://github.com/Cubik65536) [虫洞｜WORMHOLE](https://foreverblog.cn/go.html) [开往｜Travelling](https://travellings.link/) %}
-
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
 ## 嗨！我是Cubik 👋
