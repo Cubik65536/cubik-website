@@ -14,23 +14,11 @@ tags:
 
 <!-- more -->
 
-{% grid color:orange 提示 %}
+{% note color:orange 提示 在本文中，如果没有提到具体操作系统，则认为两个操作系统使用同一操作 %}
 
-在本文中，如果没有提到具体操作系统，则认为两个操作系统使用同一操作
+{% note color:orange 提示 本文使用的操作、功能、设置等可能具有时效性，仅供参考 %}
 
-{% endgrid %}
-
-{% grid color:orange 提示 %}
-
-本文使用的操作、功能、设置等可能具有时效性，仅供参考
-
-{% endgrid %}
-
-{% grid color:orange 提示 %}
-
-本文中的 `Linux` 操作系统指代 Arch Linux 系操作系统（Arch、Artix、Manjaro 等），部分命令可能不适用于其他 Linux 发行。
-
-{% endgrid %}
+{% note color:orange 提示 本文中的 `Linux` 操作系统指代 Arch Linux 系操作系统（Arch、Artix、Manjaro 等），部分命令可能不适用于其他 Linux 发行。 %}
 
 ## 安装字体
 

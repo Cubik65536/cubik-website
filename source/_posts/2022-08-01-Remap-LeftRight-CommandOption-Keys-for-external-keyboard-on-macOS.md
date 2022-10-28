@@ -17,17 +17,9 @@ tags:
 
 <!-- more -->
 
-{% grid color:orange 提示 %}
+{% note color:orange 提示 在本文中，如果没有提到**左/右**侧按键，则默认为两个均可。 %}
 
-在本文中，如果没有提到**左/右**侧按键，则默认为两个均可。
-
-{% endgrid %}
-
-{% grid color:orange 提示 %}
-
-本文内容使用英语操作系统的界面
-
-{% endgrid %}
+{% note color:orange 提示 本文内容使用英语操作系统的界面 %}
 
 ## 提前准备
 
@@ -52,17 +44,9 @@ echo $((16#046D))
 
 ## 找到你键盘的 VendorID（厂商ID）与 ProductID（硬件/产品ID）
 
-{% grid color:orange 提示 %}
+{% note color:orange 提示 我使用的是一个 USB 无线 + 有线均可使用的键盘，蓝牙键盘可能需要其他方法找到 ID %}
 
-我使用的是一个 USB 无线 + 有线均可使用的键盘，蓝牙键盘可能需要其他方法找到 ID
-
-{% endgrid %}
-
-{% grid color:orange 提示 %}
-
-从这一步开始，你需要接入你的外接键盘
-
-{% endgrid %}
+{% note color:orange 提示 从这一步开始，你需要接入你的外接键盘 %}
 
 这一步我们的目的是找到键盘在系统中的标识符，以便我们找到键盘映射设置。
 
@@ -74,21 +58,13 @@ echo $((16#046D))
 
 你在这里会找到你的键盘的十六进制 VendorID 和 ProductID。将其转换成十进制并记录下来。
 
-{% grid color:orange 提示 %}
-
-假如你的键盘同时支持有线和无线模式，那么 USB 线和 USB 无线接收器会显示为两个不同的 ID，需要单独设置，所以两者均需要记录
-
-{% endgrid %}
+{% note color:orange 提示 假如你的键盘同时支持有线和无线模式，那么 USB 线和 USB 无线接收器会显示为两个不同的 ID，需要单独设置，所以两者均需要记录 %}
 
 ## 编辑 plist 文件
 
 前往 `~/Library/Preferences/ByHost/` 路径，找到 `.GlobalPreferences.XXXXXXXX-YYYY-ZZZZ-WWWW-VVVVVVVVVVVV.plist` 格式的 plist 文件，打开它。
 
-{% grid color:orange 提示 %}
-
-从此处开始，我们会提到 `Array`/`Dictionary`/`Number` 等数据类型，如果你使用 XCode，则可以通过查看 `Type` 一栏来获得数据类型，如果你使用 VSCode，则类型为 XML 标签的命名，如果你使用 TextMate，则需要按照 Json 的方法辨认这些类型。
-
-{% endgrid %}
+{% note color:orange 提示 从此处开始，我们会提到 `Array`/`Dictionary`/`Number` 等数据类型，如果你使用 XCode，则可以通过查看 `Type` 一栏来获得数据类型，如果你使用 VSCode，则类型为 XML 标签的命名，如果你使用 TextMate，则需要按照 Json 的方法辨认这些类型。 %}
 
 ### 已经进行过键位设置
 
