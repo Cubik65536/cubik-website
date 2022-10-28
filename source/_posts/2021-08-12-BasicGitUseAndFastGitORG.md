@@ -37,11 +37,7 @@ git --version
 
 而如果输出为 `git version x.xx.x` (x.xx.x 为版本号，每人的输出可能不一样)，则代表你已经安装。
 
-{% grid color:yellow 提示 %}
-
-一般来说，如果你购买的是 Apple Mac 系列计算机，则你的系统中应该已经预装了 git
-
-{% endgrid %}
+{% note color:yellow 提示 一般来说，如果你购买的是 Apple Mac 系列计算机，则你的系统中应该已经预装了 git %}
 
 如果你没有安装，请按照以下方式安装：
 
@@ -122,11 +118,7 @@ ummm。打开你喜欢的编辑器，写吧！
 
 这一步简单来说就是告诉软件，你要提交一个更改。先进入你的 git 路径（一般是你 clone 的路径再 `cd <文件夹名>`）
 
-{% grid color:yellow 提示 %}
-
-文件夹名一般就是 repo 名称，即为 `https://github.com/author/repo` 中的 `repo`
-
-{% endgrid %}
+{% note color:yellow 提示 文件夹名一般就是 repo 名称，即为 `https://github.com/author/repo` 中的 `repo` %}
 
 输入以下命令
 
