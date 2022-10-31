@@ -10,7 +10,7 @@ comments: false
 
 <br/>
 
-{% navbar [笔记](/notes/) [网址收藏](/bookmarks/) %}
+{% navbar active:1 [笔记](/notes/) [网址收藏](/bookmarks/) %}
 
 {% endabout %}
 
