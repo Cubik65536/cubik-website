@@ -2,8 +2,17 @@
 robots: noindex,nofollow
 sitemap: false
 menu_id: notes
+title: 笔记
 comments: false
 ---
+
+{% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
+
+<br/>
+
+{% navbar [笔记](/notes/) [网址收藏](/notes/bookmarks/) %}
+
+{% endabout %}
 
 {% folding git 更新 submodules %}
 
@@ -200,21 +209,3 @@ System Integrity Protection status: enabled.
 - **推出键 (⏏)、F12**、鼠标按钮或触控板按钮：推出可移动介质，例如光盘。如果使用了固件密码，这个组合键将被停用。
 
 {% endfolding %}
-
-
-
-## Mirrors
-
-{% link https://developer.aliyun.com/mirror/ 阿里云官方镜像站 %}
-
-{% link https://mirrors.tuna.tsinghua.edu.cn 清华大学开源软件镜像站 %}
-
-## Bookmarks
-
-### Minecraft 相关网站
-
-{% sites Minecraft 相关网站 %}
-
-### 在线工具
-
-{% sites 在线工具 %}
