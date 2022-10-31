@@ -6,8 +6,31 @@ seo_title: 友链
 toc_title: 友链索引
 comments: false
 ---
+# 友链
 
-{% friends %}
+## 海内存知己 天涯若比邻
+
+感谢人生旅途中的每一份真挚的友谊。列表按结识先后顺序排列：
+
+{% friends 海内存知己 天涯若比邻 %}
+
+## 常去的地方
+
+经常访问的一些优秀博客，见识到了很多新事物，也学习到了新的知识。列表按结识先后顺序排列：
+
+{% friends 常去的地方 %}
+
+## 开发大佬
+
+特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
+
+{% friends 开发大佬 %}
+
+## 来自 GitHub 的朋友
+
+以下友链通过 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/) 提交，按 issue 最后更新时间排序：
+
+{% friends api:https://friends-api.blog.cubik65536.top/v2/data.json %}
 
 ## 关于友链
 
@@ -51,4 +74,4 @@ description: RECOMMENDED BY DR.CREATIVE
 
 {% endtimeline %}
 
-如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个。
+如果您需要更新自己的友链，请直接修改 issue 内容，大约 3 分钟内生效，无需等待博客更新。如果无法修改，可以重新创建一个
