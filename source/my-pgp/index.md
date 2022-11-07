@@ -9,13 +9,15 @@ breadcrumb: false
 header: false
 ---
 
-{% about avatar:https://img.cubik65536.top/GnuPG-Logo.svg height:48px %}
+{% about avatar:https://img.cubik65536.top/GnuPG-Logo.svg height:96px %}
 
-{% navbar active:2 [关于](/) [我的PGP](/my-pgp/) %}
+{% navbar active:3 [关于](/) [联系我](/contact-me/) [我的PGP](/my-pgp/) %}
 
 <br/>
 
 ![PGP Fingerprint](https://img.shields.io/badge/我的PGP指纹-1B38%208B7A%20A395%20A248%20F436%20244F%20FFA7%20DB11%203223%208420-%23FA7343?style=for-the-badge)
+
+{% note color:warning 对于PGP签名 您可以将所有经过 `FFA7 DB11 3223 8420` 签署过的内容视为我本人发布的内容，且我会对所有 `FFA7 DB11 3223 8420` 签署过的内容负责，除非我已经公开使用撤销证书撤销了这个密钥，当该情况发生时，我所有地方的指纹签名都会变更，而且我也会公开通知密钥的更改。 %}
 
 <br/>
 

@@ -15,7 +15,7 @@ header: false
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
-{% navbar active:1 [关于](/) [我的PGP](/my-pgp/) %}
+{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的PGP](/my-pgp/) %}
 
 <br/>
 
@@ -83,39 +83,6 @@ header: false
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
 </p>
-
-<br/>
-<hr/>
-
-#### 📫 联系我
-
-如果你需要联系我，给我发送邮件是最高效的方法。我会每4到5个小时查看一次收件箱，所以，除非你的邮件被系统移动到垃圾邮件中（一般我会每周简单检查一下垃圾邮件箱然后直接清空，所以甚至有可能我根本不会看到你的邮件），你将会可以很快收到我的回复。
-
-我建议向 `me@` 的邮件地址发送信息，因为 `cubik65536@` 同时会被用来接收各种通知，所以你的邮件有更大被无意中忽略掉的几率。
-
-<br/>
-
-<p align="center">
-  <a href="mailto:cubik65536@cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-cubik65536%40cubik65536.top-informational?style=for-the-badge" style="display: inline-block" /></a>
-  &nbsp;
-  <a href="mailto:me@cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-me%40cubik65536.top-informational?style=for-the-badge" style="display: inline-block" /></a>
-</p>
-
-<br/>
-
-**如果你想给我发送带有 PGP 加密的信息，请向下方的邮件地址发送。我不会查看发送给上方邮件地址的加密信息，我也不会查看向下方邮箱发送的非加密信息。**
-
-<br/>
-
-[![📫 EMAIL](https://img.shields.io/badge/📫%20EMAIL-me%40enc.cubik65536.top-informational?style=for-the-badge)](mailto:me@enc.cubik65536.top)
-
-<br/>
-
-**我在使用 `me@enc.cubik65536.top` 发送或回复邮件的时候永远会使用我的 PGP 签名进行加密！请注意！**
-
-<br/>
-
-![PGP Fingerprint](https://img.shields.io/badge/我的PGP指纹-1B38%208B7A%20A395%20A248%20F436%20244F%20FFA7%20DB11%203223%208420-%23FA7343?style=for-the-badge)
 
 <br/>
 <hr/>
