@@ -19,6 +19,10 @@ header: false
 
 <br/>
 
+{% link https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420 "下载我的 PGP 公钥" icon:https://img.cubik65536.top/GnuPG-Logo.svg %}
+
+<br/>
+
 {% folding 我的 PGP 公钥 %}
 
 ``` plain

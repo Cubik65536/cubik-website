@@ -75,6 +75,10 @@ footer:
       url: /more/#comments
       title: '在线聊天'
   largesocial:
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
+      url: https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420
+      title: '从 keys.openpgp.org 下载 PGP 公钥'
+      description: '我的 PGP 公钥'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
       url: https://foreverblog.cn/go.html
       title: '穿梭虫洞-随机访问十年之约友链博客'
@@ -85,16 +89,16 @@ footer:
       description: '开往 | Travelling'
   sitemap:
     '主页':
-      - '[简介](/)'
-      - '[近期日程](/#近期日程)'
-      - '[兴趣爱好](/#兴趣爱好)'
+      - '[关于](/)'
+      - '[我的PGP](/my-pgp/)'
     '博客':
       - '[近期发布](/blog/)'
       - '[分类](/categories/)'
       - '[标签](/tags/)'
       - '[归档](/archives/)'
       - '[知识库](/wiki/)'
-      - '[便签](/notes/)'
+      - '[笔记](/notes/)'
+      - '[网址收藏](/bookmarks/)'
     '社交':
       - '[友链](/friends/)'
       - '[哔哩哔哩](https://space.bilibili.com/439205819)'
@@ -104,8 +108,10 @@ footer:
       - '[开往 | Travelling](https://travellings.link)'
     '联系我们':
       - '[Email](mailto:me@cubik65536.top)'
+      - '[Email (PGP 签名的)](mailto:me@enc.cubik65536.top)'
       - '[GitHub](https://github.com/Cubik65536)'
       - '[GitLab](https://gitlab.com/Cubik65536)'
+      - '[keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420)'
   content: |
     本博客由 [Hexo](https://hexo.io/) & [Hexo Theme Stellar](https://xaoxuu.com/wiki/stellar/) 强力驱动，您可以在 [GitHub](https://github.com/Cubik65536/cubik-website/) 找到本站源码。
     Copyright © 2020-2022 [@Cubik65536](https://cubik65536.top) 保留所有权利。
