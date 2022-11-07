@@ -30,6 +30,10 @@ header: false
 <br/>
 
 <p>
+  <img src="https://img.shields.io/badge/Apple-MacBook_Pro_15_inch_2019-999999?style=for-the-badge&logo=apple&logoColor=white" style="display: inline-block" />
+</p>
+
+<p>
   <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/iPadOS-000000?style=for-the-badge&logo=ios&logoColor=white" style="display: inline-block" />
