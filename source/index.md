@@ -15,6 +15,8 @@ header: false
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
+{% navbar active:1 [关于](/) [我的PGP](/my-pgp/) %}
+
 <br/>
 
 **[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
@@ -113,8 +115,7 @@ header: false
 
 <br/>
 
-[![PGP Key](https://img.shields.io/badge/我的PGP指纹-F03D%20391A%201046%203019%20531B%20B407%208159%20AF5B%202D7F%2090EA-%23FA7343?style=for-the-badge)](https://raw.githubusercontent.com/Cubik65536/Cubik65536/main/pgp-public-key.txt)
- > 点击徽标查看我的公钥！
+![PGP Fingerprint](https://img.shields.io/badge/我的PGP指纹-1B38%208B7A%20A395%20A248%20F436%20244F%20FFA7%20DB11%203223%208420-%23FA7343?style=for-the-badge)
 
 <br/>
 <hr/>
