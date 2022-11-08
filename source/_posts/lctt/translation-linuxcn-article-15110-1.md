@@ -1,5 +1,10 @@
 ---
 title: "[转][译][LCTT] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS"
+poster:
+  topic: LCTT 原创翻译转载
+  headline: "新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS"
+  caption: TUXEDO OS 是一个基于 Ubuntu 的 Linux 发行版，旨在将 TUXEDO 在 Linux 方面的专业知识也带给非 TUXEDO 用户。
+  color: 标题颜色
 date: 2022-10-06 10:20:00
 cover: https://img.linux.net.cn/data/attachment/album/202210/06/102055dv0swm80adcwccgz.jpg
 categories:

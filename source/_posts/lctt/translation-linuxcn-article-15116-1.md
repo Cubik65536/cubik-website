@@ -1,5 +1,10 @@
 ---
 title: "[转][译][LCTT] 新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版"
+poster:
+  topic: LCTT 原创翻译转载
+  headline: "新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版"
+  caption: Pop!_OS 22.10 将不会发布。所以，你将无法使用 GNOME 43…… 这里是原因。
+  color: 标题颜色
 date: 2022-10-08 14:39:00
 cover: https://img.linux.net.cn/data/attachment/album/202210/08/143915vpfvlqmqfumvqqvb.png
 categories:
