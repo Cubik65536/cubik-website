@@ -1,5 +1,5 @@
 ---
-title: "[转][译][LCTT] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS"
+title: "[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS"
 poster:
   topic: LCTT 原创翻译转载
   headline: "新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS"

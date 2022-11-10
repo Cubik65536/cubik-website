@@ -1,5 +1,5 @@
 ---
-title: "[转][译][LCTT] 新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版"
+title: "[LCTT 原创翻译转载] 新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版"
 poster:
   topic: LCTT 原创翻译转载
   headline: "新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版"
