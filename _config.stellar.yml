@@ -107,7 +107,8 @@ footer:
       - '[留言板](/more#comments)'
       - '[虫洞 | WORMHOLE](https://foreverblog.cn/go.html)'
       - '[开往 | Travelling](https://travellings.link)'
-    '联系我们':
+    '联系我':
+      - '[联系我 (详细信息页)](/contact-me/)'
       - '[Email](mailto:me@cubik65536.top)'
       - '[Email (PGP 签名的)](mailto:me@enc.cubik65536.top)'
       - '[GitHub](https://github.com/Cubik65536)'
