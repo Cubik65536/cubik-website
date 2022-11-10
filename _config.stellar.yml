@@ -100,6 +100,7 @@ footer:
       - '[知识库](/wiki/)'
       - '[笔记](/notes/)'
       - '[网址收藏](/bookmarks/)'
+      - '[Git 提交信息格式](/commit-message-conventions/)'
     '社交':
       - '[友链](/friends/)'
       - '[哔哩哔哩](https://space.bilibili.com/439205819)'
