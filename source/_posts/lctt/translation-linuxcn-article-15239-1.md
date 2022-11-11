@@ -19,7 +19,8 @@ tags:
 license: 本文采用 [署名-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 ---
 
-> 原文：[Kate 文本编辑器增加了四个非常棒的新功能](https://linux.cn/article-15124-1.html)
+> 原文：[Kate Editor is Getting Four New Awesome Features](https://news.itsfoss.com/kate-editor-22-12-features/)
+> 首发：[Kate 文本编辑器增加了四个非常棒的新功能](https://linux.cn/article-15124-1.html) @[Linux 中国](https://linux.cn/)
 > 作者：[Sourav Rudra](https://news.itsfoss.com/kate-editor-22-12-features/)
 > 译者：[LCTT](https://linux.cn/lctt/) [Cubik](https://linux.cn/lctt/Cubik65536)
 

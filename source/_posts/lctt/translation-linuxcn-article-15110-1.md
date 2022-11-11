@@ -21,7 +21,8 @@ license: 本文采用 [署名-相同方式共享 4.0 国际](https://creativecom
 
 从现在开始，我将会在 <https://linux.cn> 站上（可能以后也会有其他站点）翻译一些文章。在这些文章被这些站点发布之后，我也会对应的转载到本站点。注意，这些文章可能不会使用本站常用的 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 协议，而是使用原站点的协议。如果你想要转载这些文章，你需要遵守原站点的协议。这些文章具体的协议信息可以在文章的底部找到。你也可以在文章底部找到英文原文以及选题、校对人员等信息。让我们开始吧！
 
-> 原文：[Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS](https://linux.cn/article-15110-1.html)
+> 原文：[[Exclusive] Tuxedo Makes Ubuntu-based 'TUXEDO OS' Available For All](https://news.itsfoss.com/tuxedo-os/)
+> 首发：[Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS](https://linux.cn/article-15110-1.html) @[Linux 中国](https://linux.cn/)
 > 作者：[Ankush Das](https://news.itsfoss.com/tuxedo-os/)
 > 译者：[LCTT](https://linux.cn/lctt/) [Cubik](https://linux.cn/lctt/Cubik65536)
 

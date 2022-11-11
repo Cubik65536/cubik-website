@@ -18,7 +18,8 @@ tags:
 license: 本文采用 [署名-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 ---
 
-> 原文：[一个全新的用于英伟达显卡的开源 Vulkan 驱动已经准备好测试了！](https://linux.cn/article-15124-1.html)
+> 原文：[A New Open Source Vulkan Driver for NVIDIA Graphics is Ready to Test!](https://news.itsfoss.com/nvidia-nvk/)
+> 首发：[一个全新的用于英伟达显卡的开源 Vulkan 驱动已经准备好测试了！](https://linux.cn/article-15124-1.html) @[Linux 中国](https://linux.cn/)
 > 作者：[Sourav Rudra](https://news.itsfoss.com/nvidia-nvk/)
 > 译者：[LCTT](https://linux.cn/lctt/) [Cubik](https://linux.cn/lctt/Cubik65536)
 

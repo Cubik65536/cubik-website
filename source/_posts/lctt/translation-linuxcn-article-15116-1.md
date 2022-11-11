@@ -18,7 +18,8 @@ tags:
 license: 本文采用 [署名-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 ---
 
-> 原文：[System 76 将不会发布 Pop!_OS 22.10 Linux 发行版](https://linux.cn/article-15116-1.html)
+> 原文：[System76 Won't Release Pop!_OS 22.10 Linux Distro: Here's Why!](https://news.itsfoss.com/no-pop-os-21-10/)
+> 首发：[System 76 将不会发布 Pop!_OS 22.10 Linux 发行版](https://linux.cn/article-15116-1.html) @[Linux 中国](https://linux.cn/)
 > 作者：[Sourav Rudra](https://news.itsfoss.com/no-pop-os-21-10/)
 > 译者：[LCTT](https://linux.cn/lctt/) [Cubik](https://linux.cn/lctt/Cubik65536)
 
