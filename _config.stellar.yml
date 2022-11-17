@@ -129,5 +129,5 @@ tag_plugins:
 style:
   font-size: 18px
   font-family:
-    body: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
-    code: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
+    body: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
+    code: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
