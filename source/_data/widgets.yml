@@ -2,11 +2,13 @@ recent:
   layout: recent
   rss: /atom.xml # npm i hexo-generator-feed
   limit: 6 # Count of posts
+
 ghuser:
   layout: ghuser
   api: https://api.github.com
   username: Cubik65536 # your github login username
   avatar: true
+  bio: "Java & Kotlin & Python Dev & Minecraft Player.<br/>@CubikTech @iXORTech<br/>PGP: FFA7 DB11 3223 8420"
 
 welcome:
   layout: markdown
