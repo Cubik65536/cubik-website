@@ -5,4 +5,4 @@ title: PGP 安装
 order: 2
 ---
 
-c
+{% note color:warning 正在撰写，即将更新，敬请期待 %}
