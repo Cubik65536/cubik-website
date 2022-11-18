@@ -1,0 +1,15 @@
+PGP 基础使用:
+  name: PGP 基础使用
+  title: PGP 基础使用
+  subtitle: '从创建密钥到加密信息 - PGP 的基础使用'
+  tags: 知识库
+  cover: true
+  logo:
+    src: https://img.cubik65536.top/GnuPG-Logo.svg
+    small: 112px
+    large: 240px
+  description: 从创建密钥到加密信息 - PGP 的基础使用
+  sidebar: [toc]
+  sections:
+    '简介': [0, 0]
+    '快速开始': [1, 100]
