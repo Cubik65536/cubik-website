@@ -18,7 +18,7 @@ tags:
 license: 本文采用 [署名-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 许可协议，转载请注明出处。
 ---
 
-> 原文：[Using Python in VS Code and Codium](https://opensource.com/article/22/11/learn-python)
+> 原文：[Learn Python: 7 of my favorite resources](https://opensource.com/article/22/11/learn-python)
 > 首发：[学习 Python：我最喜欢的 7 个资源](https://linux.cn/article-15267-1.html) @[Linux 中国](https://linux.cn/)
 > 作者：[Don Watkins](https://opensource.com/article/22/11/learn-python)
 > 译者：[LCTT](https://linux.cn/lctt/) [Cubik](https://linux.cn/lctt/Cubik65536)
