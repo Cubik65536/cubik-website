@@ -50,4 +50,8 @@ categories: 大事记
 
 - ***将博客的评论系统更换为 [Waline](https://waline.js.org)***
 
+<!-- node 2022-11-22 -->
+
+- ***增加时间线动态与朋友圈动态功能***
+
 {% endtimeline %}
