@@ -2,7 +2,7 @@
 robots: 'index,nofollow'
 menu_id: home
 seo_title: 主页
-sidebar: [ghuser, recent]
+sidebar: [ghuser, recent, timeline]
 toc_title: 主页
 comments: false
 breadcrumb: false
@@ -11,11 +11,11 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
-## 嗨！我是Cubik 👋
+## 嗨！我是 Cubik 👋
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
-{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的PGP](/my-pgp/) %}
+{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的 PGP](/my-pgp/) %}
 
 <br/>
 
@@ -173,7 +173,7 @@ header: false
 
 <!-- tab 游戏 -->
 
-{% note color:yellow 注意！ 以下列表中的平台仅代表我游玩此游戏使用的平台，此游戏可能支持其他平台。%}
+{% note color:yellow 注意！以下列表中的平台仅代表我游玩此游戏使用的平台，此游戏可能支持其他平台。%}
 
 | 游戏 | 平台 | 推荐指数 | 游玩时间 |
 |:-----|:-----|:---------|:---------|
