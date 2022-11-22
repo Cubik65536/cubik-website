@@ -12,7 +12,7 @@ ghuser:
 
 welcome:
   layout: markdown
-  title: '欢迎来到Cubik的小站'
+  title: '欢迎来到 Cubik 的小站'
   content: |
     无限创意 / 无限进步 / 无限可能
 
@@ -20,6 +20,13 @@ timeline:
   layout: timeline
   title: 近期动态
   api: https://api.github.com/repos/Cubik65536/Cubik65536/issues
-  user: # 默认显示所有人的数据，设置名称可过滤为仅显示某人的数据，多个名称用英文逗号隔开，不要加空格
+  user: Cubik65536
   type: # 默认不用写，如果是友链朋友圈数据请写 fcircle
-  limit: # 默认通过 api 上增加 per_page 来设置，如果是友链朋友圈，可通过这个设置数量
+  limit: 8
+
+'friends-circle':
+  layout: timeline
+  title: 朋友圈动态
+  api: https://hexo-circle-of-friends.cubik65536.top/all
+  type: fcircle
+  limit: 8
