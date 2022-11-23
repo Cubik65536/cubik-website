@@ -36,6 +36,8 @@ categories: 大事记
 
 本站已经正式的成为了[十年之约](https://www.foreverblog.cn)的成员，让我们一起坚持下去！
 
+本站十年之约大事记页面：<https://www.foreverblog.cn/blog/2992.html>
+
 <!-- node 2022-05-06 -->
 
 ***实现页面侧栏底部 Font Awesome 标志在不同颜色设置下的可见性适配***
