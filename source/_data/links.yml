@@ -13,7 +13,7 @@
     description: Mashirl's Blog
     avatar: https://cdn.jsdelivr.net/gh/Mashirl/Blog/source/images/avatar.jpg
     url: https://mashirl.com
-  - title: CharlieYu4994的博客
+  - title: CharlieYu4994 的博客
     description: 一只猫猫的博客
     avatar: https://blog.charlie.moe/images/avatar.png
     url: https://blog.charlie.moe
@@ -29,6 +29,10 @@
     description: 自古吉吉萌萌哒 ( •̀ ω •́ )✧
     avatar: https://mmdjiji.com/images/avatar.png
     url: https://mmdjiji.com
+  - title: 旋律的博客
+    description: 专注干一些奇怪事情的地方
+    avatar: https://avatars.githubusercontent.com/u/89735151?v=4
+    url: https://e11z.net
 
 '常去的地方':
   - title: 皮皮凛の小窝
