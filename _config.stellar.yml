@@ -5,10 +5,17 @@ sidebar:
     title: '[config.title](/)'
   menu:
     home: '[btn.home](/)'
-    post: '[btn.blog](/blog/)'
+    post: '[btn.blog](/posts/)'
     wiki: '[btn.wiki](/wiki/)'
     notes: '[btn.notes](/notes/)'
     friends: '[btn.friends](/friends/)'
+
+######## Article ########
+article:
+  # 文章许可协议
+  license: '本文采用 [署名 - 非商业性使用 - 相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  # 分享
+  share: [email, link]
 
 ######## Comments ########
 comments:
@@ -46,11 +53,6 @@ comments:
     # comment per page
     pageSize: 10
 
-######## Article ########
-article:
-  # 文章许可协议
-  license: '本文采用 [署名-非商业性使用-相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议，转载请注明出处。'
-
 ######## Footer ########
 footer:
   since: 2020
@@ -77,11 +79,11 @@ footer:
       description: '我的 PGP 公钥'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
       url: https://foreverblog.cn/go.html
-      title: '穿梭虫洞-随机访问十年之约友链博客'
+      title: '穿梭虫洞 - 随机访问十年之约友链博客'
       description: '虫洞 | WORMHOLE'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/train.svg" />'
       url: https://travellings.link
-      title: '开往-友链接力'
+      title: '开往 - 友链接力'
       description: '开往 | Travelling'
   sitemap:
     '主页':
@@ -89,7 +91,7 @@ footer:
       - '[联系我](/contact-me/)'
       - '[我的PGP](/my-pgp/)'
     '博客':
-      - '[近期发布](/blog/)'
+      - '[近期发布](/posts/)'
       - '[分类](/categories/)'
       - '[标签](/tags/)'
       - '[归档](/archives/)'

@@ -4,7 +4,7 @@
 
 # Site
 title: Cubik 的小站
-avatar: https://img.cubik65536.top/CubikLogo.png
+avatar: https://img.cubik65536.top/CubikLogoAlpha.png
 subtitle: 'RECOMMENDED BY<br/> DR.CREATIVE'
 description: ''
 keywords:
@@ -65,7 +65,7 @@ prismjs:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: '/blog'
+  path: '/posts'
   per_page: 10
   order_by: -date
 
@@ -127,7 +127,7 @@ feed:
   path: atom.xml
   limit: false
   content: true
-  icon: https://cdn.jsdelivr.net/gh/cdn-x/xaoxuu/avatar/rect-256@2x.png
+  icon: https://fapro6.cubik65536.top/svgs/solid/rss.svg
   autodiscovery: true
 
 # npm install hexo-footnote --save
