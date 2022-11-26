@@ -85,6 +85,10 @@ footer:
       url: https://travellings.link
       title: '开往 - 友链接力'
       description: '开往 | Travelling'
+  picturesocial:
+    - url: https://www.foreverblog.cn/blog/2992.html
+      image: https://img.foreverblog.cn/logo_en_default.png
+      description: '【CUBIK的小站】十年之约'
   sitemap:
     '主页':
       - '[关于](/)'
