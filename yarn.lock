@@ -1522,6 +1522,14 @@
   dependencies:
     "hexo-pagination" "3.0.0"
 
+"hexo-generator-search@^2.4.3":
+  "integrity" "sha512-Z5hfZq2g3np/Tgdp2q9HobfIvU6Pdz89tnTurc1IIq/vW0MHgDynk0Aiv6kvMtKWthnZ5l0iEMT3YLN35NdYwQ=="
+  "resolved" "https://registry.npmjs.org/hexo-generator-search/-/hexo-generator-search-2.4.3.tgz"
+  "version" "2.4.3"
+  dependencies:
+    "nunjucks" "^3.0.1"
+    "utils-merge" "^1.0.0"
+
 "hexo-generator-tag@^2.0.0":
   "integrity" "sha512-1px/hF3veEohWDN8jjzchQhaiz+uOStUvvMaBJC9vWOlALh30UFcapL8IrvAwwJZjFRVA+WqGgDRqoQ8+yaaFw=="
   "resolved" "https://registry.npmjs.org/hexo-generator-tag/-/hexo-generator-tag-2.0.0.tgz"
@@ -2576,7 +2584,7 @@
   dependencies:
     "boolbase" "^1.0.0"
 
-"nunjucks@^3.0.0", "nunjucks@^3.2.3":
+"nunjucks@^3.0.0", "nunjucks@^3.0.1", "nunjucks@^3.2.3":
   "integrity" "sha512-psb6xjLj47+fE76JdZwskvwG4MYsQKXUtMsPh6U0YMvmyjRtKRFcxnlXGWglNybtNTNVmGdp94K62/+NjF5FDQ=="
   "resolved" "https://registry.npmjs.org/nunjucks/-/nunjucks-3.2.3.tgz"
   "version" "3.2.3"
@@ -3498,7 +3506,7 @@
   "resolved" "https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz"
   "version" "1.0.2"
 
-"utils-merge@1.0.1":
+"utils-merge@^1.0.0", "utils-merge@1.0.1":
   "integrity" "sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM="
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"

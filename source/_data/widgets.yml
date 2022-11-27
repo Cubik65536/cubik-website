@@ -1,3 +1,7 @@
+search:
+  layout: search
+  filter: auto # auto or 'path'
+
 recent:
   layout: recent
   rss: /atom.xml # npm i hexo-generator-feed
