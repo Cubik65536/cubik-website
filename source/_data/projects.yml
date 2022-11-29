@@ -9,7 +9,6 @@ PGP 基础使用:
     small: 112px
     large: 240px
   description: 从创建密钥到加密信息 - PGP 的基础使用
-  sidebar: [toc]
   sections:
     '简介': [0, 0]
     '快速开始': [1, 100]

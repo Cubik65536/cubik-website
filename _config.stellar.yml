@@ -12,7 +12,7 @@ sidebar:
   # Sidebar widgets
   widgets:
     index: welcome, search, recent, timeline # for home/wiki/categories/tags/archives/404 pages
-    page: welcome, toc # for pages using 'layout:page'
+    page: welcome, search, toc # for pages using 'layout:page'
     post: toc, search, ghrepo, ghissues # for pages using 'layout:post'
     wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
 
@@ -24,8 +24,11 @@ article:
   share: [email, link]
 
 search:
-   service: local_search # hexo, todo...
-   local_search: # npm i hexo-generator-search
+  service: local_search # local_search, todo...
+  local_search:
+    field: all # post, page, all
+    path: /search.json
+    content: true
 
 ######## Comments ########
 comments:
