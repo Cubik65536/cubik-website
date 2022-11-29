@@ -9,6 +9,12 @@ sidebar:
     wiki: '[btn.wiki](/wiki/)'
     notes: '[btn.notes](/notes/)'
     friends: '[btn.friends](/friends/)'
+  # Sidebar widgets
+  widgets:
+    index: welcome, search, recent, timeline # for home/wiki/categories/tags/archives/404 pages
+    page: welcome, toc # for pages using 'layout:page'
+    post: toc, search, ghrepo, ghissues # for pages using 'layout:post'
+    wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
 
 ######## Article ########
 article:
@@ -92,7 +98,7 @@ footer:
   picturesocial:
     - url: https://www.foreverblog.cn/blog/2992.html
       image: https://img.foreverblog.cn/logo_en_default.png
-      description: '【CUBIK的小站】十年之约'
+      description: '【CUBIK 的小站】十年之约'
   sitemap:
     '主页':
       - '[关于](/)'

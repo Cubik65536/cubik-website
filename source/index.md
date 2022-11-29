@@ -2,7 +2,7 @@
 robots: 'index,nofollow'
 menu_id: home
 seo_title: 主页
-sidebar: [ghuser, recent, timeline]
+sidebar: [ghuser, search, recent, timeline]
 toc_title: 主页
 comments: false
 breadcrumb: false
@@ -15,7 +15,7 @@ header: false
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
-{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的PGP](/my-pgp/) %}
+{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的 PGP](/my-pgp/) %}
 
 <br/>
 
