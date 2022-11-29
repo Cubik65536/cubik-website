@@ -133,3 +133,7 @@ feed:
 # npm install hexo-footnote --save
 footnote:
   location_target_class: location-target
+
+# npm install hexo-generator-search --save
+search:
+  field: all # post, page, all
