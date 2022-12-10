@@ -30,7 +30,7 @@ tags:
 sudo vim /etc/ssh/sshd_config
 ```
 
-随后，找到以下三项配置，如果前面有 `#` 则去掉，并全部修改为以下内容：
+随后，找到以下两项配置，如果前面有 `#` 则去掉，并全部修改为以下内容：
 
 ``` bash
 PermitRootLogin prohibit-password
