@@ -141,7 +141,13 @@ tag_plugins:
     fancybox: true
 
 style:
-  font-size: 16px
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
   font-family:
+    logo: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
     body: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
     code: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
+    codeblock: '"ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
