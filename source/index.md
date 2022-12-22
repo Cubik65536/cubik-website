@@ -129,9 +129,13 @@ header: false
 
 ### 👨🏻‍💻 我的 GitHub
 
-<a href="https://github.com/Cubik65536"><img align="left" src="https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white"></a>
-
 {% timeline %}
+
+<!-- node GitHub -->
+
+<a href="https://github.com/Cubik65536">
+  <img align="left" src="https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
 <!-- node GitHub 统计数据 -->
 
