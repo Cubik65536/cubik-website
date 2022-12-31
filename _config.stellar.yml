@@ -106,7 +106,7 @@ footer:
     '主页':
       - '[关于](/)'
       - '[联系我](/contact-me/)'
-      - '[我的PGP](/my-pgp/)'
+      - '[我的 PGP](/my-pgp/)'
     '博客':
       - '[近期发布](/posts/)'
       - '[分类](/categories/)'
