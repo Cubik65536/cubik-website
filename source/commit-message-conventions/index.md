@@ -10,7 +10,7 @@ comments: false
 
 <br/>
 
-{% navbar active:3 [笔记](/notes/) [网址收藏](/bookmarks/) [Git提交信息格式](/commit-message-conventions/) %}
+{% navbar active:3 [笔记](/notes/) [网址收藏](/bookmarks/) [Git&nbsp;提交信息格式](/commit-message-conventions/) %}
 
 {% endabout %}
 
