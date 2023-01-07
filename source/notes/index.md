@@ -10,9 +10,15 @@ comments: false
 
 <br/>
 
-{% navbar active:1 [笔记](/notes/) [网址收藏](/bookmarks/) [Git提交信息格式](/commit-message-conventions/) %}
+{% navbar active:1 [笔记](/notes/) [网址收藏](/bookmarks/) [Git 提交信息格式](/commit-message-conventions/) %}
 
 {% endabout %}
+
+{% folding git 生成一个全新（无历史 commit 的）branch %}
+
+{% copy git switch --orphan <new branch> %}
+
+{% endfolding %}
 
 {% folding git 更新 submodules %}
 
@@ -56,7 +62,7 @@ comments: false
 
 {% endfolding %}
 
-{% folding 提示 “安装包已损坏” 怎么办？ %}
+{% folding 提示“安装包已损坏”怎么办？ %}
 
 {% copy sudo spctl --master-disable %}
 
@@ -75,7 +81,7 @@ sudo dscacheutil -flushcache
 
 {% folding TNT 团队的应用无法使用怎么办？ %}
 
-TNT 的证书签署的软件在 2019年7月12日 后都不能运行了，临时的解决办法，就是自己签名。
+TNT 的证书签署的软件在 2019 年 7 月 12 日 后都不能运行了，临时的解决办法，就是自己签名。
 
 **1. 安装 Xcode**
 
@@ -128,7 +134,7 @@ codesign --force --deep --sign - /Applications/name.app
 ```
 /volume/磁盘路径/~~~
 ```
-例如一个名称为 "Files" 的磁盘里的文件夹 "Projects" 路径是:
+例如一个名称为 "Files" 的磁盘里的文件夹 "Projects" 路径是：
 ```
 /Volumes/Files/Projects/
 ```
