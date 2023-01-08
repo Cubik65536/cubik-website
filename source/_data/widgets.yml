@@ -23,8 +23,8 @@ welcome:
 timeline:
   layout: timeline
   title: 近期动态
-  api: https://api.github.com/repos/Cubik65536/Cubik65536/issues
-  user:
+  api: https://api.github.com/repos/Cubik65536/Cubik65536/issues?state=closed
+  user: Cubik65536
   type: # 默认不用写，如果是友链朋友圈数据请写 fcircle
   limit: 8
 
