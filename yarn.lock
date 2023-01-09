@@ -267,6 +267,13 @@ decode-uri-component@^0.2.0:
   resolved "https://registry.npmjs.org/decode-uri-component/-/decode-uri-component-0.2.2.tgz"
   integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
+deep-assign@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/deep-assign/-/deep-assign-2.0.0.tgz"
+  integrity sha512-2QhG3Kxulu4XIF3WL5C5x0sc/S17JLgm1SfvDfIRsR/5m7ZGmcejII7fZ2RyWhN0UWIJm0TNM/eKow6LAn3evQ==
+  dependencies:
+    is-obj "^1.0.0"
+
 deepmerge@^4.2.2:
   version "4.2.2"
   resolved "https://registry.npmjs.org/deepmerge/-/deepmerge-4.2.2.tgz"
@@ -488,6 +495,20 @@ hexo-cli@^4.3.0:
     minimist "^1.2.5"
     resolve "^1.11.0"
     tildify "^2.0.0"
+
+hexo-filter-flowchart@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/hexo-filter-flowchart/-/hexo-filter-flowchart-1.0.4.tgz"
+  integrity sha512-WlpLcr7jJc+ukOSl3IfUXq+WlUb89P8wFAeYopmVnmiSiHEd3P9NQfqchSRB2lCN3aKc5vK1kANi3VM0RojAoQ==
+  dependencies:
+    deep-assign "^2.0.0"
+
+hexo-filter-sequence-now@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/hexo-filter-sequence-now/-/hexo-filter-sequence-now-1.0.5.tgz"
+  integrity sha512-4CGsn2r9ABRacwsh2DPoI/vlqOPCV86Z8oM8ZZ9t8SMfJle7gCLMVFxkATW8QG/H6vx3k9ZqVJBxhG9yX/pNjA==
+  dependencies:
+    deep-assign "^2.0.0"
 
 hexo-footnote@^1.0.4:
   version "1.0.4"
@@ -809,6 +830,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+is-obj@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz"
+  integrity sha512-l4RyHgRqGN4Y3+9JHVrNqO+tN0rV5My76uW5/nuO4K1b6vw5G8d/cmFjP9tRfEsdhZNt0IFdZuK/c2Vr4Nb+Qg==
 
 is-plain-object@^5.0.0:
   version "5.0.0"

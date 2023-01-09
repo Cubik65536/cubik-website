@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "hexo": "^6.3.0",
+    "hexo-filter-flowchart": "^1.0.4",
+    "hexo-filter-sequence-now": "^1.0.5",
     "hexo-footnote": "^1.0.4",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",

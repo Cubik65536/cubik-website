@@ -140,6 +140,34 @@ tag_plugins:
   image:
     fancybox: true
 
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+
+  # stellar api
+  stellar:
+    sites: /js/plugins/sites.js
+    friends: /js/plugins/friends.js
+    ghinfo: /js/plugins/ghinfo.js
+    timeline: /js/plugins/timeline.js
+    linkcard: /js/plugins/linkcard.js
+    fcircle: /js/plugins/fcircle.js
+    weibo: /js/plugins/weibo.js
+
+  marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+  
+  ## optional plugins #
+  # MathJax
+  # 需在 Markdown 文件开头加入 mathjax: true
+  # npm uninstall hexo-renderer-marked --save 
+  # npm uninstall hexo-renderer-pandoc --save
+  # npm install hexo-renderer-kramed --save
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
 style:
   font-size:
     root: 16px
