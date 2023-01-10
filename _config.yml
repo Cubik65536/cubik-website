@@ -151,3 +151,10 @@ flowchart:
   # raphael:   # optional, the source url of raphael.js
   # flowchart: # optional, the source url of flowchart.js
   options: # options used for `drawSVG`
+
+# npm install --save hexo-filter-emoji
+emoji:
+  enable: true
+  className: github-emoji
+  styles:
+  customEmojis:

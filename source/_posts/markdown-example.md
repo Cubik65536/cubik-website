@@ -311,7 +311,7 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 
 18&ordm;C  &quot;  &apos;
 
-### Emoji 表情 :smiley
+### Emoji 表情 :smiley:
 
 > Blockquotes :star:
 
