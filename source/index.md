@@ -15,7 +15,7 @@ header: false
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
-{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的&nbsp;PGP](/my-pgp/) %}
+{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) %}
 
 <br/>
 
@@ -25,9 +25,7 @@ header: false
 **[@MC@HMU](https://github.com/MC-HMU)**.
 *服主* **&** *运维*
 
-<br/>
 <hr/>
-<br/>
 
 <p>
   <img src="https://img.shields.io/badge/Apple-MacBook_Pro_15_inch_2019-999999?style=for-the-badge&logo=apple&logoColor=white" style="display: inline-block" />
@@ -89,22 +87,6 @@ header: false
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
 </p>
 
-<br/>
-<hr/>
-
-#### ℹ️ 本页面使用以下技术制作
-
-<p>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=anuraghazra&repo=github-readme-stats&show_owner=true" style="display: inline-block" /></a>
-</p>
-<p>
-  <a href="https://github.com/Ileriayo/markdown-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Ileriayo&repo=markdown-badges&show_owner=true" style="display: inline-block" /></a>
-</p>
-<p>
-  <a href="https://github.com/Envoy-VC/awesome-badges"><img src="https://github-readme-stats.cubik65536.top/api/pin/?theme=github_dark&username=Envoy-VC&repo=awesome-badges&show_owner=true" style="display: inline-block" /></a>
-</p>
-
-
 ### 🎉 感谢：
 
 感谢 [`wngamebox`](https://wngamebox.cn) 和 [@JohnsonRan](https://github.com/JohnsonRan) 为我提供网络与计算基础设施
@@ -126,30 +108,6 @@ header: false
 </p>
 
 {% endabout %}
-
-### 👨🏻‍💻 我的 GitHub
-
-{% timeline %}
-
-<!-- node GitHub -->
-
-<a href="https://github.com/Cubik65536">
-  <img align="left" src="https://img.shields.io/badge/GitHub-Cubik65536-4078c0?style=for-the-badge&logo=github&logoColor=white">
-</a>
-
-<!-- node GitHub 统计数据 -->
-
-<a href="https://github.com/Cubik65536">
-    <img src="https://github-readme-stats.cubik65536.top/api?theme=github_dark&username=Cubik65536&count_private=true&hide=stars&show_icons=true&line_height=24&locale=cn" style="display: inline-block">
-</a>
-
-<!-- node GitHub 统计图表 -->
-
-<a href="https://github.com/Cubik65536">
-    <img src="https://cdn.jsdelivr.net/gh/Cubik65536/Cubik65536@main/profile-3d-contrib/profile-night-rainbow.svg" style="display: inline-block">
-</a>
-
-{% endtimeline %}
 
 ### 🗓 近期日程
 
