@@ -16,6 +16,10 @@ sidebar:
     post: toc, search, ghrepo, ghissues # for pages using 'layout:post'
     wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
 
+######## Index ########
+post-index: # 近期发布 分类 标签 归档 and ...
+  '近期动态': /timeline/ # 这里填写的链接要与对应页面一致，否则可能无法正确高亮
+
 ######## Article ########
 article:
   # 文章许可协议
