@@ -92,16 +92,16 @@ footer:
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
       url: https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420
-      title: '从 keys.openpgp.org 下载 PGP 公钥'
-      description: '我的 PGP 公钥'
+      title: 'largesocial.title.PGP'
+      description: 'largesocial.description.PGP'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
       url: https://foreverblog.cn/go.html
-      title: '穿梭虫洞 - 随机访问十年之约友链博客'
-      description: '虫洞 | WORMHOLE'
+      title: 'largesocial.title.foreverblog'
+      description: 'largesocial.description.foreverblog'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/train.svg" />'
       url: https://www.travellings.cn/go.html
-      title: '开往 - 友链接力'
-      description: '开往 | Travelling'
+      title: 'largesocial.title.travellings'
+      description: 'largesocial.description.travellings'
   picturesocial:
     - url: https://www.foreverblog.cn/blog/2992.html
       image: https://img.foreverblog.cn/logo_en_default.png
