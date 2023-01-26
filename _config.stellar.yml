@@ -76,19 +76,19 @@ footer:
   social:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
       url: https://github.com/Cubik65536
-      title: 'GitHub (@Cubik65536)'
+      title: 'social.github'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/>'
       url: https://gitlab.com/Cubik65536
-      title: 'GitLab (@Cubik65536)'
+      title: 'social.gitlab'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
       url: https://space.bilibili.com/439205819
-      title: '哔哩哔哩 (@Cubik65536)'
+      title: 'social.bilibili'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
-      title: 'Telegram (Cubik''s Teleblog)'
+      title: 'social.telegram'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/>'
       url: mailto:me@cubik65536.top
-      title: '向我发送邮件'
+      title: 'social.email'
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
       url: https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420
@@ -105,7 +105,7 @@ footer:
   picturesocial:
     - url: https://www.foreverblog.cn/blog/2992.html
       image: https://img.foreverblog.cn/logo_en_default.png
-      description: '【CUBIK 的小站】十年之约'
+      description: 'picturesocial.foreverblog'
   sitemap:
     '主页':
       - '[关于](/)'
