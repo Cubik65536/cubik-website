@@ -22,7 +22,7 @@ welcome:
 
 timeline:
   layout: timeline
-  title: 近期动态
+  title: 近期动态 / Timeline
   api: https://api.github.com/repos/Cubik65536/Cubik65536/issues?state=closed
   user: Cubik65536
   type: # 默认不用写，如果是友链朋友圈数据请写 fcircle
@@ -30,7 +30,7 @@ timeline:
 
 'friends-circle':
   layout: timeline
-  title: 朋友圈动态
+  title: 朋友圈动态 / Friends Circle
   api: https://hexo-circle-of-friends.cubik65536.top/all
   type: fcircle
   limit: 8
