@@ -112,7 +112,7 @@ footer:
       - '[footer.sitemap.home.contact-me](/contact-me/)'
       - '[footer.sitemap.home.my-pgp](/my-pgp/)'
     'footer.sitemap.blog.group':
-      - '[footer.sitemap.blog.posts]](/posts/)'
+      - '[footer.sitemap.blog.posts](/posts/)'
       - '[footer.sitemap.blog.categories](/categories/)'
       - '[footer.sitemap.blog.tags](/tags/)'
       - '[footer.sitemap.blog.archives](/archives/)'
