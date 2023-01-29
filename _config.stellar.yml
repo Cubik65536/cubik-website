@@ -23,7 +23,7 @@ post-index: # 近期发布 分类 标签 归档 and ...
 ######## Article ########
 article:
   # 文章许可协议
-  license: '本文采用 [署名 - 非商业性使用 - 相同方式共享 4.0 国际](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议，转载请注明出处。'
+  license: license
   # 分享
   share: [email, link]
 
@@ -107,36 +107,33 @@ footer:
       image: https://img.foreverblog.cn/logo_en_default.png
       description: 'picturesocial.foreverblog'
   sitemap:
-    '主页':
-      - '[关于](/)'
-      - '[联系我](/contact-me/)'
-      - '[我的 PGP](/my-pgp/)'
-    '博客':
-      - '[近期发布](/posts/)'
-      - '[分类](/categories/)'
-      - '[标签](/tags/)'
-      - '[归档](/archives/)'
-      - '[知识库](/wiki/)'
-      - '[笔记](/notes/)'
-      - '[网址收藏](/bookmarks/)'
-      - '[Git 提交信息格式](/commit-message-conventions/)'
-    '社交':
-      - '[友链](/friends/)'
-      - '[哔哩哔哩](https://space.bilibili.com/439205819)'
-      - '[Telegram 频道](https://t.me/cubiksteleblog)'
-      - '[虫洞 | WORMHOLE](https://foreverblog.cn/go.html)'
-      - '[开往 | Travelling](https://www.travellings.cn/go.html)'
-    '联系我':
-      - '[联系我 (详细信息页)](/contact-me/)'
-      - '[Email](mailto:me@cubik65536.top)'
-      - '[Email (PGP 签名的)](mailto:me@enc.cubik65536.top)'
-      - '[GitHub](https://github.com/Cubik65536)'
-      - '[GitLab](https://gitlab.com/Cubik65536)'
-      - '[keys.openpgp.org](https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420)'
-  content: |
-    本博客由 [Hexo](https://hexo.io/) & [Hexo Theme Stellar](https://xaoxuu.com/wiki/stellar/) 强力驱动，您可以在 [GitHub](https://github.com/Cubik65536/cubik-website/) 找到本站源码。
-    Copyright © 2020-2023 [@Cubik65536](https://cubik65536.top) 保留所有权利。
-    本博客所有文章除特别声明外，均采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh) 许可协议，转载请注明出处。
+    'footer.sitemap.home.group':
+      - '[footer.sitemap.home.about](/)'
+      - '[footer.sitemap.home.contact-me](/contact-me/)'
+      - '[footer.sitemap.home.my-pgp](/my-pgp/)'
+    'footer.sitemap.blog.group':
+      - '[footer.sitemap.blog.posts]](/posts/)'
+      - '[footer.sitemap.blog.categories](/categories/)'
+      - '[footer.sitemap.blog.tags](/tags/)'
+      - '[footer.sitemap.blog.archives](/archives/)'
+      - '[footer.sitemap.blog.wiki](/wiki/)'
+      - '[footer.sitemap.blog.notes](/notes/)'
+      - '[footer.sitemap.blog.bookmarks](/bookmarks/)'
+      - '[footer.sitemap.blog.commit-message-conventions](/commit-message-conventions/)'
+    'footer.sitemap.social.group':
+      - '[footer.sitemap.social.friends](/friends/)'
+      - '[footer.sitemap.social.bilibili](https://space.bilibili.com/439205819)'
+      - '[footer.sitemap.social.telegram](https://t.me/cubiksteleblog)'
+      - '[footer.sitemap.social.wormhole](https://foreverblog.cn/go.html)'
+      - '[footer.sitemap.social.travelling](https://www.travellings.cn/go.html)'
+    'footer.sitemap.contact-me.group':
+      - '[footer.sitemap.contact-me.contact-me](/contact-me/)'
+      - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
+      - '[footer.sitemap.contact-me.email-pgp](mailto:me@enc.cubik65536.top)'
+      - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
+      - '[footer.sitemap.contact-me.gitlab](https://gitlab.com/Cubik65536)'
+      - '[footer.sitemap.contact-me.pgp](https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420)'
+  content: 'footer.content'
 
 ######## Tag Plugins ########
 tag_plugins:

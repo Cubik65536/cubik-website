@@ -44,7 +44,6 @@ sidebar: [welcome, friends-circle]
 - 有高质量，原创的内容
 - `HTTPS` 站点，一些使用免费域名（例如 `cf`, `tk`，但不包括 `vercel.app` 这类托管平台提供的域名）的站点可能会被拒绝
 
-
 ### 如何自助添加友链？
 
 {% timeline %}
@@ -54,6 +53,7 @@ sidebar: [welcome, friends-circle]
 新建 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/new/choose) 按照模板格式填写并提交。
 
 为了提高图片加载速度，建议优化头像：
+
 1. 将您的头像图片尺寸调整到 `96px`。
 2. 将压缩后的图片上传到你希望使用的图床并使用此图片链接作为头像。
 
