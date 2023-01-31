@@ -82,9 +82,8 @@ header: false
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" style="display: inline-block" />
   <img src="https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
 </p>
