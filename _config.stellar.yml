@@ -87,7 +87,7 @@ footer:
       url: https://t.me/cubiksteleblog
       title: 'social.telegram'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/>'
-      url: mailto:me@cubik65536.top
+      url: mailto:cubik65536@proton.me
       title: 'social.email'
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
@@ -128,7 +128,7 @@ footer:
       - '[footer.sitemap.social.travelling](https://www.travellings.cn/go.html)'
     'footer.sitemap.contact-me.group':
       - '[footer.sitemap.contact-me.contact-me](/contact-me/)'
-      - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
+      - '[footer.sitemap.contact-me.email](mailto:cubik65536@proton.me)'
       - '[footer.sitemap.contact-me.email-pgp](mailto:me@enc.cubik65536.top)'
       - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
       - '[footer.sitemap.contact-me.gitlab](https://gitlab.com/Cubik65536)'
