@@ -20,7 +20,7 @@ header: false
 > **如果你很长时间都没有收到我的回复，先检查一下你的垃圾邮件箱！**
 
 <p>
-  <a href="mailto:cubik65536@proton.me"><img src="https://img.shields.io/badge/📫%20EMAIL-cubik65536%40proton.me-%2357728B?style=for-the-badge" style="display: inline-block" /></a>
+  <a href="mailto:me%40cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-me%40cubik65536.top-%2357728B?style=for-the-badge" style="display: inline-block" /></a>
 </p>
 
 *我**永远会**在回复或者发送邮件时使用我的 PGP 签名，我**永远会**在回复**加密**邮件时使用加密。*
