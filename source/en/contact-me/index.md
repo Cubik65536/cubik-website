@@ -20,7 +20,7 @@ If you want to contact me, the most efficient way is to send emails to me. I wil
 > **If you have not got my reply for a long time, check your junk box!**
 
 <p>
-  <a href="mailto:me%40cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-me%40cubik65536.top-%2357728B?style=for-the-badge" style="display: inline-block" /></a>
+  <a href="mailto:me@cubik65536.top"><img src="https://img.shields.io/badge/📫%20EMAIL-me%40cubik65536.top-%2357728B?style=for-the-badge" style="display: inline-block" /></a>
 </p>
 
 *I will **ALWAYS** use my PGP signature when I reply or send messages with my email, and I will **ALWAYS** encrypt my message when I reply to an **encrypted** message.*
