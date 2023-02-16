@@ -77,6 +77,7 @@ header: false
   <img src="https://img.shields.io/badge/Spacemacs-%239266CC.svg?&style=for-the-badge&logo=spacemacs&logoColor=white" style="display: inline-block" />
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/sublime_text-%23575757.svg?&style=for-the-badge&logo=sublime-text&logoColor=important" style="display: inline-block" />
   <img src="https://img.shields.io/badge/JetBrains%20Fleet-000000.svg?style=for-the-badge&logo=jetbrains&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/CodeEdit-007ACC?style=for-the-badge&logo=Xcode&logoColor=white" style="display: inline-block" />
 </p>
