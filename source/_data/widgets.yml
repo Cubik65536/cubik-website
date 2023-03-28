@@ -12,7 +12,7 @@ ghuser:
   api: https://api.github.com
   username: Cubik65536 # your github login username
   avatar: true
-  bio: "Java & Kotlin & Python Dev<br/>Minecraft Player<br/><a href=\"https://github.com/CubikTech\">@CubikTech</a> <a href=\"https://ixor.tech\">@iXORTech</a><br/><b>PGP:</b> FFA7 DB11 3223 8420"
+  bio: "Java & Kotlin & Python & Swift Dev<br/>Minecraft Player<br/><a href=\"https://github.com/CubikTech\">@CubikTech</a> <a href=\"https://ixor.tech\">@iXORTech</a> <a href=\"https://github.com/SlopeCraft\">@SlopeCraft</a><br/><b>PGP:</b> 0xFFA7DB1132238420"
 
 welcome:
   layout: markdown
