@@ -3,7 +3,8 @@ title: macOS 版 UTM 虚拟机上手（一）
 date: 2022-05-18 20:15:37
 cover: https://img.cubik65536.top/UTM-on-macOS-screenshot.png
 categories:
-   - 折腾
+  - 日常
+  - 折腾
 tags:
   - 上手
   - 虚拟机

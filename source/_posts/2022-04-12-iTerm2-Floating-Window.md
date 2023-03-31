@@ -3,7 +3,6 @@ title: macOS iTerm2 热键悬浮窗口
 date: 2022-04-12 20:44:06
 cover: https://img.cubik65536.top/iterm2.jpg
 categories: 
-  - 日常
   - 解决方案
   - 折腾
 tags:
@@ -19,7 +18,7 @@ tags:
 
 ## 配置步骤：
 
-{% note color:orange 注意！ 本文基于 iTerm2 **Build 3.4.15** 操作，本文提到的方法可能不适用于更新/旧的版本 %}
+{% note color:orange 注意！本文基于 iTerm2 **Build 3.4.15** 操作，本文提到的方法可能不适用于更新/旧的版本 %}
 
 1. 打开 iTerm2
 2. 使用快捷键 {% kbd ⌘ %} + {% kbd , %} 打开设置页面

@@ -2,8 +2,8 @@
 title: 在 Arch 系列 Linux 操作系统与 macOS 操作系统上上使用 Oh My Zsh 终端并配置 Powerlevel10k 主题等插件
 date: 2022-08-18 14:30:27
 categories:
-  - 折腾
   - 解决方案
+  - 折腾
 tags:
   - 终端
   - Linux
