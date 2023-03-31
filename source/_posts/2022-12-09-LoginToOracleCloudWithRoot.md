@@ -3,7 +3,8 @@ title: 如何使用 root 用户登录 Oracle Cloud
 date: 2022-12-09 23:56:19
 cover:
 categories:
-  - 折腾记录
+  - 日常
+  - 折腾
 tags:
   - 服务器
   - Oracle Cloud
