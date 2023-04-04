@@ -19,7 +19,7 @@ tags:
 
 我也在 1 月 4 日加入了 [开往](https://github.com/travellings-link) 维护组。如果你发现到了，我的侧边栏底部一直有一个 `开往` 链接，这是一个随机访问其他博客方便互访的项目，我也（计算到 3 月底）加入了这个项目半年多了，我认为这个项目非常不错，也欢迎各位加入这个项目。
 
-到月中开学之后，我找到了一个非常有趣的项目 [CodeEdit](https://github.com/CodeEditApp/CodeEdit)。这个项目的目标是使用 Swift 原生技术开发的，并拥有类似于 Xcode（苹果开发的，主要用于开发苹果系统软件的 IDE）的 VSCode 替代品。我也在之后为这个项目贡献了一些代码，修复了在启动时触发触觉触控 (Haptic Touch) 的 bug ([#976](https://github.com/CodeEditApp/CodeEdit/pull/976)) 的 bug（虽然后来因为额外的功能增加，我的代码并没有做出很大的贡献）和版本管理账户管理 bug ([#1013](https://github.com/CodeEditApp/CodeEdit/pull/1013)) 两个 bug。我也很期待这个项目以后的发展，虽然目前这个软件还处于 Alpha 阶段，路线图上我认为很关键的插件功能以及很多其他关键功能都还没有实现，但是我认为这个项目的发展前景还是很好的。
+到月中开学之后，我找到了一个非常有趣的项目 [CodeEdit](https://github.com/CodeEditApp/CodeEdit)。这个项目的目标是使用 Swift 原生技术开发的，并拥有类似于 Xcode（苹果开发的，主要用于开发苹果系统软件的 IDE）的设计风格的 VSCode 替代品。我也在之后为这个项目贡献了一些代码，修复了在启动时触发触觉触控 (Haptic Touch) 的 bug ([#976](https://github.com/CodeEditApp/CodeEdit/pull/976)) 的 bug（虽然后来因为额外的功能增加，我的代码并没有做出很大的贡献）和版本管理账户管理 bug ([#1013](https://github.com/CodeEditApp/CodeEdit/pull/1013)) 两个 bug。我也很期待这个项目以后的发展，虽然目前这个软件还处于 Alpha 阶段，路线图上我认为很关键的插件功能以及很多其他关键功能都还没有实现，但是我认为这个项目的发展前景还是很好的。
 
 在月底，我还完成了博客主题的多语言配置和相关功能的魔改，折腾了不少，效果我觉得还不错。
 
