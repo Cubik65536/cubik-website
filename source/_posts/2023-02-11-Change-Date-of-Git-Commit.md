@@ -29,7 +29,7 @@ GIT_COMMITTER_DATE="Thu Jan 1 00:00:00 1970 -0500" git commit --amend --no-edit 
 
 1. 使用 `git rebase <commit-hash>^ -i` 命令进入交互式 rebase 模式，其中 `<commit-hash>` 为你想要更改的 commit 的 hash 值
 2. 将第一个 commit 开头的 `pick` 改为 `e` (edit)
-3. { % kbd esc % } 并 `:wq` 保存退出
+3. {% kbd esc %} 并 `:wq` 保存退出
 4. 更改 commit 的时间戳
 
     ```bash

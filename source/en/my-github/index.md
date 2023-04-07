@@ -1,9 +1,9 @@
 ---
 robots: noindex,nofollow
 menu_id: home
-seo_title: 主页
-sidebar: [ghuser, recent]
-toc_title: 主页
+seo_title: Index
+sidebar: [ghuser, search, recent, timeline]
+toc_title: Index
 comments: false
 breadcrumb: false
 header: false
@@ -11,7 +11,7 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
-{% navbar active:3 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) %}
+{% navbar active:3 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Chat](/en/chat) %}
 
 <br />
 

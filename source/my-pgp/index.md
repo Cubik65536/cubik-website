@@ -2,7 +2,7 @@
 robots: noindex,nofollow
 menu_id: home
 seo_title: 主页
-sidebar: [ghuser, recent]
+sidebar: [ghuser, search, recent, timeline]
 toc_title: 主页
 comments: false
 breadcrumb: false
@@ -11,7 +11,7 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/GnuPG-Logo.svg height:96px %}
 
-{% navbar active:4 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) %}
+{% navbar active:4 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [留言板](/chat/) %}
 
 <br/>
 
