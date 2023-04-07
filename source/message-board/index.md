@@ -13,6 +13,6 @@ header: false
 
 <br/>
 
-{% navbar active:5 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [留言板](/chat/) %}
+{% navbar active:5 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [留言板](/message-board/) %}
 
 {% endabout %}

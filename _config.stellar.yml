@@ -127,7 +127,7 @@ footer:
       - '[footer.sitemap.social.wormhole](https://foreverblog.cn/go.html)'
       - '[footer.sitemap.social.travelling](https://www.travellings.cn/go.html)'
     'footer.sitemap.contact-me.group':
-      - '[footer.sitemap.contact-me.chat](/chat/)'
+      - '[footer.sitemap.contact-me.message-board](/message-board/)'
       - '[footer.sitemap.contact-me.contact-me](/contact-me/)'
       - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
       - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
