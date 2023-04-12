@@ -63,12 +63,11 @@ comments:
     requiredMeta:
       - nick
       - mail
-    # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
-    lang: zh-CN
     # Whether enable login, can choose from 'enable', 'disable' and 'force'
     login: force
     # comment per page
     pageSize: 10
+    reaction: true
 
 ######## Footer ########
 footer:
