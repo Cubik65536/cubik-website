@@ -38,36 +38,82 @@ search:
 comments:
   service: waline
   waline:
-    js: https://unpkg.com/@waline/client@v2/dist/waline.js
-    css: https://unpkg.com/@waline/client@v2/dist/waline.css
-    # Waline server address url, you should set this to your own link
-    serverURL: https://waline.cubik65536.top
-    # If false, comment count will only be displayed in post page, not in home page
-    commentCount: true
-    # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
-    pageview: true
-    # Custom emoji
-    emoji:
-      - https://unpkg.com/@waline/emojis@1.0.1/weibo
-      - https://unpkg.com/@waline/emojis@1.0.1/alus
-      - https://unpkg.com/@waline/emojis@1.0.1/bilibili
-      - https://unpkg.com/@waline/emojis@1.0.1/qq
-      - https://unpkg.com/@waline/emojis@1.0.1/tieba
-      - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
-    # Comment infomation, valid meta are nick, mail and link
-    meta:
-      - nick
-      - mail
-      - link
-    # Set required meta field, e.g.: [nick] | [nick, mail]
-    requiredMeta:
-      - nick
-      - mail
-    # Whether enable login, can choose from 'enable', 'disable' and 'force'
-    login: force
-    # comment per page
-    pageSize: 10
-    reaction: true
+    zh-CN:
+      js: https://unpkg.com/@waline/client@v2/dist/waline.js
+      css: https://unpkg.com/@waline/client@v2/dist/waline.css
+      # Waline server address url, you should set this to your own link
+      serverURL: https://waline.cubik65536.top
+      # If false, comment count will only be displayed in post page, not in home page
+      commentCount: true
+      # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+      pageview: true
+      # Custom emoji
+      emoji:
+        - https://unpkg.com/@waline/emojis@1.0.1/weibo
+        - https://unpkg.com/@waline/emojis@1.0.1/alus
+        - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+        - https://unpkg.com/@waline/emojis@1.0.1/qq
+        - https://unpkg.com/@waline/emojis@1.0.1/tieba
+        - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+      # Comment infomation, valid meta are nick, mail and link
+      meta:
+        - nick
+        - mail
+        - link
+      # Set required meta field, e.g.: [nick] | [nick, mail]
+      requiredMeta:
+        - nick
+        - mail
+      # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+      lang: zh-CN
+      # Whether enable login, can choose from 'enable', 'disable' and 'force'
+      login: enable
+      # comment per page
+      pageSize: 10
+      reaction: true
+      locale:
+        placeholder: "欢迎评论（填写邮箱可以在回复时收到邮件通知）"
+        sofa: "沙发！来评论吧～"
+        comment: "评论"
+        wordHint: "评论字数应在 $0 到 $1 字之间！\n当前字数：$2"
+    en:
+      js: https://unpkg.com/@waline/client@v2/dist/waline.js
+      css: https://unpkg.com/@waline/client@v2/dist/waline.css
+      # Waline server address url, you should set this to your own link
+      serverURL: https://waline.cubik65536.top
+      # If false, comment count will only be displayed in post page, not in home page
+      commentCount: true
+      # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+      pageview: true
+      # Custom emoji
+      emoji:
+        - https://unpkg.com/@waline/emojis@1.0.1/weibo
+        - https://unpkg.com/@waline/emojis@1.0.1/alus
+        - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+        - https://unpkg.com/@waline/emojis@1.0.1/qq
+        - https://unpkg.com/@waline/emojis@1.0.1/tieba
+        - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+      # Comment infomation, valid meta are nick, mail and link
+      meta:
+        - nick
+        - mail
+        - link
+      # Set required meta field, e.g.: [nick] | [nick, mail]
+      requiredMeta:
+        - nick
+        - mail
+      # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+      lang: en-US
+      # Whether enable login, can choose from 'enable', 'disable' and 'force'
+      login: enable
+      # comment per page
+      pageSize: 10
+      reaction: true
+      locale:
+        placeholder: "Leave a comment here (submit your email address to receive email notifications when someone replies)"
+        sofa: "No.1! Leave a comment here~"
+        comment: "Comments"
+        wordHint: "The comment length should be between $0 and $1 words!\nCurrent number of words: $2"
 
 ######## Footer ########
 footer:
