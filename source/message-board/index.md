@@ -3,6 +3,7 @@ robots: noindex,nofollow
 menu_id: home
 sidebar: [ghuser, search, recent, timeline]
 comments: true
+comment_title: ""
 breadcrumb: false
 header: false
 ---
