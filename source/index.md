@@ -15,7 +15,7 @@ header: false
 
 **一个 Java、Kotlin、Python 和 Swift 开发者 / Java 和 C++ OIer。Minecraft 玩家**
 
-{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [留言板](/message-board/) %}
+{% navbar active:1 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [游戏](/games/) [书籍](/books/) [影视](/movies/) [留言板](/message-board/) %}
 
 <br/>
 

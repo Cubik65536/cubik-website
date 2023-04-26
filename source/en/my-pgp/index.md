@@ -11,13 +11,13 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/GnuPG-Logo.svg height:96px %}
 
-{% navbar active:4 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Message&nbsp;Board](/en/message-board/) %}
+{% navbar active:4 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Games](/en/games/) [Books](/en/books/) [Movies](/en/movies/) [Message&nbsp;Board](/en/message-board/) %}
 
 <br/>
 
 ![PGP Fingerprint](https://img.shields.io/badge/My%20PGP%20Fingerprint-FFA7%20DB11%203223%208420-%23FE5000?style=for-the-badge)
 
-{% note color:warning For PGP signature, you can consider all content signed by `FFA7 DB11 3223 8420` as published by me, and I will be responsible for all content signed by `FFA7 DB11 3223 8420`. Unless I have publicly revoked this key with a revocation certificate, when this happens, all my fingerprints will change, and I will also publicly notify the change of the key. %}
+{% note color:warning "For PGP Signature" You can consider all content signed by `FFA7 DB11 3223 8420` as published by me, and I will be responsible for all content signed by `FFA7 DB11 3223 8420`. Unless I have publicly revoked this key with a revocation certificate, when this happens, all my fingerprints will change, and I will also publicly notify the change of the key. %}
 
 <br/>
 

@@ -11,9 +11,9 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
-{% navbar active:2 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Message&nbsp;Board](/en/message-board/) %}
+{% navbar active:2 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Games](/en/games/) [Books](/en/books/) [Movies](/en/movies/) [Message&nbsp;Board](/en/message-board/) %}
 
-📫 联系我
+📫 Contact Me
 
 If you want to contact me, the most efficient way is to send emails to me. I will check my inbox every 4 to 5 hours, so you should get my response pretty quickly unless the mail system moves your message to the junk box, which I usually will clear directly after a quick check every week (so it's possible that I can't even see your email before it got deleted).
 

@@ -20,6 +20,6 @@ header: false
 
 <br/>
 
-{% navbar active:5 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [留言板](/message-board/) %}
+{% navbar active:8 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [游戏](/games/) [书籍](/books/) [影视](/movies/) [留言板](/message-board/) %}
 
 {% endabout %}
