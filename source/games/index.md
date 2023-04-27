@@ -28,25 +28,36 @@ header: false
 
 <!-- tab 想玩 -->
 
-| 封面 | 标题 | 开发者 | 平台 |
-|:----:|:----:|:------:|:----:|
-|  xx  |  xx  |   xx   |  xx  |
+| 标题 | 开发者 | 平台 |
+|:----:|:------:|:----:|
+| PC Building Simulator 2 | Epic Games Publishing | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> |
 
 <!-- tab 在玩 -->
 
 {% note color:blue "此处包含所有已经将剧情打过，但是仍在游玩 mod 或其他模式的游戏" %}
 
-| 封面 | 标题 | 开发者 | 平台 | 游玩时间 | 推荐指数 |
-|:----:|:----:|:------:|:----:|:--------:|:--------:|
-|  xx  |  xx  |   xx   |  xx  |  20xx -  |  ★★★★☆  |
+| 标题 | 开发者 | 平台 | 游玩时间 | 推荐指数 |
+|:----:|:------:|:----:|:--------:|:--------:|
+| Minecraft | Mojang Studios | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2019 -  |  ★★★★★  |
+| CS:GO | Valve | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2021 -  |  ★★★★  |
+| Mini Metro | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2019 -  |  ★★★★☆  |
+| Mini Motorways | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  |  ★★★★☆  |
+| Grand Theft Auto V | Rockstar North | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2019 -  | ★★★☆ |
+| F1 22 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 -  | ★★★☆ |
+| F1 Manager 2022 | Frontier Developments | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 -  | ★★★★☆ |
+| Game Dev Story+ | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  | ★★★☆ |
+| Airport Story | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★☆ |
+| Cafe Nippon | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★☆ |
 
 <!-- tab 已玩 -->
 
 {% note color:blue "此处仅包含已完全不游玩的游戏" %}
 
-| 封面 | 标题 | 开发者 | 平台 |   游玩时间   | 推荐指数 |
-|:----:|:----:|:------:|:----:|:------------:|:--------:|
-|  xx  |  xx  |   xx   |  xx  |  20xx - 20xx |  ★★★★☆  |
+| 标题 | 开发者 | 平台 |   游玩时间   | 推荐指数 |
+|:----:|:------:|:----:|:------------:|:--------:|
+| MONCAGE | Optillusion | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2021 - 2022 |  ★★★☆   |
+| F1 2020 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2020 - 2021  | ★★★★ |
+| F1 2021 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2021 - 2022  | ★★★★☆ |
 
 {% endtabs %}
 

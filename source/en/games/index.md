@@ -28,25 +28,36 @@ header: false
 
 <!-- tab Wish -->
 
-| Cover | Title | Developer | Platform |
-|:-----:|:-----:|:---------:|:--------:|
-|  xxx  |  xxx  |    xxx    |    xx    |
+| Title | Developer | Platform |
+|:-----:|:---------:|:--------:|
+| PC Building Simulator 2 | Epic Games Publishing | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> |
 
 <!-- tab Playing -->
 
 {% note color:blue "This list contains also games that I played through the story mode, but still playing with mods or other modes" %}
 
-| Cover | Title | Developer | Platform | Playtime | Recommendation |
-|:-----:|:-----:|:---------:|:--------:|:--------:|:--------------:|
-|  xxx  |  xxx  |    xxx    |    xx    |  20xx -  |     ★★★★☆     |
+| Title | Developer | Platform | Playtime | Recommendation |
+|:-----:|:---------:|:--------:|:--------:|:--------------:|
+| Minecraft | Mojang Studios | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2019 -  |  ★★★★★  |
+| CS:GO | Valve | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2021 -  |  ★★★★  |
+| Mini Metro | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2019 -  |  ★★★★☆  |
+| Mini Motorways | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  |  ★★★★☆  |
+| Grand Theft Auto V | Rockstar North | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2019 -  | ★★★☆ |
+| F1 22 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 -  | ★★★☆ |
+| F1 Manager 2022 | Frontier Developments | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 -  | ★★★★☆ |
+| Game Dev Story+ | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  | ★★★☆ |
+| Airport Story | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★☆ |
+| Cafe Nippon | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★☆ |
 
 <!-- tab Played -->
 
 {% note color:blue "This list only contains games that I no longer play" %}
 
-| Cover | Title | Developer | Platform |   Playtime    | Recommendation |
-|:-----:|:-----:|:---------:|:--------:|:-------------:|:--------------:|
-|  xxx  |  xxx  |    xxx    |    xx    |  20xx - 20xx  |     ★★★★☆     |
+| Title | Developer | Platform |   Playtime    | Recommendation |
+|:-----:|:---------:|:--------:|:-------------:|:--------------:|
+| MONCAGE | Optillusion | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2021 - 2022 |  ★★★☆   |
+| F1 2020 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2020 - 2021  | ★★★★ |
+| F1 2021 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2021 - 2022  | ★★★★☆ |
 
 {% endtabs %}
 
