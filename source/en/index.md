@@ -29,8 +29,7 @@ header: false
 <hr/>
 
 <p>
-  <img src="https://img.shields.io/badge/Apple-MacBook_Pro_15_inch_2019-999999?style=for-the-badge&logo=apple&logoColor=white" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/Windows-Windows_To_Go_(on_mac)-0078D6?style=for-the-badge&logo=windows&logoColor=white" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Apple-MacBook_Pro_M2_Pro_14_inch-999999?style=for-the-badge&logo=apple&logoColor=white" />
 </p>
 
 <p>
