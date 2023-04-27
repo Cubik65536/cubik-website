@@ -19,12 +19,13 @@ header: false
 
 <br/>
 
-**[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
 *Founder* **&** *Software Engineer*
+**[@iXORTech](https://github.com/iXORTech)**
 
-**[@MC@HMU](https://github.com/MC-HMU)**.
 *President* **&** *Operator*
+**[@MC@HMU](https://github.com/MC-HMU)**
 
+<br/>
 <hr/>
 
 <p>

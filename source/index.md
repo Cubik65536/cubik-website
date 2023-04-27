@@ -19,12 +19,13 @@ header: false
 
 <br/>
 
-**[@CubikTech](https://github.com/CubikTech)** & **[@iXORTech](https://github.com/iXORTech)**.
+**[@iXORTech](https://github.com/iXORTech)**
 *创始人* **&** *软件工程师*
 
-**[@MC@HMU](https://github.com/MC-HMU)**.
+**[@MC@HMU](https://github.com/MC-HMU)**
 *服主* **&** *运维*
 
+<br/>
 <hr/>
 
 <p>
