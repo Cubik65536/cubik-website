@@ -106,12 +106,12 @@ pageWrapper("Title") {
 在这种情况下，我们的代码与以下写法是等价的：
 
 ``` kt
-pageWrapper(
+body {
   h1 { +"Title" }
   div {
     p { +"Hello World!" }
   }
-)
+}
 ```
 
 那么，Kotlin Ktor HTML DSL 的代码复用就介绍到这里了，希望对你有所帮助！GL & HF！
