@@ -11,6 +11,10 @@ tags:
 
 <!-- more -->
 
+## Mastodon
+
+我成功搭建了我自己的 Mastodon 实例 <https://mstdn.ixor.tech>。我以后也会在这个站点上更新动态，欢迎关注。
+
 ## CodeEdit
 
 这个月我又重新开始关注 [CodeEdit](https://www.codeedit.app) 的开发。该 App 在月中的时候重构了设置界面，将 Xcode 风格更换为了 macOS Ventura 的新式风格设置。我则提交了包括 [#1244](https://github.com/CodeEditApp/CodeEdit/pull/1244)，[#1248](https://github.com/CodeEditApp/CodeEdit/pull/1248) 和 [#1263](https://github.com/CodeEditApp/CodeEdit/pull/1253) 等 PR，修复了版本管理账户无法登录，无法删除账号的 bug，并添加了在报错情况下弹窗提醒用户的功能。
