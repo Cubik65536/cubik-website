@@ -52,8 +52,6 @@ header: false
   <img src="https://img.shields.io/badge/iTerm2-546E7A?style=for-the-badge&logo=iTerm2&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Hyper-000000?style=for-the-badge&logo=hyper&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Windows%20Terminal-4D4D4D?style=for-the-badge&logo=windows-terminal&logoColor=F0F0F0" style="display: inline-block" />
-  &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/GitKraken-%23179287?style=for-the-badge&logo=GitKraken&logoColor=white" style="display: inline-block" />
 </p>
 
 <p>
