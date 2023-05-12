@@ -4,5 +4,7 @@ updates:
   directory: "/"
   schedule:
     interval: daily
+  ignore:
+    - dependency-name: "hexo-theme-landscape"
   open-pull-requests-limit: 20
   
