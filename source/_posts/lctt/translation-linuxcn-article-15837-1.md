@@ -56,7 +56,7 @@ Rust 编程语言中的数组具有以下特性：
 
 创建数组的语法如下：
 
-```
+``` rust
 // 无类型声明
 let variable_name = [element1, element2, ..., elementn];
 
@@ -68,7 +68,7 @@ let variable_name: [data_type; array_length] = [element1, element2, ..., element
 
 来让我们看一个例子来更好地理解这个。
 
-```
+``` rust
 fn main() {
     // 无类型声明
     let greeting = ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '!'];
@@ -88,20 +88,20 @@ fn main() {
 
 然后，我使用 `for` 循环打印了 `greeting` 数组的每个字符。（我很快就会讲到循环。）然后，我打印了 `pi` 数组的前 4 个值。
 
-```
+``` text
 Hello world!
 Pi: 3.11415
 ```
 
 如果你想创建一个数组，其中每个元素都是 _y_，并且出现 _x_ 次，你可以使用以下快捷方式在 Rust 中实现：
 
-```
+``` rust
 let variable_name = [y; x];
 ```
 
 来看一个演示……
 
-```
+``` rust
 fn main() {
     let a = [10; 5];
 
@@ -116,7 +116,7 @@ fn main() {
 
 它的输出如下：
 
-```
+``` text
 10 10 10 10 10
 ```
 
@@ -132,7 +132,7 @@ Rust 中的元组具有以下特性：
 
 创建元组的语法如下：
 
-```
+``` rust
 // 无类型声明
 let variable_name = (element1, element2, ..., element3);
 
@@ -142,7 +142,7 @@ let variable_name: (data_type, ..., data_type) = (element1, element2, ..., eleme
 
 元组的元素写在圆括号中。要访问元素，使用点运算符，后跟该元素的索引。
 
-```
+``` rust
 fn main() {
     let a = (38, 923.329, true);
     let b: (char, i32, f64, bool) = ('r', 43, 3.14, false);
@@ -165,13 +165,13 @@ fn main() {
 
 让我们看看输出……
 
-```
+``` text
 a.0: 38, a.1: 923.329, a.2: true
 b.0: r, b.1: 43, b.2: 3.14, b.3: false
 red: 50, green: 0, blue: 200
 ```
 
-看起来不错 : )
+看起来不错 :)
 
 ### 额外内容：切片
 
@@ -185,7 +185,7 @@ red: 50, green: 0, blue: 200
 
 接下来是数组切片的一个示例：
 
-```
+``` rust
 fn main() {
     let my_array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     let my_slice = &my_array[0..4];
@@ -202,7 +202,7 @@ fn main() {
 
 这是程序输出，以更好地理解正在发生的事情：
 
-```
+``` text
 0
 1
 2
@@ -211,7 +211,7 @@ fn main() {
 
 如果你想要一个 _包含_ 范围，你可以使用 `..=` 作为包含范围的切片运算符。
 
-```
+``` rust
 fn main() {
     let my_array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
     let my_slice = &my_array[0..=4];
@@ -224,7 +224,7 @@ fn main() {
 
 现在，这个范围是从第 0 个元素到第 4 个元素，下面是输出来证明这一点：
 
-```
+``` text
 0
 1
 2
