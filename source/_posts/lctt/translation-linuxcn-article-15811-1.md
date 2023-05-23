@@ -3,6 +3,7 @@ title: "[LCTT 翻译转载] 软件开发｜Rust 基础系列 #3: Rust 中的数�
 poster:
   topic: LCTT 翻译转载
   headline: "软件开发｜Rust 基础系列 #3: Rust 中的数据类型"
+  caption: 现在来讲解数据类型是再自然不过的了。
   color: 标题颜色
 date: 2023-05-13 21:53:20
 cover: https://img.linux.net.cn/data/attachment/album/202305/13/215245a1wjvnwtcwawasnw.jpg
