@@ -41,7 +41,7 @@ license: 本文采用 [署名 - 相同方式共享 4.0 国际](https://creativec
 
 你可能已经在我们声明 `main` 函数时知道了这一点，不管怎么样，还是让我们看一下声明函数的语法。
 
-```
+``` rust
 // 声明函数
 fn function_name() {
     <statement(s)>;
@@ -53,7 +53,7 @@ function_name();
 
 来让我们看一个简单的函数，它将字符串 `"Hi there!"` 打印到标准输出。
 
-```
+``` rust
 fn main() {
     greet();
 }
@@ -67,7 +67,7 @@ fn greet() {
 
 正如预期，它的输出如下：
 
-```
+``` text
 Hi there!
 ```
 
@@ -77,7 +77,7 @@ Hi there!
 
 声明一个接受参数的函数的语法如下：
 
-```
+``` rust
 // 声明函数
 fn function_name(variable_name: type) {
     <statement(s)>;
@@ -95,7 +95,7 @@ function_name(value);
 
 来让我们看一个程序来更好地理解这个。
 
-```
+``` rust
 fn main() {
     food(2, 4);
 }
@@ -114,7 +114,7 @@ fn food(theplas: i32, rotis: i32) {
 
 来让我们看一下程序的输出：
 
-```
+``` text
 我饿了... 我需要 2 个葫芦巴叶饼和 4 个罗提！
 ```
 
@@ -124,7 +124,7 @@ fn food(theplas: i32, rotis: i32) {
 
 就像函数可以接受参数一样，函数也可以返回一个或多个值。这样的函数的语法如下：
 
-```
+``` rust
 // 声明函数
 fn function_name() -> data_type {
     <statement(s)>;
@@ -146,7 +146,7 @@ let x = function_name();
 
 来让我们用一个例子来理解：
 
-```
+``` rust
 fn main() {
     let a = 873;
     let b = {
@@ -173,7 +173,7 @@ fn main() {
 
 来让我们看一个演示以理解函数如何返回一个值：
 
-```
+``` rust
 fn main() {
     println!(
         "如果我从水果摊买了 2 公斤苹果，我必须付给他们 {} 印度卢比。",
@@ -200,7 +200,7 @@ fn wholesale_price(weight: f64) -> f64 {
 
 除了每公斤价格之外，这两个函数还有一个区别。那就是，`retail_price` 函数使用 `return` 关键字返回乘积。而 `wholesale_price` 函数使用表达式返回乘积。
 
-```
+``` text
 如果我从水果摊买了 2 公斤苹果，我必须付给他们 1000 印度卢比。
 但是，如果我从水果摊买了 30 公斤苹果，我就要付给他们 12000 印度卢比。
 ```
@@ -213,7 +213,7 @@ fn wholesale_price(weight: f64) -> f64 {
 
 接下来是一个示例：
 
-```
+``` rust
 fn main() {
     let (maths, english, science, sanskrit) = tuple_func();
 
@@ -240,7 +240,7 @@ fn tuple_func() -> (f64, f64, f64, f64) {
 
 这是我得到的输出：
 
-```
+``` text
 数学考试得分: 84.5
 英语考试得分: 85
 科学考试得分: 75
