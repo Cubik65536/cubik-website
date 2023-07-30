@@ -272,5 +272,5 @@ via: https://itsfoss.com/rust-functions/
 
 [a]: https://itsfoss.com/author/pratham/
 [b]: https://github.com/lkxed/
-[1]: https://linux.cn/article-15837-1.html
+[1]: https://www.cubik65536.top/lctt/translation-linuxcn-article-15837-1/
 [0]: https://img.linux.net.cn/data/attachment/album/202305/29/150550h23qbhahwzb66hb1.jpg

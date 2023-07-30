@@ -222,3 +222,4 @@ via: https://itsfoss.com/rust-introduction/
 [14]: https://learnubuntu.com/install-gcc/?ref=itsfoss.com
 [15]: https://itsfoss.com/run-c-program-linux/
 [0]: https://img.linux.net.cn/data/attachment/album/202304/10/164143yksc0b56bbs0itiu.jpg
+

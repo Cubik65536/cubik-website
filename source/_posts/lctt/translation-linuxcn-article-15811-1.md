@@ -248,5 +248,5 @@ via: https://itsfoss.com/rust-data-types/
 [5]: https://zh.wikipedia.org/zh-cn/IEEE_754
 [6]: https://www.ascii-code.com/?ref=itsfoss.com
 [7]: https://unicode-table.com/en/200D/?ref=itsfoss.com
-[8]: https://linux.cn/article-15771-1.html
+[8]: https://www.cubik65536.top/lctt/translation-linuxcn-article-15771-1/
 [0]: https://img.linux.net.cn/data/attachment/album/202305/13/215245a1wjvnwtcwawasnw.jpg

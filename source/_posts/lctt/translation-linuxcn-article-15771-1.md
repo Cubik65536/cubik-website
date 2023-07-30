@@ -447,7 +447,7 @@ via: https://itsfoss.com/rust-variables/
 [a]: https://itsfoss.com/author/pratham/
 [b]: https://github.com/lkxed/
 [1]: https://itsfoss.com/content/images/2023/03/linux-mega-packt.webp
-[2]: https://linux.cn/article-15709-1.html
+[2]: https://www.cubik65536.top/lctt/translation-linuxcn-article-15709-1/
 [3]: https://doc.rust-lang.org/book/appendix-02-operators.html?ref=itsfoss.com#operators
 [4]: https://blog.thefossguy.com/posts/immutable-vars-vs-constants-rs.md?ref=itsfoss.com
 [5]: https://itsfoss.com/content/images/2023/02/image.png
