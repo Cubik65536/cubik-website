@@ -64,12 +64,12 @@ sidebar: [welcome, friends-circle]
 本站友链信息（如果您的主题需要博客主题色/卡片色，请使用 `#57728B`）：
 
 {% codeblock lang:yaml %}
-title: Cubik 的小站
-url: https://cubik65536.top
-avatar: https://img.cubik65536.top/CubikLogo.png
-screenshot: https://img.cubik65536.top/cubik65536-top-screenshot.png
-description: RECOMMENDED BY DR.CREATIVE
-color: #57728B
+title: "Cubik 的小站"
+url: "https://cubik65536.top"
+avatar: "https://img.cubik65536.top/CubikLogo.png"
+screenshot: "https://img.cubik65536.top/cubik65536-top-screenshot.png"
+description: "RECOMMENDED BY DR.CREATIVE"
+color: "#57728B"
 {% endcodeblock %}
 
 待管理员审核通过，添加了 `active` 标签后，回来刷新即可生效。
