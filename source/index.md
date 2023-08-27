@@ -19,11 +19,9 @@ header: false
 
 <br/>
 
-**[@iXORTech](https://github.com/iXORTech)**
-*创始人* **&** *软件工程师*
+[@iXORTech](https://github.com/iXORTech) **创始人** & **软件开发主管**
 
-**[@MC@HMU](https://github.com/MC-HMU)**
-*服主* **&** *运维*
+[@MC@HMU](https://github.com/MC-HMU) **服主** & **运维**
 
 <br/>
 <hr/>
