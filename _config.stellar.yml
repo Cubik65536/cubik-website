@@ -128,9 +128,6 @@ footer:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
       url: https://space.bilibili.com/439205819
       title: 'social.bilibili'
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
-      url: https://mstdn.ixor.tech/@cubik65536
-      title: 'social.mastodon'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
       title: 'social.telegram'
