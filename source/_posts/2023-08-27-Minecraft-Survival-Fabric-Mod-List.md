@@ -304,6 +304,7 @@ tags:
 - [Carpet Extra](https://github.com/gnembon/carpet-extra)
 - [Carpet AMS Addition](https://github.com/Minecraft-AMS/Carpet-AMS-Addition/blob/master/readme_folder/rules_cn.md)
 - [Carpet TIS Addition](https://github.com/TISUnion/Carpet-TIS-Addition)
+- [Gugle Carpet Addition](https://github.com/Gu-ZT/gugle-carpet-addition)
 - [Plusls Carpet Addition](https://github.com/Nyan-Work/plusls-carpet-addition)
 
 ## MASA 系列（实用类 mod，但因为数量众多且成系列，所以单独列出）
