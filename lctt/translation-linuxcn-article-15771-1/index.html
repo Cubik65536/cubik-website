@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #2: 在 Rust 程序中使用变量和常量 - Cubik 的小站</title>
+
+  
+    <meta name="description" content="原文：Rust Basics Series #2: Using Variables and Constants in Rust Programs 首发：Rust 基础系列 #2: 在 Rust 程序中使用变量和常量 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[LCTT 翻译转载] 软件开发｜Rust 基础系列 #2: 在 Rust 程序中使用变量和常量">
+<meta property="og:url" content="https://www.cubik65536.top/lctt/translation-linuxcn-article-15771-1/">
+<meta property="og:site_name" content="Cubik 的小站">
+<meta property="og:description" content="原文：Rust Basics Series #2: Using Variables and Constants in Rust Programs 首发：Rust 基础系列 #2: 在 Rust 程序中使用变量和常量 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://itsfoss.com/content/images/2023/02/image.png">
+<meta property="article:published_time" content="2023-05-01T14:50:20.000Z">
+<meta property="article:modified_time" content="2023-05-01T14:50:20.000Z">
+<meta property="article:author" content="Cubik65536">
+<meta property="article:tag" content="Rust">
+<meta property="article:tag" content="Rust 基础">
+<meta property="article:tag" content="软件开发">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://itsfoss.com/content/images/2023/02/image.png">
+  
+  
+  
+  <meta name="keywords" content="Rust,Rust 基础,软件开发">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Cubik 的小站" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    
+      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    
+      <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    
+      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    
+      <meta name="msapplication-TileColor" content="#fd7600">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.cubik65536.top/CubikLogoAlpha.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Cubik 的小站</div><div class="sub cap">RECOMMENDED BY<br/> DR.CREATIVE</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item active" href="/posts/">文章</a><a class="nav-item" href="/wiki/">知识库</a><a class="nav-item" href="/notes/">便签</a><a class="nav-item" href="/friends/">友链</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">[LCTT 翻译转载] 软件开发｜Rust 基础系列 #2: 在 Rust 程序中使用变量和常量</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rust-%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97-2-%E5%9C%A8-rust-%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%8F%98%E9%87%8F%E5%92%8C%E5%B8%B8%E9%87%8F"><span class="toc-text">Rust 基础系列 #2:
+在 Rust 程序中使用变量和常量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#rust-%E5%8F%98%E9%87%8F%E7%9A%84%E7%8B%AC%E7%89%B9%E4%B9%8B%E5%A4%84"><span class="toc-text">Rust 变量的独特之处</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rust-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A6%82%E8%A7%82"><span class="toc-text">Rust 数据类型概观</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rust-%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="toc-text">Rust 编译器的错误信息</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E5%8F%98%E9%87%8F%E7%9A%84%E4%B8%8D%E5%8F%AF%E5%8F%98%E6%80%A7"><span class="toc-text">测试变量的不可变性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%9C%AA%E5%88%9D%E5%A7%8B%E5%8C%96%E7%9A%84%E5%8F%98%E9%87%8F"><span class="toc-text">使用未初始化的变量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F%E4%BA%A4%E6%8D%A2%E6%95%B0%E5%AD%97"><span class="toc-text">示例程序：交换数字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E6%9C%AA%E4%BD%BF%E7%94%A8%E7%9A%84%E5%8F%98%E9%87%8F"><span class="toc-text">使用未使用的变量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97"><span class="toc-text">算术运算</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F%E4%B8%80%E4%B8%AA%E7%94%9F%E9%94%88%E7%9A%84%E6%B8%A9%E5%BA%A6%E8%AE%A1"><span class="toc-text">示例程序：一个生锈的温度计</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E9%87%8F"><span class="toc-text">常量</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F%E7%9A%84%E5%AF%B9%E6%AF%94"><span class="toc-text">变量与常量的对比</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%B8%B8%E9%87%8F%E7%9A%84%E7%A4%BA%E4%BE%8B%E7%A8%8B%E5%BA%8F%E8%AE%A1%E7%AE%97%E5%9C%86%E7%9A%84%E9%9D%A2%E7%A7%AF"><span class="toc-text">使用常量的示例程序：计算圆的面积</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rust-%E4%B8%AD%E7%9A%84%E5%8F%98%E9%87%8F%E9%81%AE%E8%94%BD"><span class="toc-text">Rust 中的变量遮蔽</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a rel="me" class="social" title="GitHub (@Cubik65536)" href="https://github.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/github.svg" /></a><a rel="me" class="social" title="GitLab (@Cubik65536)" href="https://gitlab.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/></a><a rel="me" class="social" title="哔哩哔哩 (@Cubik65536)" href="https://space.bilibili.com/439205819" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/></a><a rel="me" class="social" title="Telegram (Cubik's Teleblog)" href="https://t.me/cubiksteleblog" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/></a><a rel="me" class="social" title="向我发送邮件" href="mailto:me@cubik65536.top" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/></a></div><br/><div class="large-social-wrap"><a class="large-social" title="从 keys.openpgp.org 下载 PGP 公钥" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" /><span class="description">我的 PGP 公钥</span></div></a><a class="large-social" title="穿梭虫洞 - 随机访问十年之约友链博客" href="https://foreverblog.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" /><span class="description">虫洞 | WORMHOLE</span></div></a><a class="large-social" title="开往 - 友链接力" href="https://www.travellings.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/train.svg" /><span class="description">开往 | Travelling</span></div></a></div><br/><div class="large-social-wrap"><a class="large-social" href="/lctt/translation-linuxcn-article-15771-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">Chinese (S)</span></div></a><a class="large-social" href="/en/lctt/translation-linuxcn-article-15771-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">English</span></div></a></div><br/>&nbsp;<a href="https://www.foreverblog.cn/blog/2992.html" target="_blank" ><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/logo_en_default.png" alt="【CUBIK 的小站】十年之约" style="width:175px;height:auto;" /></a></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/posts">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/LCTT/">LCTT</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/">转载</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/%E7%BF%BB%E8%AF%91/">翻译</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-05-01T14:50:20.000Z">2023-05-01</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #2: 在 Rust 程序中使用变量和常量</span></h1>
+<blockquote>
+<p>原文：<a target="_blank" rel="noopener" href="https://itsfoss.com/rust-variables/">Rust Basics
+Series #2: Using Variables and Constants in Rust Programs</a> 首发：<a
+target="_blank" rel="noopener" href="https://linux.cn/article-15771-1.html">Rust 基础系列 #2: 在 Rust
+程序中使用变量和常量</a> @<a target="_blank" rel="noopener" href="https://linux.cn/">Linux 中国</a>
+作者：<a target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a>
+译者：<a target="_blank" rel="noopener" href="https://linux.cn/lctt/">LCTT</a> <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik</a></p>
+</blockquote>
+<span id="more"></span>
+<h2 id="rust-基础系列-2-在-rust-程序中使用变量和常量">Rust 基础系列 #2:
+在 Rust 程序中使用变量和常量</h2>
+<p><img
+src="https://img.linux.net.cn/data/attachment/album/202305/01/144948gp13zdindx50ll0p.png" /></p>
+<blockquote>
+<p>推进你的 Rust 学习，熟悉 Rust 程序的变量和常量。</p>
+</blockquote>
+<p>在 <a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15709-1/">该系列的第一章</a>中，我讲述了为什么
+Rust 是一门越来越流行的编程语言。我还展示了如何 <a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15709-1/">在
+Rust 中编写 Hello World 程序</a>。</p>
+<p>让我们继续 Rust 之旅。在本文中，我将向你介绍 Rust
+编程语言中的变量和常量。</p>
+<p>此外，我还将讲解一个称为“<ruby>遮蔽<rt>shadowing</rt></ruby>”的新编程概念。</p>
+<h3 id="rust-变量的独特之处">Rust 变量的独特之处</h3>
+<p>在编程语言中，变量是指 <em>存储某些数据的内存地址的一个别名</em>
+。</p>
+<p>对 Rust 语言来讲也是如此。但是 Rust
+有一个独特的“特性”。每个你声明的变量都是 <strong>默认
+<ruby>不可变的<rt>immutable</rt></ruby></strong>
+。这意味着一旦给变量赋值，就不能再改变它的值。</p>
+<p>这个决定是为了确保默认情况下，你不需要使用 <ruby>自旋锁<rt>spin
+lock</rt></ruby> 或 <ruby>互斥锁<rt>mutex</rt></ruby>
+等特殊机制来引入多线程。Rust <strong>会保证</strong>
+安全的并发。由于所有变量（默认情况下）都是不可变的，因此你不需要担心线程会无意中更改变量值。</p>
+<p>这并不是在说 Rust
+中的变量就像常量一样，因为它们确实不是常量。变量可以被显式地定义为可变的。这样的变量称为
+<strong>可变变量</strong> 。</p>
+<p>这是在 Rust 中声明变量的语法：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 默认情况下不可变</span></span><br><span class="line"><span class="comment">// 初始化值是**唯一**的值</span></span><br><span class="line"><span class="keyword">let</span> <span class="variable">variable_name</span> = value;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 使用 &#x27;mut&#x27; 关键字定义可变变量</span></span><br><span class="line"><span class="comment">// 初始化值可以被改变</span></span><br><span class="line"><span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">variable_name</span> = value;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>🚧
+尽管你可以改变可变变量的值，但你不能将另一种数据类型的值赋值给它。</p>
+<p>这意味着，如果你有一个可变的浮点型变量，你不能在后面将一个字符赋值给它。</p>
+</blockquote>
+<h3 id="rust-数据类型概观">Rust 数据类型概观</h3>
+<p>在上一篇文章中，你可能注意到了我提到 Rust
+是一种强类型语言。但是在定义变量时，你不需要指定数据类型，而是使用一个通用的关键字
+<code>let</code>。</p>
+<p>Rust
+编译器可以根据赋值给变量的值推断出变量的数据类型。但是如果你仍然希望明确指定数据类型并希望注释类型，那么可以这样做。以下是语法：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="variable">variable_name</span>: data_type = value;</span><br></pre></td></tr></table></figure>
+<p>下面是 Rust 编程语言中一些常见的数据类型：</p>
+<ul>
+<li><strong>整数类型</strong>：分别用于有符号和无符号的 32 位整数的
+<code>i32</code> 和 <code>u32</code></li>
+<li><strong>浮点类型</strong>：分别用于 32 位和 64 位浮点数的
+<code>f32</code> 和 <code>f64</code></li>
+<li><strong>布尔类型</strong>：<code>bool</code></li>
+<li><strong>字符类型</strong>：<code>char</code></li>
+</ul>
+<p>我会在下一篇文章中更详细地介绍 Rust
+的数据类型。现在，这应该足够了。</p>
+<blockquote>
+<p>🚧 Rust 并不支持隐式类型转换。因此，如果你将值 <code>8</code>
+赋给一个浮点型变量，你将会遇到编译时错误。你应该赋的值是 <code>8.</code>
+或 <code>8.0</code>。</p>
+</blockquote>
+<p>Rust 还强制要求在读取存储在其中的值之前初始化变量。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="comment">// 该代码块不会被编译</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, a); <span class="comment">// 本行报错</span></span><br><span class="line">    <span class="comment">// 读取一个**未初始化**变量的值是一个编译时错误</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#123; <span class="comment">// 该代码块会被编译</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span>;</span><br><span class="line">    a = <span class="number">128</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;&#123;&#125;&quot;</span>, a); <span class="comment">// 本行不会报错</span></span><br><span class="line">    <span class="comment">// 变量 &#x27;a&#x27; 有一个初始值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果你在不初始化的情况下声明一个变量，并在给它赋值之前使用它，Rust
+编译器将会抛出一个 <strong>编译时错误</strong> 。</p>
+<p>虽然错误很烦人，但在这种情况下，Rust
+编译器强制你不要犯写代码时常见的错误之一：未初始化的变量。</p>
+<h3 id="rust-编译器的错误信息">Rust 编译器的错误信息</h3>
+<p>来写几个程序，你将</p>
+<ul>
+<li>通过执行“正常”的任务来理解 Rust
+的设计，这些任务实际上是内存相关问题的主要原因</li>
+<li>阅读和理解 Rust 编译器的错误/警告信息</li>
+</ul>
+<h4 id="测试变量的不可变性">测试变量的不可变性</h4>
+<p>让我们故意写一个试图修改不可变变量的程序，看看接下来会发生什么。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">a</span> = <span class="number">172</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">273</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a: &#123;a&#125;, b: &#123;b&#125;&quot;</span>);</span><br><span class="line"></span><br><span class="line">    a = <span class="number">380</span>;</span><br><span class="line">    b = <span class="number">420</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a: &#123;&#125;, b: &#123;&#125;&quot;</span>, a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>直到第 4 行看起来都是一个简单的程序。但是在第 7 行，变量
+<code>b</code> —— 一个不可变变量 —— 的值被修改了。</p>
+<p>注意打印 Rust 变量值的两种方法。在第 4
+行，我将变量括在花括号中，以便打印它们的值。在第 8
+行，我保持括号为空，并使用 C
+的风格将变量作为参数。这两种方法都是有效的。（除了修改不可变变量的值，这个程序中的所有内容都是正确的。）</p>
+<p>来编译一下！如果你按照上一章的步骤做了，你已经知道该怎么做了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rustc main.rs</span></span><br><span class="line">error[E0384]: cannot assign twice to immutable variable `b`</span><br><span class="line"><span class="meta prompt_"> --&gt; </span><span class="language-bash">main.rs:7:5</span></span><br><span class="line">  |</span><br><span class="line">3 |     let b = 273;</span><br><span class="line">  |         -</span><br><span class="line">  |         |</span><br><span class="line">  |         first assignment to `b`</span><br><span class="line">  |         help: consider making this binding mutable: `mut b`</span><br><span class="line">...</span><br><span class="line">7 |     b = 420;</span><br><span class="line">  |     ^^^^^^^ cannot assign twice to immutable variable</span><br><span class="line"></span><br><span class="line">error: aborting due to previous error</span><br><span class="line"></span><br><span class="line">For more information about this error, try `rustc --explain E0384`.</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📋 “binding” 一词是指变量名。但这只是一个简单的解释。</p>
+</blockquote>
+<p>这很好的展示了 Rust
+强大的错误检查和信息丰富的错误信息。第一行展示了阻止上述代码编译的错误信息：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">error[E0384]: cannot assign twice to immutable variable b</span><br></pre></td></tr></table></figure>
+<p>这意味着，Rust 编译器注意到我试图给变量 <code>b</code>
+重新赋值，但变量 <code>b</code>
+是一个不可变变量。所以这就是导致这个错误的原因。</p>
+<p>编译器甚至可以识别出错误发生的确切行和列号。</p>
+<p>在显示 <code>first assignment to b</code>
+的行下面，是提供帮助的行。因为我正在改变不可变变量 <code>b</code>
+的值，所以我被告知使用 <code>mut</code> 关键字将变量 <code>b</code>
+声明为可变变量。</p>
+<blockquote>
+<p>🖥️ 自己实现一个修复来更好地理解手头的问题。</p>
+</blockquote>
+<h4 id="使用未初始化的变量">使用未初始化的变量</h4>
+<p>现在，让我们看看当我们尝试读取未初始化变量的值时，Rust
+编译器会做什么。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span>: <span class="type">i32</span>;</span><br><span class="line">    a = <span class="number">123</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a: &#123;a&#125;&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span>: <span class="type">i32</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;b: &#123;b&#125;&quot;</span>);</span><br><span class="line">    b = <span class="number">123</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里，我有两个不可变变量 <code>a</code> 和
+<code>b</code>，在声明时都没有初始化。变量 <code>a</code>
+在其值被读取之前被赋予了一个值。但是变量 <code>b</code>
+的值在被赋予初始值之前被读取了。</p>
+<p>来编译一下，看看结果。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">rustc main.rs</span></span><br><span class="line">warning: value assigned to `b` is never read</span><br><span class="line"><span class="meta prompt_"> --&gt; </span><span class="language-bash">main.rs:8:5</span></span><br><span class="line">  |</span><br><span class="line">8 |     b = 123;</span><br><span class="line">  |     ^</span><br><span class="line">  |</span><br><span class="line">  = help: maybe it is overwritten before being read?</span><br><span class="line">  = note: `#[warn(unused_assignments)]` on by default</span><br><span class="line"></span><br><span class="line">error[E0381]: used binding `b` is possibly-uninitialized</span><br><span class="line"><span class="meta prompt_"> --&gt; </span><span class="language-bash">main.rs:7:19</span></span><br><span class="line">  |</span><br><span class="line">6 |     let b: i32;</span><br><span class="line">  |         - binding declared here but left uninitialized</span><br><span class="line">7 |     println!(&quot;b: &#123;b&#125;&quot;);</span><br><span class="line">  |                   ^ `b` used here but it is possibly-uninitialized</span><br><span class="line">  |</span><br><span class="line">  = note: this error originates in the macro `$crate::format_args_nl` which comes from the expansion of the macro `println` (in Nightly builds, run with -Z macro-backtrace for more info)</span><br><span class="line"></span><br><span class="line">error: aborting due to previous error; 1 warning emitted</span><br><span class="line"></span><br><span class="line">For more information about this error, try `rustc --explain E0381`.</span><br></pre></td></tr></table></figure>
+<p>这里，Rust 编译器抛出了一个编译时错误和一个警告。警告说变量
+<code>b</code> 的值从来没有被读取过。</p>
+<p>但是这是荒谬的！变量 <code>b</code> 的值在第 7
+行被访问了。但是仔细看；警告是关于第 8
+行的。这很令人困惑；让我们暂时跳过这个警告，继续看错误。</p>
+<p>这个错误信息说
+<code>used binding b is possibly-uninitialized</code>。和之前的例子一样，Rust
+编译器指出错误是由于尝试在第 7 行读取变量 <code>b</code>
+的值而引起的。读取变量 <code>b</code>
+的值是错误的原因是它的值没有初始化。在 Rust
+编程语言中，这是非法的。因此编译时错误出现。</p>
+<blockquote>
+<p>🖥️ 这个错误可以很容易地通过交换第 7 和第 8
+行的代码来解决。试一下，看看错误是否消失了。</p>
+</blockquote>
+<h3 id="示例程序交换数字">示例程序：交换数字</h3>
+<p>现在你已经熟悉了常见的变量相关问题，让我们来看一个交换两个变量值的程序。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">a</span> = <span class="number">7186932</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">b</span> = <span class="number">1276561</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a: &#123;a&#125;, b: &#123;b&#125;&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 交换变量值</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">temp</span> = a;</span><br><span class="line">    a = b;</span><br><span class="line">    b = temp;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a: &#123;&#125;, b: &#123;&#125;&quot;</span>, a, b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我在这里声明了两个变量 <code>a</code> 和
+<code>b</code>。这两个变量都是可变的，因为我希望在后面改变它们的值。我赋予了一些随机值。最初，我打印了这些变量的值。</p>
+<p>然后，在第 8 行，我创建了一个名为 <code>temp</code>
+的不可变变量，并将存储在 <code>a</code>
+中的值赋给它。之所以这个变量是不可变的，是因为 <code>temp</code>
+的值不会改变。</p>
+<p>要交换值，我将变量 <code>b</code> 的值赋给变量
+<code>a</code>，在下一行，我将 <code>temp</code> 的值（它包含
+<code>a</code> 的值）赋给变量
+<code>b</code>。现在值已经交换了，我打印了变量 <code>a</code> 和
+<code>b</code> 的值。</p>
+<p>在编译并执行上面的代码后，我得到了以下输出：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a: 7186932, b: 1276561</span><br><span class="line">a: 1276561, b: 7186932</span><br></pre></td></tr></table></figure>
+<p>正如你所见，值已经交换了。完美。</p>
+<h3 id="使用未使用的变量">使用未使用的变量</h3>
+<p>当你声明了一些变量，打算在后面使用它们，但是还没有使用它们，然后编译你的
+Rust 代码来检查一些东西时，Rust 编译器会警告你。</p>
+<p>原因是显而易见的。不会被使用的变量占用了不必要的初始化时间（CPU
+周期）和内存空间。如果不会被使用，为什么要在程序写上它呢？尽管编译器确实会优化这一点。但是它仍然是一个问题，因为它会以多余的代码的形式影响可读性。</p>
+<p>但是，有的时候，你可能会面对这样的情况：创建一个变量与否不在你的控制之下。比如说，当一个函数返回多个值，而你只需要其中的一些值时。在这种情况下，你不能要求库维护者根据你的需要调整他们的函数。</p>
+<p>所以，在这种情况下，你可以写一个以下划线开头的变量，Rust
+编译器将不再显示这样的警告。如果你真的不需要使用存储在该未使用变量中的值，你可以简单地将其命名为
+<code>_</code>（下划线），Rust 编译器也会忽略它！</p>
+<p>接下来的程序不仅不会生成任何输出，而且也不会生成任何警告和/或错误消息：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">_unnecessary_var</span> = <span class="number">0</span>; <span class="comment">// 没有警告</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">_</span> = <span class="number">0.0</span>; <span class="comment">// 完全忽略</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="算术运算">算术运算</h3>
+<p>数学就是数学，Rust 并没有在这方面创新。你可以使用在其他编程语言（如
+C、C++ 和/或 Java）中使用过的所有算术运算符。</p>
+<p>包含可以在 Rust
+编程语言中使用的所有运算符和它们的含义的完整列表可以在 <a
+target="_blank" rel="noopener" href="https://doc.rust-lang.org/book/appendix-02-operators.html?ref=itsfoss.com#operators">这里</a>
+找到。</p>
+<h4 id="示例程序一个生锈的温度计">示例程序：一个生锈的温度计</h4>
+<p>（LCTT 译注：这里的温度计“生锈”了是因为它是使用
+Rust（生锈）编写的，原作者在这里玩了一个双关。）</p>
+<p>接下来是一个典型的程序，它将华氏度转换为摄氏度，反之亦然。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">boiling_water_f</span>: <span class="type">f64</span> = <span class="number">212.0</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">frozen_water_c</span>: <span class="type">f64</span> = <span class="number">0.0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">boiling_water_c</span> = (boiling_water_f - <span class="number">32.0</span>) * (<span class="number">5.0</span> / <span class="number">9.0</span>);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">frozen_water_f</span> = (frozen_water_c * (<span class="number">9.0</span> / <span class="number">5.0</span>)) + <span class="number">32.0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(</span><br><span class="line">        <span class="string">&quot;Water starts boiling at &#123;&#125;°C (or &#123;&#125;°F).&quot;</span>,</span><br><span class="line">        boiling_water_c, boiling_water_f</span><br><span class="line">    );</span><br><span class="line">    <span class="built_in">println!</span>(</span><br><span class="line">        <span class="string">&quot;Water starts freezing at &#123;&#125;°C (or &#123;&#125;°F).&quot;</span>,</span><br><span class="line">        frozen_water_c, frozen_water_f</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>没什么大不了的……华氏温度转换为摄氏温度，反之亦然。</p>
+<p>正如你在这里看到的，由于 Rust 不允许自动类型转换，我不得不在整数
+32、9 和 5 后放一个小数点。除此之外，这与你在 C、C++ 和/或 Java
+中所做的类似。</p>
+<p>作为练习，尝试编写一个程序，找出给定数中有多少位数字。</p>
+<h3 id="常量">常量</h3>
+<p>如果你有一些编程知识，你可能知道这意味着什么。常量是一种特殊类型的变量，它的值<strong>永远不会改变</strong>。<em>它保持不变</em>。</p>
+<p>在 Rust 编程语言中，使用以下语法声明常量：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> CONSTANT_NAME: data_type = value;</span><br></pre></td></tr></table></figure>
+<p>如你所见，声明常量的语法与我们在 Rust
+中看到的变量声明非常相似。但是有两个不同之处：</p>
+<ul>
+<li>常量的名字需要像 <code>SCREAMING_SNAKE_CASE</code>
+这样。所有的大写字母和单词之间用下划线分隔。</li>
+<li>常量的数据类型<strong>必须</strong>被显性定义。</li>
+</ul>
+<h4 id="变量与常量的对比">变量与常量的对比</h4>
+<p>你可能在想，既然变量默认是不可变的，为什么语言还要包含常量呢？</p>
+<p>接下来这个表格应该可以帮助你消除疑虑。（如果你好奇并且想更好地理解这些区别，你可以看看<a
+target="_blank" rel="noopener" href="https://blog.thefossguy.com/posts/immutable-vars-vs-constants-rs.md?ref=itsfoss.com">我的博客</a>，它详细地展示了这些区别。）</p>
+<figure>
+<img src="https://itsfoss.com/content/images/2023/02/image.png"
+alt="一个展示 Rust 编程语言中变量和常量之间区别的表格" />
+<figcaption aria-hidden="true">一个展示 Rust
+编程语言中变量和常量之间区别的表格</figcaption>
+</figure>
+<h4
+id="使用常量的示例程序计算圆的面积">使用常量的示例程序：计算圆的面积</h4>
+<p>这是一个很直接的关于 Rust
+中常量的简单程序。它计算圆的面积和周长。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">const</span> PI: <span class="type">f64</span> = <span class="number">3.14</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">radius</span>: <span class="type">f64</span> = <span class="number">50.0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">circle_area</span> = PI * (radius * radius);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">circle_perimeter</span> = <span class="number">2.0</span> * PI * radius;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;有一个周长为 &#123;radius&#125; 厘米的圆&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;它的面积是 &#123;&#125; 平方厘米&quot;</span>, circle_area);</span><br><span class="line">    <span class="built_in">println!</span>(</span><br><span class="line">        <span class="string">&quot;以及它的周长是 &#123;&#125; 厘米&quot;</span>,</span><br><span class="line">        circle_perimeter</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如果运行代码，将产生以下输出：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">有一个周长为 50 厘米的圆</span><br><span class="line">它的面积是 7850 平方厘米</span><br><span class="line">以及它的周长是 314 厘米</span><br></pre></td></tr></table></figure>
+<h3 id="rust-中的变量遮蔽">Rust 中的变量遮蔽</h3>
+<p>如果你是一个 C++
+程序员，你可能已经知道我在说什么了。当程序员<strong>声明</strong>一个与已经声明的变量同名的新变量时，这就是变量遮蔽。</p>
+<p>与 C++ 不同，Rust 允许你在同一作用域中执行变量遮蔽！</p>
+<blockquote>
+<p>💡
+当程序员遮蔽一个已经存在的变量时，新变量会被分配一个新的内存地址，但是使用与现有变量相同的名称引用。</p>
+</blockquote>
+<p>来看看它在 Rust 中是如何工作的。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">108</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a 的地址: &#123;:p&#125;, a 的值 &#123;a&#125;&quot;</span>, &amp;a);</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">56</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;a 的地址: &#123;:p&#125;, a 的值: &#123;a&#125; // 遮蔽后&quot;</span>, &amp;a);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">b</span> = <span class="number">82</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\nb 的地址: &#123;:p&#125;, b 的值: &#123;b&#125;&quot;</span>, &amp;b);</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">b</span> = <span class="number">120</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;b的地址: &#123;:p&#125;, b的值: &#123;b&#125; // 遮蔽后&quot;</span>, &amp;b);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">c</span> = <span class="number">18</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\nc 的地址: &#123;:p&#125;, c的值: &#123;c&#125;&quot;</span>, &amp;c);</span><br><span class="line">    c = <span class="number">29</span>;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;c 的地址: &#123;:p&#125;, c的值: &#123;c&#125; // 遮蔽后&quot;</span>, &amp;c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>println</code> 语句中花括号内的 <code>:p</code> 与 C 中的
+<code>%p</code> 类似。它指定值的格式为内存地址（指针）。</p>
+<p>我在这里使用了 3 个变量。变量 <code>a</code> 是不可变的，并且在第 4
+行被遮蔽。变量 <code>b</code> 是可变的，并且在第 9 行也被遮蔽。变量
+<code>c</code> 是可变的，但是在第 14
+行，只有它的值被改变了。它没有被遮蔽。</p>
+<p>现在，让我们看看输出。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">a 的地址: 0x7ffe954bf614, a 的值 108</span><br><span class="line">a 的地址: 0x7ffe954bf674, a 的值: 56 // 遮蔽后</span><br><span class="line"></span><br><span class="line">b 的地址: 0x7ffe954bf6d4, b 的值: 82</span><br><span class="line">b 的地址: 0x7ffe954bf734, b 的值: 120 // 遮蔽后</span><br><span class="line"></span><br><span class="line">c 的地址: 0x7ffe954bf734, c 的值: 18</span><br><span class="line">c 的地址: 0x7ffe954bf734, c 的值: 29 // 遮蔽后</span><br></pre></td></tr></table></figure>
+<p>来看看输出，你会发现不仅所有三个变量的值都改变了，而且被遮蔽的变量的地址也不同（检查十六进制的最后几个字符）。</p>
+<p>变量 <code>a</code> 和 <code>b</code>
+的内存地址改变了。这意味着变量的可变性或不可变性并不是遮蔽变量的限制。</p>
+<h3 id="总结">总结</h3>
+<p>本文介绍了 Rust 编程语言中的变量和常量。还介绍了算术运算。</p>
+<p>做个总结：</p>
+<ul>
+<li>Rust 中的变量默认是不可变的，但是可以引入可变性。</li>
+<li>程序员需要显式地指定变量的可变性。</li>
+<li>常量总是不可变的，无论如何都需要类型注释。</li>
+<li>变量遮蔽是指使用与现有变量相同的名称声明一个 <em>新</em> 变量。</li>
+</ul>
+<p>很好！我相信和 Rust 一起的进展不错。在下一章中，我将讨论 Rust
+中的数据类型。敬请关注。</p>
+<p>与此同时，如果你有任何问题，请告诉我。</p>
+<p><em>（题图：MJ/7c5366b8-f926-487e-9153-0a877145ca5）</em></p>
+<hr />
+<p>via: https://itsfoss.com/rust-variables/</p>
+<p>作者：<a target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a>
+选题：<a target="_blank" rel="noopener" href="https://github.com/lkxed/">lkxed</a> 译者：<a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik</a> 校对：<a
+target="_blank" rel="noopener" href="https://github.com/wxy">wxy</a></p>
+<p>本文由 <a target="_blank" rel="noopener" href="https://github.com/LCTT/TranslateProject">LCTT</a>
+原创编译，<a target="_blank" rel="noopener" href="https://linux.cn/">Linux中国</a> 荣誉推出</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名 -
+相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://www.cubik65536.top/lctt/translation-linuxcn-article-15771-1/" /></div><div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=[LCTT 翻译转载] 软件开发｜Rust 基础系列 #2: 在 Rust 程序中使用变量和常量 - Cubik 的小站&amp;body=https://www.cubik65536.top/lctt/translation-linuxcn-article-15771-1/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/envelope.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/link.svg"/></a></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023-04-MonthJournal/">2023 年 4 月总结</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023-04-28-kotlin-ktor-dsl-reuse/">Kotlin HTML DSL 代码复用</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">主页</span><a href="/">关于</a><a href="/contact-me/">联系我</a><a href="/my-pgp/">我的 PGP</a></div><div class="sitemap-group"><span class="fs14">博客</span><a href="/posts/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a><a href="/wiki/">知识库</a><a href="/notes/">笔记</a><a href="/bookmarks/">网址收藏</a><a href="/commit-message-conventions/">Git 提交信息格式</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/439205819">哔哩哔哩</a><a target="_blank" rel="noopener" href="https://t.me/cubiksteleblog">Telegram 频道</a><a target="_blank" rel="noopener" href="https://foreverblog.cn/go.html">虫洞 | WORMHOLE</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往 | Travelling</a></div><div class="sitemap-group"><span class="fs14">联系我</span><a href="/message-board/">留言板</a><a href="/contact-me/">联系我 (详细信息页)</a><a href="mailto:me@cubik65536.top">Email</a><a target="_blank" rel="noopener" href="https://github.com/Cubik65536">GitHub</a><a target="_blank" rel="noopener" href="https://gitlab.com/Cubik65536">GitLab</a><a target="_blank" rel="noopener" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420">keys.openpgp.org</a></div></div><div class="text"><p>本博客由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; <a
+target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Hexo Theme Stellar</a>
+强力驱动，您可以在 <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536/cubik-website/">GitHub</a>
+找到本站源码。 Copyright © 2020-2023 <a
+target="_blank" rel="noopener" href="https://cubik65536.top"><span class="citation"
+data-cites="Cubik65536">@Cubik65536</span></a> 保留所有权利。
+本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
+  }
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
+  }
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
+  }
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@2.14.1/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@2.14.1/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://waline.cubik65536.top","commentCount":true,"pageview":true,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","login":"enable","pageSize":10,"reaction":true,"locale":{"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"}}, {
+        el: '#waline_container',
+        path: path,
+        reaction: true,
+        locale: {"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"},
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5.5px 0.6rem;
+      opacity: 0.25;
+      font-weight: 1rem;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    const path = window.location.href.toString().split(window.location.host)[1]
+    codeElementArr.forEach(code => {
+
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      if (path.startsWith("/en")) {
+        codeCopyBtn.innerText = 'Copy Code'
+      } else {
+        codeCopyBtn.innerText = '复制代码'
+      }
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+        if (path.startsWith("/en")) {
+          codeCopyBtn.innerText = 'Successfully Copied'
+        } else {
+          codeCopyBtn.innerText = '复制成功'
+        }
+
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          if (path.startsWith("/en")) {
+            codeCopyBtn.innerText = 'Copy Code'
+          } else {
+            codeCopyBtn.innerText = '复制代码'
+          }
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码 / Code Copied')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此 api')
+        console.error('Current Browser does not support this API')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
+</html>
