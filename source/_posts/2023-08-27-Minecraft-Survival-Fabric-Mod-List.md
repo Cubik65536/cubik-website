@@ -81,6 +81,9 @@ tags:
 - [Iris Shaders](https://modrinth.com/mod/iris)
 - [Krypton](https://modrinth.com/mod/krypton)
 - [Lithium](https://modrinth.com/mod/lithium)
+- [Memory Leak Fix](https://modrinth.com/mod/memoryleakfix)
+- [More Culling](https://modrinth.com/mod/moreculling)
+- [No Chat Reports](https://modrinth.com/mod/no-chat-reports) (仅 1.19+，因为 1.18 没有举报机制)
 - [Replay](https://www.replaymod.com/download/)
 - [Starlight](https://modrinth.com/mod/starlight)
 - Sodium
