@@ -1,46 +1,652 @@
-.l_body {
-  display: flex;
-  margin: auto;
-  padding: 0 var(--gap-l);
-  justify-content: center;
-}
-.l_body .l_left {
-  z-index: 8;
-  width: var(--width-left);
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-.l_body .l_main {
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 320px;
-  max-width: var(--width-main);
-}
-@media screen and (max-width: $device-mobile-max) {
-  .mobile-only {
-    display: block !important;
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #6: 条件语句 - Cubik 的小站</title>
+
+  
+    <meta name="description" content="原文：Rust Basics Series #6: Conditional Statements 首发：Rust 基础系列 #6: 条件语句 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[LCTT 翻译转载] 软件开发｜Rust 基础系列 #6: 条件语句">
+<meta property="og:url" content="https://www.cubik65536.top/lctt/translation-linuxcn-article-15896-1/">
+<meta property="og:site_name" content="Cubik 的小站">
+<meta property="og:description" content="原文：Rust Basics Series #6: Conditional Statements 首发：Rust 基础系列 #6: 条件语句 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-11T09:49:20.000Z">
+<meta property="article:modified_time" content="2023-06-11T09:49:20.000Z">
+<meta property="article:author" content="Cubik65536">
+<meta property="article:tag" content="Rust">
+<meta property="article:tag" content="Rust 基础">
+<meta property="article:tag" content="软件开发">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <meta name="keywords" content="Rust,Rust 基础,软件开发">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Cubik 的小站" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    
+      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    
+      <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    
+      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    
+      <meta name="msapplication-TileColor" content="#fd7600">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.cubik65536.top/CubikLogoAlpha.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Cubik 的小站</div><div class="sub cap">RECOMMENDED BY<br/> DR.CREATIVE</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item active" href="/posts/">文章</a><a class="nav-item" href="/wiki/">知识库</a><a class="nav-item" href="/notes/">便签</a><a class="nav-item" href="/friends/">友链</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">[LCTT 翻译转载] 软件开发｜Rust 基础系列 #6: 条件语句</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rust-%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97-6-%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">Rust 基础系列 #6: 条件语句</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5"><span class="toc-text">什么是条件语句？</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="toc-text">条件运算符</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-if-else"><span class="toc-text">使用 if else</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8-else-if-%E6%9D%A1%E4%BB%B6"><span class="toc-text">使用 else if 条件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B%E6%89%BE%E5%88%B0%E6%9C%80%E5%A4%A7%E5%80%BC"><span class="toc-text">示例：找到最大值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a rel="me" class="social" title="GitHub (@Cubik65536)" href="https://github.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/github.svg" /></a><a rel="me" class="social" title="GitLab (@Cubik65536)" href="https://gitlab.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/></a><a rel="me" class="social" title="哔哩哔哩 (@Cubik65536)" href="https://space.bilibili.com/439205819" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/></a><a rel="me" class="social" title="Telegram (Cubik's Teleblog)" href="https://t.me/cubiksteleblog" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/></a><a rel="me" class="social" title="向我发送邮件" href="mailto:me@cubik65536.top" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/></a></div><br/><div class="large-social-wrap"><a class="large-social" title="从 keys.openpgp.org 下载 PGP 公钥" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" /><span class="description">我的 PGP 公钥</span></div></a><a class="large-social" title="穿梭虫洞 - 随机访问十年之约友链博客" href="https://foreverblog.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" /><span class="description">虫洞 | WORMHOLE</span></div></a><a class="large-social" title="开往 - 友链接力" href="https://www.travellings.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/train.svg" /><span class="description">开往 | Travelling</span></div></a></div><br/><div class="large-social-wrap"><a class="large-social" href="/lctt/translation-linuxcn-article-15896-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">Chinese (S)</span></div></a><a class="large-social" href="/en/lctt/translation-linuxcn-article-15896-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">English</span></div></a></div><br/>&nbsp;<a href="https://www.foreverblog.cn/blog/2992.html" target="_blank" ><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/logo_en_default.png" alt="【CUBIK 的小站】十年之约" style="width:175px;height:auto;" /></a></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/posts">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/LCTT/">LCTT</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/">转载</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/%E7%BF%BB%E8%AF%91/">翻译</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-06-11T09:49:20.000Z">2023-06-11</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #6: 条件语句</span></h1>
+<blockquote>
+<p>原文：<a target="_blank" rel="noopener" href="https://itsfoss.com/rust-if-else/">Rust Basics Series
+#6: Conditional Statements</a> 首发：<a
+target="_blank" rel="noopener" href="https://linux.cn/article-15896-1.html">Rust 基础系列 #6:
+条件语句</a> @<a target="_blank" rel="noopener" href="https://linux.cn/">Linux 中国</a> 作者：<a
+target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a> 译者：<a
+target="_blank" rel="noopener" href="https://linux.cn/lctt/">LCTT</a> <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik</a></p>
+</blockquote>
+<span id="more"></span>
+<h2 id="rust-基础系列-6-条件语句">Rust 基础系列 #6: 条件语句</h2>
+<p><img
+src="https://img.linux.net.cn/data/attachment/album/202306/11/094832bkkbs7oxntx7zxas.jpg" /></p>
+<p>在 <a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15855-1/">上一篇文章</a>
+中，你学习了函数。在这篇文章中，我们将学习使用条件语句来管理 Rust
+程序的控制流。</p>
+<h3 id="什么是条件语句">什么是条件语句？</h3>
+<p>在编写代码的时候，最常见的任务之一就是检查某些条件是否为
+<code>true</code> 或 <code>false</code>。“如果温度高于
+35°C，打开空调。”</p>
+<p>通过使用 <code>if</code> 和 <code>else</code>
+这样的关键字（有时候结合使用），程序员可以根据条件（例如提供的参数数量、从命令行传递的选项、文件名、错误发生等）改变程序的行为。</p>
+<p>所以，对一个程序员来说，了解任何语言的控制流都是至关重要的，更不用说
+Rust 了。</p>
+<h4 id="条件运算符">条件运算符</h4>
+<p>下表列出了所有常用的单个条件运算符：</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">运算符</th>
+<th style="text-align: left;">示例</th>
+<th style="text-align: left;">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>&gt;</code></td>
+<td style="text-align: left;"><code>a &gt; b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>大于</strong>
+<code>b</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&lt;</code></td>
+<td style="text-align: left;"><code>a &lt; b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>小于</strong>
+<code>b</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>==</code></td>
+<td style="text-align: left;"><code>a == b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>等于</strong>
+<code>b</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>!=</code></td>
+<td style="text-align: left;"><code>a != b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>不等于</strong>
+<code>b</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>&gt;=</code></td>
+<td style="text-align: left;"><code>a &gt;= b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>大于</strong> 或
+<strong>等于</strong> <code>b</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&lt;=</code></td>
+<td style="text-align: left;"><code>a &lt;= b</code></td>
+<td style="text-align: left;"><code>a</code> <strong>小于</strong> 或
+<strong>等于</strong> <code>b</code></td>
+</tr>
+</tbody>
+</table>
+<p>以及下表是逻辑运算符，它们用于一个或多个条件之间：</p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">运算符</th>
+<th style="text-align: left;">示例</th>
+<th style="text-align: left;">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>||</code> （逻辑或）</td>
+<td style="text-align: left;"><code>条件1 || 条件2</code></td>
+<td style="text-align: left;"><code>条件1</code> 或 <code>条件2</code>
+中至少有一个为 <code>true</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>&amp;&amp;</code> （逻辑与）</td>
+<td style="text-align: left;"><code>条件1 &amp;&amp; 条件2</code></td>
+<td style="text-align: left;"><strong>所有</strong> 条件都为
+<code>true</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>!</code> （逻辑非）</td>
+<td style="text-align: left;"><code>!条件</code></td>
+<td style="text-align: left;"><code>条件</code> 的布尔值的相反值</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>📋 与数学相似，你可以使用圆括号来指定操作的优先级。</p>
+</blockquote>
+<h3 id="使用-if-else">使用 if else</h3>
+<p>要控制 Rust 代码的基本流程，使用两个关键字：<code>if</code> 和
+<code>else</code>。这可以根据提供的条件的状态创建两个“执行路径”。</p>
+<p>一个简单的带有替代执行路径的 if 块的语法如下：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> 条件 &#123;</span><br><span class="line">    &lt;语句&gt;;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    &lt;语句&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>📋
+当只有一个条件时，将其括在圆括号中并不是强制性的。根据语法，使用圆括号是可选的。你仍然应该使用它们来指定优先级并优化可读性。</p>
+</blockquote>
+<p>来看看一个例子。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">36</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">25</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> a &gt; b &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;a 大于 b&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;b 大于 a&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里，我声明了两个整数变量 <code>a</code> 和
+<code>b</code>，它们的值分别为 '36' 和 '25'。在第 5 行，我检查变量
+<code>a</code> 中存储的值是否大于变量 <code>b</code>
+中存储的值。如果条件计算结果为 <code>true</code>，则会执行第 6
+行的代码。如果条件计算结果为 <code>false</code>，由于我们有一个
+<code>else</code> 块（可选），第 8 行的代码将被执行。</p>
+<p>来看看程序的输出。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a 大于 b</span><br></pre></td></tr></table></figure>
+<p>完美！</p>
+<p>来修改一下变量 <code>a</code> 的值，使其小于变量 <code>b</code>
+的值，看看会发生什么。我将把 <code>a</code> 的值改为
+'10'。修改后的输出如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b 大于 a</span><br></pre></td></tr></table></figure>
+<p>但是，如果我将相同的值存储在变量 <code>a</code> 和 <code>b</code>
+中呢？为了看到这一点，我将两个变量的值都设置为
+'40'。修改后的输出如下：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">b 大于 a</span><br></pre></td></tr></table></figure>
+<p>嗯？从逻辑上讲，这没有任何意义... :(</p>
+<p>但是这可以改进！我们继续。</p>
+<h3 id="使用-else-if-条件">使用 else if 条件</h3>
+<p>与其他任何编程语言一样，你可以使用 <code>else if</code>
+块来提供多于两个的执行路径。语法如下：</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> 条件 &#123;</span><br><span class="line">    &lt;语句&gt;;</span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> 条件 &#123;</span><br><span class="line">    &lt;语句&gt;;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    &lt;语句&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在，通过使用 <code>else if</code>
+块，我可以改进程序的逻辑。下面是修改后的程序。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">40</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">40</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> a == b &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;a 与 b 是相等的&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> a &gt; b &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;a 大于 b&quot;</span>);</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;b 大于 a&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在，我的程序的逻辑是正确的。它已经处理了所有的边缘情况（我能想到的）。第
+5 行处理了 <code>a</code> 等于 <code>b</code> 的情况。第 7 行处理了
+<code>a</code> 可能大于 <code>b</code> 的情况。而 <code>a</code> 小于
+<code>b</code> 的情况则由第 9 行的 <code>else</code> 块隐式处理。</p>
+<p>现在，当我运行这段代码时，我得到了以下输出：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a 与 b 是相等的</span><br></pre></td></tr></table></figure>
+<p>现在这就完美了！</p>
+<h3 id="示例找到最大值">示例：找到最大值</h3>
+<p>我知道使用 <code>if</code> 和 <code>else</code>
+很容易，但是让我们再看一个程序。这次，我们来比较三个数字。我还将在这个实例中使用逻辑运算符！</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">a</span> = <span class="number">73</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">b</span> = <span class="number">56</span>;</span><br><span class="line">    <span class="keyword">let</span> <span class="variable">c</span> = <span class="number">15</span>;</span><br><span class="line"></span><br><span class="line">    <span class="title function_ invoke__">if</span> (a != b) &amp;&amp; (a != c) &amp;&amp; (b != c) &#123;</span><br><span class="line">        <span class="title function_ invoke__">if</span> (a &gt; b) &amp;&amp; (a &gt; c) &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;a 是最大的&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="title function_ invoke__">if</span> (b &gt; a) &amp;&amp; (b &gt; c) &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;b 是最大的&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;c 是最大的&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个程序第一眼看上去可能很复杂，但是不要害怕，我会解释的！</p>
+<p>最开始，我声明了三个变量 <code>a</code>、<code>b</code> 和
+<code>c</code>，并赋予了我能想到的随机值。然后，在第 6
+行，我检查了没有变量的值与其他变量相同的条件。首先，我检查
+<code>a</code> 和 <code>b</code> 的值，然后是 <code>a</code> 和
+<code>c</code>，最后是 <code>b</code> 和
+<code>c</code>。这样我就可以确定没有变量中存储了重复的值。</p>
+<p>然后，在第 7 行，我检查了变量 <code>a</code>
+中存储的值是否是最大的。如果这个条件计算结果为
+<code>true</code>，则会执行第 8 行的代码。否则，将检查第 9
+行的执行路径。</p>
+<p>在第 9 行，我检查了变量 <code>b</code>
+中存储的值是否是最大的。如果这个条件计算结果为
+<code>true</code>，则会执行第 10 行的代码。如果这个条件也是
+<code>false</code>，那么只有一种可能。3 个变量中的最大值既不是
+<code>a</code> 也不是 <code>b</code>。</p>
+<p>所以，自然地，在 <code>else</code> 块中，我打印出变量 <code>c</code>
+拥有最大值。</p>
+<p>来看看程序的输出：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a 是最大的</span><br></pre></td></tr></table></figure>
+<p>这是预期的结果。尝试修改分配给每个变量的值，并自己测试一下！ :)</p>
+<h3 id="总结">总结</h3>
+<p>你学习到了如何使用 <code>if</code> 和 <code>else</code>
+语句。在你继续使用大量 <code>if</code> <code>else if</code>
+语句制作自己的 AI 之前（哈哈），让我们在本系列的下一篇文章中学习 Rust
+中的循环。</p>
+<p>持续关注。</p>
+<p><em>（题图：MJ/3eea3bbb-b630-4470-ae21-391ab86cd5bf）</em></p>
+<hr />
+<p>via: https://itsfoss.com/rust-if-else/</p>
+<p>作者：<a target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a>
+选题：<a target="_blank" rel="noopener" href="https://github.com/lkxed/">lkxed</a> 译者：<a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik65536</a> 校对：<a
+target="_blank" rel="noopener" href="https://github.com/wxy">wxy</a></p>
+<p>本文由 <a target="_blank" rel="noopener" href="https://github.com/LCTT/TranslateProject">LCTT</a>
+原创编译，<a target="_blank" rel="noopener" href="https://linux.cn/">Linux中国</a> 荣誉推出</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名 -
+相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://www.cubik65536.top/lctt/translation-linuxcn-article-15896-1/" /></div><div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=[LCTT 翻译转载] 软件开发｜Rust 基础系列 #6: 条件语句 - Cubik 的小站&amp;body=https://www.cubik65536.top/lctt/translation-linuxcn-article-15896-1/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/envelope.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/link.svg"/></a></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/lctt/translation-linuxcn-article-15908-1/">[LCTT 翻译转载] 软件开发｜Rust 基础系列 #7: 在 Rust 中使用循环</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023-05-MonthJournal/">2023 年 5 月总结</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">主页</span><a href="/">关于</a><a href="/contact-me/">联系我</a><a href="/my-pgp/">我的 PGP</a></div><div class="sitemap-group"><span class="fs14">博客</span><a href="/posts/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a><a href="/wiki/">知识库</a><a href="/notes/">笔记</a><a href="/bookmarks/">网址收藏</a><a href="/commit-message-conventions/">Git 提交信息格式</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/439205819">哔哩哔哩</a><a target="_blank" rel="noopener" href="https://t.me/cubiksteleblog">Telegram 频道</a><a target="_blank" rel="noopener" href="https://foreverblog.cn/go.html">虫洞 | WORMHOLE</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往 | Travelling</a></div><div class="sitemap-group"><span class="fs14">联系我</span><a href="/message-board/">留言板</a><a href="/contact-me/">联系我 (详细信息页)</a><a href="mailto:me@cubik65536.top">Email</a><a target="_blank" rel="noopener" href="https://github.com/Cubik65536">GitHub</a><a target="_blank" rel="noopener" href="https://gitlab.com/Cubik65536">GitLab</a><a target="_blank" rel="noopener" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420">keys.openpgp.org</a></div></div><div class="text"><p>本博客由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; <a
+target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Hexo Theme Stellar</a>
+强力驱动，您可以在 <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536/cubik-website/">GitHub</a>
+找到本站源码。 Copyright © 2020-2023 <a
+target="_blank" rel="noopener" href="https://cubik65536.top"><span class="citation"
+data-cites="Cubik65536">@Cubik65536</span></a> 保留所有权利。
+本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
   }
-  .l_body {
-    padding: 0;
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
   }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    margin: 0;
-    left: 0;
-    background: var(--site-bg);
-    box-shadow: $boxshadow-card-float;
-    z-index: 9;
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
-  .l_body .l_main {
-    max-width: 100%;
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
-  .l_body.mobile .l_left {
-    transition: transform 0.3s ease-out;
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
-  .l_body.mobile.sidebar .l_left {
-    transform: translateX(0px);
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
   }
-}
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@2.14.1/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@2.14.1/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://waline.cubik65536.top","commentCount":true,"pageview":true,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","login":"enable","pageSize":10,"reaction":true,"locale":{"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"}}, {
+        el: '#waline_container',
+        path: path,
+        reaction: true,
+        locale: {"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"},
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5.5px 0.6rem;
+      opacity: 0.25;
+      font-weight: 1rem;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    const path = window.location.href.toString().split(window.location.host)[1]
+    codeElementArr.forEach(code => {
+
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      if (path.startsWith("/en")) {
+        codeCopyBtn.innerText = 'Copy Code'
+      } else {
+        codeCopyBtn.innerText = '复制代码'
+      }
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+        if (path.startsWith("/en")) {
+          codeCopyBtn.innerText = 'Successfully Copied'
+        } else {
+          codeCopyBtn.innerText = '复制成功'
+        }
+
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          if (path.startsWith("/en")) {
+            codeCopyBtn.innerText = 'Copy Code'
+          } else {
+            codeCopyBtn.innerText = '复制代码'
+          }
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码 / Code Copied')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此 api')
+        console.error('Current Browser does not support this API')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
+</html>

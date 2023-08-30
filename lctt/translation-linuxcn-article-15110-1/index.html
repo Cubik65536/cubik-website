@@ -1,46 +1,612 @@
-.l_body {
-  display: flex;
-  margin: auto;
-  padding: 0 var(--gap-l);
-  justify-content: center;
-}
-.l_body .l_left {
-  z-index: 8;
-  width: var(--width-left);
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-.l_body .l_main {
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 320px;
-  max-width: var(--width-main);
-}
-@media screen and (max-width: $device-mobile-max) {
-  .mobile-only {
-    display: block !important;
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS - Cubik 的小站</title>
+
+  
+    <meta name="description" content="从现在开始，我将会在 https:&#x2F;&#x2F;linux.cn 站上（可能以后也会有其他站点）翻译一些文章。在这些文章被这些站点发布之后，我也会对应的转载到本站点。注意，这些文章可能不会使用本站常用的 CC BY-NC-SA 4.0 协议，而是使用原站点的协议。如果你想要转载这些文章，你需要遵守原站点的协议。这些文章具体的协议信息可以在文章的底部找到。你也可以在文章底部找到英文原文以及选题、校对人员等信息">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS">
+<meta property="og:url" content="https://www.cubik65536.top/lctt/translation-linuxcn-article-15110-1/">
+<meta property="og:site_name" content="Cubik 的小站">
+<meta property="og:description" content="从现在开始，我将会在 https:&#x2F;&#x2F;linux.cn 站上（可能以后也会有其他站点）翻译一些文章。在这些文章被这些站点发布之后，我也会对应的转载到本站点。注意，这些文章可能不会使用本站常用的 CC BY-NC-SA 4.0 协议，而是使用原站点的协议。如果你想要转载这些文章，你需要遵守原站点的协议。这些文章具体的协议信息可以在文章的底部找到。你也可以在文章底部找到英文原文以及选题、校对人员等信息">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-10-06T10:20:00.000Z">
+<meta property="article:modified_time" content="2022-10-06T10:20:00.000Z">
+<meta property="article:author" content="Cubik65536">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Tuxedo OS">
+<meta property="article:tag" content="LinuxCN">
+<meta property="article:tag" content="LCTT">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <meta name="keywords" content="Linux,Tuxedo OS,LinuxCN,LCTT">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Cubik 的小站" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    
+      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    
+      <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    
+      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    
+      <meta name="msapplication-TileColor" content="#fd7600">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.cubik65536.top/CubikLogoAlpha.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Cubik 的小站</div><div class="sub cap">RECOMMENDED BY<br/> DR.CREATIVE</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item active" href="/posts/">文章</a><a class="nav-item" href="/wiki/">知识库</a><a class="nav-item" href="/notes/">便签</a><a class="nav-item" href="/friends/">友链</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#tuxedo-%E5%B7%B2%E5%AF%B9%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E5%BC%80%E6%94%BE%E5%9F%BA%E4%BA%8E-ubuntu-%E7%9A%84-tuxedo-os"><span class="toc-text">Tuxedo
+已对所有用户开放基于 Ubuntu 的 TUXEDO OS</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%90%AD%E9%85%8D-kde-%E7%9A%84-tuxedo-os-1"><span class="toc-text">搭配 KDE 的 TUXEDO OS 1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tuxedo-os%E5%9F%BA%E4%BA%8E-kde-%E7%9A%84%E5%AE%9A%E5%88%B6%E5%8C%96-ubuntu-%E4%BD%93%E9%AA%8C"><span class="toc-text">TUXEDO OS，基于 KDE
+的定制化 Ubuntu 体验</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AF%E4%BB%B6%E5%8F%AF%E7%94%A8%E6%80%A7"><span class="toc-text">软件可用性？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%99%E4%B9%9F%E7%BB%99%E6%88%91%E4%BB%AC%E5%B8%A6%E6%9D%A5%E4%BA%86%E4%B8%80%E4%B8%AA%E9%87%8D%E8%A6%81%E7%9A%84%E4%BA%AE%E7%82%B9"><span class="toc-text">这也给我们带来了一个重要的亮点</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tuxedo-%E9%99%84%E5%8A%A0%E5%8A%9F%E8%83%BD"><span class="toc-text">TUXEDO 附加功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD-tuxedo-os-1"><span class="toc-text">下载 TUXEDO OS 1</span></a></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a rel="me" class="social" title="GitHub (@Cubik65536)" href="https://github.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/github.svg" /></a><a rel="me" class="social" title="GitLab (@Cubik65536)" href="https://gitlab.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/></a><a rel="me" class="social" title="哔哩哔哩 (@Cubik65536)" href="https://space.bilibili.com/439205819" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/></a><a rel="me" class="social" title="Telegram (Cubik's Teleblog)" href="https://t.me/cubiksteleblog" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/></a><a rel="me" class="social" title="向我发送邮件" href="mailto:me@cubik65536.top" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/></a></div><br/><div class="large-social-wrap"><a class="large-social" title="从 keys.openpgp.org 下载 PGP 公钥" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" /><span class="description">我的 PGP 公钥</span></div></a><a class="large-social" title="穿梭虫洞 - 随机访问十年之约友链博客" href="https://foreverblog.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" /><span class="description">虫洞 | WORMHOLE</span></div></a><a class="large-social" title="开往 - 友链接力" href="https://www.travellings.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/train.svg" /><span class="description">开往 | Travelling</span></div></a></div><br/><div class="large-social-wrap"><a class="large-social" href="/lctt/translation-linuxcn-article-15110-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">Chinese (S)</span></div></a><a class="large-social" href="/en/lctt/translation-linuxcn-article-15110-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">English</span></div></a></div><br/>&nbsp;<a href="https://www.foreverblog.cn/blog/2992.html" target="_blank" ><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/logo_en_default.png" alt="【CUBIK 的小站】十年之约" style="width:175px;height:auto;" /></a></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/posts">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/LCTT/">LCTT</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/">转载</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/%E7%BF%BB%E8%AF%91/">翻译</a></div><div id="post-meta">发布于&nbsp;<time datetime="2022-10-06T10:20:00.000Z">2022-10-06</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS</span></h1>
+<p>从现在开始，我将会在 <a target="_blank" rel="noopener" href="https://linux.cn"
+class="uri">https://linux.cn</a>
+站上（可能以后也会有其他站点）翻译一些文章。在这些文章被这些站点发布之后，我也会对应的转载到本站点。注意，这些文章可能不会使用本站常用的
+<a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a>
+协议，而是使用原站点的协议。如果你想要转载这些文章，你需要遵守原站点的协议。这些文章具体的协议信息可以在文章的底部找到。你也可以在文章底部找到英文原文以及选题、校对人员等信息。让我们开始吧！</p>
+<blockquote>
+<p>原文：<a target="_blank" rel="noopener" href="https://news.itsfoss.com/tuxedo-os/">[Exclusive]
+Tuxedo Makes Ubuntu-based 'TUXEDO OS' Available For All</a> 首发：<a
+target="_blank" rel="noopener" href="https://linux.cn/article-15110-1.html">Tuxedo 已对所有用户开放基于
+Ubuntu 的 TUXEDO OS</a> @<a target="_blank" rel="noopener" href="https://linux.cn/">Linux 中国</a>
+作者：<a target="_blank" rel="noopener" href="https://news.itsfoss.com/tuxedo-os/">Ankush Das</a>
+译者：<a target="_blank" rel="noopener" href="https://linux.cn/lctt/">LCTT</a> <a
+target="_blank" rel="noopener" href="https://linux.cn/lctt/Cubik65536">Cubik</a></p>
+</blockquote>
+<span id="more"></span>
+<h2 id="tuxedo-已对所有用户开放基于-ubuntu-的-tuxedo-os">Tuxedo
+已对所有用户开放基于 Ubuntu 的 TUXEDO OS</h2>
+<blockquote>
+<p>TUXEDO OS 是一个基于 Ubuntu 的 Linux 发行版，旨在将 TUXEDO 在 Linux
+方面的专业知识也带给非 TUXEDO 用户。</p>
+</blockquote>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/size/w1200/2022/09/tuxedo-os-1.png"
+alt="[独家] Tuxedo 已对所有用户开放基于 Ubuntu 的 &#39;TUXEDO OS&#39;" />
+<figcaption aria-hidden="true">[独家] Tuxedo 已对所有用户开放基于 Ubuntu
+的 'TUXEDO OS'</figcaption>
+</figure>
+<p>又一个基于 Ubuntu 的 Linux 发行版？😕</p>
+<p>不完全是！<strong>TUXEDO 计算机公司</strong>
+是一家硬件制造商，以其专注于 Linux 的笔记本电脑和计算机而闻名。</p>
+<p><strong>TUXEDO OS 与 Ubuntu 之间存在着一些有趣的差异</strong>。</p>
+<p>虽然他们已经在笔记本电脑/计算机上提供预装 TUXEDO OS
+的选项，但是它并未对所有人开放。</p>
+<p>终于，他们决定将其发行版的第一个版本作为 <strong>TUXEDO OS 1</strong>
+开放，该版本现已可供下载。</p>
+<p>这也意味着你可以在自己的非 TUXEDO 系统上试用它。</p>
+<p>所以这个思路很像 System76 的 Pop!_OS，所以这并不算一件坏事 👌</p>
+<h3 id="搭配-kde-的-tuxedo-os-1">搭配 KDE 的 TUXEDO OS 1</h3>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-home.jpg"
+alt="tuxedo 桌面" />
+<figcaption aria-hidden="true">tuxedo 桌面</figcaption>
+</figure>
+<p>TUXEDO OS 1 是基于 <a
+target="_blank" rel="noopener" href="https://news.itsfoss.com/ubuntu-22-04-release/">Ubuntu 22.04
+LTS</a> 的; 所以它应该可以直接在大多数设备上运行。</p>
+<p>与 System76 的 Pop!_OS 不同，TUXEDO OS 搭载了 <a
+target="_blank" rel="noopener" href="https://news.itsfoss.com/kde-plasma-5-24-lts-release/">KDE Plasma
+5.24.6</a>。因此，它应当提供了一个 Windows
+用户也较为熟悉的用户界面。</p>
+<p>但是，TUXEDO OS 还包括一些额外的功能，例如 TUXEDO
+控制中心，用于微调你的硬件（CPU/风扇等），以及 TUXEDO
+Tomte，一个用于解决驱动程序/缺少包问题的配置服务，但是它或许能，或许不能在其他硬件配置上工作。</p>
+<p>说到这里，让我们看看 TUXEDO OS 及其提供的功能。</p>
+<h3 id="tuxedo-os基于-kde-的定制化-ubuntu-体验">TUXEDO OS，基于 KDE
+的定制化 Ubuntu 体验</h3>
+<p>用户体验正如预期一样，与任何基于 KDE 的 Ubuntu 发行版相同。</p>
+<blockquote>
+<p>📣 我将 TUXEDO OS（预览版）用做我的主要系统来体验它。</p>
+</blockquote>
+<p>你会在应用和菜单上发现带有红色调的 TUXEDO
+徽标。它还具有令人耳目一新的壁纸。</p>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-menu.png"
+alt="tuxedo 菜单" />
+<figcaption aria-hidden="true">tuxedo 菜单</figcaption>
+</figure>
+<p>除了定制化的 KDE Plasma 主题，还有一些其他的变化，例如：</p>
+<ul>
+<li>它使用了 PipeWire 作为声音服务器，而不是 PulseAudio。</li>
+<li>GRUB 中启用了 os-prober
+功能，让用户可以方便地检测已安装的其他操作系统。</li>
+<li>.deb 作为首选的软件包格式，而 Snap 默认情况下被禁用。</li>
+<li>从 NetworkManagerConnectivity 检查中移除了 Canonical 的链接。</li>
+</ul>
+<h4 id="软件可用性">软件可用性？</h4>
+<p>你可以通过 “<ruby>发现<rt>Discover</rt></ruby>”
+应用来找到所有流行的软件工具，其中包括 Ubuntu 的仓库和 TUXEDO
+的仓库。</p>
+<p>它包含了 <strong>Firefox、Thunderbird、LibreOffice、VLC、Lutris 和
+Heroic Games Launcher</strong>
+等必备应用程序。所以我认为你不会觉得它们很臃肿。</p>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-os-repositories.png"
+alt="tuxedo discover 应用" />
+<figcaption aria-hidden="true">tuxedo discover 应用</figcaption>
+</figure>
+<p>我还注意到它默认启用了 Flatpak 集成。</p>
+<p>你可以在他们的 <a
+target="_blank" rel="noopener" href="https://www.tuxedocomputers.com/en/Featured-KDEs-outstanding-applications-and-tools.tuxedo">官方网页</a>
+上了解有关可用软件的更多信息。</p>
+<h4
+id="这也给我们带来了一个重要的亮点">这也给我们带来了一个重要的亮点</h4>
+<p>❌ TUXEDO OS 不会默认安装 Snap。对于 Firefox，它会像 Linux Mint
+一样附带 deb 包安装。</p>
+<p>✅ 值得注意的是，TUXEDO OS 22.04 LTS 附带了 Nvidia 驱动程序。</p>
+<p>因此，我可以毫不费力地将它安装在带有 RTX 3060 Ti 显卡的系统上。</p>
+<h3 id="tuxedo-附加功能">TUXEDO 附加功能</h3>
+<p>如上所述，TUXEDO OS 附带了一些专为增强 Tuxedo
+硬件的体验而量身定制的附加功能。</p>
+<p>控制中心是监控你的系统、选择电源配置文件、控制外部水冷（<a
+target="_blank" rel="noopener" href="https://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo">TUXEDO
+Aquaris</a>）等的绝佳工具。</p>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-os-control-center.png"
+alt="tuxedo 控制中心" />
+<figcaption aria-hidden="true">tuxedo 控制中心</figcaption>
+</figure>
+<p>虽然控制中心不是为非 TUXEDO
+设备量身定制的，但它在大多数情况下仍然能够正常工作。</p>
+<p>还有一个 TUXEDO WebFAI Creator 程序（定制的
+BalenaEtcher）来烧录用于操作系统安装的 U 盘。</p>
+<figure>
+<img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-webfai.jpg"
+alt="tuxedo webfai" />
+<figcaption aria-hidden="true">tuxedo webfai</figcaption>
+</figure>
+<p>还有，不要忘记 TUXEDO Tomte，它无法在我的系统上运行，但可以很完美的在
+TUXEDO 设备上作为配置服务运行：</p>
+<p><img
+src="https://news.itsfoss.com/content/images/2022/09/tuxedo-tomte.jpg" /></p>
+<h3 id="下载-tuxedo-os-1">下载 TUXEDO OS 1</h3>
+<p>TUXEDO OS 带来了非常精致的体验。TUXEDO 背后的团队在让 Linux
+运行在他们的一些最新笔记本电脑上拥有丰富的经验。因此，使用他们的 Linux
+发行版，你可以对自己的体验充满信心。</p>
+<p>如果你有兴趣，还可以找到关于 <a
+target="_blank" rel="noopener" href="https://www.tuxedocomputers.com/en/First-Steps-with-TUXEDO-OS.tuxedo">TUXEDO
+OS 入门</a> 的官方文章。</p>
+<p><strong>如果你希望获得一个基于 KDE 的定制化 Ubuntu 体验，TUXEDO OS 1
+是一个不错的选择。</strong></p>
+<p>你可以通过使用它来支持他们的计划，这可能会让你决定购买一台 TUXEDO
+设备；你永远不知道以后会发生什么，对吧？</p>
+<p>你可以从其官方网站下载它，并在下方的评论区中分享你的想法。</p>
+<blockquote>
+<p><strong><a target="_blank" rel="noopener" href="https://www.tuxedocomputers.com/os">下载 TUXEDO OS
+1</a></strong></p>
+</blockquote>
+<hr />
+<p>via: https://news.itsfoss.com/tuxedo-os/</p>
+<p>作者：<a target="_blank" rel="noopener" href="https://news.itsfoss.com/author/ankush/">Ankush
+Das</a> 选题：<a target="_blank" rel="noopener" href="https://github.com/lkxed">lkxed</a> 译者：<a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik65536</a> 校对：<a
+target="_blank" rel="noopener" href="https://github.com/wxy">wxy</a></p>
+<p>本文由 <a target="_blank" rel="noopener" href="https://github.com/LCTT/TranslateProject">LCTT</a>
+原创编译，<a target="_blank" rel="noopener" href="https://linux.cn/">Linux中国</a> 荣誉推出</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名-相同方式共享
+4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://www.cubik65536.top/lctt/translation-linuxcn-article-15110-1/" /></div><div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=[LCTT 原创翻译转载] 新闻｜Tuxedo 已对所有用户开放基于 Ubuntu 的 TUXEDO OS - Cubik 的小站&amp;body=https://www.cubik65536.top/lctt/translation-linuxcn-article-15110-1/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/envelope.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/link.svg"/></a></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/lctt/translation-linuxcn-article-15116-1/">[LCTT 原创翻译转载] 新闻｜System 76 将不会发布 Pop!_OS 22.10 Linux 发行版</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2022-09-MonthJournal/">2022 年 9 月总结</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">主页</span><a href="/">关于</a><a href="/contact-me/">联系我</a><a href="/my-pgp/">我的 PGP</a></div><div class="sitemap-group"><span class="fs14">博客</span><a href="/posts/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a><a href="/wiki/">知识库</a><a href="/notes/">笔记</a><a href="/bookmarks/">网址收藏</a><a href="/commit-message-conventions/">Git 提交信息格式</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/439205819">哔哩哔哩</a><a target="_blank" rel="noopener" href="https://t.me/cubiksteleblog">Telegram 频道</a><a target="_blank" rel="noopener" href="https://foreverblog.cn/go.html">虫洞 | WORMHOLE</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往 | Travelling</a></div><div class="sitemap-group"><span class="fs14">联系我</span><a href="/message-board/">留言板</a><a href="/contact-me/">联系我 (详细信息页)</a><a href="mailto:me@cubik65536.top">Email</a><a target="_blank" rel="noopener" href="https://github.com/Cubik65536">GitHub</a><a target="_blank" rel="noopener" href="https://gitlab.com/Cubik65536">GitLab</a><a target="_blank" rel="noopener" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420">keys.openpgp.org</a></div></div><div class="text"><p>本博客由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; <a
+target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Hexo Theme Stellar</a>
+强力驱动，您可以在 <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536/cubik-website/">GitHub</a>
+找到本站源码。 Copyright © 2020-2023 <a
+target="_blank" rel="noopener" href="https://cubik65536.top"><span class="citation"
+data-cites="Cubik65536">@Cubik65536</span></a> 保留所有权利。
+本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
   }
-  .l_body {
-    padding: 0;
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
   }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    margin: 0;
-    left: 0;
-    background: var(--site-bg);
-    box-shadow: $boxshadow-card-float;
-    z-index: 9;
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
-  .l_body .l_main {
-    max-width: 100%;
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
-  .l_body.mobile .l_left {
-    transition: transform 0.3s ease-out;
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
-  .l_body.mobile.sidebar .l_left {
-    transform: translateX(0px);
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
   }
-}
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@2.14.1/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@2.14.1/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://waline.cubik65536.top","commentCount":true,"pageview":true,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","login":"enable","pageSize":10,"reaction":true,"locale":{"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"}}, {
+        el: '#waline_container',
+        path: path,
+        reaction: true,
+        locale: {"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"},
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5.5px 0.6rem;
+      opacity: 0.25;
+      font-weight: 1rem;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    const path = window.location.href.toString().split(window.location.host)[1]
+    codeElementArr.forEach(code => {
+
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      if (path.startsWith("/en")) {
+        codeCopyBtn.innerText = 'Copy Code'
+      } else {
+        codeCopyBtn.innerText = '复制代码'
+      }
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+        if (path.startsWith("/en")) {
+          codeCopyBtn.innerText = 'Successfully Copied'
+        } else {
+          codeCopyBtn.innerText = '复制成功'
+        }
+
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          if (path.startsWith("/en")) {
+            codeCopyBtn.innerText = 'Copy Code'
+          } else {
+            codeCopyBtn.innerText = '复制代码'
+          }
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码 / Code Copied')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此 api')
+        console.error('Current Browser does not support this API')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
+</html>

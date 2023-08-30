@@ -1,46 +1,583 @@
-.l_body {
-  display: flex;
-  margin: auto;
-  padding: 0 var(--gap-l);
-  justify-content: center;
-}
-.l_body .l_left {
-  z-index: 8;
-  width: var(--width-left);
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-.l_body .l_main {
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 320px;
-  max-width: var(--width-main);
-}
-@media screen and (max-width: $device-mobile-max) {
-  .mobile-only {
-    display: block !important;
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>Arc 浏览器上手 - Cubik 的小站</title>
+
+  
+    <meta name="description" content="前一段时间我通过朋友拿到了一个体验 Arc 浏览器的邀请码，于是我开始将 Arc 浏览器当作我的主力浏览器使用了一段时间。由于生活中需要忙各种其他事情，于是这个上手体验文被拖到了现在。这篇文章仍然主要着重于 Arc 浏览器带给我的第一印象，那我们开始吧！">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arc 浏览器上手">
+<meta property="og:url" content="https://www.cubik65536.top/2022-12-31-HandsOnArcBrowser/">
+<meta property="og:site_name" content="Cubik 的小站">
+<meta property="og:description" content="前一段时间我通过朋友拿到了一个体验 Arc 浏览器的邀请码，于是我开始将 Arc 浏览器当作我的主力浏览器使用了一段时间。由于生活中需要忙各种其他事情，于是这个上手体验文被拖到了现在。这篇文章仍然主要着重于 Arc 浏览器带给我的第一印象，那我们开始吧！">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rlj.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rp8.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rz5.png">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s0i.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s4b.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s4i.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s8d.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9d.png">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9m.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9p.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sa0.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sa7.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sax.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sfi.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sif.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221201-d17.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sbs.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-scm.jpeg">
+<meta property="og:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sir.jpeg">
+<meta property="article:published_time" content="2022-12-31T17:16:45.000Z">
+<meta property="article:modified_time" content="2022-12-31T17:16:45.000Z">
+<meta property="article:author" content="Cubik65536">
+<meta property="article:tag" content="macOS">
+<meta property="article:tag" content="上手">
+<meta property="article:tag" content="浏览器">
+<meta property="article:tag" content="Arc">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rlj.jpeg">
+  
+  
+  
+  <meta name="keywords" content="macOS,上手,浏览器,Arc">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Cubik 的小站" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    
+      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    
+      <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    
+      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    
+      <meta name="msapplication-TileColor" content="#fd7600">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.cubik65536.top/CubikLogoAlpha.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Cubik 的小站</div><div class="sub cap">RECOMMENDED BY<br/> DR.CREATIVE</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item active" href="/posts/">文章</a><a class="nav-item" href="/wiki/">知识库</a><a class="nav-item" href="/notes/">便签</a><a class="nav-item" href="/friends/">友链</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">Arc 浏览器上手</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-arc-%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-text">安装 Arc 浏览器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9D%E6%AC%A1%E4%BD%BF%E7%94%A8-arc-%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-text">初次使用 Arc 浏览器</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BC%98%E7%82%B9"><span class="toc-text">优点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-text">缺点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%98%AF%E5%90%A6%E5%8F%AF%E4%BB%A5%E6%9B%BF%E4%BB%A3%E5%85%B6%E4%BB%96%E6%B5%8F%E8%A7%88%E5%99%A8"><span class="toc-text">是否可以替代其他浏览器？</span></a></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a rel="me" class="social" title="GitHub (@Cubik65536)" href="https://github.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/github.svg" /></a><a rel="me" class="social" title="GitLab (@Cubik65536)" href="https://gitlab.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/></a><a rel="me" class="social" title="哔哩哔哩 (@Cubik65536)" href="https://space.bilibili.com/439205819" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/></a><a rel="me" class="social" title="Telegram (Cubik's Teleblog)" href="https://t.me/cubiksteleblog" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/></a><a rel="me" class="social" title="向我发送邮件" href="mailto:me@cubik65536.top" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/></a></div><br/><div class="large-social-wrap"><a class="large-social" title="从 keys.openpgp.org 下载 PGP 公钥" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" /><span class="description">我的 PGP 公钥</span></div></a><a class="large-social" title="穿梭虫洞 - 随机访问十年之约友链博客" href="https://foreverblog.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" /><span class="description">虫洞 | WORMHOLE</span></div></a><a class="large-social" title="开往 - 友链接力" href="https://www.travellings.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/train.svg" /><span class="description">开往 | Travelling</span></div></a></div><br/><div class="large-social-wrap"><a class="large-social" href="/2022-12-31-HandsOnArcBrowser/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">Chinese (S)</span></div></a><a class="large-social" href="/en/2022-12-31-HandsOnArcBrowser/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">English</span></div></a></div><br/>&nbsp;<a href="https://www.foreverblog.cn/blog/2992.html" target="_blank" ><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/logo_en_default.png" alt="【CUBIK 的小站】十年之约" style="width:175px;height:auto;" /></a></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/posts">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></div><div id="post-meta">发布于&nbsp;<time datetime="2022-12-31T17:16:45.000Z">2022-12-31</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>Arc 浏览器上手</span></h1>
+<p>前一段时间我通过朋友拿到了一个体验 Arc 浏览器的邀请码，于是我开始将
+Arc
+浏览器当作我的主力浏览器使用了一段时间。由于生活中需要忙各种其他事情，于是这个上手体验文被拖到了现在。这篇文章仍然主要着重于
+Arc 浏览器带给我的第一印象，那我们开始吧！</p>
+<span id="more"></span>
+<h2 id="安装-arc-浏览器">安装 Arc 浏览器</h2>
+<p>目前 Arc 浏览器仅支持 macOS
+系统而且仍然需要邀请码才可以体验。如果你还没有邀请码，你可以前往 <a
+target="_blank" rel="noopener" href="https://www.arc.net">Arc 浏览器官网</a>
+填写表格申请邀请码。如果你有朋友已经在使用 Arc
+浏览器，你也可以找他们给你一个邀请链接。已有 Arc
+用户可以每周生成一个可供五人使用的邀请链接。打开 Arc
+浏览器，点击菜单栏中的 <code>Arc</code>，然后点击
+<code>Gift Arc to a friend</code>，你就可以将你的邀请码分享给你的朋友了。</p>
+<p>在你收到你的朋友发送给你的邀请之后，打开链接即可看见以下页面，输入你的邮箱地址，然后点击
+<code>Get early access</code> 即可。</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rlj.jpeg" fancybox="true"/></div></div>
+<p>在完成上述步骤（或 Arc
+浏览器开发组直接邀请你）之后，你会收到一个类似这个的邮件（我此处使用了好友邀请，开发组邀请邮件可能不太一样）：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rp8.jpeg" fancybox="true"/></div></div>
+<p>点击 <code>Download Arc</code> 开始下载，然后打开
+<code>Arc-latet.dmg</code>，像安装大部分其他 App 一样将
+<code>Arc.app</code> 拖动到 <code>Applications</code>
+文件夹中即可完成安装。</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-rz5.png" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s0i.jpeg" fancybox="true"/></div></div>
+<h2 id="初次使用-arc-浏览器">初次使用 Arc 浏览器</h2>
+<p>初次打开 Arc 浏览器，你会看见以下界面：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s4b.jpeg" fancybox="true"/></div></div>
+<p>点击继续（➡️），你将会进入 Arc
+浏览器的初次配置流程，首先姓名邮箱（必须是收到邀请邮件的那个）以及 Arc
+账户密码：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s4i.jpeg" fancybox="true"/></div></div>
+<p>然后选择是否要从其他浏览器导入：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s8d.jpeg" fancybox="true"/></div></div>
+<p>到现在都还和其他浏览器没什么区别，但是接下来就不一样了。Arc
+浏览器会让你自行选择你想要的主题色：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9d.png" fancybox="true"/></div></div>
+<p>然后是常用书签以及是否要开启广告拦截：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9m.jpeg" fancybox="true"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-s9p.jpeg" fancybox="true"/></div></div>
+<p>最后是是否要设置 Arc 为默认浏览器：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sa0.jpeg" fancybox="true"/></div></div>
+<p>完事之后还会给你一个可以保存的图片已证明你是 Arc 浏览器的用户：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sa7.jpeg" fancybox="true"/></div></div>
+<p>然后你就可以开始体验 Arc 浏览器了！</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sax.jpeg" fancybox="true"/></div></div>
+<h2 id="优点">优点</h2>
+<p>Arc
+浏览器相对于其他浏览器，都有各不相同的优势，这里我就列举一些我认为比较重要的优势：</p>
+<ol type="1">
+<li><p>基于 Chromium 内核</p>
+<p>这点其实是相当重要的。我之前使用的主力浏览器是
+Safari，所以会遇到各种兼容性的问题，但在使用基于 Chromium 的 Arc
+身上这些问题就不存在了。另外，Arc 浏览器也支持 Chrome 扩展，所以你可以在
+Chrome 商店中找到你想要的扩展并安装到 Arc
+浏览器中，为浏览器的功能以及可定制性带来的极大的提升。</p></li>
+<li><p>好看的界面</p>
+<p>看完上一点，你可能会问，那为什么不直接用 Chrome
+呢？看到上面几个截图，你应该会发现 Arc 浏览器的界面风格和
+Chrome/Chromium/Edge
+以及其他浏览器有很大不同。我个人认为这样的界面风格相对于上述浏览器都更适合
+macOS。</p></li>
+<li><p>特殊功能</p>
+<p>对我来说，Arc 浏览器独特的标签页组织方式非常吸引人。在 Arc
+浏览器中引入了 Space 的概念，你可以把你的标签页分组到不同的 Space
+中，这样你就可以在不同的 Space
+中切换，而不需要开启多个窗口来分组不同的工作内容。同时，Arc
+浏览器收藏标签页的功能也非常有意思。在左侧的标签页列表中，标签页分为
+<code>Favorites</code>，即为不同 Space
+共享的统一收藏夹，<code>Pinned Tabs</code> 即为当前 Space
+的固定标签页，以及更像是普通浏览器打开的各种标签页的
+<code>Today tabs</code>，你也可以设置自动关闭一段时间没有访问的
+<code>Today tabs</code>。Arc
+浏览器还支持关闭侧边栏已获得更多的浏览空间，或者在同一窗口下分开显示多个网页。这些新功能无疑改变了许多浏览器常用的操作逻辑。</p>
+<p><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sfi.jpeg" alt="Arc 浏览器同窗口分屏显示" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">Arc 浏览器同窗口分屏显示</span></div></div> <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sif.jpeg" alt="Arc 浏览器对网页元素单独截图" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">Arc 浏览器对网页元素单独截图</span></div></div> <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221201-d17.jpeg" alt="Arc 浏览器隐藏侧边栏显示" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">Arc 浏览器隐藏侧边栏显示</span></div></div></p></li>
+<li><p>隐私优化</p>
+<p>Arc
+浏览器属于相当注重用户隐私的浏览器之一。在设置过程中它就会问你是否要开启广告拦截，而且
+Arc 会收集的数据也很少，但是这引出了极大的问题：</p></li>
+</ol>
+<h2 id="缺点">缺点</h2>
+<ol type="1">
+<li><p>不完美的同步</p>
+<p>作为需要在多个设备上工作的人，Arc
+<strong>不会</strong>同步保存的密码，历史记录，书签，插件等内容。这意味着更换一个工作设备都要注意重新设置大量内容，造成了极大的不便。这也不禁让我思考：为了隐私而放弃同步这一个极大提升多设备体验的功能，值得吗？</p></li>
+<li><p>确实是基于 Chromium 的</p>
+<p>没错，这是对于 Arc 浏览器完成度的吐槽，这是 Arc
+浏览器的设置界面：</p>
+<p><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sbs.jpeg" fancybox="true"/></div></div></p>
+<p>挺有苹果味的？那如果我们点击 <code>Password</code>
+选项看看保存的密码呢？</p>
+<p><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-scm.jpeg" fancybox="true"/></div></div></p>
+<p>这包装完成度未免也太低了点？About Chromium？</p></li>
+<li><p>复杂的操作逻辑</p>
+<p>Arc
+浏览器引入了各种操作以及对应的快捷键。侧边栏等带有复杂的操作的模块因为可以隐藏所以对效率的影响可以被降低，但是快捷键？很多网站（尤其是
+Google Doc 这种网页应用）都会使用快捷键来提升操作效率，但是 Arc
+将很多常用快捷键都占用了，虽然可以设置要求网页优先使用快捷键或者设置快捷键，但是还是会造成一些不便。</p>
+<p><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.cubik65536.top/ArcBrowser/SCR-20221130-sir.jpeg" alt="Arc 浏览器快捷键配置窗口" fancybox="true"/></div><div class="image-meta"><span class="image-caption center">Arc 浏览器快捷键配置窗口</span></div></div></p></li>
+</ol>
+<h2 id="是否可以替代其他浏览器">是否可以替代其他浏览器？</h2>
+<p>我个人认为 Arc
+可以在大多数情况下当做主要浏览器使用，但是我个人还是建议保留一个常用/系统自带的浏览器应付跨设备工作的情况。</p>
+<p>那么就这样吧，GL &amp; HF！对了，新年快乐！</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名 -
+非商业性使用 - 相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://www.cubik65536.top/2022-12-31-HandsOnArcBrowser/" /></div><div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=Arc 浏览器上手 - Cubik 的小站&amp;body=https://www.cubik65536.top/2022-12-31-HandsOnArcBrowser/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/envelope.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/link.svg"/></a></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2022-12-MonthJournal/">2022 年 12 月总结 (2022 年终总结？)</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2022-12-16-macOS-automatically-mount-dmg-when-start/">macOS 操作系统在启动时自动挂载 dmg 文件</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">主页</span><a href="/">关于</a><a href="/contact-me/">联系我</a><a href="/my-pgp/">我的 PGP</a></div><div class="sitemap-group"><span class="fs14">博客</span><a href="/posts/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a><a href="/wiki/">知识库</a><a href="/notes/">笔记</a><a href="/bookmarks/">网址收藏</a><a href="/commit-message-conventions/">Git 提交信息格式</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/439205819">哔哩哔哩</a><a target="_blank" rel="noopener" href="https://t.me/cubiksteleblog">Telegram 频道</a><a target="_blank" rel="noopener" href="https://foreverblog.cn/go.html">虫洞 | WORMHOLE</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往 | Travelling</a></div><div class="sitemap-group"><span class="fs14">联系我</span><a href="/message-board/">留言板</a><a href="/contact-me/">联系我 (详细信息页)</a><a href="mailto:me@cubik65536.top">Email</a><a target="_blank" rel="noopener" href="https://github.com/Cubik65536">GitHub</a><a target="_blank" rel="noopener" href="https://gitlab.com/Cubik65536">GitLab</a><a target="_blank" rel="noopener" href="https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420">keys.openpgp.org</a></div></div><div class="text"><p>本博客由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; <a
+target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Hexo Theme Stellar</a>
+强力驱动，您可以在 <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536/cubik-website/">GitHub</a>
+找到本站源码。 Copyright © 2020-2023 <a
+target="_blank" rel="noopener" href="https://cubik65536.top"><span class="citation"
+data-cites="Cubik65536">@Cubik65536</span></a> 保留所有权利。
+本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
   }
-  .l_body {
-    padding: 0;
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
   }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    margin: 0;
-    left: 0;
-    background: var(--site-bg);
-    box-shadow: $boxshadow-card-float;
-    z-index: 9;
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
-  .l_body .l_main {
-    max-width: 100%;
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
-  .l_body.mobile .l_left {
-    transition: transform 0.3s ease-out;
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
-  .l_body.mobile.sidebar .l_left {
-    transform: translateX(0px);
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
   }
-}
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@2.14.1/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@2.14.1/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://waline.cubik65536.top","commentCount":true,"pageview":true,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","login":"enable","pageSize":10,"reaction":true,"locale":{"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"}}, {
+        el: '#waline_container',
+        path: path,
+        reaction: true,
+        locale: {"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"},
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5.5px 0.6rem;
+      opacity: 0.25;
+      font-weight: 1rem;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    const path = window.location.href.toString().split(window.location.host)[1]
+    codeElementArr.forEach(code => {
+
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      if (path.startsWith("/en")) {
+        codeCopyBtn.innerText = 'Copy Code'
+      } else {
+        codeCopyBtn.innerText = '复制代码'
+      }
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+        if (path.startsWith("/en")) {
+          codeCopyBtn.innerText = 'Successfully Copied'
+        } else {
+          codeCopyBtn.innerText = '复制成功'
+        }
+
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          if (path.startsWith("/en")) {
+            codeCopyBtn.innerText = 'Copy Code'
+          } else {
+            codeCopyBtn.innerText = '复制代码'
+          }
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码 / Code Copied')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此 api')
+        console.error('Current Browser does not support this API')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
+</html>
