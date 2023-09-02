@@ -20,58 +20,60 @@ tags:
 
 {% note color:orange "本列表会进行简单分类，但是主要是以数字和字母顺序排序（0~9，然后 A~Z）<br/>本列表中对版本的标注仅包含&nbsp;Fabric&nbsp;版&nbsp;1.18&nbsp;到&nbsp;1.20&nbsp;(最新版可能会更新，最低版大概率将保持&nbsp;1.18)" %}
 
+{% note color:blue "服务端 Mod 会以 **[S]** 标记，客户端 Mod 会以 *[C]* 标记" %}
+
 ## API
 
-- [Architectury API](https://modrinth.com/mod/architectury-api)
+- [Architectury API](https://modrinth.com/mod/architectury-api) **[S]***[C]*
   - Modrinth Project ID: {% copy lhGA9TYQ %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [bad packets](https://modrinth.com/mod/badpackets)
+- [bad packets](https://modrinth.com/mod/badpackets) **[S]***[C]*
   - Modrinth Project ID: {% copy ftdbN0KK %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Cloth API](https://www.curseforge.com/minecraft/mc-mods/cloth-api)
+- [Cloth API](https://www.curseforge.com/minecraft/mc-mods/cloth-api) *[C]*
   - CurseForge Project ID: {% copy 317121 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19
     - [ ] 1.19.x (except 1.19)
     - [ ] 1.20.x
-- [Cloth Config API](https://modrinth.com/mod/cloth-config)
+- [Cloth Config API](https://modrinth.com/mod/cloth-config) *[C]*
   - Modrinth Project ID: {% copy 9s6osm5g %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Fabric API](https://modrinth.com/mod/fabric-api)
+- [Fabric API](https://modrinth.com/mod/fabric-api) **[S]***[C]*
   - Modrinth Project ID: {% copy P7dR8mSH %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)
+- [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin) **[S]***[C]*
   - Modrinth Project ID: {% copy Ha28R6CL %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Iceberg](https://modrinth.com/mod/iceberg)
+- [Iceberg](https://modrinth.com/mod/iceberg) *[C]*
   - Modrinth Project ID: {% copy 5faXoLqX %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [MaglicLib](https://modrinth.com/mod/magiclib)
+- [MaglicLib](https://modrinth.com/mod/magiclib) **[S]***[C]*
   - Modrinth Project ID: {% copy mv1zH6ln %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib)
+- [MaLiLib](https://www.curseforge.com/minecraft/mc-mods/malilib) **[S]***[C]*
   - CurseForge Project ID: {% copy 303119 %}
   - 版本支持：
     - [x] 1.18.x
@@ -82,63 +84,65 @@ tags:
 
 {% note color:orange "本列表 mod 除非单独备注则认为支持 1.18 到 1.20 全部版本" %}
 
-- [Enhanced Block Entities](https://modrinth.com/mod/ebe)
+- [Concurrent Chunk Management Engine](https://modrinth.com/mod/c2me-fabric) **[S]***[C]*
+  - Modrinth Project ID: {% copy VSNURh3q %}
+- [Enhanced Block Entities](https://modrinth.com/mod/ebe) *[C]*
   - Modrinth Project ID: {% copy OVuFYfre %}
-- [FastChest](https://github.com/FakeDomi/FastChest)
-- [FerriteCore](https://modrinth.com/mod/ferrite-core)
+- [FastChest](https://github.com/FakeDomi/FastChest) *[C]*
+- [FerriteCore](https://modrinth.com/mod/ferrite-core) **[S]***[C]*
   - Modrinth Project ID: {% copy uXXizFIs %}
-- [Indium](https://modrinth.com/mod/indium)
+- [Indium](https://modrinth.com/mod/indium) *[C]*
   - Modrinth Project ID: {% copy Orvt0mRa %}
-- [Iris Shaders](https://modrinth.com/mod/iris)
+- [Iris Shaders](https://modrinth.com/mod/iris) *[C]*
   - Modrinth Project ID: {% copy YL57xq9U %}
-- [Krypton](https://modrinth.com/mod/krypton)
+- [Krypton](https://modrinth.com/mod/krypton) **[S]***[C]*
   - Modrinth Project ID: {% copy fQEb0iXm %}
-- [Lithium](https://modrinth.com/mod/lithium)
+- [Lithium](https://modrinth.com/mod/lithium) **[S]***[C]*
   - Modrinth Project ID: {% copy gvQqBUqZ %}
-- [Memory Leak Fix](https://modrinth.com/mod/memoryleakfix)
+- [Memory Leak Fix](https://modrinth.com/mod/memoryleakfix) **[S]***[C]*
   - Modrinth Project ID: {% copy NRjRiSSD %}
-- [More Culling](https://modrinth.com/mod/moreculling)
+- [More Culling](https://modrinth.com/mod/moreculling) *[C]*
   - Modrinth Project ID: {% copy 51shyZVL %}
-- [No Chat Reports](https://modrinth.com/mod/no-chat-reports) (仅 1.19+，因为 1.18- 没有举报机制)
+- [No Chat Reports](https://modrinth.com/mod/no-chat-reports) (仅 1.19+，因为 1.18- 没有举报机制) **[S]***[C]*
   - Modrinth Project ID: {% copy qQyHxfxd %}
-- [Replay](https://modrinth.com/mod/replaymod)
+- [Replay](https://modrinth.com/mod/replaymod) *[C]*
   - Modrinth Project ID: {% copy Nv2fQJo5 %}
-- [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options)
+- [Reese's Sodium Options](https://modrinth.com/mod/reeses-sodium-options) *[C]*
   - Modrinth Project ID: {% copy Bh37bMuy %}
-- [Starlight](https://modrinth.com/mod/starlight)
+- [Starlight](https://modrinth.com/mod/starlight) **[S]***[C]*
   - Modrinth Project ID: {% copy H8CaAYZC %}
-- Sodium
+- Sodium *[C]*
   - [1.18.x ~ 1.19](https://www.replaymod.com/download)
   - [1.19.1 ~ 1.20.x](https://modrinth.com/mod/sodium)
     - Modrinth Project ID: {% copy AANobbMI %}
-- [Sodium Extra](https://modrinth.com/mod/sodium-extra)
+- [Sodium Extra](https://modrinth.com/mod/sodium-extra) *[C]*
   - Modrinth Project ID: {% copy PtjYWJkn %}
 
 ## 聊天
 
-- [Chat Heads](https://modrinth.com/mod/chat-heads)
+- [Chat Heads](https://modrinth.com/mod/chat-heads) *[C]*
   - Modrinth Project ID: {% copy Wb5oqrBJ %}
-- AdvancedChatCore
+- AdvancedChatCore *[C]*
   - [1.18.x ~ 1.19.x](https://modrinth.com/mod/advancedchatcore)
     - Modrinth Project ID: {% copy 1l6k9gvT %}
   - [1.20.x](https://github.com/medisant/AdvancedChatCore)
     - GitHub Repository ID: {% copy medisant/AdvancedChatCore %}
-- AdvancedChatHUD
+- AdvancedChatHUD *[C]*
   - [1.18.x ~ 1.19.x](https://modrinth.com/mod/advancedchathud)
     - Modrinth Project ID: {% copy lBFvglCF %}
   - [1.20.x](https://github.com/medisant/AdvancedChatHUD)
     - GitHub Repository ID: {% copy medisant/AdvancedChatHUD %}
-- AdvancedChatBox
+- AdvancedChatBox *[C]*
   - [1.18.x ~ 1.19.x](https://modrinth.com/mod/advancedchatbox)
     - Modrinth Project ID: {% copy 8WeCY8Xd %}
   - [1.20.x](https://github.com/medisant/AdvancedChatBox)
     - GitHub Repository ID: {% copy medisant/AdvancedChatBox %}
-- AdvancedChatFilters
+- AdvancedChatFilters *[C]*
   - [1.18.x ~ 1.19.x](https://modrinth.com/mod/advancedchatfilters)
     - Modrinth Project ID: {% copy c6fx2vMe %}
   - [1.20.x](https://github.com/medisant/AdvancedChatFilters)
     - GitHub Repository ID: {% copy medisant/AdvancedChatFilters %}
-- AdvancedChatLog
+- AdvancedChatLog *[C]*
   - [1.18.x ~ 1.19.x](https://modrinth.com/mod/advancedchatlog)
     - Modrinth Project ID: {% copy 6PRTTuco %}
   - [1.20.x](https://github.com/medisant/AdvancedChatLog)
@@ -146,229 +150,229 @@ tags:
 
 ## 实用类
 
-- [AutoReconnect](https://www.curseforge.com/minecraft/mc-mods/autoreconnect)
+- [AutoReconnect](https://www.curseforge.com/minecraft/mc-mods/autoreconnect) *[C]*
   - 自动重新连接
   - CurseForge Project ID: {% copy 406211 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Bedrock Miner](https://github.com/LXYan2333/Fabric-Bedrock-Miner)
+- [Bedrock Miner](https://github.com/LXYan2333/Fabric-Bedrock-Miner) *[C]*
   - "挖掘"基岩
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [ ] 1.20.x
-- [Beenfo](https://modrinth.com/plugin/beenfo)
+- [Beenfo](https://modrinth.com/plugin/beenfo) **[S]***[C]*
   - 蜂箱信息显示
   - Modrinth Project ID: {% copy Bta0Pt47 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [BetterF3](https://modrinth.com/mod/betterf3)
+- [BetterF3](https://modrinth.com/mod/betterf3) *[C]*
   - 更好的 F3 菜单
   - Modrinth Project ID: {% copy 8shC1gFX %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Better Ping Display](https://modrinth.com/mod/better-ping-display-fabric)
+- [Better Ping Display](https://modrinth.com/mod/better-ping-display-fabric) *[C]*
   - 更好的延迟显示
   - Modrinth Project ID: {% copy MS1ZMyR7 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Bobby](https://modrinth.com/mod/bobby)
+- [Bobby](https://modrinth.com/mod/bobby) *[C]*
   - 更改视距
   - Modrinth Project ID: {% copy M08ruV16 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Bounding Box Outline Reloaded](https://modrinth.com/mod/bbor)
+- [Bounding Box Outline Reloaded](https://modrinth.com/mod/bbor) **[S]***[C]*
   - 结构边框显示
   - Modrinth Project ID: {% copy ECATbUJL %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [ChestTracker](https://modrinth.com/mod/chest-tracker)
+- [ChestTracker](https://modrinth.com/mod/chest-tracker) *[C]*
   - 箱子位置追踪
   - Modrinth Project ID: {% copy ni4SrKmq %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [clientcommands](https://modrinth.com/mod/client-commands)
+- [clientcommands](https://modrinth.com/mod/client-commands) *[C]*
   - RNG 控制
   - Modrinth Project ID: {% copy 7Coz83fv %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [DeathLog](https://modrinth.com/mod/deathlog)
+- [DeathLog](https://modrinth.com/mod/deathlog) **[S]***[C]*
   - 死亡日志
   - Modrinth Project ID: {% copy TPAYeAOc %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [EasierVillagerTrading](https://modrinth.com/mod/easiervillagertrading)
+- [EasierVillagerTrading](https://modrinth.com/mod/easiervillagertrading) *[C]*
   - 快速村民交易
   - Modrinth Project ID: {% copy ChscgScW %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [EditSign](https://modrinth.com/mod/editsign)
+- [EditSign](https://modrinth.com/mod/editsign) **[S]**
   - 编辑告示牌内容
   - Modrinth Project ID: {% copy hFMCvH85 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [ ] 1.20.x（已内置本功能）
-- [Firework Rocket Duration](https://www.curseforge.com/minecraft/mc-mods/firework-rocket-duration)
+- [Firework Rocket Duration](https://www.curseforge.com/minecraft/mc-mods/firework-rocket-duration) *[C]*
   - 烟花火箭持续时间显示
   - CurseForge Project ID: {% copy 486697 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [FPS Reducer](https://www.curseforge.com/minecraft/mc-mods/fps-reducer)
+- [FPS Reducer](https://www.curseforge.com/minecraft/mc-mods/fps-reducer) *[C]*
   - FPS 减速器（在游戏失去焦点时降低游戏帧数）
   - CurseForge Project ID: {% copy 280294 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [IMBlocker](https://github.com/reserveword/IMBlocker)
+- [IMBlocker](https://github.com/reserveword/IMBlocker) *[C]*
   - 输入法冲突修复
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [In-Game Account Switcher](https://modrinth.com/mod/in-game-account-switcher)
+- [In-Game Account Switcher](https://modrinth.com/mod/in-game-account-switcher) *[C]*
   - 在游戏内切换账号
   - Modrinth Project ID: {% copy cudtvDnd %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Inventory HUD+](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge)
+- [Inventory HUD+](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge) *[C]*
   - 背包显示
   - CurseForge Project ID: {% copy 357540 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next)
+- [Inventory Profiles Next](https://modrinth.com/mod/inventory-profiles-next) *[C]*
   - 背包整理
   - Modrinth Project ID: {% copy O7RBXm3n %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Jade](https://modrinth.com/mod/jade)
+- [Jade](https://modrinth.com/mod/jade) **[S]***[C]*
   - 你在看什么？
   - Modrinth Project ID: {% copy nvQzSEkH %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Jade Addon](https://modrinth.com/mod/jade-addons-fabric)
+- [Jade Addon](https://modrinth.com/mod/jade-addons-fabric) **[S]***[C]*
   - 你在看什么？(Mod 显示扩展)
   - Modrinth Project ID: {% copy nvQzSEkH %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights)
+- [LambDynamicLights](https://modrinth.com/mod/lambdynamiclights) *[C]*
   - 动态光源
   - Modrinth Project ID: {% copy yBW8D80W %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Logical Zoom](https://www.curseforge.com/minecraft/mc-mods/logical-zoom)
+- [Logical Zoom](https://www.curseforge.com/minecraft/mc-mods/logical-zoom) *[C]*
   - 缩放
   - CurseForge Project ID: {% copy 356461 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Memory Usage Screen](https://modrinth.com/mod/memory-usage-screen)
+- [Memory Usage Screen](https://modrinth.com/mod/memory-usage-screen) *[C]*
   - 内存使用情况显示
   - Modrinth Project ID: {% copy n9mFA0ax %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [MixinTrace](https://modrinth.com/mod/mixintrace)
+- [MixinTrace](https://modrinth.com/mod/mixintrace) **[S]***[C]*
   - 更好的报错信息显示
   - Modrinth Project ID: {% copy sGmHWmeL %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Mod Menu](https://modrinth.com/mod/modmenu)
+- [Mod Menu](https://modrinth.com/mod/modmenu) *[C]*
   - Mod 菜单
   - Modrinth Project ID: {% copy mOgUt4GM %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Pistorder](https://modrinth.com/mod/pistorder)
+- [Pistorder](https://modrinth.com/mod/pistorder) *[C]*
   - 活塞推动顺序显示
   - Modrinth Project ID: {% copy lpin1bEg %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Quick Shulker](https://www.curseforge.com/minecraft/mc-mods/quick-shulker)
+- [Quick Shulker](https://www.curseforge.com/minecraft/mc-mods/quick-shulker) **[S]***[C]*
   - 快速末影箱访问
   - CurseForge Project ID: {% copy 362669 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Reasonable Sorting](https://modrinth.com/mod/reasonable-sorting)
+- [Reasonable Sorting](https://modrinth.com/mod/reasonable-sorting) *[C]*
   - 更合理的创造物品栏排序
   - Modrinth Project ID: {% copy ghf7OqIS %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [ ] 1.20.x
-- [Roughly Enough Items (REI)](https://modrinth.com/mod/rei)
+- [Roughly Enough Items (REI)](https://modrinth.com/mod/rei) *[C]*
   - 物品栏查看物品合成配方/用途
   - Modrinth Project ID: {% copy nfn13YXA %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Trajectory Preview](https://www.curseforge.com/minecraft/mc-mods/trajectory-preview-fabric)
+- [Trajectory Preview](https://www.curseforge.com/minecraft/mc-mods/trajectory-preview-fabric) *[C]*
   - 投掷物品（箭/末影珍珠/雪球/鸡蛋等）轨迹预览
   - Modrinth Project ID: {% copy 545067 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [VoxelMap](https://modrinth.com/mod/voxelmap-updated)
+- [VoxelMap](https://modrinth.com/mod/voxelmap-updated) *[C]*
   - 小地图/世界地图
   - Modrinth Project ID: {% copy wkzK5379 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [WorldEdit](https://www.curseforge.com/minecraft/mc-mods/worldedit)
+- [WorldEdit](https://www.curseforge.com/minecraft/mc-mods/worldedit) **[S]***[C]*
   - 创世神
   - CurseForge Project ID: {% copy 225608 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [WorldEditCUI](https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric)
+- [WorldEditCUI](https://www.curseforge.com/minecraft/mc-mods/worldeditcui-fabric) *[C]*
   - 创世神可视化
   - CurseForge Project ID: {% copy 402098 %}
   - 版本支持：
@@ -380,134 +384,136 @@ tags:
 
 {% note color:orange "本列表 mod 除非单独备注则认为支持 1.18 到 1.20 全部版本" %}
 
-- [Fabric Carpet](https://modrinth.com/mod/carpet)
+- [Fabric Carpet](https://modrinth.com/mod/carpet) **[S]***[C]*
   - Modrinth Project ID: {% copy TQTTVgYE %}
-- [Carpet Extra](https://modrinth.com/mod/carpet-extra)
+- [Carpet Extra](https://modrinth.com/mod/carpet-extra) **[S]***[C]*
   - Modrinth Project ID: {% copy VX3TgwQh %}
-- [Carpet AMS Addition](https://modrinth.com/mod/carpet-ams-addition)
+- [Carpet AMS Addition](https://modrinth.com/mod/carpet-ams-addition) **[S]***[C]*
   - Modrinth Project ID: {% copy q4fx1eTg %}
-- [Carpet TCTC Addition](https://modrinth.com/mod/carpet-tctc-addition)
+- [Carpet TCTC Addition](https://modrinth.com/mod/carpet-tctc-addition) **[S]***[C]*
   - Modrinth Project ID: {% copy vbBQ6dVH %}
-- [Carpet TIS Addition](https://modrinth.com/mod/carpet-tis-addition)
+- [Carpet TIS Addition](https://modrinth.com/mod/carpet-tis-addition) **[S]***[C]*
   - Modrinth Project ID: {% copy jE0SjGuf %}
-- [Gugle Carpet Addition](https://modrinth.com/mod/gca)
+- [Gugle Carpet Addition](https://modrinth.com/mod/gca) **[S]***[C]*
   - Modrinth Project ID: {% copy UHjbX5mk %}
-- [Plusls Carpet Addition](https://github.com/Nyan-Work/plusls-carpet-addition)
+- [Plusls Carpet Addition](https://github.com/Nyan-Work/plusls-carpet-addition) **[S]***[C]*
 
 ## MASA 系列（实用类 mod，但因为数量众多且成系列，所以单独列出）
 
 {% note color:orange "本列表 mod 除非单独备注则认为支持 1.18 到 1.20 全部版本" %}
 
-- [Item Scroller](https://www.curseforge.com/minecraft/mc-mods/item-scroller)
+- [Item Scroller](https://www.curseforge.com/minecraft/mc-mods/item-scroller) *[C]*
   - CurseForge Project ID: {% copy 242064 %}
-- [Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica)
+- [Litematica](https://www.curseforge.com/minecraft/mc-mods/litematica) *[C]*
   - CurseForge Project ID: {% copy 308892 %}
-- [MasaGadget](https://modrinth.com/mod/masa-gadget)
+- [MasaGadget](https://modrinth.com/mod/masa-gadget) *[C]*
   - Modrinth Project ID: {% copy SFO4Ca80 %}
-- [MiniHUD](https://www.curseforge.com/minecraft/mc-mods/minihud)
+- [MiniHUD](https://www.curseforge.com/minecraft/mc-mods/minihud) *[C]*
   - CurseForge Project ID: {% copy 244260 %}
-- [Oh My Minecraft Client](https://github.com/Nyan-Work/oh-my-minecraft-client)
-- [Syncmatica](https://modrinth.com/mod/syncmatica)
+- [Oh My Minecraft Client](https://github.com/Nyan-Work/oh-my-minecraft-client) *[C]*
+- [Servux](https://www.curseforge.com/minecraft/mc-mods/servux) **[S]**
+  - CurseForge Project ID: {% copy 406323 %}
+- [Syncmatica](https://modrinth.com/mod/syncmatica)  **[S]***[C]*
   - Modrinth Project ID: {% copy bfneejKo %}
-- [Tweakermore](https://modrinth.com/mod/tweakermore)
+- [Tweakermore](https://modrinth.com/mod/tweakermore) *[C]*
   - Modrinth Project ID: {% copy GBeCx05I %}
-- [Tweakeroo](https://www.curseforge.com/minecraft/mc-mods/tweakeroo)
+- [Tweakeroo](https://www.curseforge.com/minecraft/mc-mods/tweakeroo) **[S]***[C]*
   - CurseForge Project ID: {% copy 297344 %}
 
 ## 美化（皮肤/GUI等）
 
-- [3D Skin Layers](https://modrinth.com/mod/3dskinlayers)
+- [3D Skin Layers](https://modrinth.com/mod/3dskinlayers) *[C]*
   - 3D 皮肤显示
   - Modrinth Project ID: {% copy zV5r3pPn %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [AppleSkin](https://modrinth.com/mod/appleskin)
+- [AppleSkin](https://modrinth.com/mod/appleskin) *[C]*
   - 饱食度显示
   - Modrinth Project ID: {% copy EsAfCjCV %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Blur](https://modrinth.com/mod/blur-fabric)
+- [Blur](https://modrinth.com/mod/blur-fabric) *[C]*
   - 在打开 GUI 时模糊背景
   - Modrinth Project ID: {% copy NK39zBp2 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [CIT Resewn](https://modrinth.com/mod/cit-resewn)
+- [CIT Resewn](https://modrinth.com/mod/cit-resewn) *[C]*
   - 自定义物品纹理
   - Modrinth Project ID: {% copy otVJckYQ %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Continuity](https://modrinth.com/mod/continuity)
+- [Continuity](https://modrinth.com/mod/continuity) *[C]*
   - 连接纹理
   - Modrinth Project ID: {% copy 1IjD5062 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Dark Loading Screen](https://modrinth.com/mod/dark-loading-screen)
+- [Dark Loading Screen](https://modrinth.com/mod/dark-loading-screen) *[C]*
   - 暗色加载界面
   - Modrinth Project ID: {% copy h3XWIuzM %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar)
+- [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) *[C]*
   - 更好的盔甲条
   - Modrinth Project ID: {% copy hAt6ty93 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [ExtraPlayerRenderer](https://modrinth.com/mod/extraplayerrenderer)
+- [ExtraPlayerRenderer](https://modrinth.com/mod/extraplayerrenderer) *[C]*
   - 额外的玩家渲染
   - Modrinth Project ID: {% copy 7q8r8AtY %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [First-person Model](https://modrinth.com/mod/first-person-model)
+- [First-person Model](https://modrinth.com/mod/first-person-model) *[C]*
   - 更好的第一人称动画
   - Modrinth Project ID: {% copy H5XMjpHi %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Not Enough Animations](https://modrinth.com/mod/not-enough-animations)
+- [Not Enough Animations](https://modrinth.com/mod/not-enough-animations) *[C]*
   - 更好的第三人称动画
   - Modrinth Project ID: {% copy MPCX6s5C %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [MinecraftCapes](https://modrinth.com/mod/minecraftcapes)
+- [MinecraftCapes](https://modrinth.com/mod/minecraftcapes) *[C]*
   - 自定义披风
   - Modrinth Project ID: {% copy 9gNVPfzw %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [MiniMePets](https://www.curseforge.com/minecraft/mc-mods/minimepets)
+- [MiniMePets](https://www.curseforge.com/minecraft/mc-mods/minimepets) *[C]*
   - 应用玩家皮肤到宠物上
   - CurseForge Project ID: {% copy 593627 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [TalkBubbles](https://www.curseforge.com/minecraft/mc-mods/talkbubbles)
+- [TalkBubbles](https://www.curseforge.com/minecraft/mc-mods/talkbubbles) *[C]*
   - 聊天气泡
   - CurseForge Project ID: {% copy 532113 %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
-- [Wavey Capes](https://modrinth.com/mod/wavey-capes)
+- [Wavey Capes](https://modrinth.com/mod/wavey-capes) *[C]*
   - 飘动的披风
   - Modrinth Project ID: {% copy kYuIpRLv %}
   - 版本支持：
