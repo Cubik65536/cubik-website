@@ -751,9 +751,9 @@ Arc 浏览器带给我的第一印象，那我们开始吧！&lt;/p&gt;</summary
     <category term="日常" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
-    
     <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
+    
+    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
     
     <category term="浏览器" scheme="https://www.cubik65536.top/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
@@ -820,9 +820,9 @@ root 用户登录。&lt;/p&gt;
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
     <category term="Oracle Cloud" scheme="https://www.cubik65536.top/tags/Oracle-Cloud/"/>
     
@@ -1201,13 +1201,13 @@ href=&quot;https://linux.cn/lctt/Cubik65536&quot;&gt;Cubik&lt;/a&gt;&lt;/p&gt;
     <category term="解决方案" scheme="https://www.cubik65536.top/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     
     
-    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
-    
     <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
     
-    <category term="代码运行" scheme="https://www.cubik65536.top/tags/%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C/"/>
+    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
     <category term="C++" scheme="https://www.cubik65536.top/tags/C/"/>
+    
+    <category term="代码运行" scheme="https://www.cubik65536.top/tags/%E4%BB%A3%E7%A0%81%E8%BF%90%E8%A1%8C/"/>
     
     <category term="Java" scheme="https://www.cubik65536.top/tags/Java/"/>
     
@@ -1259,11 +1259,11 @@ href=&quot;https://github.com/vercel/hyper&quot;&gt;Hyper&lt;/a&gt;，在 macOS 
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
     <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
+    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
   </entry>
   
@@ -1312,13 +1312,13 @@ macOS 版 UTM 的优缺点和一些使用建议。&lt;/p&gt;</summary>
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
+    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
+    
     <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
     
     <category term="虚拟机" scheme="https://www.cubik65536.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
     <category term="UTM" scheme="https://www.cubik65536.top/tags/UTM/"/>
-    
-    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
   </entry>
   
@@ -1376,11 +1376,11 @@ href=&quot;https://www.cubik65536.top/2022-04-17-Hands-On-Warp-Terminal/&quot;&g
     <category term="日常" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
+    <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
     
     <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
-    <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
+    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
     
   </entry>
   
@@ -1436,13 +1436,13 @@ iOS 上运行虚拟机而闻名，但是这个软件也有 macOS
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
+    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
+    
     <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
     
     <category term="虚拟机" scheme="https://www.cubik65536.top/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     
     <category term="UTM" scheme="https://www.cubik65536.top/tags/UTM/"/>
-    
-    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
   </entry>
   
@@ -1523,11 +1523,11 @@ href=&quot;https://github.com/warpdotdev/Warp&quot;&gt;Warp&lt;/a&gt;
     <category term="日常" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/"/>
     
     
-    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
+    <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
     
     <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
-    <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
+    <category term="上手" scheme="https://www.cubik65536.top/tags/%E4%B8%8A%E6%89%8B/"/>
     
   </entry>
   
@@ -1596,9 +1596,9 @@ href=&quot;https://github.com/warpdotdev/Warp&quot;&gt;Warp&lt;/a&gt;
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
-    
     <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
+    
+    <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
     
   </entry>
   
@@ -1904,9 +1904,9 @@ RHEL（Red Hat Enterprise Linux）的下游构建版本，而是转变为与 Fed
     <category term="解决方案" scheme="https://www.cubik65536.top/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
   </entry>
   
@@ -1994,9 +1994,9 @@ Code SSH 远程访问控制 CentOS 7
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
     <category term="CentOS" scheme="https://www.cubik65536.top/tags/CentOS/"/>
     
