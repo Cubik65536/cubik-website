@@ -696,9 +696,9 @@
       
         <tags>
             
-            <tag> 上手 </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> 上手 </tag>
             
             <tag> 浏览器 </tag>
             
@@ -1107,13 +1107,13 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
-            <tag> C++ </tag>
-            
             <tag> 终端 </tag>
             
+            <tag> macOS </tag>
+            
             <tag> 代码运行 </tag>
+            
+            <tag> C++ </tag>
             
             <tag> Java </tag>
             
@@ -1169,11 +1169,11 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> 终端 </tag>
             
             <tag> Linux </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
@@ -1225,13 +1225,13 @@
       
         <tags>
             
+            <tag> macOS </tag>
+            
             <tag> 上手 </tag>
             
             <tag> 虚拟机 </tag>
             
             <tag> UTM </tag>
-            
-            <tag> macOS </tag>
             
         </tags>
       
@@ -1287,11 +1287,11 @@
       
         <tags>
             
-            <tag> 上手 </tag>
+            <tag> 终端 </tag>
             
             <tag> macOS </tag>
             
-            <tag> 终端 </tag>
+            <tag> 上手 </tag>
             
         </tags>
       
@@ -1318,9 +1318,9 @@
       
         <tags>
             
-            <tag> C++ </tag>
-            
             <tag> 终端 </tag>
+            
+            <tag> C++ </tag>
             
         </tags>
       
@@ -1347,13 +1347,13 @@
       
         <tags>
             
+            <tag> macOS </tag>
+            
             <tag> 上手 </tag>
             
             <tag> 虚拟机 </tag>
             
             <tag> UTM </tag>
-            
-            <tag> macOS </tag>
             
         </tags>
       
@@ -1432,11 +1432,11 @@
       
         <tags>
             
-            <tag> 上手 </tag>
+            <tag> 终端 </tag>
             
             <tag> macOS </tag>
             
-            <tag> 终端 </tag>
+            <tag> 上手 </tag>
             
         </tags>
       
@@ -1501,9 +1501,9 @@
       
         <tags>
             
-            <tag> macOS </tag>
-            
             <tag> 终端 </tag>
+            
+            <tag> macOS </tag>
             
         </tags>
       
