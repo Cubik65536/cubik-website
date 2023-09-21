@@ -16,7 +16,7 @@ header: false
 
 {% about %}
 
-{% quot Movies el:h2 %}
+{% quot Anime el:h2 %}
 
 {% tabs active:2 align:center %}
 

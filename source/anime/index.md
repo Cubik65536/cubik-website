@@ -16,7 +16,7 @@ header: false
 
 {% about %}
 
-{% quot 电影 el:h2 %}
+{% quot 动漫 el:h2 %}
 
 {% tabs active:2 align:center %}
 

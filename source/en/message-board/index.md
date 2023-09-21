@@ -18,8 +18,4 @@ header: false
 
 {% quot Message Board el:h2 %}
 
-<br/>
-
-{% navbar active:8 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Games](/en/games/) [Books](/en/books/) [Movies](/en/movies/) [Message&nbsp;Board](/en/message-board/) %}
-
 {% endabout %}

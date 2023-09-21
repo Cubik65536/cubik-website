@@ -18,10 +18,6 @@ header: false
 
 {% quot Books el:h2 %}
 
-<br/>
-
-{% navbar active:6 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Games](/en/games/) [Books](/en/books/) [Movies](/en/movies/) [Message&nbsp;Board](/en/message-board/) %}
-
 {% tabs active:2 align:center %}
 
 <!-- tab Wish -->

@@ -18,10 +18,6 @@ header: false
 
 {% quot 游戏 el:h2 %}
 
-<br/>
-
-{% navbar active:5 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [游戏](/games/) [书籍](/books/) [影视](/movies/) [留言板](/message-board/) %}
-
 {% note color:warning "注意" "本列表中提到的平台仅代表我游玩此游戏使用的平台，此游戏可能支持其他平台" %}
 
 {% tabs active:2 align:center %}

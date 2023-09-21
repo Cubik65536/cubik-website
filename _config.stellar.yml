@@ -7,8 +7,14 @@ sidebar:
     home: '[btn.home](/)'
     post: '[btn.blog](/posts/)'
     wiki: '[btn.wiki](/wiki/)'
-    notes: '[btn.notes](/notes/)'
     friends: '[btn.friends](/friends/)'
+    games: '[btn.games](/games/)'
+    books: '[btn.books](/books/)'
+    movies: '[btn.movies](/movies/)'
+    anime: '[btn.anime](/anime/)'
+    notes: '[btn.notes](/notes/)'
+    message_board: '[btn.message_board](/message-board/)'
+
   # Sidebar widgets
   widgets:
     #### 自动生成的页面 ####

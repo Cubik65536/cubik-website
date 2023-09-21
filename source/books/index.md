@@ -18,10 +18,6 @@ header: false
 
 {% quot 书籍 el:h2 %}
 
-<br/>
-
-{% navbar active:6 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) [游戏](/games/) [书籍](/books/) [影视](/movies/) [留言板](/message-board/) %}
-
 {% tabs active:2 align:center %}
 
 <!-- tab 想读 -->
