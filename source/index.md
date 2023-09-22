@@ -117,12 +117,12 @@ header: false
 > 🏅 [@KevinZonda](https://github.com/KevinZonda)
 >
 
-如果你也希望你的名字出现在这里，可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或 [`爱发电`](https://afdian.net/@cubik65536) 赞助我！
+如果你也希望你的名字出现在这里，可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或 [`Buy me a coffee`](https://www.buymeacoffee.com/cubik65536) 赞助我！
 
 <p>
   <a href="https://github.com/sponsors/Cubik65536"><img src="https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA" width="auto" height="40" style="display: inline-block" /></a>
   &nbsp;
-  <a href="https://afdian.net/@cubik65536"><img src="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/support%20me%20on%20afd.png" width="auto" height="38" style="display: inline-block" /></a>
+  <a href="https://www.buymeacoffee.com/cubik65536"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=cubik65536&button_colour=577281&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00" width="auto" height="40" /></a>
 </p>
 
 {% endabout %}
