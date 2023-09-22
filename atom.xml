@@ -820,11 +820,11 @@ root 用户登录。&lt;/p&gt;
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
     <category term="Oracle Cloud" scheme="https://www.cubik65536.top/tags/Oracle-Cloud/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
   </entry>
   
@@ -1261,9 +1261,9 @@ href=&quot;https://github.com/vercel/hyper&quot;&gt;Hyper&lt;/a&gt;，在 macOS 
     
     <category term="终端" scheme="https://www.cubik65536.top/tags/%E7%BB%88%E7%AB%AF/"/>
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="macOS" scheme="https://www.cubik65536.top/tags/macOS/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
   </entry>
   
@@ -1904,9 +1904,9 @@ RHEL（Red Hat Enterprise Linux）的下游构建版本，而是转变为与 Fed
     <category term="解决方案" scheme="https://www.cubik65536.top/categories/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
   </entry>
   
@@ -1994,9 +1994,9 @@ Code SSH 远程访问控制 CentOS 7
     <category term="折腾" scheme="https://www.cubik65536.top/categories/%E6%97%A5%E5%B8%B8/%E6%8A%98%E8%85%BE/"/>
     
     
-    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
-    
     <category term="服务器" scheme="https://www.cubik65536.top/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    <category term="Linux" scheme="https://www.cubik65536.top/tags/Linux/"/>
     
     <category term="CentOS" scheme="https://www.cubik65536.top/tags/CentOS/"/>
     
