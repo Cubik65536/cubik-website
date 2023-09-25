@@ -163,7 +163,7 @@ footer:
       title: 'social.email'
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
-      url: https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420
+      url: .
       title: 'largesocial.title.PGP'
       description: 'largesocial.description.PGP'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
@@ -204,7 +204,7 @@ footer:
       - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
       - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
       - '[footer.sitemap.contact-me.gitlab](https://gitlab.com/Cubik65536)'
-      - '[footer.sitemap.contact-me.pgp](https://keys.openpgp.org/vks/v1/by-fingerprint/1B388B7AA395A248F436244FFFA7DB1132238420)'
+      - '[footer.sitemap.contact-me.pgp](.)'
   content: 'footer.content'
 
 
