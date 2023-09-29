@@ -762,9 +762,9 @@
             
             <tag> 服务器 </tag>
             
-            <tag> Linux </tag>
-            
             <tag> Oracle Cloud </tag>
+            
+            <tag> Linux </tag>
             
         </tags>
       
@@ -1107,9 +1107,9 @@
       
         <tags>
             
-            <tag> 终端 </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> 终端 </tag>
             
             <tag> C++ </tag>
             
@@ -1169,11 +1169,11 @@
       
         <tags>
             
+            <tag> macOS </tag>
+            
             <tag> Linux </tag>
             
             <tag> 终端 </tag>
-            
-            <tag> macOS </tag>
             
         </tags>
       
@@ -1287,11 +1287,11 @@
       
         <tags>
             
-            <tag> 终端 </tag>
-            
             <tag> macOS </tag>
             
             <tag> 上手 </tag>
+            
+            <tag> 终端 </tag>
             
         </tags>
       
@@ -1432,11 +1432,11 @@
       
         <tags>
             
-            <tag> 终端 </tag>
-            
             <tag> macOS </tag>
             
             <tag> 上手 </tag>
+            
+            <tag> 终端 </tag>
             
         </tags>
       
@@ -1501,9 +1501,9 @@
       
         <tags>
             
-            <tag> 终端 </tag>
-            
             <tag> macOS </tag>
+            
+            <tag> 终端 </tag>
             
         </tags>
       
