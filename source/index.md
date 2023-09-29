@@ -11,7 +11,7 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
 
-{% note color:warning "NOTICE/通知" "My old PGP key with fingerprint 0xFFA7DB1132238420 is NO LONGER VALID and **CANNOT BE TRUSTED** since 2023/09/25 and 0x6D45181617CFA432 is the replacement one.<br/>我的指纹为 0xFFA7DB1132238420 的旧 PGP 密钥已于 2023/09/25 失效并**不再可信**。0x6D45181617CFA432 是新的可信密钥指纹。" %}
+{% note color:warning "NOTICE/通知" "My old PGP key with fingerprint 0xFFA7DB1132238420 is NO LONGER VALID and **CANNOT BE TRUSTED** since 2023/09/25 and 0xDDB32000DDDF3D48 is the replacement one.<br/>我的指纹为 0xFFA7DB1132238420 的旧 PGP 密钥已于 2023/09/25 失效并**不再可信**。0xDDB32000DDDF3D48 是新的可信密钥指纹。" %}
 
 ## 嗨！我是 Cubik 👋
 
