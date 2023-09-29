@@ -1,6 +1,6 @@
 ---
 robots: noindex,nofollow
-menu_id: home
+menu_id: message_board
 sidebar: [ghuser, search, recent, timeline]
 comments: true
 comment_title: ""

@@ -1,6 +1,6 @@
 ---
 robots: noindex,nofollow
-menu_id: home
+menu_id: movies
 sidebar: [ghuser, search, recent, timeline]
 comments: true
 comment_title: ""
