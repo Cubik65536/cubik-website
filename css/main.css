@@ -96,7 +96,7 @@
   }
 }
 pre {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   font-size: 0.8125rem;
   tab-size: 4;
   -moz-tab-size: 4;
@@ -153,7 +153,7 @@ table:not([class]) tr:hover {
   background: var(--block);
 }
 *[ff=title] {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
 }
 blockquote {
   display: block;
@@ -356,7 +356,7 @@ a.button.start.gradient:hover:after {
 code {
   -webkit-font-smoothing: auto;
   -moz-osx-font-smoothing: auto;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
 }
 p>code:not([class]),
 li>code:not([class]) {
@@ -373,7 +373,7 @@ pre:not([class]):has(>code) {
   overflow: hidden;
   background: var(--block);
   line-height: 1.5;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   box-sizing: border-box;
 }
 @media screen and (min-width: 500px) {
@@ -725,7 +725,7 @@ table:not([class]) {
   outline: none;
 }
 html {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -751,7 +751,7 @@ input {
 }
 input.copy-area {
   display: block;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--text-p3);
@@ -1300,7 +1300,7 @@ nav.cap a+a {
   background-image: url("https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/arrow/f049bbd4e88ec.svg");
 }
 .paginator-wrap .current {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   color: var(--text-p3);
 }
 .paginator-wrap .extend {
@@ -2391,7 +2391,7 @@ details.folding[child=iframe] >div.body {
   border-bottom-width: 2px;
   background: var(--card);
   padding: 2px 4px 1px 4px;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   font-weight: 700;
 }
 .md-text psw {
@@ -2413,7 +2413,7 @@ details.folding[child=iframe] >div.body {
   color: var(--theme);
   line-height: 1;
   font-weight: 700;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
 }
 .md-text h1 sup,
 .md-text h2 sup,
@@ -3942,7 +3942,7 @@ nav.menu a.nav-item:hover {
   padding: 0.5rem 0;
   line-height: 1;
   box-sizing: border-box;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
   color: var(--text-p0);
 }
 .search-wrapper.noresult .search-icon {
@@ -4296,7 +4296,7 @@ nav.menu a.nav-item:hover {
 }
 .post-list #archive .archive-header {
   display: inline-block;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
@@ -4325,7 +4325,7 @@ nav.menu a.nav-item:hover {
   color: #63829e;
 }
 .post-list #archive a.post time {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   margin-right: 1em;
   font-weight: 700;
   flex-shrink: 0;
@@ -4355,7 +4355,7 @@ nav.menu a.nav-item:hover {
 }
 .post-list #cats a.cat .badge {
   font-weight: 700;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   opacity: 0.5;
   font-size: 0.75rem;
 }
@@ -4961,7 +4961,7 @@ article.md-text code {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   color: var(--text-code);
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif;
   word-break: break-all;
   font-size: 85%;
   background: var(--block);
@@ -5200,7 +5200,7 @@ pre.mermaid {
   display: inline-block;
   width: 100%;
   text-align: center;
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
 }
 .mermaid svg {
   width: 100%;
@@ -5212,7 +5212,7 @@ pre.mermaid {
 }
 .mermaid span,
 text {
-  font-family: "ProFont For Powerline", "Smiley Sans", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
+  font-family: "ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif;
 }
 .mermaid .edgeLabel {
   padding: 4px;
