@@ -21,12 +21,19 @@ In this article, I will briefly cover some basic terminal usage, *some recommend
 Usually, the default terminal emulator is good enough for basic usages, but they don't really provide the best experience (except those coming with Linux distributions). Here are some recommendations:
 
 - [Tabby](https://tabby.sh) (for Windows, macOS & Linux) - FOSS
+  
   One of the best cross-platform terminal emulators, works well with zsh (for macOS/Linux) and powershell (Windows). Not native, so not really recommended to macOS users (while there's terminals emulators like iTerm2 written in native codes).
+
 - [iTerm2](https://iterm2.com) (for macOS) - FOSS
-  Personally the terminal emulator to recommend for macOS users. Written in Objective-C and Swift, it's feature complete and supports lot of features.
+
+  Personally speaking the terminal emulator to recommend for macOS users. Written in Objective-C and Swift, it's feature complete and supports lot of features.
+
 - [Warp](https://warp.dev) (for macOS (for now)) - Non-FOSS
+
   Yes, Rust. Yes, AI-Powered. I love the strong command completion feature, and it's really fast. But, a bad experience: it requires to sign in (and the promise of not using t later was removed), not really a fan of having to sign in to use a terminal emulator and execute LOCAL commands.
+
 - [Windows Terminal](https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701) (for Windows) - FOSS
+
   NOT the terminal that comes with Windows. But having a good support for PowerShell and WSL (Windows Subsystem for Linux), still a good choice for Windows users.
 
 ## Homebrew
