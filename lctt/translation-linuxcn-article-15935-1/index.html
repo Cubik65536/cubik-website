@@ -1,46 +1,667 @@
-.l_body {
-  display: flex;
-  margin: auto;
-  padding: 0 var(--gap-l);
-  justify-content: center;
-}
-.l_body .l_left {
-  z-index: 8;
-  width: var(--width-left);
-  flex-shrink: 0;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-}
-.l_body .l_main {
-  flex-shrink: 1;
-  flex-grow: 1;
-  width: 320px;
-  max-width: var(--width-main);
-}
-@media screen and (max-width: $device-mobile-max) {
-  .mobile-only {
-    display: block !important;
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+<head>
+  <meta name="generator" content="Hexo 6.3.0">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
+  <meta charset="utf-8">
+  
+
+  <meta http-equiv='x-dns-prefetch-control' content='on' />
+  <link rel='dns-prefetch' href='https://gcore.jsdelivr.net'>
+  <link rel="preconnect" href="https://gcore.jsdelivr.net" crossorigin>
+  <link rel='dns-prefetch' href='//unpkg.com'>
+
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="theme-color" content="#f8f8f8">
+  
+  <title>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #8：编写里程碑 Rust 程序 - Cubik 的小站</title>
+
+  
+    <meta name="description" content="原文：Rust Basics Series #8: Write the Milestone Rust Program 首发：Rust 基础系列 #8：编写里程碑 Rust 程序 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[LCTT 翻译转载] 软件开发｜Rust 基础系列 #8：编写里程碑 Rust 程序">
+<meta property="og:url" content="https://www.cubik65536.top/lctt/translation-linuxcn-article-15935-1/">
+<meta property="og:site_name" content="Cubik 的小站">
+<meta property="og:description" content="原文：Rust Basics Series #8: Write the Milestone Rust Program 首发：Rust 基础系列 #8：编写里程碑 Rust 程序 @Linux 中国 作者：Pratham Patel 译者：LCTT Cubik">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-06-23T11:44:20.000Z">
+<meta property="article:modified_time" content="2023-06-23T11:44:20.000Z">
+<meta property="article:author" content="Cubik65536">
+<meta property="article:tag" content="Rust">
+<meta property="article:tag" content="Rust 基础">
+<meta property="article:tag" content="软件开发">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <meta name="keywords" content="Rust,Rust 基础,软件开发">
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="Cubik 的小站" type="application/atom+xml">
+  
+
+  
+    
+<link rel="stylesheet" href="/css/main.css">
+
+  
+
+  
+
+  
+
+  
+
+
+  
+    
+      <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/apple-touch-icon.png">
+    
+      <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-32x32.png">
+    
+      <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon-16x316png">
+    
+      <link rel="manifest" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/site.webmanifest">
+    
+      <link rel="mask-icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/safari-pinned-tab.svg" color="#fd7600">
+    
+      <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/favicon.ico">
+    
+      <meta name="msapplication-TileColor" content="#fd7600">
+    
+      <meta name="msapplication-config" content="https://cdn.jsdelivr.net/gh/Cubik65536/cubik-favicons@main/Cubik65536.github.io/favicon_package_v0.16/browserconfig.xml">
+    
+      <meta name="theme-color" content="#ffffff">
+    
+  
+</head>
+
+<body>
+  
+
+
+
+
+  <div class='l_body' id='start'>
+    <aside class='l_left' layout='post'>
+    
+
+
+
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img.cubik65536.top/CubikLogoAlpha.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Cubik 的小站</div><div class="sub cap">RECOMMENDED BY<br/> DR.CREATIVE</div></a></div>
+
+<nav class="menu dis-select"><a class="nav-item" href="/">主页</a><a class="nav-item active" href="/posts/">文章</a><a class="nav-item" href="/wiki/">知识库</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/games/">游戏</a><a class="nav-item" href="/books/">书籍</a><a class="nav-item" href="/movies/">电影</a><a class="nav-item" href="/anime/">动漫</a><a class="nav-item" href="/notes/">便签</a><a class="nav-item" href="/message-board/">留言板</a></nav>
+</header>
+
+
+<div class="widgets">
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
+
+
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">[LCTT 翻译转载] 软件开发｜Rust 基础系列 #8：编写里程碑 Rust 程序</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#rust-%E5%9F%BA%E7%A1%80%E7%B3%BB%E5%88%97-8%E7%BC%96%E5%86%99%E9%87%8C%E7%A8%8B%E7%A2%91-rust-%E7%A8%8B%E5%BA%8F"><span class="toc-text">Rust 基础系列
+#8：编写里程碑 Rust 程序</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%88%91%E4%BB%AC%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84"><span class="toc-text">我们程序的基本结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5"><span class="toc-text">获取用户输入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%90%86%E8%A7%A3-use-%E5%85%B3%E9%94%AE%E5%AD%97"><span class="toc-text">1. 理解 use 关键字</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%90%86%E8%A7%A3-rust-%E4%B8%AD%E7%9A%84-string-%E7%B1%BB%E5%9E%8B"><span class="toc-text">2. 理解 Rust 中的 String 类型</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8E%A5%E5%8F%97%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5"><span class="toc-text">3. 接受用户输入</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rust-%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8"><span class="toc-text">Rust 中的错误处理入门</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AA%8C%E8%AF%81%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5"><span class="toc-text">验证用户输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E6%97%A0%E6%95%88%E8%BE%93%E5%85%A5"><span class="toc-text">处理无效输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5%E5%81%9A%E5%87%BA%E5%8F%8D%E5%BA%94"><span class="toc-text">对用户输入做出反应</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%A3%E6%9E%90%E6%95%B0%E9%87%8F"><span class="toc-text">解析数量</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E4%BB%B7%E6%A0%BC-%E6%9C%80%E5%90%8E%E7%9A%84%E4%BF%AE%E9%A5%B0"><span class="toc-text">计算价格 + 最后的修饰</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></li></ol></div></div></widget>
+
+
+
+
+</div>
+<footer class="footer dis-select"><div class="social-wrap"><a rel="me" class="social" title="GitHub (@Cubik65536)" href="https://github.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/github.svg" /></a><a rel="me" class="social" title="GitLab (@Cubik65536)" href="https://gitlab.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/></a><a rel="me" class="social" title="哔哩哔哩 (@Cubik65536)" href="https://space.bilibili.com/439205819" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/></a><a rel="me" class="social" title="X (原 Twitter) (@Cubik65536)" href="https://x.com/Cubik65536" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/x-twitter.svg"/></a><a rel="me" class="social" title="Telegram (Cubik's Teleblog)" href="https://t.me/cubiksteleblog" target="_blank" rel="external nofollow noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/></a><a rel="me" class="social" title="向我发送邮件" href="mailto:me@cubik65536.top" rel="noopener noreferrer"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/></a></div><br/><div class="large-social-wrap"><a class="large-social" title="从 keys.openpgp.org 下载 PGP 公钥" href="https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" /><span class="description">我的 PGP 公钥</span></div></a><a class="large-social" title="穿梭虫洞 - 随机访问十年之约友链博客" href="https://foreverblog.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" /><span class="description">虫洞 | WORMHOLE</span></div></a><a class="large-social" title="开往 - 友链接力" href="https://www.travellings.cn/go.html" target="_blank" rel="external nofollow noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/light/train.svg" /><span class="description">开往 | Travelling</span></div></a></div><br/><div class="large-social-wrap"><a class="large-social" href="/lctt/translation-linuxcn-article-15935-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">Chinese (S)</span></div></a><a class="large-social" href="/en/lctt/translation-linuxcn-article-15935-1/" rel="noopener noreferrer"><div><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/language.svg" /><span class="description">English</span></div></a></div><br/>&nbsp;<a href="https://www.foreverblog.cn/blog/2992.html" target="_blank" ><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://img.foreverblog.cn/logo_en_default.png" alt="【CUBIK 的小站】十年之约" style="width:175px;height:auto;" /></a></footer>
+    </aside>
+    <div class='l_main'>
+      
+
+      
+
+
+
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/posts">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/LCTT/">LCTT</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/">转载</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/LCTT/%E8%BD%AC%E8%BD%BD/%E7%BF%BB%E8%AF%91/">翻译</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-06-23T11:44:20.000Z">2023-06-23</time></div></div>
+
+<article class='md-text content post'>
+<h1 class="article-title"><span>[LCTT 翻译转载] 软件开发｜Rust 基础系列 #8：编写里程碑 Rust 程序</span></h1>
+<blockquote>
+<p>原文：<a target="_blank" rel="noopener" href="https://itsfoss.com/milestone-rust-program/">Rust
+Basics Series #8: Write the Milestone Rust Program</a> 首发：<a
+target="_blank" rel="noopener" href="https://linux.cn/article-15935-1.html">Rust 基础系列
+#8：编写里程碑 Rust 程序</a> @<a target="_blank" rel="noopener" href="https://linux.cn/">Linux 中国</a>
+作者：<a target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a>
+译者：<a target="_blank" rel="noopener" href="https://linux.cn/lctt/">LCTT</a> <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik</a></p>
+</blockquote>
+<span id="more"></span>
+<h2 id="rust-基础系列-8编写里程碑-rust-程序">Rust 基础系列
+#8：编写里程碑 Rust 程序</h2>
+<p><img
+src="https://img.linux.net.cn/data/attachment/album/202306/23/114333ni9fkzpykmz37zpu.jpg" /></p>
+<p>到目前为止，我们已经讲解了包括 <a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15771-1/">变量、可变性、常量</a>、<a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15811-1/">数据类型</a>、<a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15855-1/">函数</a>、<a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15896-1/">if-else
+语句</a> 和 <a
+href="https://www.cubik65536.top/lctt/translation-linuxcn-article-15908-1/">循环</a>
+在内的一些关于 Rust 编程的基础知识。</p>
+<p>在 Rust 基础系列的最后一章里，让我们现在用 Rust
+编写一个程序，使用这些主题，以便更好地理解它们在现实世界中的用途。让我们来编写一个相对简单的程序，用来从水果市场订购水果。</p>
+<h3 id="我们程序的基本结构">我们程序的基本结构</h3>
+<p>来让我们首先向用户问好，并告诉他们如何与程序交互。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="获取用户输入">获取用户输入</h3>
+<p>上面的代码非常简单。目前，你不知道接下来该做什么，因为你不知道用户接下来想做什么。</p>
+<p>所以让我们添加一些代码，接受用户输入并将其存储在某个地方以便稍后解析，然后根据用户输入采取适当的操作。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取用户输入</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">        .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">        .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>有三个新元素需要告诉你。所以让我们对这些新元素进行浅层次的探索。</p>
+<h4 id="理解-use-关键字">1. 理解 use 关键字</h4>
+<p>在这个程序的第一行，你可能已经注意到我们“使用”（哈哈！）了一个叫做
+<code>use</code> 的新关键字。Rust 中的 <code>use</code> 关键字类似于
+C/C++ 中的 <code>#include</code> 指令和 Python 中的 <code>import</code>
+关键字。使用 <code>use</code> 关键字，我们从 Rust 标准库
+<code>std</code> 中“导入”了 <code>io</code>（输入输出）模块。</p>
+<blockquote>
+<p>LCTT 译注：“使用”在原文中为“use”，与新介绍的关键字一样。</p>
+</blockquote>
+<p>你可能会想知道为什么我们在可以使用 <code>println</code>
+宏来将某些内容输出到标准输出时，导入 <code>io</code> 模块是必要的。Rust
+的标准库有一个叫做 <code>prelude</code>
+的模块，它会自动被包含。该模块包含了 Rust
+程序员可能需要使用的所有常用函数，比如 <code>println</code>
+宏。（你可以在 <a
+target="_blank" rel="noopener" href="https://doc.rust-lang.org/std/prelude/index.html">这里</a>
+阅读更多关于 <code>std::prelude</code> 模块的内容。）</p>
+<p>Rust 标准库 <code>std</code> 中的 <code>io</code>
+模块是接受用户输入所必需的。因此，我们在程序的第一行添加了一个
+<code>use</code> 语句。</p>
+<h4 id="理解-rust-中的-string-类型">2. 理解 Rust 中的 String 类型</h4>
+<p>在第 11 行，我创建了一个新的可变变量
+<code>user_input</code>，正如它的名字所表示的那样，它将被用来存储用户输入。但是在同一行，你可能已经注意到了一些“新的”东西（哈哈，又来了！）。</p>
+<blockquote>
+<p>LCTT 译注：“新的”在原文中为“new”，在第 11 行的代码中，原作者使用了
+<code>String::new()</code>
+函数，所以此处的梗与“使用”一样，原作者使用了一个在代码中用到的单词。</p>
+</blockquote>
+<p>我没有使用双引号（<code>""</code>）声明一个空字符串，而是使用
+<code>String::new()</code> 函数来创建一个新的空字符串。</p>
+<p><code>""</code> 与 <code>String::new()</code> 的区别是你将在 Rust
+系列的后续文章中学习到的。现在，只需要知道，使用
+<code>String::new()</code>
+函数，你可以创建一个<strong>可变</strong>的，<strong>位于堆上</strong>的字符串。</p>
+<p>如果我使用 <code>""</code>
+创建了一个字符串，我将得到一个叫做“字符串切片”的东西。字符串切片的内容也位于堆上，但是字符串本身是<strong>不可变</strong>的。所以，即使变量本身是可变的，作为字符串存储的实际数据是不可变的，需要被<strong>覆盖</strong>而不是修改。</p>
+<h4 id="接受用户输入">3. 接受用户输入</h4>
+<p>在第 12 行，我调用了 <code>std::io</code> 的 <code>stdin()</code>
+函数。如果我在程序的开头没有导入 <code>std::io</code>
+模块，那么这一行将是 <code>std::io::stdin()</code> 而不是
+<code>io::stdin()</code>。</p>
+<p><code>sdtin()</code>
+函数返回一个终端的输入句柄。<code>read_line()</code>
+函数抓住这个输入句柄，然后，正如它的名字所暗示的那样，读取一行输入。这个函数接受一个可变字符串的引用。所以，我传入了
+<code>user_input</code> 变量，通过在它前面加上
+<code>&amp;mut</code>，使它成为一个可变引用。</p>
+<blockquote>
+<p>⚠️ <code>read_line()</code> 函数有一个
+<em>怪癖</em>。这个函数在用户按下回车键之后 <strong>停止</strong>
+读取输入。因此，这个函数也会记录换行符（<code>\n</code>），并将一个换行符存储在你传入的可变字符串变量的结尾处。</p>
+</blockquote>
+<p>所以，请在处理它时要么考虑到这个换行符，要么将它删除。</p>
+<h3 id="rust-中的错误处理入门">Rust 中的错误处理入门</h3>
+<p>最后，在这个链的末尾有一个 <code>expect()</code>
+函数。让我们稍微偏题一下，来理解为什么要调用这个函数。</p>
+<p><code>read_line()</code> 函数返回一个叫做 <code>Result</code>
+的枚举。我会在后面的文章中讲解 Rust 中的枚举，但是现在只需要知道，枚举在
+Rust 中是非常强大的。这个 <code>Result</code>
+枚举返回一个值，告诉程序员在读取用户输入时是否发生了错误。</p>
+<p><code>expect()</code> 函数接受这个 <code>Result</code>
+枚举，并检查结果是否正常。如果没有发生错误，什么都不会发生。但是如果发生了错误，我传入的消息（<code>无法读取用户输入。</code>）将会被打印到
+STDERR，<em>程序将会退出</em>。</p>
+<blockquote>
+<p>📋 <strong>所有我简要提及的新概念将会在后续的新 Rust
+系列文章中讲解。</strong></p>
+</blockquote>
+<p>现在我希望你应该已经理解了这些新概念，让我们添加更多的代码来增加程序的功能。</p>
+<h3 id="验证用户输入">验证用户输入</h3>
+<p>我接受了用户的输入，但是我没有对其进行验证。在当前的上下文中，验证意味着用户输入了一些“命令”，我们希望能够处理这些命令。目前，这些命令有两个“类别”。</p>
+<p>第一类用户可以输入的命令是用户希望购买的水果的名称。第二个命令表示用户想要退出程序。</p>
+<p>我们的任务现在是确保用户输入不会偏离 <em>可接受的命令</em>。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取用户输入</span></span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">    io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">        .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">        .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 验证用户输入</span></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">valid_inputs</span> = [<span class="string">&quot;苹果&quot;</span>, <span class="string">&quot;香蕉&quot;</span>, <span class="string">&quot;橘子&quot;</span>, <span class="string">&quot;芒果&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;quit&quot;</span>, <span class="string">&quot;q&quot;</span>];</span><br><span class="line">    user_input = user_input.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">to_lowercase</span>();</span><br><span class="line">    <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">input_error</span> = <span class="literal">true</span>;</span><br><span class="line">    <span class="keyword">for</span> <span class="variable">input</span> <span class="keyword">in</span> valid_inputs &#123;</span><br><span class="line">        <span class="keyword">if</span> input == user_input &#123;</span><br><span class="line">            input_error = <span class="literal">false</span>;</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>要使验证更容易，我创建了一个叫做 <code>valid_inputs</code>
+的字符串切片数组（第 17
+行）。这个数组包含了所有可以购买的水果的名称，以及字符串切片
+<code>q</code> 和
+<code>quit</code>，让用户可以传达他们是否希望退出。</p>
+<p>用户可能不知道我们希望输入是什么样的。用户可能会输入“Apple”、“apple”或
+“APPLE” 来表示他们想要购买苹果。我们的工作是正确处理这些输入。</p>
+<p>在第 18 行，我通过调用 <code>trim()</code> 函数从
+<code>user_input</code>
+字符串中删除了尾部的换行符。为了处理上面提到的问题，我使用
+<code>to_lowercase()</code> 函数将所有字符转换为小写，这样
+“Apple”、“apple” 和 “APPLE” 都会变成 “apple”。</p>
+<p>现在，来看第 19 行，我创建了一个名为 <code>input_error</code>
+的可变布尔变量，初始值为 <code>true</code>。稍后在第 20 行，我创建了一个
+<code>for</code> 循环，它遍历了 <code>valid_inputs</code>
+数组的所有元素（字符串切片），并将迭代的模式存储在 <code>input</code>
+变量中。</p>
+<p>在循环内部，我检查用户输入是否等于其中一个有效字符串，如果是，我将
+<code>input_error</code> 布尔值的值设置为 <code>false</code>，并跳出
+<code>for</code> 循环。</p>
+<h3 id="处理无效输入">处理无效输入</h3>
+<p>现在是时候处理无效输入了。这可以通过将一些代码移动到无限循环中来完成，如果用户给出无效输入，则
+<em>继续</em> 该无限循环。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">valid_inputs</span> = [<span class="string">&quot;苹果&quot;</span>, <span class="string">&quot;香蕉&quot;</span>, <span class="string">&quot;橘子&quot;</span>, <span class="string">&quot;芒果&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;quit&quot;</span>, <span class="string">&quot;q&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="symbol">&#x27;mart</span>: <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 读取用户输入</span></span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">        user_input = user_input.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">to_lowercase</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 验证用户输入</span></span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">input_error</span> = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> <span class="variable">input</span> <span class="keyword">in</span> valid_inputs &#123;</span><br><span class="line">            <span class="keyword">if</span> input == user_input &#123;</span><br><span class="line">                input_error = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 处理无效输入</span></span><br><span class="line">        <span class="keyword">if</span> input_error &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;错误: 请输入有效的输入&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这里，我将一些代码移动到了循环内部，并重新组织了一下代码，以便更好地处理循环的引入。在循环内部，第
+31 行，如果用户输入了一个无效的字符串，我将 <code>continue</code>
+<code>mart</code> 循环。</p>
+<h3 id="对用户输入做出反应">对用户输入做出反应</h3>
+<p>现在，所有其他的状况都已经处理好了，是时候写一些代码来让用户从水果市场购买水果了，当用户希望退出时，程序也会退出。</p>
+<p>因为你也知道用户选择了哪种水果，所以让我们问一下他们打算购买多少，并告诉他们输入数量的格式。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">valid_inputs</span> = [<span class="string">&quot;苹果&quot;</span>, <span class="string">&quot;香蕉&quot;</span>, <span class="string">&quot;橘子&quot;</span>, <span class="string">&quot;芒果&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;quit&quot;</span>, <span class="string">&quot;q&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="symbol">&#x27;mart</span>: <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">quantity</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 读取用户输入</span></span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">        user_input = user_input.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">to_lowercase</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 验证用户输入</span></span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">input_error</span> = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> <span class="variable">input</span> <span class="keyword">in</span> valid_inputs &#123;</span><br><span class="line">            <span class="keyword">if</span> input == user_input &#123;</span><br><span class="line">                input_error = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 处理无效输入</span></span><br><span class="line">        <span class="keyword">if</span> input_error &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;错误: 请输入有效的输入&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果用户想要退出，就退出</span></span><br><span class="line">        <span class="keyword">if</span> user_input == <span class="string">&quot;q&quot;</span> || user_input == <span class="string">&quot;quit&quot;</span> &#123;</span><br><span class="line">            <span class="keyword">break</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数量</span></span><br><span class="line">        <span class="built_in">println!</span>(</span><br><span class="line">            <span class="string">&quot;\n你选择购买的水果是 \&quot;&#123;&#125;\&quot;。请输入以千克为单位的数量。</span></span><br><span class="line"><span class="string">（1 千克 500 克的数量应该输入为 &#x27;1.5&#x27;。）&quot;</span>,</span><br><span class="line">            user_input</span><br><span class="line">        );</span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> quantity)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在第 11 行，我声明了另一个可变变量，它的值是一个空字符串，在第 48
+行，我接受了用户的输入，但是这次是用户打算购买的水果的数量。</p>
+<h4 id="解析数量">解析数量</h4>
+<p>我刚刚增加了一些代码，以已知的格式接受数量，但是这些数据被存储为字符串。我需要从中提取出浮点数。幸运的是，这可以通过
+<code>parse()</code> 方法来完成。</p>
+<p>就像 <code>read_line()</code> 方法一样，<code>parse()</code>
+方法返回一个 <code>Result</code> 枚举。<code>parse()</code> 方法返回
+<code>Result</code> 枚举的原因可以通过我们试图实现的内容来轻松理解。</p>
+<p>我正在接受用户的字符串，并尝试将其转换为浮点数。浮点数有两个可能的值。一个是浮点数本身，另一个是小数。</p>
+<p>字符串可以包含字母，但是浮点数不行。所以，如果用户输入的不是浮点数和小数，<code>parse()</code>
+函数将会返回一个错误。</p>
+<p>因此，这个错误也需要处理。我们将使用 <code>expect()</code>
+函数来处理这个错误。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">valid_inputs</span> = [<span class="string">&quot;苹果&quot;</span>, <span class="string">&quot;香蕉&quot;</span>, <span class="string">&quot;橘子&quot;</span>, <span class="string">&quot;芒果&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;quit&quot;</span>, <span class="string">&quot;q&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="symbol">&#x27;mart</span>: <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">quantity</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 读取用户输入</span></span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">        user_input = user_input.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">to_lowercase</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 验证用户输入</span></span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">input_error</span> = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> <span class="variable">input</span> <span class="keyword">in</span> valid_inputs &#123;</span><br><span class="line">            <span class="keyword">if</span> input == user_input &#123;</span><br><span class="line">                input_error = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 处理无效输入</span></span><br><span class="line">        <span class="keyword">if</span> input_error &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;错误: 请输入有效的输入&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果用户想要退出，就退出</span></span><br><span class="line">        <span class="keyword">if</span> user_input == <span class="string">&quot;q&quot;</span> || user_input == <span class="string">&quot;quit&quot;</span> &#123;</span><br><span class="line">            <span class="keyword">break</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数量</span></span><br><span class="line">        <span class="built_in">println!</span>(</span><br><span class="line">            <span class="string">&quot;\n你选择购买的水果是 \&quot;&#123;&#125;\&quot;。请输入以千克为单位的数量。</span></span><br><span class="line"><span class="string">（1 千克 500 克的数量应该输入为 &#x27;1.5&#x27;。）&quot;</span>,</span><br><span class="line">            user_input</span><br><span class="line">        );</span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> quantity)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> <span class="variable">quantity</span>: <span class="type">f64</span> = quantity</span><br><span class="line">            .<span class="title function_ invoke__">trim</span>()</span><br><span class="line">            .<span class="title function_ invoke__">parse</span>()</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;请输入有效的数量。&quot;</span>);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如你所见，我通过变量遮蔽将解析后的浮点数存储在变量
+<code>quantity</code> 中。为了告诉 <code>parse()</code>
+函数，我的意图是将字符串解析为 <code>f64</code>，我手动将变量
+<code>quantity</code> 的类型注释为 <code>f64</code>。</p>
+<p>现在，<code>parse()</code> 函数将会解析字符串并返回一个
+<code>f64</code> 或者一个错误，<code>expect()</code>
+函数将会处理这个错误。</p>
+<h3 id="计算价格-最后的修饰">计算价格 + 最后的修饰</h3>
+<p>现在我们知道了用户想要购买的水果及其数量，现在是时候进行计算了，并让用户知道结果/总价了。</p>
+<p>为了真实起见，我将为每种水果设置两个价格。第一个价格是零售价，我们在购买少量水果时向水果供应商支付的价格。水果的第二个价格是当有人批量购买水果时支付的批发价。</p>
+<p>批发价将会在订单数量大于被认为是批发购买的最低订单数量时确定。这个最低订单数量对于每种水果都是不同的。每种水果的价格都是每千克多少卢比。</p>
+<p>想好了逻辑，下面是最终的程序。</p>
+<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> std::io;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> APPLE_RETAIL_PER_KG: <span class="type">f64</span> = <span class="number">60.0</span>;</span><br><span class="line"><span class="keyword">const</span> APPLE_WHOLESALE_PER_KG: <span class="type">f64</span> = <span class="number">45.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> BANANA_RETAIL_PER_KG: <span class="type">f64</span> = <span class="number">20.0</span>;</span><br><span class="line"><span class="keyword">const</span> BANANA_WHOLESALE_PER_KG: <span class="type">f64</span> = <span class="number">15.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> ORANGE_RETAIL_PER_KG: <span class="type">f64</span> = <span class="number">100.0</span>;</span><br><span class="line"><span class="keyword">const</span> ORANGE_WHOLESALE_PER_KG: <span class="type">f64</span> = <span class="number">80.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> MANGO_RETAIL_PER_KG: <span class="type">f64</span> = <span class="number">60.0</span>;</span><br><span class="line"><span class="keyword">const</span> MANGO_WHOLESALE_PER_KG: <span class="type">f64</span> = <span class="number">55.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> GRAPES_RETAIL_PER_KG: <span class="type">f64</span> = <span class="number">120.0</span>;</span><br><span class="line"><span class="keyword">const</span> GRAPES_WHOLESALE_PER_KG: <span class="type">f64</span> = <span class="number">100.0</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">main</span>() &#123;</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;欢迎来到水果市场！&quot;</span>);</span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;请选择要购买的水果。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">let</span> <span class="variable">valid_inputs</span> = [<span class="string">&quot;苹果&quot;</span>, <span class="string">&quot;香蕉&quot;</span>, <span class="string">&quot;橘子&quot;</span>, <span class="string">&quot;芒果&quot;</span>, <span class="string">&quot;葡萄&quot;</span>, <span class="string">&quot;quit&quot;</span>, <span class="string">&quot;q&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="symbol">&#x27;mart</span>: <span class="keyword">loop</span> &#123;</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">user_input</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">quantity</span> = <span class="type">String</span>::<span class="title function_ invoke__">new</span>();</span><br><span class="line"></span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;\n可以购买的水果：苹果、香蕉、橘子、芒果、葡萄&quot;</span>);</span><br><span class="line">        <span class="built_in">println!</span>(<span class="string">&quot;购买完成后，请输入“quit”或“q”。\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 读取用户输入</span></span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> user_input)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line">        user_input = user_input.<span class="title function_ invoke__">trim</span>().<span class="title function_ invoke__">to_lowercase</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 验证用户输入</span></span><br><span class="line">        <span class="keyword">let</span> <span class="keyword">mut </span><span class="variable">input_error</span> = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">for</span> <span class="variable">input</span> <span class="keyword">in</span> valid_inputs &#123;</span><br><span class="line">            <span class="keyword">if</span> input == user_input &#123;</span><br><span class="line">                input_error = <span class="literal">false</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 处理无效输入</span></span><br><span class="line">        <span class="keyword">if</span> input_error &#123;</span><br><span class="line">            <span class="built_in">println!</span>(<span class="string">&quot;错误: 请输入有效的输入&quot;</span>);</span><br><span class="line">            <span class="keyword">continue</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 如果用户想要退出，就退出</span></span><br><span class="line">        <span class="keyword">if</span> user_input == <span class="string">&quot;q&quot;</span> || user_input == <span class="string">&quot;quit&quot;</span> &#123;</span><br><span class="line">            <span class="keyword">break</span> <span class="symbol">&#x27;mart</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取数量</span></span><br><span class="line">        <span class="built_in">println!</span>(</span><br><span class="line">            <span class="string">&quot;\n你选择购买的水果是 \&quot;&#123;&#125;\&quot;。请输入以千克为单位的数量。</span></span><br><span class="line"><span class="string">（1 千克 500 克的数量应该输入为 &#x27;1.5&#x27;。）&quot;</span>,</span><br><span class="line">            user_input</span><br><span class="line">        );</span><br><span class="line">        io::<span class="title function_ invoke__">stdin</span>()</span><br><span class="line">            .<span class="title function_ invoke__">read_line</span>(&amp;<span class="keyword">mut</span> quantity)</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;无法读取用户输入。&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> <span class="variable">quantity</span>: <span class="type">f64</span> = quantity</span><br><span class="line">            .<span class="title function_ invoke__">trim</span>()</span><br><span class="line">            .<span class="title function_ invoke__">parse</span>()</span><br><span class="line">            .<span class="title function_ invoke__">expect</span>(<span class="string">&quot;请输入有效的数量。&quot;</span>);</span><br><span class="line"></span><br><span class="line">        total += <span class="title function_ invoke__">calc_price</span>(quantity, user_input);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">println!</span>(<span class="string">&quot;\n\n总价是 &#123;&#125; 卢比。&quot;</span>, total);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">calc_price</span>(quantity: <span class="type">f64</span>, fruit: <span class="type">String</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> fruit == <span class="string">&quot;apple&quot;</span> &#123;</span><br><span class="line">        <span class="title function_ invoke__">price_apple</span>(quantity)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> fruit == <span class="string">&quot;banana&quot;</span> &#123;</span><br><span class="line">        <span class="title function_ invoke__">price_banana</span>(quantity)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> fruit == <span class="string">&quot;orange&quot;</span> &#123;</span><br><span class="line">        <span class="title function_ invoke__">price_orange</span>(quantity)</span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span> fruit == <span class="string">&quot;mango&quot;</span> &#123;</span><br><span class="line">        <span class="title function_ invoke__">price_mango</span>(quantity)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="title function_ invoke__">price_grapes</span>(quantity)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">price_apple</span>(quantity: <span class="type">f64</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> quantity &gt; <span class="number">7.0</span> &#123;</span><br><span class="line">        quantity * APPLE_WHOLESALE_PER_KG</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        quantity * APPLE_RETAIL_PER_KG</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">price_banana</span>(quantity: <span class="type">f64</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> quantity &gt; <span class="number">4.0</span> &#123;</span><br><span class="line">        quantity * BANANA_WHOLESALE_PER_KG</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        quantity * BANANA_RETAIL_PER_KG</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">price_orange</span>(quantity: <span class="type">f64</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> quantity &gt; <span class="number">3.5</span> &#123;</span><br><span class="line">        quantity * ORANGE_WHOLESALE_PER_KG</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        quantity * ORANGE_RETAIL_PER_KG</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">price_mango</span>(quantity: <span class="type">f64</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> quantity &gt; <span class="number">5.0</span> &#123;</span><br><span class="line">        quantity * MANGO_WHOLESALE_PER_KG</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        quantity * MANGO_RETAIL_PER_KG</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">fn</span> <span class="title function_">price_grapes</span>(quantity: <span class="type">f64</span>) <span class="punctuation">-&gt;</span> <span class="type">f64</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> quantity &gt; <span class="number">2.0</span> &#123;</span><br><span class="line">        quantity * GRAPES_WHOLESALE_PER_KG</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        quantity * GRAPES_RETAIL_PER_KG</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>对比之前的版本，我做了一些改动……</p>
+<p>水果的价格可能会波动，但是在我们程序的生命周期内，这些价格不会波动。所以我将每种水果的零售价和批发价存储在常量中。我将这些常量定义在
+<code>main()</code> 函数之外（即全局常量），因为我不会在
+<code>main()</code> 函数内计算每种水果的价格。这些常量被声明为
+<code>f64</code>，因为它们将与 <code>quantity</code> 相乘，而
+<code>quantity</code> 是 <code>f64</code>。记住，Rust 没有隐式类型转换
+;)</p>
+<p>当水果名称和用户想要购买的数量被存下来之后，<code>calc_price()</code>
+函数被调用来计算用户指定数量的水果的价格。这个函数接受水果名称和数量作为参数，并将价格作为
+<code>f64</code> 返回。</p>
+<p>当你看到 <code>calc_price()</code>
+函数的内部时，你会发现它是许多人所说的包装函数。它被称为包装函数，因为它调用其他函数来完成它的脏活。</p>
+<p>因为每种水果都有不同的最低订单数量，才能被认为是批发购买，为了确保代码在未来可以轻松维护，每种水果都有单独的函数负责计算价格。</p>
+<p>所以，<code>calc_price()</code>
+函数所做的就是确定用户选择了哪种水果，并调用相应的函数来计算所选水果的价格。这些水果特定的函数只接受一个参数：数量。这些水果特定的函数将价格作为
+<code>f64</code> 返回。</p>
+<p>现在，<code>price_*()</code>
+函数只做一件事。它们检查订单数量是否大于被认为是批发购买的最低订单数量。如果是这样，<code>quantity</code>
+将会乘以水果的每千克批发价格。否则，<code>quantity</code>
+将会乘以水果的每千克零售价格。</p>
+<p>由于乘法行末尾没有分号，所以函数返回乘积。</p>
+<p>如果你仔细看看 <code>calc_price()</code>
+函数中水果特定函数的函数调用，这些函数调用在末尾没有分号。这意味着，<code>price_*()</code>
+函数返回的值将会被 <code>calc_price()</code> 函数返回给它的调用者。</p>
+<p>而且 <code>calc_price()</code> 函数只有一个调用者。这个调用者在
+<code>mart</code> 循环的末尾，这个调用者使用这个函数返回的值来增加
+<code>total</code> 的值。</p>
+<p>最终，当 <code>mart</code> 循环结束（当用户输入 <code>q</code> 或
+<code>quit</code> 时），存储在变量 <code>total</code>
+中的值将会被打印到屏幕上，并且用户将会被告知他/她需要支付的价格。</p>
+<h3 id="总结">总结</h3>
+<p>这篇文章中，我使用了之前讲解的 Rust
+编程语言的所有主题来创建一个简单的程序，这个程序仍然在某种程度上展示了一个现实世界的问题。</p>
+<p>现在，我写的代码肯定可以用一种更符合编程习惯的方式来写，这种方式最好地使用了
+Rust 的喜爱特性，但是我还没有讲到它们！</p>
+<p>所以，敬请关注后续的 <strong>将 Rust 带入下一个层次</strong>
+系列，并学习更多 Rust 编程语言的内容！</p>
+<p>Rust 基础系列到此结束。欢迎你的反馈。</p>
+<p><em>（题图：MJ/6d486f23-e6fe-4bef-a28d-df067ef2ec06）</em></p>
+<hr />
+<p>via: https://itsfoss.com/milestone-rust-program/</p>
+<p>作者：<a target="_blank" rel="noopener" href="https://itsfoss.com/author/pratham/">Pratham Patel</a>
+选题：<a target="_blank" rel="noopener" href="https://github.com/lkxed/">lkxed</a> 译者：<a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536">Cubik65536</a> 校对：<a
+target="_blank" rel="noopener" href="https://github.com/wxy">wxy</a></p>
+<p>本文由 <a target="_blank" rel="noopener" href="https://github.com/LCTT/TranslateProject">LCTT</a>
+原创编译，<a target="_blank" rel="noopener" href="https://linux.cn/">Linux中国</a> 荣誉推出</p>
+
+
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">署名 -
+相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+</div></section><section id="share"><div class="header"><span>分享文章</span></div><div class="body"><div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://www.cubik65536.top/lctt/translation-linuxcn-article-15935-1/" /></div><div class="social-wrap dis-select"><a class="social share-item email" href="mailto:?subject=[LCTT 翻译转载] 软件开发｜Rust 基础系列 #8：编写里程碑 Rust 程序 - Cubik 的小站&amp;body=https://www.cubik65536.top/lctt/translation-linuxcn-article-15935-1/"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/envelope.svg"/></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://fapro6.cubik65536.top/svgs/duotone/link.svg"/></a></div></div></section></div>
+
+</article>
+
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023-06-07-08-MonthJournal/">2023 年 6 至 8 月总结</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/lctt/translation-linuxcn-article-15908-1/">[LCTT 翻译转载] 软件开发｜Rust 基础系列 #7: 在 Rust 中使用循环</a></div></section></div>
+
+
+
+
+
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
+
+
+
+      
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">主页</span><a href="/">关于</a><a href="/contact-me/">联系我</a><a href="/my-pgp/">我的 PGP</a></div><div class="sitemap-group"><span class="fs14">博客</span><a href="/posts/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a><a href="/wiki/">知识库</a><a href="/notes/">笔记</a><a href="/bookmarks/">网址收藏</a><a href="/commit-message-conventions/">Git 提交信息格式</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/friends/">友链</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/439205819">哔哩哔哩</a><a target="_blank" rel="noopener" href="https://x.com/Cubik65536">X (原 Twitter)</a><a target="_blank" rel="noopener" href="https://t.me/cubiksteleblog">Telegram 频道</a><a target="_blank" rel="noopener" href="https://foreverblog.cn/go.html">虫洞 | WORMHOLE</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go.html">开往 | Travelling</a></div><div class="sitemap-group"><span class="fs14">联系我</span><a href="/message-board/">留言板</a><a href="/contact-me/">联系我 (详细信息页)</a><a href="mailto:me@cubik65536.top">Email</a><a target="_blank" rel="noopener" href="https://github.com/Cubik65536">GitHub</a><a target="_blank" rel="noopener" href="https://gitlab.com/Cubik65536">GitLab</a><a target="_blank" rel="noopener" href="https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48">keys.openpgp.org</a></div></div><div class="text"><p>本博客由 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> &amp; <a
+target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/stellar/">Hexo Theme Stellar</a>
+强力驱动，您可以在 <a
+target="_blank" rel="noopener" href="https://github.com/Cubik65536/cubik-website/">GitHub</a>
+找到本站源码。 Copyright © 2020-2023 <a
+target="_blank" rel="noopener" href="https://cubik65536.top"><span class="citation"
+data-cites="Cubik65536">@Cubik65536</span></a> 保留所有权利。
+本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">CC
+BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+</div></footer>
+
+      <div class='float-panel mobile-only blur' style='display:none'>
+  <button type='button' class='sidebar-toggle mobile' onclick='sidebar.toggle()'>
+    <svg class="icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="15301"><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 2.3 26.8 24.6 47.5 51.6 47.6h416.5v4z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15302"></path><path d="M566.407 808.3c26.9-0.1 49.3-20.8 51.6-47.6-1.9-27.7-23.9-49.7-51.6-51.6h-412.6c-28.2-1.4-52.6 19.5-55.5 47.6 1.9 27.7 23.9 49.7 51.6 51.6h416.5z m309.3-249.9c26.9-0.1 49.3-20.8 51.6-47.6-2.2-26.8-24.6-47.5-51.6-47.6h-721.9c-27.7-2.8-52.5 17.4-55.3 45.1-0.1 0.8-0.1 1.7-0.2 2.5 0.9 27.2 23.6 48.5 50.7 47.6H875.707z m-103.1-245.9c26.9-0.1 49.3-20.8 51.6-47.6-0.4-28.3-23.2-51.1-51.5-51.6h-618.9c-29.5-1.1-54.3 21.9-55.5 51.4v0.2c1.4 27.8 25.2 49.2 53 47.8 0.8 0 1.7-0.1 2.5-0.2h618.8z" p-id="15303"></path></svg>
+  </button>
+</div>
+
+    </div>
+  </div>
+  <div class='scripts'>
+    <script type="text/javascript">
+  const stellar = {
+    // 懒加载 css https://github.com/filamentgroup/loadCSS
+    loadCSS: (href, before, media, attributes) => {
+      var doc = window.document;
+      var ss = doc.createElement("link");
+      var ref;
+      if (before) {
+        ref = before;
+      } else {
+        var refs = (doc.body || doc.getElementsByTagName("head")[0]).childNodes;
+        ref = refs[refs.length - 1];
+      }
+      var sheets = doc.styleSheets;
+      if (attributes) {
+        for (var attributeName in attributes) {
+          if (attributes.hasOwnProperty(attributeName)) {
+            ss.setAttribute(attributeName, attributes[attributeName]);
+          }
+        }
+      }
+      ss.rel = "stylesheet";
+      ss.href = href;
+      ss.media = "only x";
+      function ready(cb) {
+        if (doc.body) {
+          return cb();
+        }
+        setTimeout(function () {
+          ready(cb);
+        });
+      }
+      ready(function () {
+        ref.parentNode.insertBefore(ss, before ? ref : ref.nextSibling);
+      });
+      var onloadcssdefined = function (cb) {
+        var resolvedHref = ss.href;
+        var i = sheets.length;
+        while (i--) {
+          if (sheets[i].href === resolvedHref) {
+            return cb();
+          }
+        }
+        setTimeout(function () {
+          onloadcssdefined(cb);
+        });
+      };
+      function loadCB() {
+        if (ss.addEventListener) {
+          ss.removeEventListener("load", loadCB);
+        }
+        ss.media = media || "all";
+      }
+      if (ss.addEventListener) {
+        ss.addEventListener("load", loadCB);
+      }
+      ss.onloadcssdefined = onloadcssdefined;
+      onloadcssdefined(loadCB);
+      return ss;
+    },
+
+    // 从 butterfly 和 volantis 获得灵感
+    loadScript: (src, opt) => new Promise((resolve, reject) => {
+      var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
+      script.src = src;
+      if (opt) {
+        for (let key of Object.keys(opt)) {
+          script[key] = opt[key]
+        }
+      } else {
+        // 默认异步，如果需要同步，第二个参数传入 {} 即可
+        script.async = true
+      }
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    }),
+
+    // https://github.com/jerryc127/hexo-theme-butterfly
+    jQuery: (fn) => {
+      if (typeof jQuery === 'undefined') {
+        stellar.loadScript(stellar.plugins.jQuery).then(fn)
+      } else {
+        fn()
+      }
+    }
+  };
+  stellar.version = '1.19.0';
+  stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
+  stellar.config = {
+    date_suffix: {
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
+    },
+    root : '/',
+  };
+
+  // required plugins (only load if needs)
+  stellar.plugins = {
+    jQuery: 'https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js'
+  };
+
+  if ('local_search') {
+    stellar.search = {};
+    stellar.search.service = 'local_search';
+    if (stellar.search.service == 'local_search') {
+      let service_obj = Object.assign({}, {"field":"all","path":"/search.json","content":true,"sort":"-date"});
+      stellar.search[stellar.search.service] = service_obj;
+    }
   }
-  .l_body {
-    padding: 0;
+
+  // stellar js
+  stellar.plugins.stellar = Object.assign({"sites":"/js/plugins/sites.js","friends":"/js/plugins/friends.js","ghinfo":"/js/plugins/ghinfo.js","timeline":"/js/plugins/timeline.js","linkcard":"/js/plugins/linkcard.js","fcircle":"/js/plugins/fcircle.js","weibo":"/js/plugins/weibo.js"});
+
+  stellar.plugins.marked = Object.assign("https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js");
+  // optional plugins
+  if ('true' == 'true') {
+    stellar.plugins.lazyload = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js","transition":"blur"});
   }
-  .l_body .l_left {
-    position: fixed;
-    transform: translateX(-320px);
-    margin: 0;
-    left: 0;
-    background: var(--site-bg);
-    box-shadow: $boxshadow-card-float;
-    z-index: 9;
+  if ('true' == 'true') {
+    stellar.plugins.swiper = Object.assign({"enable":true,"css":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css","js":"https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js"});
   }
-  .l_body .l_main {
-    max-width: 100%;
+  if ('' == 'true') {
+    stellar.plugins.scrollreveal = Object.assign({"enable":null,"js":"https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js","distance":"8px","duration":500,"interval":100,"scale":1});
   }
-  .l_body.mobile .l_left {
-    transition: transform 0.3s ease-out;
+  if ('true' == 'true') {
+    stellar.plugins.preload = Object.assign({"enable":true,"service":"flying_pages","instant_page":"https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js","flying_pages":"https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"});
   }
-  .l_body.mobile.sidebar .l_left {
-    transform: translateX(0px);
+  if ('true' == 'true') {
+    stellar.plugins.fancybox = Object.assign({"enable":true,"js":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js","css":"https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css","selector":".swiper-slide img"});
   }
-}
+  if ('false' == 'true') {
+    stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti@0.9.2/umd/heti.min.css","js":"https://unpkg.com/heti@0.9.2/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
+</script>
+
+<!-- required -->
+
+  
+<script src="/js/main.js" async></script>
+
+
+
+<!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@2.14.1/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@2.14.1/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@2.14.1/dist/waline.js","css":"https://unpkg.com/@waline/client@2.14.1/dist/waline.css","serverURL":"https://waline.cubik65536.top","commentCount":true,"pageview":true,"emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/qq","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"meta":["nick","mail","link"],"requiredMeta":["nick","mail"],"lang":"zh-CN","login":"enable","pageSize":10,"reaction":true,"locale":{"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"}}, {
+        el: '#waline_container',
+        path: path,
+        reaction: true,
+        locale: {"placeholder":"欢迎评论（填写邮箱可以在回复时收到邮件通知）","sofa":"沙发！来评论吧～","comment":"评论","wordHint":"评论字数应在 $0 到 $1 字之间！\n当前字数：$2"},
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
+
+
+
+<!-- inject -->
+
+
+  </div>
+<!-- hexo injector body_end start -->
+  <style>
+    .highlight {
+      position: relative;
+    }
+    .highlight .code .copy-btn{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 5.5px 0.6rem;
+      opacity: 0.25;
+      font-weight: 1rem;
+      color: var(--theme);
+      cursor: pointer;
+      transination: opacity 0.3s;
+    }
+    .highlight .code .copy-btn:hover{
+      color: var(--text-code);
+      opacity: 0.75;
+    }
+    .highlight .code .copy-btn.success {
+      color: var(--swiper-theme-color);
+      opacity: 0.75;
+
+    }
+    
+  </style>
+  <script>
+    const codeElementArr = document.querySelectorAll('.code')
+    const path = window.location.href.toString().split(window.location.host)[1]
+    codeElementArr.forEach(code => {
+
+      const codeBeforeWidth = window.getComputedStyle(code, '::before').width.split('px')[0]
+      const codeBeforePadding = window.getComputedStyle(code, '::before').padding.split(' ').pop().split('px')[0]
+  
+      // copy btn 
+      const codeCopyBtn = document.createElement('div')
+      codeCopyBtn.classList.add('copy-btn')
+      codeCopyBtn.style.right = Number(codeBeforeWidth) + Number(codeBeforePadding) * 2 + 'px'
+      if (path.startsWith("/en")) {
+        codeCopyBtn.innerText = 'Copy Code'
+      } else {
+        codeCopyBtn.innerText = '复制代码'
+      }
+      code.appendChild(codeCopyBtn)
+  
+      codeCopyBtn.addEventListener('click', async () => {
+        const currentCodeElement = code.children[0]?.innerText
+        await copyCode(currentCodeElement)
+
+        if (path.startsWith("/en")) {
+          codeCopyBtn.innerText = 'Successfully Copied'
+        } else {
+          codeCopyBtn.innerText = '复制成功'
+        }
+
+        codeCopyBtn.classList.add('success')
+
+        setTimeout(() => {
+          if (path.startsWith("/en")) {
+            codeCopyBtn.innerText = 'Copy Code'
+          } else {
+            codeCopyBtn.innerText = '复制代码'
+          }
+          codeCopyBtn.classList.remove('success')
+        },1000)
+      })
+    })
+    
+    async function copyCode(currentCode) {
+      console.log(currentCode)
+      console.log('复制代码 / Code Copied')
+      if (navigator.clipboard) {
+        try {
+          await navigator.clipboard.writeText(currentCode)
+        } catch (error) {
+          // 未获得用户许可
+          console.error(error)
+        }
+      } else {
+        console.error('当前浏览器不支持此 api')
+        console.error('Current Browser does not support this API')
+      }
+    }
+  </script>
+  <!-- hexo injector body_end end --></body>
+</html>
