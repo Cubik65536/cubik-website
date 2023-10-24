@@ -15,7 +15,7 @@ header: false
 
 **A Java & Kotlin & Python & Swift Developer. Minecraft Player.**
 
-{% navbar active:1 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) [Games](/en/games/) [Books](/en/books/) [Movies](/en/movies/) [Message&nbsp;Board](/en/message-board/) %}
+{% navbar active:1 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) %}
 
 <br/>
 
