@@ -13,8 +13,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Pandoc
-        uses: nikeee/setup-pandoc@v1
       - name: Get git submodules
         run: git submodule update --init --recursive
       - name: Use Node.js 20

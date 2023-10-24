@@ -19,7 +19,7 @@ header: false
 
 {% note color:orange "For PGP Signature" You can consider all content signed by `DDB3 2000 DDDF 3D48` as published by me, and I will be responsible for all content signed by `DDB3 2000 DDDF 3D48`. Unless I have publicly revoked this key with a revocation certificate, when this happens, all my fingerprints will change, and I will also publicly notify the change of the key. %}
 
-{% note color:warning WARNING "My PGP key having the fingerprint 0xFFA7DB1132238420 is NO LONGER VALID since 2023/09/25." %}
+{% note color:warning "WARNING" My PGP key having the fingerprint 0xFFA7DB1132238420 is NO LONGER VALID since 2023/09/25. %}
 
 <br/>
 
