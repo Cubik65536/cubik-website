@@ -12,3 +12,12 @@ PGP 基础使用:
   sections:
     '简介': [0, 0]
     '快速开始': [1, 100]
+
+提问的智慧:
+  name: 提问的智慧
+  title: 提问的智慧
+  subtitle: '如何更好地提问'
+  tags: 知识库
+  cover: false
+  sections:
+    '提问的智慧': [0, 0]
