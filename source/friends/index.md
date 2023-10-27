@@ -13,19 +13,19 @@ sidebar: [welcome, friends-circle]
 
 感谢人生旅途中的每一份真挚的友谊。列表按结识先后顺序排列：
 
-{% friends 海内存知己 天涯若比邻 %}
+{% friends api:https://friends-api.blog.cubik65536.top/v2/friends.json %}
 
 {% quot 常去的地方 el:h2 %}
 
 经常访问的一些优秀博客，见识到了很多新事物，也学习到了新的知识。列表按结识先后顺序排列：
 
-{% friends 常去的地方 %}
+{% friends api:https://friends-api.blog.cubik65536.top/v2/frequently-visited.json %}
 
 {% quot 开发大佬 el:h2 %}
 
 特别感谢各位的各种优秀项目，也学到了很多知识。列表按结识先后顺序排列：
 
-{% friends 开发大佬 %}
+{% friends api:https://friends-api.blog.cubik65536.top/v2/developers.json %}
 
 ## 来自 GitHub 的朋友
 
