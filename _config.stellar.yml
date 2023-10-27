@@ -149,9 +149,6 @@ footer:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
       url: https://github.com/Cubik65536
       title: 'social.github'
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/gitlab.svg"/>'
-      url: https://gitlab.com/Cubik65536
-      title: 'social.gitlab'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
       url: https://space.bilibili.com/439205819
       title: 'social.bilibili'
@@ -205,6 +202,8 @@ footer:
       - '[footer.sitemap.social.friends](/friends/)'
       - '[footer.sitemap.social.bilibili](https://space.bilibili.com/439205819)'
       - '[footer.sitemap.social.x-twitter](https://x.com/Cubik65536)'
+      - '[social.mastodon-en](https://c.im/@cubik65536)'
+      - '[social.mastodon-zh](https://m.cmx.im/@cubik65536)'
       - '[footer.sitemap.social.telegram](https://t.me/cubiksteleblog)'
       - '[footer.sitemap.social.wormhole](https://foreverblog.cn/go.html)'
       - '[footer.sitemap.social.travelling](https://www.travellings.cn/go.html)'
