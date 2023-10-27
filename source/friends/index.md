@@ -31,7 +31,7 @@ sidebar: [welcome, friends-circle]
 
 以下友链通过 [GitHub Issue](https://github.com/Cubik65536/friends-api/issues/) 提交，按 issue 最后更新时间排序：
 
-{% friends api:https://friends-api.blog.cubik65536.top/v2/data.json %}
+{% friends api:https://friends-api.blog.cubik65536.top/v2/github-friends.json %}
 
 ## 关于友链
 
