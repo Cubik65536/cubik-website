@@ -158,6 +158,12 @@ footer:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/x-twitter.svg"/>'
       url: https://x.com/Cubik65536
       title: 'social.x-twitter'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
+      url: https://c.im/@cubik65536
+      title: 'social.mastodon-en'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
+      url: https://m.cmx.im/@cubik65536
+      title: 'social.mastodon-zh'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
       title: 'social.telegram'

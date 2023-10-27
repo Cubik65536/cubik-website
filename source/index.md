@@ -128,3 +128,8 @@ header: false
 </p>
 
 {% endabout %}
+
+<span style="visibility: hidden">
+  <a rel="me" href="https://c.im/@cubik65536">@cubik65536@c.im</a>
+  <a rel="me" href="https://m.cmx.im/@cubik65536">@cubik65536@m.cmx.im</a>
+</span>
