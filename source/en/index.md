@@ -9,7 +9,11 @@ breadcrumb: false
 header: false
 ---
 
+{% note color:warning "NOTICE/通知" Because of some issues, I currently have to use X account [@Cubik65536_](https://x.com/Cubik65536_) to replace my old account [@Cubik65536](https://x.com/Cubik65536) (at least temporarily).<br/>由于某些问题，我目前不得不使用 X 账户 [@Cubik65536_](https://x.com/Cubik65536_) （至少暂时）代替我的旧账户 [@Cubik65536](https://x.com/Cubik65536)。 %}
+
 {% about avatar:https://img.cubik65536.top/hello-cubik.png height:96px %}
+
+{% note color:warning "NOTICE/通知" "My old PGP key with fingerprint 0xFFA7DB1132238420 is NO LONGER VALID and **CANNOT BE TRUSTED** since 2023/09/25 and 0xDDB32000DDDF3D48 is the replacement one.<br/>我的指纹为 0xFFA7DB1132238420 的旧 PGP 密钥已于 2023/09/25 失效并**不再可信**。0xDDB32000DDDF3D48 是新的可信密钥指纹。" %}
 
 ## Hi! I'm Cubik 👋
 

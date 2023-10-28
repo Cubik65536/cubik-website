@@ -14,6 +14,8 @@ breadcrumb: false
 header: false
 ---
 
+{% note color:warning "NOTICE/通知" Because of some issues, I currently have to use X account [@Cubik65536_](https://x.com/Cubik65536_) to replace my old account [@Cubik65536](https://x.com/Cubik65536) (at least temporarily).<br/>由于某些问题，我目前不得不使用 X 账户 [@Cubik65536_](https://x.com/Cubik65536_) （至少暂时）代替我的旧账户 [@Cubik65536](https://x.com/Cubik65536)。 %}
+
 {% about %}
 
 {% quot 留言板 el:h2 %}

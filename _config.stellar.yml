@@ -153,7 +153,7 @@ footer:
       url: https://space.bilibili.com/439205819
       title: 'social.bilibili'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/x-twitter.svg"/>'
-      url: https://x.com/Cubik65536
+      url: https://x.com/Cubik65536_
       title: 'social.x-twitter'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
       url: https://c.im/@cubik65536
@@ -201,7 +201,7 @@ footer:
     'footer.sitemap.social.group':
       - '[footer.sitemap.social.friends](/friends/)'
       - '[footer.sitemap.social.bilibili](https://space.bilibili.com/439205819)'
-      - '[footer.sitemap.social.x-twitter](https://x.com/Cubik65536)'
+      - '[footer.sitemap.social.x-twitter](https://x.com/Cubik65536_)'
       - '[social.mastodon-en](https://c.im/@cubik65536)'
       - '[social.mastodon-zh](https://m.cmx.im/@cubik65536)'
       - '[footer.sitemap.social.telegram](https://t.me/cubiksteleblog)'
