@@ -111,7 +111,7 @@ header: false
 
 ## 🎉 致谢
 
-感谢 [`wngamebox`](https://wngamebox.cn) 与 [@JohnsonRan](https://github.com/JohnsonRan) 为我提供的网络与计算资源
+感谢 [@JohnsonRan](https://github.com/JohnsonRan) 为我提供的网络与计算资源
 
 特别感谢下列的赞助者们！你们的支持将会使我走得更远！
 
