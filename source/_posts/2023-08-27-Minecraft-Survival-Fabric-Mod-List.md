@@ -43,7 +43,7 @@ tags:
     - [x] 1.19
     - [ ] 1.19.x (except 1.19)
     - [ ] 1.20.x
-- [Cloth Config API](https://modrinth.com/mod/cloth-config) *[C]*
+- [Cloth Config API](https://modrinth.com/mod/cloth-config) **[S]***[C]*
   - Modrinth Project ID: {% copy 9s6osm5g %}
   - 版本支持：
     - [x] 1.18.x
