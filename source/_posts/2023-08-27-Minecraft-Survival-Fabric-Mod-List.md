@@ -163,9 +163,16 @@ tags:
     - [x] 1.18.x
     - [x] 1.19.x
     - [ ] 1.20.x
-- [Beenfo](https://modrinth.com/plugin/beenfo) **[S]***[C]*
+- [Beehave](https://modrinth.com/mod/beehave) **[S]**
+  - 右键蜜蜂信息显示
+  - Modrinth Project ID: {% copy e0YVwkW5 %}
+  - 版本支持：
+    - [x] 1.18.x
+    - [x] 1.19.x
+    - [x] 1.20.x (1.20.3 fork: https://github.com/MC-HMU/beehave)
+- [MoreBeeInfo](https://modrinth.com/plugin/MoreBeeInfo) *[C]*
   - 蜂箱信息显示
-  - Modrinth Project ID: {% copy Bta0Pt47 %}
+  - Modrinth Project ID: {% copy N2XKPu4u %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
