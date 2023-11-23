@@ -61,6 +61,8 @@ tags:
     - [x] 1.18.x
     - [x] 1.19.x
     - [x] 1.20.x
+- [FabricProxy-Lite](https://modrinth.com/mod/fabricproxy-lite) **[S]**
+  - Modrinth Project ID: {% copy 8dI2tmqs %}
 - [Iceberg](https://modrinth.com/mod/iceberg) *[C]*
   - Modrinth Project ID: {% copy 5faXoLqX %}
   - 版本支持：
@@ -474,6 +476,13 @@ tags:
 - [Detail Armor Bar](https://modrinth.com/mod/detail-armor-bar) *[C]*
   - 更好的盔甲条
   - Modrinth Project ID: {% copy hAt6ty93 %}
+  - 版本支持：
+    - [x] 1.18.x
+    - [x] 1.19.x
+    - [x] 1.20.x
+- [Simple Discord RPC](https://modrinth.com/mod/simple-discord-rpc) *[C]*
+  - Discord RPC
+  - Modrinth Project ID: {% copy ObXSoyrn %}
   - 版本支持：
     - [x] 1.18.x
     - [x] 1.19.x
