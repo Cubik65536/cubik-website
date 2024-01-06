@@ -1,0 +1,36 @@
+search:
+  layout: search
+  filter: auto # auto or 'path'
+
+recent:
+  layout: recent
+  rss: /atom.xml # npm i hexo-generator-feed
+  limit: 6 # Count of posts
+
+ghuser:
+  layout: ghuser
+  api: https://api.github.com
+  username: Cubik65536 # your github login username
+  avatar: true
+  bio: "Java & Kotlin & Python & Swift Dev<br/>Minecraft Player<br/><a href=\"https://ixor.tech\">@iXORTech</a><br/><a href=\"https://github.com/SlopeCraft\">@SlopeCraft</a> <a href=\"https://github.com/RedenMC\">@RedenMC</a><br/><b>PGP:</b> 0xDDB32000DDDF3D48."
+
+welcome:
+  layout: markdown
+  title: '欢迎来到 Cubik 的小站'
+  content: |
+    无限创意 / 无限进步 / 无限可能
+
+timeline:
+  layout: timeline
+  title: 近期动态 / Timeline
+  api: https://api.github.com/repos/Cubik65536/Cubik65536/issues?state=closed
+  user: Cubik65536
+  type: # 默认不用写，如果是友链朋友圈数据请写 fcircle
+  limit: 8
+
+'friends-circle':
+  layout: timeline
+  title: 朋友圈动态 / Friends Circle
+  api: https://hexo-circle-of-friends.cubik65536.top/all
+  type: fcircle
+  limit: 8

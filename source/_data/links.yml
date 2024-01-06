@@ -1,0 +1,57 @@
+'镜像站':
+  - title: 清华大学开源软件镜像站
+    url: https://mirrors.tuna.tsinghua.edu.cn
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://mirrors.tuna.tsinghua.edu.cn&width=1280&height=720
+    avatar: 
+    description:
+
+'Minecraft 相关网站':
+  - title: Chunker
+    url: https://chunker.app
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://chunker.app&width=1280&height=720
+    avatar: 
+    description: 将 Minecraft 基岩地图转换为 Java 版本
+
+'在线工具':
+  - title: thum.io
+    url: https://image.thum.io
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://image.thum.io&width=1280&height=720
+    avatar:
+    description: 快速生成网站截图
+  - title: Neumorphism.io
+    url: https://neumorphism.io/#e0e0e0
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://neumorphism.io/#e0e0e0&width=1280&height=720
+    avatar:
+    description: Generate Soft-UI CSS code
+  - title: Shields IO
+    url: https://shields.io
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://shields.io&width=1280&height=720
+    avatar:
+    description:
+  - title: json.cn
+    url: https://www.json.cn
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://www.json.cn&width=1280&height=720
+    avatar:
+    description:
+  - title: Favicon Generator
+    url: https://realfavicongenerator.net
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://realfavicongenerator.net&width=1280&height=720
+    avatar:
+    description:
+
+'设计灵感和素材':
+  - title: Flaticon
+    url: https://www.flaticon.com
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://www.flaticon.com&width=1280&height=720
+    avatar:
+    description: Access 8.4M+ vector icons and stickers
+  - title: Heroicons
+    url: https://heroicons.dev
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://heroicons.dev&width=1280&height=720
+    avatar:
+    description: Free Open Source SVG Icon Library
+  - title: Simple Icons
+    url: https://simpleicons.org
+    screenshot: https://website-screenshot-api.cubik65536.top/api?url=https://simpleicons.org&width=1280&height=720
+    avatar:
+    description: 2404 Free SVG icons for popular brands

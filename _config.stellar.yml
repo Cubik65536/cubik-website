@@ -1,0 +1,403 @@
+######## Sidebar ########
+sidebar:
+  logo:
+    avatar: '[config.avatar](/)' # you can set avatar link in _config.yml or '[https://xxx.png](/about/)'
+    title: '[config.title](/)' # you can set html tag like: '[<img no-lazy height="32px" src="xxx"/>](/)'
+  menu:
+    home: '[btn.home](/)'
+    post: '[btn.blog](/posts/)'
+    wiki: '[btn.wiki](/wiki/)'
+    friends: '[btn.friends](/friends/)'
+    games: '[btn.games](/games/)'
+    books: '[btn.books](/books/)'
+    movies: '[btn.movies](/movies/)'
+    anime: '[btn.anime](/anime/)'
+    notes: '[btn.notes](/notes/)'
+    message_board: '[btn.message_board](/message-board/)'
+
+  # Sidebar widgets
+  widgets:
+    #### 自动生成的页面 ####
+    # 主页
+    home: welcome, search, recent, timeline # for home
+    # 博客索引页
+    blog_index: welcome, search_blog, recent, timeline # for categories/tags/archives
+    # 文档索引页
+    wiki_index: welcome, search_docs, recent, timeline # for wiki
+    # 其它（404）
+    others: welcome, search, recent, timeline # for 404 and ...
+    #### 手动创建的页面 ####
+    # 文章内页
+    post: search_blog, toc, ghrepo, ghissues # for pages using 'layout:post'
+    # 文档内页
+    wiki: search, ghrepo, toc, ghissues, related # for pages using 'layout:wiki'
+    # 其它 layout:page 的页面
+    page: toc, search # for custom pages using 'layout:page'
+
+######## Index ########
+post-index: # 近期发布 分类 标签 归档 and ...
+  'post-index.timeline': /timeline/
+
+######## Article ########
+article:
+  # 文章许可协议
+  license: license
+  # 分享
+  share: [email, link]
+  # 相关文章，需要安装插件 (for layout: post)
+  # npm i hexo-related-popular-posts
+  related_posts:
+    enable: false
+    max_count: 5
+
+search:
+  service: local_search # local_search, todo...
+  local_search: # 在 front-matter 中设置 indexing:false 来避免被搜索索引
+    field: all # post, page, all
+    path: /search.json # 搜索文件存放位置
+    content: true # 是否搜索内容
+
+
+######## Comments ########
+comments:
+  service: waline
+  # Waline
+  # https://waline.js.org/
+  waline:
+    zh-CN:
+      js: https://unpkg.com/@waline/client@2.14.1/dist/waline.js
+      css: https://unpkg.com/@waline/client@2.14.1/dist/waline.css
+      # Waline server address url, you should set this to your own link
+      serverURL: https://waline.cubik65536.top
+      # If false, comment count will only be displayed in post page, not in home page
+      commentCount: true
+      # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+      pageview: true
+      # Custom emoji
+      emoji:
+          - https://unpkg.com/@waline/emojis@1.0.1/weibo
+          - https://unpkg.com/@waline/emojis@1.0.1/alus
+          - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+          - https://unpkg.com/@waline/emojis@1.0.1/qq
+          - https://unpkg.com/@waline/emojis@1.0.1/tieba
+          - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+      # Comment infomation, valid meta are nick, mail and link
+      meta:
+        - nick
+        - mail
+        - link
+      # Set required meta field, e.g.: [nick] | [nick, mail]
+      requiredMeta:
+        - nick
+        - mail
+      # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+      lang: zh-CN
+      # Whether enable login, can choose from 'enable', 'disable' and 'force'
+      login: enable
+      # comment per page
+      pageSize: 10
+      reaction: true
+      locale:
+        placeholder: "欢迎评论（填写邮箱可以在回复时收到邮件通知）"
+        sofa: "沙发！来评论吧～"
+        comment: "评论"
+        wordHint: "评论字数应在 $0 到 $1 字之间！\n当前字数：$2"
+    en:
+      js: https://unpkg.com/@waline/client@2.14.1/dist/waline.js
+      css: https://unpkg.com/@waline/client@2.14.1/dist/waline.css
+      # Waline server address url, you should set this to your own link
+      serverURL: https://waline.cubik65536.top
+      # If false, comment count will only be displayed in post page, not in home page
+      commentCount: true
+      # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+      pageview: true
+      # Custom emoji
+      emoji:
+          - https://unpkg.com/@waline/emojis@1.0.1/weibo
+          - https://unpkg.com/@waline/emojis@1.0.1/alus
+          - https://unpkg.com/@waline/emojis@1.0.1/bilibili
+          - https://unpkg.com/@waline/emojis@1.0.1/qq
+          - https://unpkg.com/@waline/emojis@1.0.1/tieba
+          - https://unpkg.com/@waline/emojis@1.0.1/tw-emoji
+      # Comment infomation, valid meta are nick, mail and link
+      meta:
+        - nick
+        - mail
+        - link
+      # Set required meta field, e.g.: [nick] | [nick, mail]
+      requiredMeta:
+        - nick
+        - mail
+      # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+      lang: en-US
+      # Whether enable login, can choose from 'enable', 'disable' and 'force'
+      login: enable
+      # comment per page
+      pageSize: 10
+      reaction: true
+      locale:
+        placeholder: "Leave a comment here (submit your email address to receive email notifications when someone replies)"
+        sofa: "No.1! Leave a comment here~"
+        comment: "Comments"
+        wordHint: "The comment length should be between $0 and $1 words!\nCurrent number of words: $2"
+
+
+######## Footer ########
+footer:
+  since: 2020
+  social:
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
+      url: https://github.com/Cubik65536
+      title: 'social.github'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
+      url: https://space.bilibili.com/439205819
+      title: 'social.bilibili'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/x-twitter.svg"/>'
+      url: https://x.com/Cubik65536
+      title: 'social.x-twitter'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
+      url: https://c.im/@cubik65536
+      title: 'social.mastodon-en'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/mastodon.svg"/>'
+      url: https://m.cmx.im/@cubik65536
+      title: 'social.mastodon-zh'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
+      url: https://t.me/cubiksteleblog
+      title: 'social.telegram'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/>'
+      url: mailto:me@cubik65536.top
+      title: 'social.email'
+  largesocial:
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
+      url: https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48
+      title: 'largesocial.title.PGP'
+      description: 'largesocial.description.PGP'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
+      url: https://foreverblog.cn/go.html
+      title: 'largesocial.title.foreverblog'
+      description: 'largesocial.description.foreverblog'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/train.svg" />'
+      url: https://www.travellings.cn/go.html
+      title: 'largesocial.title.travellings'
+      description: 'largesocial.description.travellings'
+  picturesocial:
+    - url: https://www.foreverblog.cn/blog/2992.html
+      image: https://img.foreverblog.cn/logo_en_default.png
+      description: 'picturesocial.foreverblog'
+  sitemap:
+    'footer.sitemap.home.group':
+      - '[footer.sitemap.home.about](/)'
+      - '[footer.sitemap.home.contact-me](/contact-me/)'
+      - '[footer.sitemap.home.my-pgp](/my-pgp/)'
+    'footer.sitemap.blog.group':
+      - '[footer.sitemap.blog.posts](/posts/)'
+      - '[footer.sitemap.blog.categories](/categories/)'
+      - '[footer.sitemap.blog.tags](/tags/)'
+      - '[footer.sitemap.blog.archives](/archives/)'
+      - '[footer.sitemap.blog.wiki](/wiki/)'
+      - '[footer.sitemap.blog.notes](/notes/)'
+      - '[footer.sitemap.blog.bookmarks](/bookmarks/)'
+      - '[footer.sitemap.blog.commit-message-conventions](/commit-message-conventions/)'
+    'footer.sitemap.social.group':
+      - '[footer.sitemap.social.friends](/friends/)'
+      - '[footer.sitemap.social.bilibili](https://space.bilibili.com/439205819)'
+      - '[footer.sitemap.social.x-twitter](https://x.com/Cubik65536)'
+      - '[social.mastodon-en](https://c.im/@cubik65536)'
+      - '[social.mastodon-zh](https://m.cmx.im/@cubik65536)'
+      - '[footer.sitemap.social.telegram](https://t.me/cubiksteleblog)'
+      - '[footer.sitemap.social.wormhole](https://foreverblog.cn/go.html)'
+      - '[footer.sitemap.social.travelling](https://www.travellings.cn/go.html)'
+    'footer.sitemap.contact-me.group':
+      - '[footer.sitemap.contact-me.message-board](/message-board/)'
+      - '[footer.sitemap.contact-me.contact-me](/contact-me/)'
+      - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
+      - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
+      - '[footer.sitemap.contact-me.gitlab](https://gitlab.com/Cubik65536)'
+      - '[footer.sitemap.contact-me.pgp](https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48)'
+  content: 'footer.content'
+
+
+######## Tag Plugins ########
+tag_plugins:
+  # {% ablock %} / {% note %}
+  note:
+    default_color: '' # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+    border: true # true / false
+  # {% checkbox %}
+  checkbox:
+    interactive: false # enable interactive for user
+  # {% quot %}
+  quot:
+    default: # 可以自行配置多种图标方案
+      prefix: https://bu.dusays.com/2022/10/24/63567d3e092ff.png
+      suffix: https://bu.dusays.com/2022/10/24/63567d3e0ab55.png
+    hashtag:
+      prefix: https://bu.dusays.com/2022/10/24/63567d3e07da3.png
+  # {% emoji %}
+  emoji:
+    default: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/${name}.gif
+    twemoji: https://gcore.jsdelivr.net/gh/twitter/twemoji/assets/svg/${name}.svg
+    qq: https://gcore.jsdelivr.net/gh/cdn-x/emoji/qq/${name}.gif
+    aru: https://gcore.jsdelivr.net/gh/cdn-x/emoji/aru-l/${name}.gif
+    tieba: https://gcore.jsdelivr.net/gh/cdn-x/emoji/tieba/${name}.png
+    blobcat: https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs/${name}.png
+  # {% image %}
+  image:
+    fancybox: true # true, false
+    parse_markdown: true # 把 markdown 格式的图片解析成图片标签
+  # {% timeline %}
+  timeline:
+    max-height: 80vh
+  # {% mark %}
+  mark:
+    default_color: dark # light, dark, red, orange, yellow, green, cyan, blue, purple, warning, error
+  # {% tag %}
+  tag:
+    default_color: yellow # red, orange, yellow, green, cyan, blue, purple
+
+
+######## JS Plugins ########
+plugins:
+  ## required plugins ##
+  # jquery
+  jquery: https://gcore.jsdelivr.net/npm/jquery@3.6.2/dist/jquery.min.js
+
+  # stellar api
+  stellar:
+    sites: /js/plugins/sites.js
+    friends: /js/plugins/friends.js
+    ghinfo: /js/plugins/ghinfo.js
+    timeline: /js/plugins/timeline.js
+    linkcard: /js/plugins/linkcard.js
+    fcircle: /js/plugins/fcircle.js
+    weibo: /js/plugins/weibo.js
+
+  marked: https://cdn.bootcdn.net/ajax/libs/marked/4.0.18/marked.min.js
+
+  ## optional plugins ##
+  # preload
+  preload:
+    enable: true
+    service: flying_pages # instant_page, flying_pages
+    instant_page: https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@4.1.2/js/instant_page.js
+    flying_pages: https://gcore.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js
+
+  # image lazyload
+  # https://www.npmjs.com/package/vanilla-lazyload
+  lazyload:
+    enable: true # [hexo clean && hexo s] is required after changing this value.
+    js: https://gcore.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js
+    transition: blur # blur, fade
+
+  # https://scrollrevealjs.org/api/reveal.html
+  scrollreveal:
+    enable: #true
+    js: https://gcore.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js
+    distance: 8px
+    duration: 500 # ms
+    interval: 100 # ms
+    scale: 1 # 0.1~1
+
+  # https://fancyapps.com/docs/ui/fancybox/
+  # available for {% image xxx %}
+  fancybox:
+    enable: true
+    js: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js
+    css: https://gcore.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css
+    # 可以处理评论区的图片（不支持 iframe 类评论系统）例如：
+    # 使用twikoo评论可以写: .tk-content img:not([class*="emo"])
+    # 使用waline评论可以写: #waline_container .vcontent img
+    selector: .swiper-slide img # 多个选择器用英文逗号隔开
+
+  # swiper
+  swiper:
+    enable: true
+    css: https://unpkg.com/swiper@8.4.5/swiper-bundle.min.css
+    js: https://unpkg.com/swiper@8.4.5/swiper-bundle.min.js
+
+  # MathJax
+  # 需在Markdown文件开头加入mathjax: true
+  # 推荐使用Pandoc: npm uninstall hexo-renderer-marked --save & npm install hexo-renderer-pandoc --save
+  mathjax:
+    enable: true
+    cdn: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+  # Mermaid - markdwon to flow chart, seq chart, class chart ...
+  # 需要安装 npm install --save hexo-filter-mermaid-diagrams
+  # 使用时 需要在Markdown文件开头加入 mermaid: true
+  # 使用示例：
+  # ```mermaid
+  # graph LR
+  #   A(Section A) -->|option 1| B(Section A)
+  #   B -->|option 2| C(Section C)
+  # ```
+  mermaid:
+    enable: true
+    # js: https://unpkg.com/mermaid@9.0.0/dist/mermaid.min.js
+    js: https://cdn.jsdelivr.net/npm/mermaid@v9/dist/mermaid.min.js
+    # Available themes: default | dark | forest | neutral
+    theme: neutral
+
+  # 代码块复制按钮
+  copycode:
+    enable: true
+    js: /js/plugins/copycode.js
+    default_text: 'Copy'
+    success_text: 'Copied'
+
+style:
+  darkmode: auto # auto / always / false
+  smooth_scroll: true # true / false
+  font-size:
+    root: 16px
+    body: .9375rem # 15px
+    code: 85% # 14px
+    codeblock: 0.8125rem # 13px
+  font-family:
+    logo: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
+    body: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, sans-serif'
+    code: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
+    codeblock: '"ProFont For Powerline", "LXGW WenKai Screen", "Apple Color Emoji", "Source Han Serif", system-ui, -apple-system, monospace, sans-serif'
+  text-align: left
+  border-radius:
+    card: 12px
+    block: 12px
+    bar: 6px
+    image: 6px
+  color:
+    # 动态颜色（会根据明暗主题重设明度值，只用关心色相和饱和度即可）
+    background: 'hsl(212 16% 98%)' # 浅色背景颜色
+    block: 'hsl(212 8% 95%)' # 块背景颜色
+    code: 'hsl(14 100% 48%)' # 行内代码颜色
+    text: 'hsl(0 0% 20%)' # 文本颜色
+    # 主题色配置（不会根据明暗动态调整，请设置为通用的颜色）
+    theme: 'hsl(208.8 23% 44.3%)' # 主题色
+    accent: 'hsl(208.5 23.3% 50.4%)' # 强调色
+    link: 'hsl(207 90% 54%)' # 超链接颜色
+    button: 'hsl(192 98% 55%)' # 按钮颜色
+    hover: 'hsl(208.5 23.3% 50.4%)' # 按钮高亮颜色
+  link:
+    underline: true # true / false
+  animated_avatar:
+    animate: auto # auto, always
+    background: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp
+  codeblock:
+    scrollbar: 4px
+    highlightjs_theme: https://gcore.jsdelivr.net/gh/highlightjs/cdn-release@11.7.0/build/styles/atom-one-dark.min.css
+  loading:
+    loading: 正在加载
+    error: 加载失败，请稍后重试。
+  gradient: # https://webgradients.com/
+    start: 'linear-gradient(to right, hsl(215, 95%, 64%), hsl(195, 95%, 60%), hsl(165, 95%, 56%), hsl(165, 95%, 56%), hsl(195 95% 60%), hsl(215, 95%, 64%))'
+    search: 'linear-gradient(to right, #04F3FF, #08FFC6, #DDF730, #FFBD19, #FF1FE0, #C418FF, #04F3FF)'
+
+default:
+  avatar: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/3442075.svg
+  link: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/link/8f277b4ee0ecd.svg
+  cover: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/cover/76b86c0226ffd.svg
+  image: https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg
+
+api_host:
+  ghapi: https://api.github.com
+  ghraw: https://raw.githubusercontent.com
+  gist: https://gist.github.com
