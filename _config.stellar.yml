@@ -164,19 +164,19 @@ footer:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
       title: 'social.telegram'
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/regular/envelopes-bulk.svg"/>'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/envelopes-bulk.svg"/>'
       url: mailto:me@cubik65536.top
       title: 'social.email'
   largesocial:
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/fingerprint.svg" />'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/fingerprint.svg" />'
       url: https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48
       title: 'largesocial.title.PGP'
       description: 'largesocial.description.PGP'
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/bullseye-pointer.svg" />'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/bullseye-pointer.svg" />'
       url: https://foreverblog.cn/go.html
       title: 'largesocial.title.foreverblog'
       description: 'largesocial.description.foreverblog'
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/light/train.svg" />'
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/train.svg" />'
       url: https://www.travellings.cn/go.html
       title: 'largesocial.title.travellings'
       description: 'largesocial.description.travellings'
