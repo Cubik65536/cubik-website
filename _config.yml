@@ -12,7 +12,7 @@ author: Cubik65536
 language:
   - zh-CN
   - en
-timezone: ''
+timezone: 'America/Toronto'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
