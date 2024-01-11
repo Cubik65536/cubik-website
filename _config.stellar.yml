@@ -185,6 +185,7 @@ footer:
       description: 'picturesocial.foreverblog'
   sitemap:
     'footer.sitemap.home.group':
+      - '[footer.sitemap.home.home](/)'
       - '[footer.sitemap.home.about](/)'
       - '[footer.sitemap.home.contact-me](/contact-me/)'
       - '[footer.sitemap.home.my-pgp](https://pgp.cubik65536.top/)'
@@ -212,7 +213,6 @@ footer:
       - '[footer.sitemap.contact-me.email](mailto:me@cubik65536.top)'
       - '[footer.sitemap.contact-me.github](https://github.com/Cubik65536)'
       - '[footer.sitemap.contact-me.gitlab](https://gitlab.com/Cubik65536)'
-      - '[footer.sitemap.contact-me.pgp](https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48)'
   content: 'footer.content.blog.open-source'
 
 
