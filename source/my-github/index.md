@@ -11,7 +11,7 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/hello-cubik-developer.jpg height:96px %}
 
-{% navbar active:3 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) [我的&nbsp;PGP](/my-pgp/) %}
+{% navbar active:3 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) %}
 
 <br />
 

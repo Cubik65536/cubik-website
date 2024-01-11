@@ -169,9 +169,8 @@ footer:
       title: 'social.email'
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/fingerprint.svg" />'
-      url: https://keys.openpgp.org/vks/v1/by-fingerprint/F9CBDDD99B6043914632B9D8DDB32000DDDF3D48
-      title: 'largesocial.title.PGP'
-      description: 'largesocial.description.PGP'
+      url: https://pgp.cubik65536.top/
+      description: 'largesocial.description.my-pgp'
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/bullseye-pointer.svg" />'
       url: https://foreverblog.cn/go.html
       title: 'largesocial.title.foreverblog'
@@ -188,7 +187,7 @@ footer:
     'footer.sitemap.home.group':
       - '[footer.sitemap.home.about](/)'
       - '[footer.sitemap.home.contact-me](/contact-me/)'
-      - '[footer.sitemap.home.my-pgp](/my-pgp/)'
+      - '[footer.sitemap.home.my-pgp](https://pgp.cubik65536.top/)'
     'footer.sitemap.blog.group':
       - '[footer.sitemap.blog.posts](/posts/)'
       - '[footer.sitemap.blog.categories](/categories/)'

@@ -11,7 +11,7 @@ header: false
 
 {% about avatar:https://img.cubik65536.top/GnuPG-Logo.svg height:96px %}
 
-{% navbar active:4 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) [My&nbsp;PGP](/en/my-pgp/) %}
+{% navbar active:4 [About](/en/) [Contact&nbsp;Me](/en/contact-me/) [My&nbsp;Github](/en/my-github/) %}
 
 <br/>
 
