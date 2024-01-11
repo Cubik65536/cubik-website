@@ -25,7 +25,7 @@ If you want to contact me, the most efficient way is to send emails to me. I wil
 
 *I will **ALWAYS** use my PGP signature when I reply or send messages with my email, and I will **ALWAYS** encrypt my message when I reply to an **encrypted** message.*
 
-**If you received a reply message but was not signed with `DDB3 2000 DDDF 3D48`, it is very likely that the message was not sent by me unless I publicly revoked `DDB3 2000 DDDF 3D48` and changed my keys. Please refer to [My PGP Info Site](https://pgp.cubik65536.top/) for more information.**
+**If you received a reply message but was not signed with `DDB3 2000 DDDF 3D48`, it is very likely that the message was not sent by me unless I publicly revoked `DDB3 2000 DDDF 3D48` and changed my keys. Please refer to [My PGP Info Site](https://pgp.cubik65536.top/en/) for more information.**
 
 {% note color:warning WARNING "My PGP key having the fingerprint 0xFFA7DB1132238420 is NO LONGER VALID since 2023/09/25." %}
 
