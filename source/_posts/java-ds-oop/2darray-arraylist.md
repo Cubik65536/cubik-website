@@ -425,7 +425,7 @@ public class Main {
 ```
 {% endfolding %}
 
-1. 写一个程序，创建一个长度为 10 的 String 类型的 ArrayList，然后向其中添加 10 个字符串。最后删除掉所有重复的字符串。
+2. 写一个程序，创建一个长度为 10 的 String 类型的 ArrayList，然后向其中添加 10 个字符串。最后删除掉所有重复的字符串。
 
 {% folding 解题方法 %}
 ```java
