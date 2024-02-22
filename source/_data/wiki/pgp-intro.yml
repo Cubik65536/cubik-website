@@ -3,12 +3,8 @@ title: PGP 基础使用
 subtitle: '从创建密钥到加密信息 - PGP 的基础使用'
 tags: 知识库
 cover: true
-logo:
-  src: https://img.cubik65536.top/GnuPG-Logo.svg
-  small: 112px
-  large: 240px
+icon: https://img.cubik65536.top/GnuPG-Logo.svg
 description: 从创建密钥到加密信息 - PGP 的基础使用
-path: /wiki/pgp-intro/
 toc:
   '简介':
     - index

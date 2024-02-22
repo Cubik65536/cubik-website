@@ -6,7 +6,15 @@ title: 友链
 seo_title: 友链
 toc_title: 友链索引
 comments: false
-sidebar: [welcome, friends-circle]
+leftbar:
+- layout: markdown
+  title: 社交链接
+  linklist:
+    columns: 1 
+    items:
+      - title: 留言板
+        url: /message-board/
+- friends-circle
 ---
 
 {% quot 海内存知己 天涯若比邻 el:h2 %}
