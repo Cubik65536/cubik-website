@@ -73,132 +73,138 @@ for (int i = 0; i < myClassArray.length; i++) {
 
 1. 输入一个 4x4 的 int 类型二维数组，寻找其中的最大值并输出其坐标。
 
-{% folding 解题方法 %}
-```java
-public class Main {
-    public static void main(String[] args) {
-        // 创建一个 4x4 的 int 类型二维数组
-        int[][] arr = new int[][]{
-                {182, 1723, 28, 12},
-                {18, 238, 229, 128},
-                {283, 2891, 38, 1},
-                {0, -29, 382, 29}
-        };
+    {% folding 解题方法 %}
 
-        // 创建一个变量用于存储最大值，其初始值为 int 类型的最小值，以确保数组中的任意值都会比其大
-        int max = Integer.MIN_VALUE;
-        // 创建两个变量用于存储最大值的坐标
-        int x = 0, y = 0;
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            // 创建一个 4x4 的 int 类型二维数组
+            int[][] arr = new int[][]{
+                    {182, 1723, 28, 12},
+                    {18, 238, 229, 128},
+                    {283, 2891, 38, 1},
+                    {0, -29, 382, 29}
+            };
 
-        // 遍历二维数组
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                // 如果当前元素大于 max，则将 max 更新为当前元素，并记录其坐标
-                if (arr[i][j] > max) {
-                    max = arr[i][j];
-                    x = i;
-                    y = j;
+            // 创建一个变量用于存储最大值，其初始值为 int 类型的最小值，以确保数组中的任意值都会比其大
+            int max = Integer.MIN_VALUE;
+            // 创建两个变量用于存储最大值的坐标
+            int x = 0, y = 0;
+
+            // 遍历二维数组
+            for (int i = 0; i < arr.length; i++) {
+                for (int j = 0; j < arr[i].length; j++) {
+                    // 如果当前元素大于 max，则将 max 更新为当前元素，并记录其坐标
+                    if (arr[i][j] > max) {
+                        max = arr[i][j];
+                        x = i;
+                        y = j;
+                    }
                 }
             }
-        }
 
-        // 输出最大值及其坐标
-        System.out.println("max: " + max + ", x: " + x + ", y: " + y);
+            // 输出最大值及其坐标
+            System.out.println("max: " + max + ", x: " + x + ", y: " + y);
+        }
     }
-}
-```
-{% endfolding %}
+    ```
+
+    {% endfolding %}
 
 2. 输入一个 4x4 的 int 类型二维数组，使用冒泡排序 (bubble sort) 对其进行从大到小的排序。
 
-{% folding 解题方法（较为简单） %}
-```java
-public class Main {
-    public static void main(String[] args) {
-        // 创建一个 4x4 的 int 类型二维数组
-        int[][] arr = new int[][]{
-                {182, 1723, 28, 12},
-                {18, 238, 229, 128},
-                {283, 2891, 38, 1},
-                {0, -29, 382, 29}
-        };
+    {% folding 解题方法（较为简单） %}
 
-        // 使用冒泡排序对二维数组进行排序
-        // 冒泡排序的算法本质决定了最多只需要 n 次遍历即可完成排序，其中 n 为数组的长度
-        for (int c = 0; c < arr.length * arr[0].length; c++) { // 由于二维数组的长度为 4x4，所以这里的 n 为 16，是大数组的长度乘以小数组的长度
-            // 冒泡排序核心算法：将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置（我们需要从大到小排序）
-            for (int i = 0; i < arr.length; i++) {
-                int j;
-                for (j = 0; j < arr[i].length - 1; j++) {
-                    // 将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置
-                    // 注意：此处 j 只到每行的倒数第二个元素，因为如果 j 到最后一个元素，那么 j + 1 就会越界
-                    if (arr[i][j] < arr[i][j + 1]) {
-                        int temp = arr[i][j];
-                        arr[i][j] = arr[i][j + 1];
-                        arr[i][j + 1] = temp;
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            // 创建一个 4x4 的 int 类型二维数组
+            int[][] arr = new int[][]{
+                    {182, 1723, 28, 12},
+                    {18, 238, 229, 128},
+                    {283, 2891, 38, 1},
+                    {0, -29, 382, 29}
+            };
+
+            // 使用冒泡排序对二维数组进行排序
+            // 冒泡排序的算法本质决定了最多只需要 n 次遍历即可完成排序，其中 n 为数组的长度
+            for (int c = 0; c < arr.length * arr[0].length; c++) { // 由于二维数组的长度为 4x4，所以这里的 n 为 16，是大数组的长度乘以小数组的长度
+                // 冒泡排序核心算法：将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置（我们需要从大到小排序）
+                for (int i = 0; i < arr.length; i++) {
+                    int j;
+                    for (j = 0; j < arr[i].length - 1; j++) {
+                        // 将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置
+                        // 注意：此处 j 只到每行的倒数第二个元素，因为如果 j 到最后一个元素，那么 j + 1 就会越界
+                        if (arr[i][j] < arr[i][j + 1]) {
+                            int temp = arr[i][j];
+                            arr[i][j] = arr[i][j + 1];
+                            arr[i][j + 1] = temp;
+                        }
                     }
-                }
-                // 但是，上面只检查到每行的倒数第二个元素肯定是不够的，我们还需要将每行的最后一个元素和下一行的第一个元素进行比较并按需交换
-                if (i < 3) { // 此处的 if 确保我们不去检查最后一行的最后一个元素，它后面没有元素了
-                    if (arr[i][j] < arr[i + 1][0]) {
-                        int temp = arr[i][j];
-                        arr[i][j] = arr[i + 1][0];
-                        arr[i + 1][0] = temp;
+                    // 但是，上面只检查到每行的倒数第二个元素肯定是不够的，我们还需要将每行的最后一个元素和下一行的第一个元素进行比较并按需交换
+                    if (i < 3) { // 此处的 if 确保我们不去检查最后一行的最后一个元素，它后面没有元素了
+                        if (arr[i][j] < arr[i + 1][0]) {
+                            int temp = arr[i][j];
+                            arr[i][j] = arr[i + 1][0];
+                            arr[i + 1][0] = temp;
+                        }
                     }
                 }
             }
         }
     }
-}
-```
-{% endfolding %}
+    ```
 
-{% folding 解题方法（优化版） %}
-```java
-public class Main {
-    public static void main(String[] args) {
-        // 创建一个 4x4 的 int 类型二维数组
-        int[][] arr = new int[][]{
-                {182, 1723, 28, 12},
-                {18, 238, 229, 128},
-                {283, 2891, 38, 1},
-                {0, -29, 382, 29}
-        };
+    {% endfolding %}
 
-        // 使用冒泡排序对二维数组进行排序
-        // 冒泡排序的算法本质决定了最多只需要 n 次遍历即可完成排序，其中 n 为数组的长度
-        bool swapped = true;
-        while (swapped) { // 实际上，在某些情况下，我们不需要遍历 n 次就可以完成排序，所以我们可以通过判断上一次“排序”是否有交换来提前结束排序，如果上一次没有交换，那么说明数组已经排序完成
-            swapped = false; // 每次遍历开始前，我们都假设没有交换
-            // 其余算法与上面的解题方法相同
-            // 冒泡排序核心算法：将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置（我们需要从大到小排序）
-            for (int i = 0; i < arr.length; i++) {
-                int j;
-                for (j = 0; j < arr[i].length - 1; j++) {
-                    // 将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置
-                    // 注意：此处 j 只到每行的倒数第二个元素，因为如果 j 到最后一个元素，那么 j + 1 就会越界
-                    if (arr[i][j] < arr[i][j + 1]) {
-                        int temp = arr[i][j];
-                        arr[i][j] = arr[i][j + 1];
-                        arr[i][j + 1] = temp;
-                        swapped = true;
+    {% folding 解题方法（优化版） %}
+
+    ```java
+    public class Main {
+        public static void main(String[] args) {
+            // 创建一个 4x4 的 int 类型二维数组
+            int[][] arr = new int[][]{
+                    {182, 1723, 28, 12},
+                    {18, 238, 229, 128},
+                    {283, 2891, 38, 1},
+                    {0, -29, 382, 29}
+            };
+
+            // 使用冒泡排序对二维数组进行排序
+            // 冒泡排序的算法本质决定了最多只需要 n 次遍历即可完成排序，其中 n 为数组的长度
+            bool swapped = true;
+            while (swapped) { // 实际上，在某些情况下，我们不需要遍历 n 次就可以完成排序，所以我们可以通过判断上一次“排序”是否有交换来提前结束排序，如果上一次没有交换，那么说明数组已经排序完成
+                swapped = false; // 每次遍历开始前，我们都假设没有交换
+                // 其余算法与上面的解题方法相同
+                // 冒泡排序核心算法：将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置（我们需要从大到小排序）
+                for (int i = 0; i < arr.length; i++) {
+                    int j;
+                    for (j = 0; j < arr[i].length - 1; j++) {
+                        // 将每个元素与其后一个元素进行比较，如果前者小于后者，则交换两者的位置
+                        // 注意：此处 j 只到每行的倒数第二个元素，因为如果 j 到最后一个元素，那么 j + 1 就会越界
+                        if (arr[i][j] < arr[i][j + 1]) {
+                            int temp = arr[i][j];
+                            arr[i][j] = arr[i][j + 1];
+                            arr[i][j + 1] = temp;
+                            swapped = true;
+                        }
                     }
-                }
-                // 但是，上面只检查到每行的倒数第二个元素肯定是不够的，我们还需要将每行的最后一个元素和下一行的第一个元素进行比较并按需交换
-                if (i < 3) { // 此处的 if 确保我们不去检查最后一行的最后一个元素，它后面没有元素了
-                    if (arr[i][j] < arr[i + 1][0]) {
-                        int temp = arr[i][j];
-                        arr[i][j] = arr[i + 1][0];
-                        arr[i + 1][0] = temp;
-                        swapped = true;
+                    // 但是，上面只检查到每行的倒数第二个元素肯定是不够的，我们还需要将每行的最后一个元素和下一行的第一个元素进行比较并按需交换
+                    if (i < 3) { // 此处的 if 确保我们不去检查最后一行的最后一个元素，它后面没有元素了
+                        if (arr[i][j] < arr[i + 1][0]) {
+                            int temp = arr[i][j];
+                            arr[i][j] = arr[i + 1][0];
+                            arr[i + 1][0] = temp;
+                            swapped = true;
+                        }
                     }
                 }
             }
         }
     }
-}
-```
-{% endfolding %}
+    ```
+
+    {% endfolding %}
 
 ## 类数组
 
@@ -209,6 +215,7 @@ public class Main {
 创建一个类 `Student`，包含两个属性 `name` 和 `score`，分别为学生的姓名和分数。然后，输入一个 `Student` 类型的数组，对其按照分数从大到小进行排序。最后以此输出学生的姓名和分数。
 
 {% folding 解题方法 %}
+
 ```java
 class Student {
     // 学生类，包含两个属性 name 和 score
@@ -260,6 +267,7 @@ public class Main {
     }
 }
 ```
+
 {% endfolding %}
 
 总而言之，使用类作为数组的元素类型可以让我们在处理一些复杂的数据时更加方便。以上述例题为例，如果我们分开使用两个数组来存储学生的姓名和分数，由于我们只在排序成绩，但同时需要保证姓名和分数的对应关系，相关操作会变的相当麻烦。但是，如果我们使用一个 `Student` 类型的数组，那么我们就可以保证姓名和分数的对应关系，从而更加方便地进行排序。
@@ -371,91 +379,95 @@ public class Main {
 }
 ```
 
-## 例题
+### 例题
 
 1. 写一个程序，创建一个长度为 10 的 String 类型的 ArrayList，然后向其中添加 10 个字符串。接着创建一个长度为 10 的 Integer 类型的 ArrayList，然后向其中添加 10 个整数。最后，将 String 类型的 ArrayList 中元素索引为偶数的元素删除掉，将 Integer 类型的 ArrayList 中元素索引为奇数的元素删除掉。
 
-{% folding 解题方法 %}
-```java
-import java.util.*;
+    {% folding 解题方法 %}
 
-public class Main {
-    public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("String0");
-        strings.add("String1");
-        strings.add("String2");
-        strings.add("String3");
-        strings.add("String4");
-        strings.add("String5");
-        strings.add("String6");
-        strings.add("String7");
-        strings.add("String8");
-        strings.add("String9");
+    ```java
+    import java.util.*;
 
-        ArrayList<Integer> integers = new ArrayList<>();
-        integers.add(0);
-        integers.add(1);
-        integers.add(2);
-        integers.add(3);
-        integers.add(4);
-        integers.add(5);
-        integers.add(6);
-        integers.add(7);
-        integers.add(8);
-        integers.add(9);
+    public class Main {
+        public static void main(String[] args) {
+            ArrayList<String> strings = new ArrayList<>();
+            strings.add("String0");
+            strings.add("String1");
+            strings.add("String2");
+            strings.add("String3");
+            strings.add("String4");
+            strings.add("String5");
+            strings.add("String6");
+            strings.add("String7");
+            strings.add("String8");
+            strings.add("String9");
 
-        // 创建新的 ArrayList 并不难，但是删除元素的时候需要注意，因为每次删除元素后，ArrayList 的长度会发生变化，需要删除的元素的索引也会发生变化，所以我们需要点小技巧
-        // 接下来两个循环都使用了一些神奇的算法，如果你不太理解，可以尝试在草稿纸上画出数组，然后一步一步地模拟删除的过程，你就会发现其中的规律
-        // 规律：为了删除索引为偶数的元素，我们其实正好只需要删除从 0 开始，每次 +1 的位置的元素，直至数组的长度的一半；对于奇数的情况，我们其实只需要删除从 1 开始，其他同理
+            ArrayList<Integer> integers = new ArrayList<>();
+            integers.add(0);
+            integers.add(1);
+            integers.add(2);
+            integers.add(3);
+            integers.add(4);
+            integers.add(5);
+            integers.add(6);
+            integers.add(7);
+            integers.add(8);
+            integers.add(9);
 
-        // 删除 String 类型的 ArrayList 中索引为偶数的元素
-        int stringsSize = strings.size();
-        for (int i = 0; i < stringsSize / 2; i++) {
-            strings.remove(i);
-        }
+            // 创建新的 ArrayList 并不难，但是删除元素的时候需要注意，因为每次删除元素后，ArrayList 的长度会发生变化，需要删除的元素的索引也会发生变化，所以我们需要点小技巧
+            // 接下来两个循环都使用了一些神奇的算法，如果你不太理解，可以尝试在草稿纸上画出数组，然后一步一步地模拟删除的过程，你就会发现其中的规律
+            // 规律：为了删除索引为偶数的元素，我们其实正好只需要删除从 0 开始，每次 +1 的位置的元素，直至数组的长度的一半；对于奇数的情况，我们其实只需要删除从 1 开始，其他同理
 
-        // 删除 Integer 类型的 ArrayList 中索引为奇数的元素
-        int integersSize = integers.size();
-        for (int i = 1; i < integersSize / 2 + 1; i++) {
-            integers.remove(i);
+            // 删除 String 类型的 ArrayList 中索引为偶数的元素
+            int stringsSize = strings.size();
+            for (int i = 0; i < stringsSize / 2; i++) {
+                strings.remove(i);
+            }
+
+            // 删除 Integer 类型的 ArrayList 中索引为奇数的元素
+            int integersSize = integers.size();
+            for (int i = 1; i < integersSize / 2 + 1; i++) {
+                integers.remove(i);
+            }
         }
     }
-}
-```
-{% endfolding %}
+    ```
+
+    {% endfolding %}
 
 2. 写一个程序，创建一个长度为 10 的 String 类型的 ArrayList，然后向其中添加 10 个字符串。最后删除掉所有重复的字符串。
 
-{% folding 解题方法 %}
-```java
-import java.util.*;
+    {% folding 解题方法 %}
 
-public class Main {
-    public static void main(String[] args) {
-        ArrayList<String> strings = new ArrayList<>();
-        strings.add("String");
-        strings.add("String1");
-        strings.add("String");
-        strings.add("String3");
-        strings.add("String");
-        strings.add("String5");
-        strings.add("String");
-        strings.add("String7");
-        strings.add("String");
-        strings.add("String9");
+    ```java
+    import java.util.*;
 
-        // 实际上，我们只需要将每个元素和它后面的所有元素进行一下比较就可以了
-        // 如果后面的元素和当前元素相同，那么我们就可以删除后面的元素
-        for (int i = 0; i < strings.size(); i++) {
-            for (int j = i + 1; j < strings.size(); j++) {
-                if (strings.get(i).equals(strings.get(j))) {
-                    strings.remove(j);
-                    j--; // 此处要注意，删除元素后，后面的元素会向前移动，所以我们需要将 j 减一，以确保被向前移动的元素也会被检查
+    public class Main {
+        public static void main(String[] args) {
+            ArrayList<String> strings = new ArrayList<>();
+            strings.add("String");
+            strings.add("String1");
+            strings.add("String");
+            strings.add("String3");
+            strings.add("String");
+            strings.add("String5");
+            strings.add("String");
+            strings.add("String7");
+            strings.add("String");
+            strings.add("String9");
+
+            // 实际上，我们只需要将每个元素和它后面的所有元素进行一下比较就可以了
+            // 如果后面的元素和当前元素相同，那么我们就可以删除后面的元素
+            for (int i = 0; i < strings.size(); i++) {
+                for (int j = i + 1; j < strings.size(); j++) {
+                    if (strings.get(i).equals(strings.get(j))) {
+                        strings.remove(j);
+                        j--; // 此处要注意，删除元素后，后面的元素会向前移动，所以我们需要将 j 减一，以确保被向前移动的元素也会被检查
+                    }
                 }
             }
         }
     }
-}
-```
-{% endfolding %}
+    ```
+
+    {% endfolding %}
