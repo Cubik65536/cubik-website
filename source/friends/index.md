@@ -7,13 +7,7 @@ seo_title: 友链
 toc_title: 友链索引
 comments: false
 leftbar:
-  - layout: markdown
-    title: 社交链接
-    linklist:
-      columns: 1 
-      items:
-        - title: 留言板
-          url: /message-board/
+  - social-links
   - friends-circle
 ---
 

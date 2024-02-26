@@ -13,6 +13,19 @@ welcome:
   content: |
     无限创意 / 无限进步 / 无限可能
 
+'social-links':
+  layout: linklist
+  title: 社交链接
+  align: left
+  columns: 1 
+  items:
+    - icon: fapro5:face-sunglasses
+      title: 友情链接
+      url: /friends/
+    - icon: fapro5:message-lines
+      title: 留言板
+      url: /message-board/
+
 timeline:
   layout: timeline
   title: 近期动态 / Timeline

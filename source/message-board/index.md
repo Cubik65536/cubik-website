@@ -1,7 +1,6 @@
 ---
 robots: noindex,nofollow
 menu_id: message_board
-sidebar: [ghuser, search, recent, timeline]
 comments: true
 comment_title: ""
 comment_locale:
@@ -12,6 +11,9 @@ comment_locale:
 reaction: false
 breadcrumb: false
 header: false
+leftbar:
+  - social-links
+  - friends-circle
 ---
 
 {% about %}
