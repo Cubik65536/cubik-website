@@ -281,7 +281,7 @@ public class Main {
 
 {% note color:yellow "如果你可能会抛出异常的函数在一个类中，<code>throws</code> 关键字也会被用在类的声明中 <code>class Clazz throws ExceptionType</code>" %}
 
-同时，上面代码中出现了一个新的关键字：`finally`。`finally` 代码块中的代码会在 `try-catch` 代码块中的代码执行完毕后执行，无论是否出现异常。
+同时，上面代码中出现了一个新的关键字：`finally`。`finally` 代码块中的代码会在 `try-catch` 代码块中的代码执行完毕后执行，无论是否出现异常。实际上，就算 `try` 代码块中的代码出现了异常，`catch` 代码块并未处理被抛出的异常，`finally` 代码块中的代码也会被执行，然后异常会继续向上传递（或者导致程序终止）。
 
 ## 例题
 
