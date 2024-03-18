@@ -141,8 +141,9 @@ search:
 comments:
   service: waline # beaudar, utterances, giscus, twikoo, waline, artalk
   waline:
-    js: https://unpkg.com/@waline/client@2.14.1/dist/waline.js
-    css: https://unpkg.com/@waline/client@2.14.1/dist/waline.css
+    js: https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline.js
+    css: https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline.css
+    meta_css: https://gcore.jsdelivr.net/npm/@waline/client@3.1.3/dist/waline-meta.css
     # Waline server address url, you should set this to your own link
     serverURL: https://waline.cubik65536.top
     # If false, comment count will only be displayed in post page, not in home page
@@ -170,6 +171,8 @@ comments:
     lang: zh-CN
     # Whether enable login, can choose from 'enable', 'disable' and 'force'
     login: force
+    # Dark Mode
+    dark: auto
     # comment per page
     pageSize: 10
     reaction: true
