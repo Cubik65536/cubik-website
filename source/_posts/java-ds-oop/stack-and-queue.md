@@ -10,17 +10,15 @@ tags:
   - 面向对象编程
   - 栈
   - 队列
-  - 链表
   - Stack
   - Queue
-  - LinkedList
 references:
   - "[1] \"Stack (abstract data type),\" *Wikipedia*. Accessed: Mar. 27, 2024.<br/>Available: https://en.wikipedia.org/wiki/Stack_(abstract_data_type)"
   - "[2] \"Queue (abstract data type),\" *Wikipedia*. Accessed: Mar. 27, 2024.<br/>Available: https://en.wikipedia.org/wiki/Queue_(abstract_data_type)"
   - "[3] GeekforGeeks, \"Introduction to Circular Queue,\" July 7, 2023. Accessed: Mar. 27, 2024.<br/>Available: https://www.geeksforgeeks.org/introduction-to-circular-queue/"
 ---
 
-本文将简单介绍栈、队列和链表的概念，给出它们的 Java 实现，并介绍 Java Util 中的 `Stack`、`Queue` 和 `LinkedList` 类。
+本文将简单介绍栈和队列的概念，给出它们的 Java 实现以及原理解析。
 
 <!-- more -->
 
