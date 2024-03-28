@@ -35,7 +35,14 @@ header: false
   <a href="https://github.com/RedenMC">
     <img src="https://img.shields.io/badge/@RedenMC-维护者-57728B.svg?style=for-the-badge&logoColor=ccecff&logo=data:image/svg%2bxml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTA2NyAxMDY3IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MjsiPjx1c2UgaWQ9IkJhY2tncm91bmQiIHhsaW5rOmhyZWY9IiNfSW1hZ2UxIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjU2cHgiIGhlaWdodD0iMjU2cHgiIHRyYW5zZm9ybT0ibWF0cml4KDQuMTY2NjcsMCwwLDQuMTY2NjcsMCwwKSIvPjxkZWZzPjxpbWFnZSBpZD0iX0ltYWdlMSIgd2lkdGg9IjI1NnB4IiBoZWlnaHQ9IjI1NnB4IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQVFBQUFBRUFDQUlBQUFEVEVEOHhBQUFBQ1hCSVdYTUFBQXNUQUFBTEV3RUFtcHdZQUFBRnlXbFVXSFJZVFV3NlkyOXRMbUZrYjJKbExuaHRjQUFBQUFBQVBEOTRjR0ZqYTJWMElHSmxaMmx1UFNMdnU3OGlJR2xrUFNKWE5VMHdUWEJEWldocFNIcHlaVk42VGxSamVtdGpPV1FpUHo0Z1BIZzZlRzF3YldWMFlTQjRiV3h1Y3pwNFBTSmhaRzlpWlRwdWN6cHRaWFJoTHlJZ2VEcDRiWEIwYXowaVFXUnZZbVVnV0UxUUlFTnZjbVVnTnk0d0xXTXdNREFnTnprdU1UTTFOMk01WlN3Z01qQXlNUzh3Tnk4eE5DMHdNRG96T1RvMU5pQWdJQ0FnSUNBZ0lqNGdQSEprWmpwU1JFWWdlRzFzYm5NNmNtUm1QU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh4T1RrNUx6QXlMekl5TFhKa1ppMXplVzUwWVhndGJuTWpJajRnUEhKa1pqcEVaWE5qY21sd2RHbHZiaUJ5WkdZNllXSnZkWFE5SWlJZ2VHMXNibk02ZUcxd1BTSm9kSFJ3T2k4dmJuTXVZV1J2WW1VdVkyOXRMM2hoY0M4eExqQXZJaUI0Yld4dWN6cGtZejBpYUhSMGNEb3ZMM0IxY213dWIzSm5MMlJqTDJWc1pXMWxiblJ6THpFdU1TOGlJSGh0Ykc1ek9uQm9iM1J2YzJodmNEMGlhSFIwY0RvdkwyNXpMbUZrYjJKbExtTnZiUzl3YUc5MGIzTm9iM0F2TVM0d0x5SWdlRzFzYm5NNmVHMXdUVTA5SW1oMGRIQTZMeTl1Y3k1aFpHOWlaUzVqYjIwdmVHRndMekV1TUM5dGJTOGlJSGh0Ykc1ek9uTjBSWFowUFNKb2RIUndPaTh2Ym5NdVlXUnZZbVV1WTI5dEwzaGhjQzh4TGpBdmMxUjVjR1V2VW1WemIzVnlZMlZGZG1WdWRDTWlJSGh0Y0RwRGNtVmhkRzl5Vkc5dmJEMGlRV1J2WW1VZ1VHaHZkRzl6YUc5d0lESXlMalVnS0ZkcGJtUnZkM01wSWlCNGJYQTZRM0psWVhSbFJHRjBaVDBpTWpBeU15MHdOQzB5TWxReE1qb3hPVG95Tnlzd01qb3dNQ0lnZUcxd09rMXZaR2xtZVVSaGRHVTlJakl3TWpNdE1EZ3RNVFZVTVRBNk1UUTZORFlyTURJNk1EQWlJSGh0Y0RwTlpYUmhaR0YwWVVSaGRHVTlJakl3TWpNdE1EZ3RNVFZVTVRBNk1UUTZORFlyTURJNk1EQWlJR1JqT21admNtMWhkRDBpYVcxaFoyVXZjRzVuSWlCd2FHOTBiM05vYjNBNlEyOXNiM0pOYjJSbFBTSXpJaUI0YlhCTlRUcEpibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPakJrTkdNMU9UWXdMVGhtWmpjdFkyUTBNaTA0T0RZeExUTmtORE00T1RrM1pUaGlZeUlnZUcxd1RVMDZSRzlqZFcxbGJuUkpSRDBpWVdSdlltVTZaRzlqYVdRNmNHaHZkRzl6YUc5d09qWXdNakZpT1dJeExUZzNZMkl0Wm1RME9TMDVZak5sTFdJMk9EVTBNbVZsTXpFeVl5SWdlRzF3VFUwNlQzSnBaMmx1WVd4RWIyTjFiV1Z1ZEVsRVBTSjRiWEF1Wkdsa09qVTJZakkyTm1ZMExUTTROVGN0TkRnME5TMDVaR05rTFRReFlXTTVNekkwWVdVek5pSStJRHg0YlhCTlRUcElhWE4wYjNKNVBpQThjbVJtT2xObGNUNGdQSEprWmpwc2FTQnpkRVYyZERwaFkzUnBiMjQ5SW1OeVpXRjBaV1FpSUhOMFJYWjBPbWx1YzNSaGJtTmxTVVE5SW5odGNDNXBhV1E2TlRaaU1qWTJaalF0TXpnMU55MDBPRFExTFRsa1kyUXROREZoWXprek1qUmhaVE0ySWlCemRFVjJkRHAzYUdWdVBTSXlNREl6TFRBMExUSXlWREV5T2pFNU9qSTNLekF5T2pBd0lpQnpkRVYyZERwemIyWjBkMkZ5WlVGblpXNTBQU0pCWkc5aVpTQlFhRzkwYjNOb2IzQWdNakl1TlNBb1YybHVaRzkzY3lraUx6NGdQSEprWmpwc2FTQnpkRVYyZERwaFkzUnBiMjQ5SW5OaGRtVmtJaUJ6ZEVWMmREcHBibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPakJrTkdNMU9UWXdMVGhtWmpjdFkyUTBNaTA0T0RZeExUTmtORE00T1RrM1pUaGlZeUlnYzNSRmRuUTZkMmhsYmowaU1qQXlNeTB3T0MweE5WUXhNRG94TkRvME5pc3dNam93TUNJZ2MzUkZkblE2YzI5bWRIZGhjbVZCWjJWdWREMGlRV1J2WW1VZ1VHaHZkRzl6YUc5d0lESXlMalVnS0ZkcGJtUnZkM01wSWlCemRFVjJkRHBqYUdGdVoyVmtQU0l2SWk4K0lEd3ZjbVJtT2xObGNUNGdQQzk0YlhCTlRUcElhWE4wYjNKNVBpQThMM0prWmpwRVpYTmpjbWx3ZEdsdmJqNGdQQzl5WkdZNlVrUkdQaUE4TDNnNmVHMXdiV1YwWVQ0Z1BEOTRjR0ZqYTJWMElHVnVaRDBpY2lJL1B0SStyRFVBQUFSclNVUkJWSGphN2QwL2ExTlJITWRoYVoyeXBIVUxLTFFneGFVbFhRUUR4Y1dpRm4wMTlROVNPNm1JMXI0YlFTRWRZZ3R4YkdpWFVvUVVLbVFSbXpoa1Uzd0RYYjdvZ1lUN1BQem1jbTl5UHB3TTU5N09iRzF2UmJPenV6TlI0L3JOdjh6TUZhZ3dBU0FBRUFBSUFBUUFBZ0FCZ0FCQUFDQUFFQUFJQUFRQUFvQktCZEJjYVVhemVHT3g2S3d1cjBhVC92MzBmcDlzUG8zbTlhczMwYlRXV2xNOXBkZVBIUUFFQUFJQUFZQUFRQUFnQUJBQUNBQUVnQUJBQUNBQUVBQUlBS29Td0Z4b2RER0twajVmajZheDBKaW82ZXgzb25tNXZSWE5YcnNkelhnMGptWndOcGlvU2RlUEhRQUVBQUlBQVlBQVFBQWdBQkFBQ0FBRUFBSUFBWUFBUUFBZ0FQZy9BYVRuNld2MVdqVHBlZmQwdWdmZGFOTFBKMzNmLzczMTlXaDZSNzFvMHVjeEp1MzVqZlI2N0FBZ0FCQUFDQUFFQUFJQUFZQUFRQUFnQUFRQUFnQUJnQUJBQUNDQXkwM2ErK1BUOC9IRFVQcjVmTmpkaVNiOSs0K2V2WWdtL1h6UzZ5bjkvRWE2SHRMdjF3NkFIUUFFQUFJQUFZQUFRQUFnQUJBQUNBQUVBQUlBQVlBQVFBQlFsUUJLdjIrK2Y5NlBKajMvbmI2L1A1MzA4eXo5L01EUzV2Tm8wdWNIMHZQNjZhVHJaeTVrQjhBT0FBSUFBWUFBUUFBZ0FCQUFDQUFFQUFJQUFZQUFRQUFnQUpqV0FOTHo5SjM5VGpTbDM5OWYrcngrS24xL2YzT2xHYzMzejUraVdacWR5U1o4ZmlBOXI1OStudWw2OC84QndFOGdFQUFJQUFRQUFnQUJnQUJBQUNBQUJBQUNBQUdBQUVBQVVKVUE1Z3FiOXZQOUo3TlhvL240L20wMHBhKy85UE1ENC9YNzBSd2VIMFpUZW4zYUFmQVRDQVFBQWdBQmdBQkFBQ0FBRUFBSUFBUUFBZ0FCZ0FCQUFGQ1ZBTkx6L1J1UE42S3AyaGR3L2NIRGFOSy9YNnZYb2lsOXYrbDZTTmViSFFBRUFBSUFBWUFBUUFBZ0FCQUFDQUFFZ0FCQUFDQUFFQUFJQUtvU1FHdXRGVTE2bm50d05vaG1yOTJPSnIzaDB1LzdiNjQwbzBtdlAzMSs0TWZ0dFdoT2YvK0o1dWJKY1RUcC9hYnJMVjNQZGdEOEJBSUJnQUJBQUNBQUVBQUlBQVFBQWdBQmdBQkFBQ0FBRUFCTWF3RGRnMjQwNmZuKytudzltdlFHU2o4L2tKN3ZMLzArL3ZTOGZ2cjMwL1A5dzEvRGFNYWpjVFRwZWt2WHN4MEFQNEZBQUNBQUVBQUlBQVFBQWdBQmdBQkFBQ0FBRUFBSUFBUUEweHJBTURUdE4veno2NWRvMHZmeFg3dHpONXFxbmU4di9mMm02OWtPZ0o5QUlBQVFBQWdBQkFBQ0FBR0FBRUFBSUFBUUFBZ0FCQUFDZ0drTllDNlV2dTkvZERFcU91a05wK2ZYMCtjSHFuYSt2L1QzbTY2M2REM2JBZkFUQ0FRQUFnQUJnQUJBQUNBQUVBQUlBQVFBQWdBQmdBQkFBRkNWQUVxZjUyNHNOS0twMVd2UnBQZWJubzlQeit0UDJ2bis5UE5NdjYvU3o1UFlBVUFBSUFBUUFBZ0FCQUFDQUFHQUFFQUFDQUFFQUFJQUFZQUFRQUNYSzMxZVB6Mi9uazU2dituMWY3dTFYSFJLWDMvNmVRN09CdEdVUHQ5dkJ3QUJnQUJBQUNBQUVBQUlBQVFBQWdBQklBQVFBQWdBQkFBQ0FBRmNybnZRTFRxOW8xNDBuZjFPTk9uZlQ2Ly9kUGRkMFptMHo3OS8zaTg2aDhlSDBkZ0JRQUFnQUJBQUNBQUVBQUlBQVlBQVFBQUlBQVFBQWdBQmdBQ2dJdjRDbzZoZ0xmcmZERGdBQUFBT1pWaEpaazFOQUNvQUFBQUlBQUFBQUFBQUFOSlRrd0FBQUFCSlJVNUVya0pnZ2c9PSIvPjwvZGVmcz48L3N2Zz4=" style="display: inline-block" />
   </a>
+  <a href="https://github.com/ungoogled-software/ungoogled-chromium-macos">
+    <img src="https://img.shields.io/badge/Ungoogled_Chromium_macOS-维护者-57728B.svg?style=for-the-badge" style="display: inline-block" />
+  </a>
 </p>
+
+<hr/>
+
+<img align="right" src="./github-metrics.svg" />
 
 <p>
   <img src="https://img.shields.io/badge/Apple-MacBook_Pro_2023-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
@@ -84,7 +91,7 @@ header: false
   <img src="https://img.shields.io/badge/Xcode-007ACC?style=for-the-badge&logo=Xcode&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/CLion-black?style=for-the-badge&logo=clion&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/IntelliJ%20IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=F0F0F0" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/DataGrip-000000.svg?style=for-the-badge&logo=datagrip&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/Rider-000000.svg?style=for-the-badge&logo=rider&logoColor=F0F0F0" style="display: inline-block" />
 </p>
 
 <p>
@@ -94,8 +101,9 @@ header: false
   -->
   <img src="https://img.shields.io/badge/kotlin-%230095D5.svg?style=for-the-badge&logo=kotlin&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=F0F0F0" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white" style="display: inline-block" />
   <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" style="display: inline-block" />
   <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=F0F0F0" style="display: inline-block" />
 </p>
 
@@ -103,8 +111,9 @@ header: false
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=F0F0F0" style="display: inline-block" />
   &nbsp;&nbsp;
-  <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/typst-%23239DAD.svg?style=for-the-badge&logo=latex&logoColor=F0F0F0" style="display: inline-block" />
+  <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=F0F0F0" style="display: inline-block" />
 </p>
 
 ## 🎉 致谢
