@@ -154,7 +154,7 @@ head = newNode; // 将新节点设置为头节点
 ```java
 // 尾部插入方法也需要一个参数 data 作为新节点的数据
 Node newNode = new Node(); // 创建一个新节点
-newNode.data = 10; // 设置新节点的数据
+newNode.data = data; // 设置新节点的数据
 newNode.next = null; // 将新节点的“下一个”指针设置为 null
 if (head == null) { // 如果链表为空
     head = newNode; // 将新节点设置为头节点
@@ -227,6 +227,138 @@ if (index == 0) {
 ```
 
 {% image https://img.cubik65536.top/Deletion-at-a-Specific-Position-of-Singly-Linked-List.png 在链表中间删除一个节点 [5] %}
+
+## 示例实现与测试
+
+下面是一个上述链表实现的示例代码以及一个简单的测试代码，用于测试链表的操作。
+
+``` java
+/**
+ * 链表的节点
+ */
+class Node {
+    /**
+     * 节点的数据
+     */
+    public int data;
+    /**
+     * 节点的“下一个”指针
+     */
+    public Node next;
+}
+
+/**
+ * 链表
+ */
+class MyLinkedList {
+    private Node head = null;
+
+    /**
+     * 遍历链表，显示链表中的所有元素
+     */
+    public void traverse() {
+        Node current = head; // 从链表的第一个节点（head）开始
+        while (current.next != null) { // 当前节点的“下一个”指针不为空时（即当前节点不是最后一个节点）
+            System.out.print(current.data + " "); // 获取当前节点的数据（如果需要的话）
+            current = current.next; // 将当前节点指针指向下一个节点
+        }
+        System.out.print(current.data + " "); // 输出最后一个节点的数据（如果需要的话）
+        System.out.println(); // 换行
+    }
+
+    /**
+     * 在链表的开头插入一个新数据
+     * @param data 新节点的数据
+     */
+    public void insertAtBeginning(int data) {
+        // 头部插入方法需要一个参数 data 作为新节点的数据
+        Node newNode = new Node(); // 创建一个新节点
+        newNode.data = data; // 设置新节点的数据
+        newNode.next = head; // 将新节点的“下一个”指针指向原来的头节点
+        head = newNode; // 将新节点设置为头节点
+    }
+
+    /**
+     * 在链表的末尾插入一个新数据
+     * @param data 新节点的数据
+     */
+    public void insertAtEnd(int data) {
+        // 尾部插入方法也需要一个参数 data 作为新节点的数据
+        Node newNode = new Node(); // 创建一个新节点
+        newNode.data = data; // 设置新节点的数据
+        newNode.next = null; // 将新节点的“下一个”指针设置为 null
+        if (head == null) { // 如果链表为空
+            head = newNode; // 将新节点设置为头节点
+        } else {
+            Node current = head; // 从头节点开始遍历
+            while (current.next != null) { // 当前节点的“下一个”指针不为空时（即当前节点不是最后一个节点）
+                current = current.next; // 将当前节点指针指向下一个节点
+            }
+            current.next = newNode; // 将最后一个节点的“下一个”指针指向新节点
+        }
+    }
+
+    /**
+     * 在链表的指定位置插入一个新数据
+     * @param data  新节点的数据
+     * @param index 新节点的位置
+     */
+    public void insertAt(int data, int index) {
+        // 中间插入方法需要两个参数 data 和 index，分别表示新节点的数据和要插入的位置（从 0 开始）
+        if (index == 0) {
+            // 实际上就是头部插入
+            insertAtBeginning(data); // 由于已经有了头部插入方法，所以可以直接调用头部插入方法
+        } else {
+            Node newNode = new Node(); // 创建一个新节点
+            newNode.data = data; // 设置新节点的数据
+            Node current = head; // 从头节点开始遍历
+            for (int i = 1; i < index; i++) { // 遍历到要插入的位置的前一个位置
+                current = current.next; // 如果还没到要插入的位置，就将当前节点指针指向下一个节点
+            }
+            // 到了要插入的位置后（此时 current 指向要插入的位置的前一个位置）
+            newNode.next = current.next; // 将新节点的“下一个”指针指向当前节点的“下一个”指针指向的节点
+            current.next = newNode; // 将当前节点的“下一个”指针指向新节点
+        }
+    }
+
+    /**
+     * 删除链表指定位置的节点
+     * @param index 要删除的节点的位置
+     */
+    public void deleteAt(int index) {
+        // 删除方法需要一个参数 index，表示要删除的节点的位置（从 0 开始）
+        if (index == 0) {
+            // 实际上就是删除头节点
+            Node temp = head; // 保存头节点
+            head = head.next; // 将头节点指针指向头节点的“下一个”指针指向的节点
+            temp = null; // 删除头节点，这一步实际上不是必要的
+        } else {
+            Node current = head; // 从头节点开始遍历
+            for (int i = 1; i < index; i++) { // 遍历到要删除的位置的前一个位置
+                current = current.next; // 如果还没到要删除的位置，就将当前节点指针指向下一个节点
+            }
+            // 到了要删除的位置的前一个位置后（此时 current 指向要删除的位置的前一个位置）
+            Node temp = current.next; // 保存要删除的节点
+            current.next = temp.next; // 将前一个节点的“下一个”指针指向要删除节点的“下一个”指针指向的节点
+            temp = null; // 删除要删除的节点
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyLinkedList list = new MyLinkedList();
+        list.insertAtBeginning(10);
+        list.insertAtBeginning(5);
+        list.insertAtEnd(15);
+        list.traverse(); // 5 10 15
+        list.insertAt(8, 2);
+        list.traverse(); // 5 10 8 15
+        list.deleteAt(1);
+        list.traverse(); // 5 8 15
+    }
+}
+```
 
 ## 例题
 
