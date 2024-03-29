@@ -15,6 +15,6 @@ header: false
 
 <br />
 
-![GitHub Metrics](https://img.cubik65536.top/github-cubik65536-metrics.svg)
+![GitHub Metrics](https://github-metrics.cubik65536.top/github-metrics.svg)
 
 {% endabout %}
