@@ -172,6 +172,16 @@ public static void printList(List<? extends Number> list) {
 
 此时，`list` 参数这个列表的元素的类型就只能是 `Number` 类型或者 `Number` 的子类类型了。
 
+同时，我们也可以使用泛型通配符 `super`，表示泛型参数是某个类型的父类。例如：
+
+```java
+public static void addNumbers(List<? super Integer> list) {
+    list.add(42);
+}
+```
+
+在上述示例中，`addNumbers` 方法接受一个 `List` 类型的参数，这个 `List` 类型的元素类型只能是 `Integer` 或者 `Integer` 的父类类型。
+
 {% note color:red 注意！泛型通配符 `?` 只能用于声明泛型类型，不能用于创建对象。例如，`List<?> list = new ArrayList<>()` 是错误的。 %}
 
 ## 例题
