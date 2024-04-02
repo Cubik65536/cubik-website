@@ -51,7 +51,7 @@ System.out.println(strBox.getData()); // Hello, Java!
 
 在上述代码中，`intBox` 中 `data` 的类型是 `Integer`，而 `strBox` 中 `data` 的类型是 `String`。
 
-{% note color:orange 注意！泛型类中的类型参数不能是基本数据类型，只能是“类”类型。也就是说，我们不能创建一个 `Box<int>` 对象，而应该使用 `Box<Integer>`。但是，我们可以随便使用其他类作为类型参数，例如 `Box<Toy>`。 %}
+{% note color:orange 注意！ 泛型类中的类型参数不能是基本数据类型，只能是“类”类型。也就是说，我们不能创建一个 `Box<int>` 对象，而应该使用 `Box<Integer>`。但是，我们可以随便使用其他类作为类型参数，例如 `Box<Toy>`。 %}
 
 在 Java 中，泛型在集合（Collection）类中得到了广泛的应用。例如，`ArrayList`、`LinkedList`、`HashMap` 等都是泛型类。在使用这些类时，我们可以指定集合中元素的类型，从而避免了类型转换的麻烦。同时，泛型的使用提高了代码的复用性以及代码的安全性（由于类型已经在编写时确定，编译器可以在编译时检查类型是否匹配）。
 
@@ -182,7 +182,7 @@ public static void addNumbers(List<? super Integer> list) {
 
 在上述示例中，`addNumbers` 方法接受一个 `List` 类型的参数，这个 `List` 类型的元素类型只能是 `Integer` 或者 `Integer` 的父类类型。
 
-{% note color:red 注意！泛型通配符 `?` 只能用于声明泛型类型，不能用于创建对象。例如，`List<?> list = new ArrayList<>()` 是错误的。 %}
+{% note color:red 注意！ 泛型通配符 `?` 只能用于声明泛型类型，不能用于创建对象。例如，`List<?> list = new ArrayList<>()` 是错误的。 %}
 
 ## 例题
 
