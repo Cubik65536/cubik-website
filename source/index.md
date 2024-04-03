@@ -65,6 +65,7 @@ header: false
   &nbsp;&nbsp;
   <img src="https://img.shields.io/badge/Windows%2011-0078D6?style=for-the-badge&logo=windows&logoColor=F0F0F0" style="display: inline-block" />
   &nbsp;&nbsp;
+  <img src="https://img.shields.io/badge/Asahi%20Linux-A61200?style=for-the-badge&logo=asahi-linux&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/KDE-1D99F3?logo=KDE&logoColor=fff&style=for-the-badge" style="display: inline-block" />
   &nbsp;&nbsp;
