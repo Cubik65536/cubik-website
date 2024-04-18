@@ -105,7 +105,7 @@ private static int factorial(int n) {
 如果我们要计算指数，那么我们可以将其定义为：
 
 $$
-f(x, n) = x^n = x \times x^{n-1} = x \times f(x, n-1)
+f(x, n) = x^n = x \times x^{n-1} = x \times f(x, n-1) \text{, where } n \in \mathbb{N}
 $$
 
 这个问题的终止条件是 $n=0$，此时 $x^0 = 1$。
@@ -115,7 +115,7 @@ $$
 ```java
 /**
  * 计算 x 的 n 次方
- * @param x 非负整数
+ * @param x 非负整数（我们不考虑负数/小数的情况，虽然其实是可以的）
  * @param n 非负整数
  * @return x 的 n 次方
  */
@@ -144,6 +144,7 @@ f(x, n) = \begin{cases}
     x \times f(x, n-1), & \text{if } n > 0 \newline
     \frac{1}{x \times f(x, \|n\| - 1)}, & \text{if } n < 0
 \end{cases}
+\text{where } n \in \mathbb{Z}
 $$
 
 在这种情况下，如果 $n$ 是正数，我们就按照正常的递归计算 $x^n$。但是，如果 $n$ 是负数，我们就计算 $x$ 乘以 $x$ 的 $|n|-1$ 次方的倒数。注意到了吗？这里使用了 $|n|$ 来表示 $n$ 的绝对值，这样递归计算完后，我们将其与 $x$ 相乘，我们就得到了 $x^{|n|}$，然后计算其倒数即可。
@@ -153,7 +154,7 @@ $$
 ```java
 /**
  * 计算 x 的 n 次方
- * @param x 非负整数
+ * @param x 非负整数（我们不考虑负数/小数的情况，虽然其实是可以的）
  * @param n 整数
  * @return x 的 n 次方
  */
@@ -180,6 +181,7 @@ f(n) = \begin{cases}
     1, & \text{if } n = 1 \newline
     f(n-1) + f(n-2), & \text{if } n > 1
 \end{cases}
+\text{where } n \in \mathbb{N}
 $$
 
 也就是说，在这个数列中，第一项是 0，第二项是 1，之后的每一项都是前两项的和。
