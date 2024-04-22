@@ -105,7 +105,7 @@ private static int factorial(int n) {
 如果我们要计算指数，那么我们可以将其定义为：
 
 $$
-f(x, n) = x^n = x \times x^{n-1} = x \times f(x, n-1) \text{, where } n \in \mathbb{N}
+f(x, n) = x^n = x \times x^{n-1} = x \times f(x, n-1) \text{, where } n \in \mathbb{N}_0
 $$
 
 这个问题的终止条件是 $n=0$，此时 $x^0 = 1$。
@@ -181,7 +181,7 @@ f(n) = \begin{cases}
     1, & \text{if } n = 1 \newline
     f(n-1) + f(n-2), & \text{if } n > 1
 \end{cases}
-\text{where } n \in \mathbb{N}
+\text{where } n \in \mathbb{N}_0
 $$
 
 也就是说，在这个数列中，第一项是 0，第二项是 1，之后的每一项都是前两项的和。
