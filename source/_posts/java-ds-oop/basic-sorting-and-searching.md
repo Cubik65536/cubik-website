@@ -326,7 +326,8 @@ class JumpSearch {
             }
         }
 
-        for (int i = idx - step; i < idx; i++) { // 回退一个步长，回到上次检查的元素，遍历这个步长内的元素
+        // 回退一个步长，回到上次检查的元素，遍历这个步长内的元素（或者直到数组末尾）
+        for (int i = idx - step; i < idx && i < list.size(); i++) {
             if (list.get(i) == target) { // 如果找到目标
                 return i; // 返回目标的索引
             }
