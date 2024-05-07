@@ -117,7 +117,7 @@ public class LambdaExample {
         MyFunctionalInterface myLambda1 = () -> 3.1415926;
         // 引用也可以分开写
         MyFunctionalInterface myLambda2;
-        myLambda2 = () -> 3.1415926;
+        myLambda2 = () -> 2.7182818;
         // 调用 Lambda 表达式定义的方法（执行定义好的方法）
         System.out.println("Value of Pi: " + myLambda1.getValue());
         System.out.println("Value of e: " + myLambda2.getValue());
