@@ -1,0 +1,11 @@
+name: 探索
+title: 探索
+subtitle: '笔记、收藏等'
+tags: 知识库
+cover: false
+description: 笔记、收藏等
+base_dir: /explore/
+tree:
+  - index
+  - bookmarks
+  - commit-message-conventions

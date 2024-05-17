@@ -1,18 +1,9 @@
 ---
-robots: noindex,nofollow
-sitemap: false
-menu_id: notes
+layout: wiki
+wiki: explore
 title: 网址收藏
 comments: false
 ---
-
-{% about avatar:https://img.cubik65536.top/hello-cubik-developer.jpg height:96px %}
-
-<br/>
-
-{% navbar active:2 [笔记](/notes/) [网址收藏](/bookmarks/) [Git&nbsp;提交信息格式](/commit-message-conventions/) %}
-
-{% endabout %}
 
 {% quot 镜像站 icon:hashtag el:h2 %}
 

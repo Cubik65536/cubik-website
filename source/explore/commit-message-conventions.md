@@ -1,18 +1,9 @@
 ---
-robots: noindex,nofollow
-sitemap: false
-menu_id: notes
+layout: wiki
+wiki: explore
 title: "Git 提交信息格式"
 comments: false
 ---
-
-{% about avatar:https://img.cubik65536.top/hello-cubik-developer.jpg height:96px %}
-
-<br/>
-
-{% navbar active:3 [笔记](/notes/) [网址收藏](/bookmarks/) [Git&nbsp;提交信息格式](/commit-message-conventions/) %}
-
-{% endabout %}
 
 {% note color:light "本页面将简单描述本博客仓库的 git 提交信息格式。" %}
 

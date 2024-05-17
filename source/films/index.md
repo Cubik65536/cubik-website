@@ -1,6 +1,6 @@
 ---
 robots: noindex,nofollow
-menu_id: movies
+menu_id: films
 sidebar: [ghuser, search, recent, timeline]
 comments: true
 comment_title: ""
@@ -16,7 +16,7 @@ header: false
 
 {% about %}
 
-{% quot 电影 el:h2 %}
+{% quot 电影/动漫 el:h2 %}
 
 {% tabs active:2 align:center %}
 

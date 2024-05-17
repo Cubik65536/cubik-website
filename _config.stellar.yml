@@ -20,20 +20,35 @@ menubar:
       title: 主页
       url: /
     - id: post
-      theme: '#1BCDFC'
+      theme: '#FFC107'
       icon: fapro6:album-collection
       title: 博客
       url: /posts/
     - id: wiki
       theme: '#3DC550'
-      icon: fapro6:books
+      icon: fapro6:folders
       title: 文档
       url: /wiki/
-    # - id: explore
-    #   theme: '#FA6400'
-    #   icon: 
-    #   title: 探索
-      # url: /explore/
+    - id: explore
+      theme: '#C0C0C0'
+      icon: fapro6:compass
+      title: 探索
+      url: /explore/
+    - id: books
+      theme: '#A47D43'
+      icon: fapro6:books
+      title: 书单
+      url: /books/
+    - id: films
+      theme: '#B18F6A'
+      icon: fapro6:films
+      title: 影单
+      url: /films/
+    - id: games
+      theme: '#FF9800'
+      icon: fapro6:gamepad-modern
+      title: 游戏
+      url: /games/
     - id: social
       theme: '#FE5000'
       icon: fapro5:message-heart
