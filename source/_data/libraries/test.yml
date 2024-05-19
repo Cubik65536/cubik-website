@@ -1,0 +1,22 @@
+- name: Name AAA
+  link: https://example.com
+  cover: https://cdn.jsdelivr.net/npm/xiansakana-blog-assets/blog-assets/%E6%97%A0%E8%81%8C%E8%BD%AC%E7%94%9F/images/cover.jpg
+  badge: <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" />
+  author: Author
+  publisher: Publisher
+  year: Year
+  isbn: ISBN
+  recommend: ★★★★☆
+  description: |
+    <b>Description</b> <i>Test</i>
+- name: Name AAB
+  link: https://example.com
+  cover: https://cdn.jsdelivr.net/npm/xiansakana-blog-assets/blog-assets/%E6%97%A0%E8%81%8C%E8%BD%AC%E7%94%9F/images/cover.jpg
+  badge: <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" />
+  author: Author
+  publisher: Publisher
+  year: Year
+  isbn: ISBN
+  recommend: ★★★★☆
+  description: |
+    <b>Description</b> <i>Test</i>

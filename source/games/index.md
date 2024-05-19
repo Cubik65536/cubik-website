@@ -12,6 +12,7 @@ comment_locale:
 reaction: false
 breadcrumb: false
 header: false
+rightbar: false
 ---
 
 {% about %}
@@ -20,7 +21,7 @@ header: false
 
 {% note color:warning "注意" "本列表中提到的平台仅代表我游玩此游戏使用的平台，此游戏可能支持其他平台" %}
 
-{% tabs active:2 align:center %}
+{% tabs active:2 %}
 
 <!-- tab 想玩 -->
 

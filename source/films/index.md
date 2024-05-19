@@ -12,13 +12,14 @@ comment_locale:
 reaction: false
 breadcrumb: false
 header: false
+rightbar: false
 ---
 
 {% about %}
 
 {% quot 电影/动漫 el:h2 %}
 
-{% tabs active:2 align:center %}
+{% tabs active:2 %}
 
 <!-- tab 想看 -->
 
