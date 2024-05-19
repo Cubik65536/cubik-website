@@ -34,7 +34,7 @@ header: false
 
 | 标题 | 开发者 | 平台 | 游玩时间 | 推荐指数 |
 |:----:|:------:|:----:|:--------:|:--------:|
-| Minecraft | Mojang Studios | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2019 -  |  ★★★★★  |
+| Minecraft | Mojang Studios | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2019 -  | ★★★★★ |
 | Soul Knight | ChillyRoom Inc. © | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2020 -  | ★★★★☆ |
 | CS:GO / CS2 | Valve | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2021 -  |  ★★★★  |
 | Mini Metro | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2019 -  |  ★★★★☆  |
