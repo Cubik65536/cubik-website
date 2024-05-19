@@ -35,15 +35,15 @@ header: false
 | 标题 | 开发者 | 平台 | 游玩时间 | 推荐指数 |
 |:----:|:------:|:----:|:--------:|:--------:|
 | Minecraft | Mojang Studios | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2019 -  |  ★★★★★  |
-| CS:GO | Valve | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2021 -  |  ★★★★  |
+| Soul Knight | ChillyRoom Inc. © | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2020 -  | ★★★★☆ |
+| CS:GO / CS2 | Valve | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /> |  2021 -  |  ★★★★  |
 | Mini Metro | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2019 -  |  ★★★★☆  |
 | Mini Motorways | Dinosaur Polo Club | <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0" /><img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  |  ★★★★☆  |
 | Grand Theft Auto V | Rockstar North | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2019 -  | ★★★☆ |
 | F1 22 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 -  | ★★★☆ |
 | F1 Manager 2023 | Frontier Developments | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2023 -  | ★★★★☆ |
 | Game Dev Story+ | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2022 -  | ★★★★☆ |
-| Airport Story | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★★ |
-| Cafe Nippon | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 -  | ★★★☆ |
+| Assetto Corsa | Kunos Simulazioni | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> |  2024 -  | ★★★★☆ |
 
 <!-- tab 已玩 -->
 
@@ -55,6 +55,8 @@ header: false
 | F1 2020 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2020 - 2021  | ★★★★ |
 | F1 2021 | Codemasters | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2021 - 2022  | ★★★★☆ |
 | F1 Manager 2022 | Frontier Developments | <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" /> | 2022 - 2023 | ★★★★☆ |
+| Airport Story | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 - 2024 | ★★★★ |
+| Cafe Nippon | Kairosoft | <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" /> |  2023 - 2024 | ★★★☆ |
 
 {% endtabs %}
 
