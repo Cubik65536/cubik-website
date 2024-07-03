@@ -10,7 +10,7 @@ description: ''
 keywords:
 author: Cubik65536
 language:
-- zh-CN
+  - zh-CN
   - en
 timezone: 'America/Toronto'
 
