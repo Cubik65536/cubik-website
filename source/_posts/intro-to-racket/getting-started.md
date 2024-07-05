@@ -109,11 +109,15 @@ Sublime Text 也有 Racket 的语法高亮插件，但是似乎已经很久没�
 
 如果你习惯了使用 Java、Python 等语言，你可能会发现很奇怪的一件事情：我们并没有使用任何打印函数来输出 `Hello, World!`，这是因为在 Racket 中，表达式的值会被自动输出到控制台。
 
+> In imperative programming languages, a program typically computes by repeatedly modifying or mutating the values of variables. In contrast, functional programming languages focus more on the application of functions (also called procedures) to already-computed values in order to create new values. Mutation is present in Racket but is de-emphasized; we will discuss it and other side effects much later in this document, to show what can be accomplished in their absence.
+>
 > 在命令式编程语言中，程序通常通过反复修改或变化变量的值来进行计算。相比之下，函数式编程语言更注重将函数（也称为过程）应用于已计算的值，以创建新值。Racket 中存在可变性，但是它被弱化了；我们将在本文档的后面讨论它和其他副作用，以展示在它们的缺失下可以实现什么。
+>
+> A Racket program is a sequence of definitions and expressions. When one runs a program, each of the expressions is evaluated in order, and the resulting values are printed in the Interactions window, one to a line. (All Racket values have a printed representation, though, as we will see, in some cases only a limited amount of information is printed.) The Interactions window then repeatedly offers an interactive prompt (>) which lets one enter more expressions and have them evaluated. This read-evaluate-print loop (REPL) is a common and useful feature of interpreters for functional programming languages.
 >
 > 一个 Racket 程序是由一系列的定义与表达式组成的。当运行一个程序时，每个表达式按顺序被求值，结果值被打印在交互窗口中，每行一个。（所有 Racket 值都有一个打印表示，尽管，正如我们将看到的，有些情况下只有有限的信息被打印。）交互窗口随后会提供一个交互式提示符（>），让你输入更多的表达式并对其求值。这种读取-求值-打印循环（REPL）是函数式编程语言解释器的一个常见且有用的特性。
 >
-> Ragde [2]
+> Ragde [2]，Cubik65536 译
 
 由于我们暂时并不会去使用 Racket 交互式命令行，所以我们暂且先不去深究交互窗口的内容。
 
