@@ -416,10 +416,11 @@ $$
 
 一个列表还可以有一些其他的函数用来对其进行操作：
 
-函数 `second` 到 `tenth` 分别可以返回列表的第二个到第十个元素。
+函数 `first` 到 `tenth` 分别可以返回列表的第一个到第十个元素。
 
 ```scheme
 (define numbers '(1 2 3 4 5 6 7 8 9 10))
+(first numbers) ; 1
 (second numbers) ; 2
 (third numbers) ; 3
 (tenth numbers) ; 10
@@ -460,6 +461,13 @@ $$
 
 ```scheme
 (drop '(1 2 3 4 5) 3) ; '(4 5)
+```
+
+同样的，`car` 和 `cdr` 函数也会返回列表的第一个和除了第一个元素之外的剩余部分。
+
+```scheme
+(car '(1 2 3 4 5)) ; 1
+(cdr '(1 2 3 4 5)) ; '(2 3 4 5)
 ```
 
 ### 引号表示法... 们
