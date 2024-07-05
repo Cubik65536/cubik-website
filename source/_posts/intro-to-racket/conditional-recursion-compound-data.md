@@ -28,7 +28,7 @@ references:
 >
 > DrRacket will position the cursor at the right level of indentation when the Enter key is pressed. This positioning can be overridden with Space and Delete keys, and restored for a single line using the Tab key. There are menu items to reindent the current text selection and the entire program. If the cursor is before an open parenthesis or after a close parenthesis, the entire sub-expression will be highlighted, which avoids the need to count parentheses. There are many useful keyboard shortcuts for editing which you can explore (and alter) by using the Keybindings entry in the Edit menu.
 >
-> DrRacket（以及其他经过语法分析器配置的代码编辑器，译者注）会自动在按下 Enter 键时将光标定位到正确的缩进级别。使用 Space 和 Delete 键可以覆盖此定位，并使用 Tab 键恢复单行的自动缩进。（仅 DrRacket，译者注）有菜单项可以重新缩进当前文本选择和整个程序。（所有经过配置的编辑器，译者注）如果光标位于开括号之前或闭括号之后，则整个子表达式将被高亮显示，这样就不需要计算括号的数量了。有许多有用的编辑键盘快捷键，您可以通过“编辑”菜单中的“键绑定”选项进行来探索（和更改）可用的快捷键。
+> DrRacket（以及大部分经过语法分析器配置的代码编辑器，译者注）会自动在按下 Enter 键时将光标定位到正确的缩进级别。使用 Space 和 Delete 键可以覆盖此定位，并使用 Tab 键恢复单行的自动缩进。\[DrRacket 中\]有菜单项可以重新缩进当前文本选择和整个程序。如果光标位于开括号之前或闭括号之后，则整个子表达式将被高亮显示，这样就不需要计算括号的数量了。有许多有用的编辑键盘快捷键，您可以通过“编辑”菜单中的“键绑定”选项进行来探索（和更改）可用的快捷键。（非 DrRacket 的编辑器可能在细节上一些差别，或者一些功能可能不存在，译者注）
 >
 > A semicolon (`;`) signals the start of a comment, which persists for the rest of the line. Nestable multi-line comments start with `#|` and end with `|#`. Racket programs tend to contain many small functions which don’t require in-line comments. A short header describing purpose and arguments can be useful.
 >
@@ -180,7 +180,7 @@ references:
 >
 > Ragde [1]，Cubik65536 译
 
-更复杂的条件可以通过使用 `and` 和 `or` 函数来实现。在 `and` 函数中，
+更复杂的条件可以通过使用 `and` 和 `or` 函数来实现。
 
 一个 `and` 表达式会逐个求值每个子表达式，直到找到一个值为 `#f` 的子表达式，然后返回 `#f`；如果所有子表达式的值都为 `#t`，则返回最后一个子表达式的值。例如：
 
