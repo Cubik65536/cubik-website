@@ -10,7 +10,7 @@ tags:
   - Rocky Linux
 ---
 
-前一段时间，我在我自己的服务器上部署了 [我自己的 Mastodon 示例](https://mstdn.ixor.tech) ，在本文中，我将简单展示如何在 Rocky Linux 上搭配 Docker 和 Docker Compose 来部署 Mastodon。
+前一段时间，我在我自己的服务器上部署了 [我自己的 Mastodon 示例](https://mstdn.ixor.dev) ，在本文中，我将简单展示如何在 Rocky Linux 上搭配 Docker 和 Docker Compose 来部署 Mastodon。
 
 <!-- more -->
 

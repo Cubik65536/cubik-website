@@ -30,7 +30,7 @@ a(href = "https://github.com/iXORTech") {
   i { attributes["data-feather"] = "github" }
 }
 +" | ${I18N.poweredBy} "
-a(href = "https://ixor.tech") { +"iXOR Technology" }
+a(href = "https://ixor.dev") { +"iXOR Technology" }
 +" ${I18N.withLove}"
 br {}
 +I18N.htmlThemeDesigned0()
@@ -55,7 +55,7 @@ fun DIV.htmlPageFooter() = footer {
     i { attributes["data-feather"] = "github" }
   }
   +" | ${I18N.poweredBy} "
-  a(href = "https://ixor.tech") { +"iXOR Technology" }
+  a(href = "https://ixor.dev") { +"iXOR Technology" }
   +" ${I18N.withLove}"
   br {}
   +I18N.htmlThemeDesigned0()

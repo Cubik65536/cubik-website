@@ -13,7 +13,7 @@ tags:
 
 ## Mastodon
 
-我成功搭建了我自己的 Mastodon 实例 <https://mstdn.ixor.tech>。我以后也会在这个站点上更新动态，欢迎关注。
+我成功搭建了我自己的 Mastodon 实例 <https://mstdn.ixor.dev>。我以后也会在这个站点上更新动态，欢迎关注。
 
 ## CodeEdit
 
