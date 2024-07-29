@@ -15,8 +15,6 @@ header: false
 
 ## 嗨！我是 Cubik 👋
 
-**一个 Java & Kotlin & Python & Swift 开发者 / Minecraft 玩家**.
-
 {% navbar active:1 [关于](/) [联系我](/contact-me/) [我的&nbsp;Github](/my-github/) %}
 
 <br/>
