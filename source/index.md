@@ -50,9 +50,9 @@ header: false
 
 <p>
   <img src="https://img.shields.io/badge/WezTerm-4E49EE?style=for-the-badge&logo=wezterm&logoColor=F0F0F0" style="display: inline-block" />
-  &nbsp;&nbsp;
+  &nbsp;
   <img src="https://img.shields.io/badge/Tower-00CAF4.svg?style=for-the-badge&logo=tower&logoColor=F0F0F0" style="display: inline-block" />
-  &nbsp;&nbsp;
+  &nbsp;
   <img src="https://img.shields.io/badge/NeoVim-%2357A143.svg?&style=for-the-badge&logo=neovim&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logoColor=F0F0F0&logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zOnNlcmlmPSJodHRwOi8vd3d3LnNlcmlmLmNvbS8iIHN0eWxlPSJmaWxsLXJ1bGU6ZXZlbm9kZDtjbGlwLXJ1bGU6ZXZlbm9kZDtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MjsiPjxwYXRoIGQ9Ik05Ni40NTgsMTAuNzc5bC0yMC41ODMsLTkuOTA0Yy0yLjM3OCwtMS4xNDUgLTUuMjM4LC0wLjY1OSAtNy4xMDQsMS4yMDhsLTM5LjQxNywzNS45NTlsLTE3LjE2NiwtMTMuMDM0Yy0xLjU5MiwtMS4yMDcgLTMuODQsLTEuMTA3IC01LjMxNywwLjIzOGwtNS41MDgsNS4wMDhjLTAuODY5LDAuNzg5IC0xLjM2NCwxLjkxIC0xLjM2NCwzLjA4M2MtMCwxLjE3MiAwLjQ5NCwyLjI5MSAxLjM1OSwzLjA4bDE0Ljg4OCwxMy41ODNsLTE0Ljg4OCwxMy41ODNjLTAuODY1LDAuNzg5IC0xLjM1OSwxLjkwOCAtMS4zNTksMy4wOGMtMCwxLjE3MyAwLjQ5NSwyLjI5NCAxLjM2NCwzLjA4M2w1LjUxMiw1LjAwNGMxLjQ3OCwxLjM0NCAzLjcyNSwxLjQ0NSA1LjMxNywwLjIzOGwxNy4xNjYsLTEzLjAzNGwzOS40MTcsMzUuOTU5YzEuODY0LDEuODY3IDQuNzIzLDIuMzU0IDcuMSwxLjIwOGwyMC41OTIsLTkuOTA0YzIuMTU4LC0xLjA0MiAzLjUzNSwtMy4yMzcgMy41MzMsLTUuNjM0bDAsLTY3LjE3MWMwLC0yLjM5OCAtMS4zOCwtNC41OTQgLTMuNTQyLC01LjYzM1ptLTIxLjQ0MSw2MS45MjFsLTI5LjkwOSwtMjIuN2wyOS45MDksLTIyLjdsLTAsNDUuNFoiIHN0eWxlPSJmaWxsOiNmMGYwZjA7ZmlsbC1ydWxlOm5vbnplcm87Ii8+PC9zdmc+" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Zed_Editor-084CCF.svg?style=for-the-badge&logo=zed-industries&logoColor=F0F0F0" style="display: inline-block" />
@@ -71,7 +71,7 @@ header: false
 <p>
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=F0F0F0" style="display: inline-block" />
-  &nbsp;&nbsp;
+  &nbsp;
   <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/typst-%23239DAD.svg?style=for-the-badge&logo=latex&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=F0F0F0" style="display: inline-block" />
