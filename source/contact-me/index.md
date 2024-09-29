@@ -25,8 +25,8 @@ header: false
 
 *我**永远会**在回复或者发送邮件时使用我的 PGP 签名，我**永远会**在回复**加密**邮件时使用加密。*
 
-**如果你收到了回复的消息但是并未使用 `DDB3 2000 DDDF 3D48` 进行签名，那这封签名后的邮件极有可能不是由我发送的，除非我公开撤销了 `DDB3 2000 DDDF 3D48` 并更换了密钥。更多信息请参考 [我的 PGP 信息站](https://pgp.cubik65536.top/zh-CN/)**
+**如果你收到了回复的消息但是并未使用 `` 进行签名，那这封签名后的邮件极有可能不是由我发送的，除非我公开撤销了 `` 并更换了密钥。更多信息请参考 [我的 PGP 信息站](https://pgp.cubik65536.top/zh-CN/)**
 
-{% note color:warning 警告！ "我的 PGP 指纹为 0xFFA7DB1132238420 的密钥已于 2023/09/25 **失效**。" %}
+{% note color:warning "NOTICE/通知" "My old PGP key with fingerprint 0xDDDF3D48 is NO LONGER VALID and **CANNOT BE TRUSTED** since 2024/09/28 (incl.) and a new post will confirm the new one.<br/>我的指纹为 0xDDDF3D48 的旧 PGP 密钥已于 2024/09/28（包含当日）失效并**不再可信**。新可信指纹稍后更新。" %}
 
 {% endabout %}
