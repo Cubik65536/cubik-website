@@ -85,12 +85,10 @@ header: false
 
 ### 赞助者
 
-> - [@pascal-giguere (GitHub)](https://github.com/pascal-giguere)
-> - [@kevingriffin (GitHub)](https://github.com/kevingriffin)
-> - BabyFn0rd (Buy Me a Coffee)
 > - dasos (Buy Me a Coffee)
 > - [@vinnysaj (GitHub)](https://github.com/vinnysaj)
 > - [@trinque (GitHub)](https://github.com/trinque)
+> - [@marlonjames71 (GitHub)](https://github.com/marlonjames71)
 
 如果你也希望你的名字出现在这里，可以在 [`GitHub`](https://github.com/sponsors/Cubik65536) 或 [`Buy me a coffee`](https://www.buymeacoffee.com/cubik65536) 赞助我！
 
