@@ -203,12 +203,14 @@ footer:
   social:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/github.svg" />'
       url: https://github.com/Cubik65536
-    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
-      url: https://space.bilibili.com/439205819
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bluesky.svg" />'
+      url: https://bsky.app/profile/cubik65536.top
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/x-twitter.svg"/>'
       url: https://x.com/Cubik65536
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/telegram.svg"/>'
       url: https://t.me/cubiksteleblog
+    - icon: '<img src="https://fapro6.cubik65536.top/svgs/brands/bilibili.svg"/>'
+      url: https://space.bilibili.com/439205819
   largesocial:
     - icon: '<img src="https://fapro6.cubik65536.top/svgs/duotone/fingerprint.svg" />'
       url: https://pgp.cubik65536.top/
