@@ -3,7 +3,7 @@ title: "[开源观察原创翻译转载] 新闻｜Mozilla 再次裁员，解散�
 poster:
   topic: 开源观察原创翻译转载
   headline: "新闻｜Mozilla 再次裁员，解散倡导部门"
-  caption: ""
+  caption: "Mozilla 正在采取这些高风险措施。接下来会发生什么？"
   color: 标题颜色
 date: 2024-11-21 22:22:34
 cover: https://static.fosscope.com/articles_img/2024/11/mozilla-layoff-again-2024/mozila-boots-staff-again.webp
