@@ -39,13 +39,16 @@ header: false
 
 <p>
   <img src="https://img.shields.io/badge/Apple-MacBook_Pro_2023-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
-  <img src="https://img.shields.io/badge/Apple-MacBook_Pro_2019-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
   <br/>
   <img src="https://img.shields.io/badge/Apple-iPhone_12-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Apple-Watch_Series_7-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
   <br/>
   <img src="https://img.shields.io/badge/Apple-iPad_Air_(M2)-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
   <img src="https://img.shields.io/badge/Apple-AirPods_Pro_1st_gen-999999?style=for-the-badge&logo=apple&logoColor=F0F0F0" style="display: inline-block" />
+</p>
+
+<p>
+  <img src="https://img.shields.io/badge/ROG_Ally_X-FF0029?style=for-the-badge&logo=republicofgamers&logoColor=F0F0F0" style="display: inline-block" />
 </p>
 
 <p>
